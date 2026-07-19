@@ -120,7 +120,6 @@ ant_born_in_the_highlands = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -146,7 +145,6 @@ mtr_the_masters_of_the_karavasta = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -277,7 +275,6 @@ alb_the_national_arsenal = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -492,7 +489,6 @@ ant_arianitis_defiance = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -518,7 +514,6 @@ mtr_marshland_guerillas = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -570,7 +565,6 @@ thp_a_centralized_levy_system = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -864,7 +858,6 @@ ant_the_eternal_resistance = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -1049,7 +1042,6 @@ ant_the_professional_highland_grenadiers = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions

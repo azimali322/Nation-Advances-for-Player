@@ -99,7 +99,6 @@ cha_veteran_shipbuilders = {	#https://en.wikipedia.org/wiki/Military_of_Champa#
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -120,7 +119,6 @@ cha_haluwbilau = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Haluwbilau
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -164,7 +162,6 @@ cha_boarding_tactics = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Confl
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -189,7 +186,6 @@ cha_towers_on_water = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Ships
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism

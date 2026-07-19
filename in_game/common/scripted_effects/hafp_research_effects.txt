@@ -1783,7 +1783,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -2925,7 +2924,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3000,7 +2998,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3227,7 +3224,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3265,7 +3261,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3460,7 +3455,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3607,7 +3601,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3645,7 +3638,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3840,7 +3832,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -3953,7 +3944,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -4028,7 +4018,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -4066,7 +4055,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -4264,7 +4252,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -4848,7 +4835,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -4923,7 +4909,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -4960,7 +4945,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -5145,7 +5129,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -5333,7 +5316,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -5817,7 +5799,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -6120,7 +6101,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -6195,7 +6175,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -6859,7 +6838,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -6899,7 +6877,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -6975,7 +6952,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -7675,7 +7651,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -7713,7 +7688,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -7861,7 +7835,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -7936,7 +7909,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -7974,7 +7946,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -8159,7 +8130,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -8347,7 +8317,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -8495,7 +8464,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -8570,7 +8538,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -8722,7 +8689,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -9767,7 +9733,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -10994,7 +10959,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -11462,7 +11426,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -11497,7 +11460,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -11812,7 +11774,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -12444,7 +12405,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -12479,7 +12439,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -12751,7 +12710,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -12890,7 +12848,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -13214,7 +13171,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -13283,7 +13239,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -13319,7 +13274,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -13670,7 +13624,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -13883,7 +13836,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -14531,7 +14483,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -14815,7 +14766,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -14851,7 +14801,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -14887,7 +14836,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -15099,7 +15047,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16350,7 +16297,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16465,7 +16411,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16503,7 +16448,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16541,7 +16485,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16687,7 +16630,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16761,7 +16703,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -16799,7 +16740,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17188,7 +17128,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17466,7 +17405,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17536,7 +17474,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17573,7 +17510,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17682,7 +17618,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17719,7 +17654,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17792,7 +17726,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -17829,7 +17762,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18010,7 +17942,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18083,7 +18014,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18120,7 +18050,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18157,7 +18086,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18266,7 +18194,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18339,7 +18266,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18412,7 +18338,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18449,7 +18374,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -18487,7 +18411,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -19719,7 +19642,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -19943,7 +19865,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -20307,7 +20228,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -20530,7 +20450,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -20851,7 +20770,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -21772,7 +21690,6 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -25040,7 +24957,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -25673,7 +25589,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -25711,7 +25626,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -25866,7 +25780,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -25904,7 +25817,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -25978,7 +25890,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26021,7 +25932,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26064,7 +25974,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26144,7 +26053,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26218,7 +26126,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26560,7 +26467,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26707,7 +26613,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -26828,7 +26733,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -27271,7 +27175,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -27381,7 +27284,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -27529,7 +27431,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28090,7 +27991,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28200,7 +28100,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28242,7 +28141,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28532,7 +28430,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28684,7 +28581,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28911,7 +28807,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -28949,7 +28844,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -29024,7 +28918,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -29099,7 +28992,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -29393,7 +29285,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -29541,7 +29432,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -29843,7 +29733,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -29881,7 +29770,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30211,7 +30099,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30249,7 +30136,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30618,7 +30504,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30656,7 +30541,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30693,7 +30577,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30875,7 +30758,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -30950,7 +30832,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -31135,7 +31016,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -31356,7 +31236,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -31547,7 +31426,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -31585,7 +31463,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -31995,7 +31872,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -32070,7 +31946,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -32182,7 +32057,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -32408,7 +32282,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -32485,7 +32358,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -32898,7 +32770,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33010,7 +32881,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33085,7 +32955,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33271,7 +33140,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33383,7 +33251,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33613,7 +33480,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33650,7 +33516,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -33799,7 +33664,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34018,7 +33882,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34056,7 +33919,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34204,7 +34066,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34487,7 +34348,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34776,7 +34636,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34953,7 +34812,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -34988,7 +34846,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -35417,7 +35274,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36067,7 +35923,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36539,7 +36394,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36574,7 +36428,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36643,7 +36496,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36782,7 +36634,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36852,7 +36703,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36887,7 +36737,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36958,7 +36807,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -36994,7 +36842,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -37031,7 +36878,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -37253,7 +37099,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -37614,7 +37459,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -37720,7 +37564,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -37756,7 +37599,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -37864,7 +37706,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -38120,7 +37961,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -38305,7 +38145,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -38854,7 +38693,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -38962,7 +38800,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -38998,7 +38835,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39067,7 +38903,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39145,7 +38980,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39292,7 +39126,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39367,7 +39200,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39405,7 +39237,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39693,7 +39524,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39935,7 +39765,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -39970,7 +39799,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40008,7 +39836,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40082,7 +39909,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40350,7 +40176,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40609,7 +40434,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40682,7 +40506,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40720,7 +40543,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40757,7 +40579,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40795,7 +40616,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40833,7 +40653,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40871,7 +40690,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -40945,7 +40763,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -42127,7 +41944,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -42164,7 +41980,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -42282,7 +42097,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -43042,7 +42856,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -43088,7 +42901,6 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -47979,7 +47791,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48017,7 +47828,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48055,7 +47865,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48209,7 +48018,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48479,7 +48287,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48554,7 +48361,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48862,7 +48668,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48935,7 +48740,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -48973,7 +48777,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -49333,7 +49136,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -49382,7 +49184,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -49651,7 +49452,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -49688,7 +49488,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -49799,7 +49598,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -49947,7 +49745,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -50022,7 +49819,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -50172,7 +49968,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -50209,7 +50004,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -50294,7 +50088,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -50745,7 +50538,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -50855,7 +50647,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -51110,7 +50901,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -51191,7 +50981,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -51675,7 +51464,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -51750,7 +51538,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -51789,7 +51576,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -51902,7 +51688,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -52016,7 +51801,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -52126,7 +51910,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -52164,7 +51947,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -52720,7 +52502,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -53124,7 +52905,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -53988,7 +53768,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -54099,7 +53878,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -54322,7 +54100,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -54396,7 +54173,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -54900,7 +54676,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -54936,7 +54711,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -55007,7 +54781,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -55188,7 +54961,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -55224,7 +54996,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -55368,7 +55139,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -55404,7 +55174,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -55651,7 +55420,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -56022,7 +55790,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -56163,7 +55930,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -56596,7 +56362,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -56820,7 +56585,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -56891,7 +56655,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57107,7 +56870,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57180,7 +56942,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57216,7 +56977,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57252,7 +57012,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57360,7 +57119,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57716,7 +57474,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -57790,7 +57547,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -58294,7 +58050,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -58916,7 +58671,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59063,7 +58817,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59175,7 +58928,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59286,7 +59038,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59397,7 +59148,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59509,7 +59259,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59582,7 +59331,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -59756,7 +59504,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60009,7 +59756,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60047,7 +59793,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60085,7 +59830,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60123,7 +59867,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60198,7 +59941,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60273,7 +60015,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60425,7 +60166,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -60500,7 +60240,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -61925,7 +61664,6 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -65728,7 +65466,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -66037,7 +65774,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -66187,7 +65923,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -66836,7 +66571,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67110,7 +66844,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67259,7 +66992,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67485,7 +67217,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67523,7 +67254,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67596,7 +67326,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67785,7 +67514,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67822,7 +67550,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67895,7 +67622,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -67968,7 +67694,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -68355,7 +68080,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -68393,7 +68117,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -68430,7 +68153,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -68747,7 +68469,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -68786,7 +68507,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -68825,7 +68545,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -69279,7 +68998,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -69677,7 +69395,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -69860,7 +69577,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -70195,7 +69911,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -70600,7 +70315,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -70973,7 +70687,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -71084,7 +70797,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -71751,7 +71463,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -72090,7 +71801,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -72767,7 +72477,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -72837,7 +72546,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -72908,7 +72616,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -72981,7 +72688,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -73746,7 +73452,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -73782,7 +73487,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -73817,7 +73521,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -73888,7 +73591,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -74178,7 +73880,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -74316,7 +74017,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -74852,7 +74552,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -74996,7 +74695,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75066,7 +74764,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75101,7 +74798,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75280,7 +74976,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75315,7 +75010,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75426,7 +75120,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75465,7 +75158,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75501,7 +75193,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75722,7 +75413,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -75938,7 +75628,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76226,7 +75915,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76261,7 +75949,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76407,7 +76094,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76445,7 +76131,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76482,7 +76167,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76593,7 +76277,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76667,7 +76350,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -76741,7 +76423,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77028,7 +76709,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77278,7 +76958,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77316,7 +76995,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77505,7 +77183,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77580,7 +77257,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77766,7 +77442,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77804,7 +77479,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77842,7 +77516,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77880,7 +77553,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77918,7 +77590,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -77993,7 +77664,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -78249,7 +77919,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -78887,7 +78556,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -79376,7 +79044,6 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -82622,7 +82289,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -82851,7 +82517,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -83005,7 +82670,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -83231,7 +82895,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -83534,7 +83197,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -83723,7 +83385,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -83978,7 +83639,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85103,7 +84763,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85176,7 +84835,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85475,7 +85133,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85524,7 +85181,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85763,7 +85419,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85875,7 +85530,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -85913,7 +85567,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -86057,7 +85710,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -86357,7 +86009,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -86617,7 +86268,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -87054,7 +86704,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -87129,7 +86778,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -87351,7 +86999,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -87572,7 +87219,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -87683,7 +87329,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -87758,7 +87403,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88058,7 +87702,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88096,7 +87739,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88209,7 +87851,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88359,7 +88000,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88677,7 +88317,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88887,7 +88526,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88922,7 +88560,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -88958,7 +88595,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -89492,7 +89128,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -89527,7 +89162,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -89562,7 +89196,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -90816,7 +90449,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -90852,7 +90484,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -91176,7 +90807,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -91358,7 +90988,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -91932,7 +91561,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -92190,7 +91818,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -92337,7 +91964,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -92623,7 +92249,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -93769,7 +93394,6 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -97231,7 +96855,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -97386,7 +97009,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -97650,7 +97272,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -97688,7 +97309,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -97995,7 +97615,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98143,7 +97762,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98216,7 +97834,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98436,7 +98053,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98473,7 +98089,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98586,7 +98201,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98661,7 +98275,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98807,7 +98420,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98880,7 +98492,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -98918,7 +98529,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -99273,7 +98883,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -99707,7 +99316,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -99745,7 +99353,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -99931,7 +99538,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -99968,7 +99574,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -100112,7 +99717,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -100186,7 +99790,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -100223,7 +99826,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -100408,7 +100010,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -100741,7 +100342,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101003,7 +100603,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101150,7 +100749,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101188,7 +100786,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101565,7 +101162,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101603,7 +101199,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101640,7 +101235,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101677,7 +101271,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101752,7 +101345,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101918,7 +101510,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -101956,7 +101547,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -102102,7 +101692,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -102665,7 +102254,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -102990,7 +102578,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -103272,7 +102859,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -103487,7 +103073,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -103995,7 +103580,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -104247,7 +103831,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -104283,7 +103866,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -104318,7 +103900,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -104712,7 +104293,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105325,7 +104905,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105401,7 +104980,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105476,7 +105054,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105514,7 +105091,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105589,7 +105165,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105921,7 +105496,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -105956,7 +105530,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -106442,7 +106015,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -106825,7 +106397,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -106861,7 +106432,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -106897,7 +106467,6 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					AND = {
 					has_variable = hafp_enabled
-					NOT = { has_variable = hafp_exclude_military }
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions

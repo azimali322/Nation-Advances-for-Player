@@ -49,48 +49,13 @@ MASTER_ENABLED = "hafp_enabled"
 UNLOCK_ALL = "hafp_all_advances_enabled"
 EXCLUDE_MILITARY = "hafp_exclude_military"
 
-# Military classification: these whole files are army/navy trees...
-MILITARY_FILES = {"2_army_unlocks.txt", "2_ship_unlocks.txt"}
-# ...elsewhere an advance is military if it unlocks units/levies or if its
-# modifiers are predominantly military stats.
-STRUCTURAL_KEYS = {
-    "age", "icon", "requires", "potential", "allow", "government", "depth",
-    "content_priority", "for", "country_type", "allow_children", "ai_weight",
-    "ai_will_do", "ai_preference_tags", "modifier_while_progressing",
-}
-MILITARY_TERMS = (
-    "army", "navy", "naval", "levy", "levies", "morale", "discipline",
-    "manpower", "sailor", "siege", "fort_", "_fort", "regiment", "cavalry",
-    "infantry", "artillery", "ship", "galley", "fleet", "marine", "mercenar",
-    "combat", "battle", "attrition", "reinforce", "garrison", "blockade",
-    "military", "supply_limit", "defensiveness", "war_", "_war", "admiral",
-    "general_", "unit_", "_unit", "shock", "casualt", "conscript",
-)
-
-
-def is_military_key(key):
-    return any(t in key for t in MILITARY_TERMS)
-
-
 def is_military_advance(fname, body):
-    if fname in MILITARY_FILES:
-        return True
-    if re.search(r"\bunlock_(unit|levy)\s*=", body):
-        return True
-    mil = 0
-    civ = 0
-    for line in body.splitlines():
-        m = re.match(r"\s*([a-z_0-9]+)\s*=", line.split("#")[0])
-        if not m:
-            continue
-        key = m.group(1)
-        if key in STRUCTURAL_KEYS or key.startswith(("unlock_", "ai_")):
-            continue
-        if is_military_key(key):
-            mil += 1
-        else:
-            civ += 1
-    return mil > 0 and mil >= civ
+    """True only for advances that unlock army/navy UNITS (or levies).
+
+    Deliberately narrow: advances that merely buff military stats (infantry
+    power, morale, sailors, ...) are NOT excluded - the toggle's purpose is to
+    keep foreign unit rosters locked, not foreign military bonuses."""
+    return bool(re.search(r"\bunlock_(unit|levy)\s*=", body))
 
 KEY_RE = re.compile(r"([A-Za-z0-9_.:]+)\s*=\s*(\{|\"[^\"]*\"|[^\s{}#]+)")
 

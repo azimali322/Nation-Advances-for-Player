@@ -1,5 +1,11 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 9 checks (Exclude toggle narrowed to unit unlocks)
+
+- [ ] The Settings toggle is now labeled **Exclude Foreign Unit Unlocks**. With it ON and everything unlocked: foreign advances that unlock **units or levies** (ship unlocks like Dhow/Genoese Galley, levy unlocks like Noble Knights/Mailed Knights, unique regiment advances) stay locked.
+- [ ] Foreign advances that only give military **buffs** now unlock normally with it on — e.g. Élan (land morale), Gendarmes (heavy cavalry power — a buff, not a unit), infantry/sailor power advances.
+- [ ] Note: if you already force-researched military advances in your Tunisia save before this change (via *All advances* scope), those stay researched — the toggle only controls what is *unlockable/researchable*, it never un-researches. Test on a fresh save or before clicking research buttons.
+
 ## Round 8 checks (institution `allow` gates no longer bypassed)
 
 - [ ] With *Unlock All Custom Advances* on, the **Meritocracy advance** (and other institution-gated defaults: Legalism/Feudalism roots, Banking, New World tree, ...) is **not** researchable until its institution is actually embraced — identical to vanilla. Previously the unlock toggles bypassed these `allow` gates.
