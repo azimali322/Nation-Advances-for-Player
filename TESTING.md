@@ -1,5 +1,11 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 3 checks (from second test pass)
+
+- [ ] **Cascading selection.** Toggling *All of Balkans* checks every area under it; unchecking it unchecks them. *All of Europe* checks/unchecks every region and area in the Europe tab. New *Select All* toggles at the top of each Cultures group and of Religions / Governments / Special do the same for their group. (Cascade is downward only: unchecking a single area does not untick its region — and note the region toggle alone still unlocks the whole region while checked.)
+- [ ] **"All advances" scope now bypasses ages/institutions.** With *Unlock All Custom Advances* on and scope = *All advances*, *Research All Custom Advances* researches custom advances from **all** eras and institutions, including unembraced/future ones. With scope = *Embraced institutions only* the behavior confirmed working last round is unchanged.
+- [ ] With scope = *All advances* but **nothing unlocked**, the research buttons still only touch advances available to you (your own nation's full tree across all eras, plus default trees for the all/era buttons).
+
 ## Round 2 regression checks (bugfixes from first test pass)
 
 Fixes to verify first, from the 2026-07-19 test report:

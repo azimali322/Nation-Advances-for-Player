@@ -67,7 +67,10 @@ A second tab called **Settings** containing:
 - Instant research uses the engine effect `research_advance = advance_type:<id>`, guarded per advance: *Embraced institutions only* uses the engine's `can_research_advance` trigger (reached age + embraced institutions + prerequisites; blocks are emitted prerequisites-first so chains cascade in one click), *All advances* uses `has_advance_available` (anything visible to the player — which respects the mod's unlock toggles) regardless of institutions or age.
 - Advances gated by a top-level `government = X` key are wrapped using the trigger `government_type = government_type:X` (the bare key is an engine filter, not a trigger, and is silently ignored inside `potential` — the cause of the first-test visibility leak).
 
+- Cascading selection (user enhancement, 2026-07-19): toggling a continent checks/unchecks every region and area beneath it, a region its areas, and each Cultures / Religions / Governments / Special group has a *Select All* parent. Cascade is downward-only and copies the parent's new value to all children.
+
 ## Changelog
 
 - **2026-07-19** — Initial requirements captured (items 1–6). v1.0 implements the all-or-nothing unlock toggle (port of "All Advances Unlocked" into CMF format, re-baselined to 1.3).
 - **2026-07-19 (phase 2)** — CMM menu implemented: continent/region/area toggles (items 1), Settings tab with Enabled master switch, unlock-all, era unlocks, research buttons with institution scope (items 2, 5, 6), tooltips (item 3), base-game invisibility when nothing is selected (item 4). Character-interaction toggle from v1.0 removed in favor of the CMM.
+- **2026-07-19 (round 3)** — Cascading selection added (parent toggles check/uncheck their children; Select All parents for Cultures and category groups). Fixed "All advances" research scope: `has_advance_available` also enforces age/institution limits engine-side, so the all-scope branch now embeds the advance's own unlock gate instead, researching everything unlocked regardless of era or institutions.

@@ -100,6 +100,30 @@ def main():
                 "custom": is_custom,
             }
 
+    # The availability gate the mod generated for each custom advance (its
+    # rewritten `potential` body). The "All advances" research scope embeds it
+    # so buttons research everything the player has unlocked, regardless of
+    # age or institutions (has_advance_available/can_research_advance both
+    # enforce those engine-side).
+    from generate_advances import strip_positions, find_blocks
+    gates = {}
+    mod_adv_dir = os.path.join(ROOT, "in_game", "common", "advances")
+    for fname in os.listdir(mod_adv_dir):
+        if fname not in files:
+            continue
+        text = open(os.path.join(mod_adv_dir, fname), encoding="utf-8-sig").read()
+        mask = strip_positions(text)
+        for name, kstart, obrace, cbrace in find_blocks(text, mask, 0, len(text)):
+            if name not in advs or name in gates:
+                continue
+            body = text[obrace + 1 : cbrace]
+            bmask = strip_positions(body)
+            for bname, bk, bo, bc in find_blocks(body, bmask, 0, len(body)):
+                if bname == "potential":
+                    gates[name] = [ln.strip() for ln in
+                                   body[bo + 1 : bc].strip().splitlines() if ln.strip()]
+                    break
+
     def topo_sort(ids):
         """Order ids so prerequisites come before dependents (stable)."""
         idset = set(ids)
@@ -124,8 +148,12 @@ def main():
     # ------------------------------------------------------------------ #
     # Settings inventory                                                 #
     # ------------------------------------------------------------------ #
-    # (setting_id, tab, group, alias, name, desc)
+    # (setting_id, tab, group, alias) - alias None for pure "select all"
+    # parent toggles that only cascade to their children
     toggles = []
+    # parent setting id -> [child setting ids]; toggling the parent copies its
+    # value onto every child through the cmf_on_callback hook
+    parents = {}
     loc = {}
 
     def add_toggle(setting_id, tab, group, alias, name, desc):
@@ -150,11 +178,12 @@ def main():
         loc["%s__%s__all_name" % (MOD_ID, tab)] = "Entire Continent"
         add_toggle("cont_%s" % cont, tab, "all", "hafp_g_cont_%s" % cont,
                    "All of %s" % cname,
-                   "Unlock every custom nation advance on %s, regardless of the "
-                   "region and area toggles below." % cname)
+                   "Unlock every custom nation advance on %s. Toggling this "
+                   "also checks or unchecks every region and area below." % cname)
 
         cont_regions = sorted((r for r, v in regions.items() if v["continent"] == cont),
                               key=lambda r: regions[r]["name"])
+        cont_children = []
         for reg in cont_regions:
             rname = regions[reg]["name"]
             gid = "reg_%s" % reg
@@ -164,9 +193,11 @@ def main():
             n_nations = sorted({t for a in reg_areas for t in areas[a]["tag_names"]})
             add_toggle(gid, tab, gid, "hafp_g_reg_%s" % reg,
                        "All of %s" % rname,
-                       "Unlock every custom nation advance in the %s region%s." % (
+                       "Unlock every custom nation advance in the %s region%s. "
+                       "Toggling this also checks or unchecks its areas." % (
                            rname,
                            " (%s)" % esc(", ".join(n_nations)) if n_nations else ""))
+            area_ids = []
             for a in reg_areas:
                 v = areas[a]
                 label = v["name"]
@@ -175,6 +206,11 @@ def main():
                            "%s%s" % (label, " - %s" % nations if nations else ""),
                            "Unlock the custom advances of nations based in %s%s." % (
                                label, " (%s)" % nations if nations else ""))
+                area_ids.append("area_%s" % a)
+            parents[gid] = area_ids
+            cont_children.append(gid)
+            cont_children.extend(area_ids)
+        parents["cont_%s" % cont] = cont_children
 
     # --- cultures tab ---------------------------------------------------
     tab = "cultures"
@@ -195,6 +231,11 @@ def main():
         gname = continents[cont]["name"] if cont in continents else (
             humanize(cont) if cont != "other" else "Other")
         loc["%s__%s__%s_name" % (MOD_ID, tab, gid)] = gname
+        add_toggle("cul_all_%s" % cont, tab, gid, None,
+                   "Select All - %s" % gname,
+                   "Check or uncheck every culture toggle in this group.")
+        parents["cul_all_%s" % cont] = [
+            "f_%s" % f[:-4] for f in cultures_by_cont[cont]]
         for fname in cultures_by_cont[cont]:
             entry = files[fname]
             stem = fname[:-4]
@@ -218,6 +259,11 @@ def main():
                              ("governments", "government", "Governments"),
                              ("special", "special", "Special")):
         loc["%s__%s__%s_name" % (MOD_ID, tab, gid)] = gname
+        add_toggle("all_%s" % gid, tab, gid, None,
+                   "Select All %s" % gname,
+                   "Check or uncheck every toggle in this group.")
+        parents["all_%s" % gid] = [
+            "f_%s" % f[:-4] for f, e in sorted(files.items()) if e["kind"] == kind]
         for fname, entry in sorted(files.items()):
             if entry["kind"] != kind:
                 continue
@@ -326,11 +372,29 @@ def main():
     reg.append("")
     reg.append("hafp_sync_aliases = {")
     for setting_id, tab, group, alias in toggles:
-        reg.append("\tcmm_sync_bool_alias = { setting = %s__%s alias = %s }"
-                   % (MOD_ID, setting_id, alias))
+        if alias:
+            reg.append("\tcmm_sync_bool_alias = { setting = %s__%s alias = %s }"
+                       % (MOD_ID, setting_id, alias))
     reg.append("}")
     reg.append("")
+    reg.append("# Toggling a parent (continent / region / select-all) copies its new")
+    reg.append("# value onto every child toggle, then aliases are re-synced.")
     reg.append("hafp_handle_callback = {")
+    for parent, children in parents.items():
+        reg.append("\tif = {")
+        reg.append("\t\tlimit = { var:cmf_callback = flag:%s__%s }" % (MOD_ID, parent))
+        reg.append("\t\tif = {")
+        reg.append('\t\t\tlimit = { "variable_map(cmm|flag:%s__%s)" >= 1 }' % (MOD_ID, parent))
+        for child in children:
+            reg.append("\t\t\tadd_to_variable_map = { name = cmm key = flag:%s__%s value = 1 }"
+                       % (MOD_ID, child))
+        reg.append("\t\t}")
+        reg.append("\t\telse = {")
+        for child in children:
+            reg.append("\t\t\tadd_to_variable_map = { name = cmm key = flag:%s__%s value = 0 }"
+                       % (MOD_ID, child))
+        reg.append("\t\t}")
+        reg.append("\t}")
     reg.append("\thafp_sync_aliases = yes")
     for bid, _, _ in buttons:
         reg.append("\tif = {")
@@ -345,27 +409,27 @@ def main():
     def research_block(adv_id, indent="\t"):
         # Two paths through the limit:
         #  * "All advances" scope (dropdown = 2): force-research anything the
-        #    player can SEE (has_advance_available respects the mod's unlock
-        #    gates and the vanilla potential), ignoring institutions and age.
+        #    player has unlocked (the advance's rewritten potential: own
+        #    nation OR mod toggles), ignoring institutions and age.
         #  * otherwise: can_research_advance - the game's full research rule
         #    (reached age, embraced institutions, prerequisites researched).
         #    Blocks are ordered prerequisites-first so whole eligible chains
         #    cascade in a single click.
-        info = advs[adv_id]
         lines = ["%sif = {" % indent,
                  "%s\tlimit = {" % indent,
                  "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id),
                  "%s\t\tOR = {" % indent,
                  "%s\t\t\tAND = {" % indent,
                  '%s\t\t\t\t"variable_map(cmm|flag:%s__research_scope)" >= 2'
-                 % (indent, MOD_ID),
-                 "%s\t\t\t\thas_advance_available = %s" % (indent, adv_id),
-                 "%s\t\t\t}" % indent,
-                 "%s\t\t\tcan_research_advance = %s" % (indent, adv_id),
-                 "%s\t\t}" % indent,
-                 "%s\t}" % indent,
-                 "%s\tresearch_advance = advance_type:%s" % (indent, adv_id),
-                 "%s}" % indent]
+                 % (indent, MOD_ID)]
+        for gl in gates.get(adv_id, ()):
+            lines.append("%s\t\t\t\t%s" % (indent, gl))
+        lines += ["%s\t\t\t}" % indent,
+                  "%s\t\t\tcan_research_advance = %s" % (indent, adv_id),
+                  "%s\t\t}" % indent,
+                  "%s\t}" % indent,
+                  "%s\tresearch_advance = advance_type:%s" % (indent, adv_id),
+                  "%s}" % indent]
         return lines
 
     res = ["﻿# Generated by tools/generate_cmm.py - do not edit by hand.",

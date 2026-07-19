@@ -1501,6 +1501,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = cul_all_europe
+		tab_id = cultures
+		group_id = cul_europe
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_culture_albanian
 		tab_id = cultures
 		group_id = cul_europe
@@ -1711,6 +1718,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = cul_all_asia
+		tab_id = cultures
+		group_id = cul_asia
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_culture_arabian
 		tab_id = cultures
 		group_id = cul_asia
@@ -1851,9 +1865,23 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = cul_all_africa
+		tab_id = cultures
+		group_id = cul_africa
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_culture_west_african
 		tab_id = cultures
 		group_id = cul_africa
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = cul_all_america
+		tab_id = cultures
+		group_id = cul_america
 		default_value = 0
 	}
 	cmm_register_bool_setting = {
@@ -1872,9 +1900,23 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = cul_all_oceania
+		tab_id = cultures
+		group_id = cul_oceania
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_culture_maori
 		tab_id = cultures
 		group_id = cul_oceania
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = all_religions
+		tab_id = categories
+		group_id = religions
 		default_value = 0
 	}
 	cmm_register_bool_setting = {
@@ -1942,6 +1984,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = all_governments
+		tab_id = categories
+		group_id = governments
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_government_monarchy
 		tab_id = categories
 		group_id = governments
@@ -1966,6 +2015,13 @@ hafp_register_mod = {
 		setting_id = f_government_theocracy
 		tab_id = categories
 		group_id = governments
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = all_special
+		tab_id = categories
+		group_id = special
 		default_value = 0
 	}
 	cmm_register_bool_setting = {
@@ -2367,7 +2423,1467 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__age_age_6_revolutions alias = hafp_g_age_age_6_revolutions }
 }
 
+# Toggling a parent (continent / region / select-all) copies its new
+# value onto every child toggle, then aliases are re-synced.
 hafp_handle_callback = {
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_balkan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_balkan_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_aegean_archipelago_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bosnia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bulgaria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_croatia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_macedonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morea_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_greece_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_serbia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_slavonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_thrace_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_aegean_archipelago_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bosnia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bulgaria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_croatia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_macedonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morea_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_greece_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_serbia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_slavonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_thrace_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_baltic_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_baltic_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baltic_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_poland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greater_poland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lesser_poland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lithuania_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mazovia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_prussia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_samogitia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_silesia_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baltic_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_poland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greater_poland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lesser_poland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lithuania_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mazovia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_prussia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_samogitia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_silesia_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_great_britain_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_great_britain_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_carpathia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_carpathia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transdanubia_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transdanubia_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_caucasus_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_caucasus_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenian_highlands_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_georgia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_shirvan_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenian_highlands_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_georgia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_shirvan_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_france_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_france_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brittany_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_burgundy_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_normandy_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_provence_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_savoy_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ile_de_france_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brittany_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_burgundy_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_normandy_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_provence_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_savoy_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ile_de_france_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_iberia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_iberia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_italy_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_italy_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_abruzzo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_apulia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_basilicata_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_campania_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liguria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sicily_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tuscany_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_abruzzo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_apulia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_basilicata_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_campania_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liguria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sicily_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tuscany_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_north_atlantic_islands_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_north_atlantic_islands_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_north_german_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_north_german_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brabant_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brandenburg_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_flanders_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_friesland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hesse_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holstein_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_saxony_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rhineland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_saxony_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wallonia_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brabant_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brandenburg_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_flanders_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_friesland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hesse_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holstein_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_saxony_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rhineland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_saxony_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wallonia_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_steppes_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_steppes_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_russian_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_russian_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_east_novgorod_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_moscow_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_smolensk_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_novgorod_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_east_novgorod_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_moscow_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_smolensk_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_novgorod_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_ruthenia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_ruthenia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_left_bank_ukraine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_left_bank_ukraine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_scandinavian_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_scandinavian_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_denmark_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_finland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_svealand_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_syd_norge_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_denmark_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_finland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_svealand_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_syd_norge_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_south_german_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_south_german_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bavaria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bohemia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_austria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bavaria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bohemia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_austria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_ural_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_ural_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_europe }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_europe)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_balkan_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_aegean_archipelago_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bosnia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bulgaria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_croatia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_macedonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morea_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_greece_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_serbia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_slavonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_thrace_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_baltic_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baltic_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_poland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greater_poland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lesser_poland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lithuania_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mazovia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_prussia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_samogitia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_silesia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_britain_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_carpathia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transdanubia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_caucasus_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenian_highlands_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_georgia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_shirvan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_france_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brittany_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_burgundy_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_normandy_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_provence_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_savoy_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ile_de_france_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_iberia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_italy_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_abruzzo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_apulia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_basilicata_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_campania_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liguria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sicily_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tuscany_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_atlantic_islands_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_german_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brabant_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brandenburg_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_flanders_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_friesland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hesse_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holstein_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_saxony_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rhineland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_saxony_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wallonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_steppes_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_russian_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_east_novgorod_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_moscow_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_smolensk_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_novgorod_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_ruthenia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_left_bank_ukraine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_scandinavian_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_denmark_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_finland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_svealand_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_syd_norge_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_south_german_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bavaria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bohemia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_austria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_ural_region value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_balkan_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_aegean_archipelago_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bosnia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bulgaria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_croatia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_macedonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morea_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_greece_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_serbia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_slavonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_thrace_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_baltic_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baltic_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_poland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greater_poland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lesser_poland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lithuania_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mazovia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_prussia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_samogitia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_silesia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_britain_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_carpathia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transdanubia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_caucasus_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_armenian_highlands_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_georgia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_shirvan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_france_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brittany_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_burgundy_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_normandy_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_provence_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_savoy_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ile_de_france_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_iberia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_italy_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_abruzzo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_apulia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_basilicata_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_campania_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liguria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sicily_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tuscany_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_atlantic_islands_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_german_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brabant_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_brandenburg_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_flanders_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_friesland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hesse_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_holstein_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_saxony_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rhineland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_saxony_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_wallonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_steppes_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_russian_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_east_novgorod_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_moscow_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_smolensk_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_novgorod_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_ruthenia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_left_bank_ukraine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_scandinavian_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_denmark_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_finland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_svealand_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_syd_norge_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_south_german_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bavaria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bohemia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_austria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_ural_region value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_anatolia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_anatolia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_cappadocia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_anatolia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_marmara_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_pontus_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_cappadocia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_anatolia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_marmara_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_pontus_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_arabia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_arabia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_oman_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_yemen_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_oman_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_yemen_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_bengal_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_bengal_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_orissa_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_orissa_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_central_india_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_central_india_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_crescent_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_crescent_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iraq_arabi_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_jazira_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_levant_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iraq_arabi_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_jazira_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_levant_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_deccan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_deccan_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_karnakassala_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tamil_land_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_karnakassala_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tamil_land_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_east_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_east_china_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_hindustan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_hindustan_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_doab_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_doab_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_indochina_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_indochina_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_champa_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_chao_phraya_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_mekong_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_malay_peninsula_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_tai_highland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_river_delta_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_champa_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_chao_phraya_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_mekong_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_malay_peninsula_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_tai_highland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_river_delta_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_indonesia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_indonesia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_java_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_java_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_japan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_japan_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hokurikudou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_nankaidou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_saikaidou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanindou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanyoudou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toukaidou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tousandou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ou_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hokurikudou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_nankaidou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_saikaidou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanindou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanyoudou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toukaidou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tousandou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ou_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_khorasan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_khorasan_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_eastern_khorasan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transoxiana_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_western_khorasan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zhetysu_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_eastern_khorasan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transoxiana_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_western_khorasan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zhetysu_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_korea_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_korea_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gyeonggi_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gyeonggi_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_manchuria_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_manchuria_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liaodong_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_amur_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_middle_amur_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songhua_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songnen_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ussuri_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liaodong_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_amur_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_middle_amur_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songhua_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songnen_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ussuri_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_mongolia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_mongolia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_selenga_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_selenga_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_north_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_north_china_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_beiping_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_beiping_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_persia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_persia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_south_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_south_china_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_tibet_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_tibet_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tsang_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tsang_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_west_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_west_china_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_western_india_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_western_india_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_xinjiang_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_xinjiang_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_asia }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_asia)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_anatolia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_cappadocia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_anatolia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_marmara_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_pontus_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_arabia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_oman_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_yemen_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_bengal_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_orissa_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_india_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_crescent_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iraq_arabi_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_jazira_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_levant_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_deccan_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_karnakassala_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tamil_land_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_east_china_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_hindustan_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_doab_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_indochina_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_champa_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_chao_phraya_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_mekong_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_malay_peninsula_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_tai_highland_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_river_delta_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_indonesia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_java_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_japan_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hokurikudou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_nankaidou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_saikaidou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanindou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanyoudou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toukaidou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tousandou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ou_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_khorasan_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_eastern_khorasan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transoxiana_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_western_khorasan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zhetysu_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_korea_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gyeonggi_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_manchuria_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liaodong_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_amur_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_middle_amur_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songhua_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songnen_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ussuri_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_mongolia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_selenga_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_china_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_beiping_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_persia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_south_china_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_tibet_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tsang_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_west_china_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_western_india_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_xinjiang_region value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_anatolia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_cappadocia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_anatolia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_marmara_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_pontus_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_arabia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_oman_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_yemen_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_bengal_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_orissa_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_india_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_crescent_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_iraq_arabi_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_jazira_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_levant_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_deccan_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_karnakassala_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tamil_land_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_east_china_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_hindustan_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_doab_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_indochina_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_champa_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_chao_phraya_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_mekong_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_malay_peninsula_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_northern_tai_highland_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_red_river_delta_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_indonesia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_java_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_japan_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_hokurikudou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_nankaidou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_saikaidou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanindou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sanyoudou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toukaidou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tousandou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ou_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_khorasan_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_eastern_khorasan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_transoxiana_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_western_khorasan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zhetysu_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_korea_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gyeonggi_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_manchuria_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_liaodong_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_amur_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_middle_amur_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songhua_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_songnen_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ussuri_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_mongolia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_selenga_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_china_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_beiping_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_persia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_south_china_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_tibet_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tsang_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_west_china_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_western_india_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_xinjiang_region value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_central_africa_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_central_africa_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_egypt_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_egypt_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_egypt_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_egypt_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_ethiopia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_ethiopia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_ethiopia_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_ethiopia_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_great_lakes_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_great_lakes_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_guinea_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_guinea_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gold_coast_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gold_coast_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_kongo_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_kongo_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kongo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_kongo_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kongo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_kongo_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_macaronesia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_macaronesia_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_madagascar_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_madagascar_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_maghreb_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_maghreb_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_nubia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_nubia_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_sahel_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_sahel_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_hausa_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_hausa_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_somalia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_somalia_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_southern_africa_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_southern_africa_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_southern_africa_islands_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_southern_africa_islands_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_swahili_coast_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_swahili_coast_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rufiji_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rufiji_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_zimbabwe_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_zimbabwe_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_save_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_save_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_africa }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_africa)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_africa_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_egypt_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_egypt_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_ethiopia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_ethiopia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_lakes_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_guinea_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gold_coast_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_kongo_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kongo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_kongo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_macaronesia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_madagascar_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_maghreb_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_nubia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_sahel_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_hausa_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_somalia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_southern_africa_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_southern_africa_islands_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_swahili_coast_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rufiji_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_zimbabwe_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_save_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_africa_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_egypt_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_egypt_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_ethiopia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_central_ethiopia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_lakes_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_guinea_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gold_coast_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_kongo_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kongo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_west_kongo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_macaronesia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_madagascar_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_maghreb_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_nubia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_sahel_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_south_hausa_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_somalia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_southern_africa_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_southern_africa_islands_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_swahili_coast_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_rufiji_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_zimbabwe_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_save_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_alaska_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_alaska_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_andes_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_andes_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_acamama_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_puna_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_acamama_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_puna_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_aridoamerica_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_aridoamerica_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_canada_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_canada_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_caribbean_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_caribbean_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_central_america_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_central_america_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_east_coast_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_east_coast_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_great_plains_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_great_plains_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_mesoamerica_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_mesoamerica_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_west_coast_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_west_coast_region)" >= 1 }
+		}
+		else = {
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_america }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_america)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_alaska_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_andes_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_acamama_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_puna_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_aridoamerica_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_canada_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_caribbean_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_america_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_east_coast_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_plains_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_mesoamerica_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_west_coast_region value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_alaska_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_andes_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_acamama_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_puna_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_aridoamerica_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_canada_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_caribbean_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_america_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_east_coast_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_plains_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_mesoamerica_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__reg_west_coast_region value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_europe }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_europe)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_albanian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_corsican value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_dalmatian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_emilian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_georgian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_carpathian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_german value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_polish value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_rhaetian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_romanian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_south_slavic value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_high_alemannic value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_irish value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_ligurian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_lombard value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_median value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_neapolitan value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_netherlands value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_piedmontese value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_romagnol value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_russian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_ruthenian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_sardinian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_scandinavian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_sicilian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_slovak value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_slovene value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_tuscan value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_venetian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_vivaro_alpine value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_albanian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_corsican value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_dalmatian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_emilian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_georgian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_carpathian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_german value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_polish value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_rhaetian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_romanian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_south_slavic value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_high_alemannic value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_irish value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_ligurian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_lombard value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_median value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_neapolitan value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_netherlands value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_piedmontese value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_romagnol value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_russian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_ruthenian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_sardinian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_scandinavian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_sicilian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_slovak value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_slovene value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_tuscan value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_venetian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_vivaro_alpine value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_asia }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_asia)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_arabian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_armenian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_bengali value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_cham value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_arabian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_chinese value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_greek value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_gujurati value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_indian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_japan value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_jurchen value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_kannada_muslim value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_malayalam value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_marathi value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_nepali value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_nomadic value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_punjabi value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_rajasthani value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_thai value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_vietnamese value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_arabian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_armenian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_bengali value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_cham value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_arabian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_chinese value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_greek value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_gujurati value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_indian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_japan value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_jurchen value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_kannada_muslim value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_malayalam value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_marathi value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_nepali value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_nomadic value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_punjabi value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_rajasthani value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_thai value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_vietnamese value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_africa }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_africa)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_west_african value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_west_african value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_america }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_america)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_andean value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_haudenosaunee value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_andean value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_haudenosaunee value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_oceania }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_oceania)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_maori value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_maori value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__all_religions }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__all_religions)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_buddhist value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_catholic value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hellenism value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hindu value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_miaphysite value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_muslim value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_orthodox value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_protestant value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_shinto value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_buddhist value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_catholic value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hellenism value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hindu value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_miaphysite value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_muslim value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_orthodox value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_protestant value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_shinto value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__all_governments }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__all_governments)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_monarchy value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_republic value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_steppe_horde value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_theocracy value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_monarchy value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_republic value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_steppe_horde value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_government_theocracy value = 0 }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__all_special }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__all_special)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_colonial_nations value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_estate_cossacks value = 1 }
+		}
+		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_colonial_nations value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_estate_cossacks value = 0 }
+		}
+	}
 	hafp_sync_aliases = yes
 	if = {
 		limit = { var:cmf_callback = flag:hafp__research_custom }
