@@ -447,10 +447,11 @@ def main():
         #  * "All advances" scope (dropdown = 2): force-research anything the
         #    player has unlocked (the advance's rewritten potential: own
         #    nation OR mod toggles), ignoring institutions and age.
-        #  * otherwise: can_research_advance - the game's full research rule
-        #    (reached age, embraced institutions, prerequisites researched).
-        #    Blocks are ordered prerequisites-first so whole eligible chains
-        #    cascade in a single click.
+        #  * otherwise: has_advance_available - unlocked for the player AND
+        #    reached age AND embraced institutions. Deliberately NOT
+        #    can_research_advance: that also demands every prerequisite be
+        #    researched, which skipped custom advances hanging off unresearched
+        #    plain advances (e.g. Classic Scholasticism, which stays locked).
         lines = ["%sif = {" % indent,
                  "%s\tlimit = {" % indent,
                  "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id),
@@ -461,7 +462,7 @@ def main():
         for gl in gates.get(adv_id, ()):
             lines.append("%s\t\t\t\t%s" % (indent, gl))
         lines += ["%s\t\t\t}" % indent,
-                  "%s\t\t\tcan_research_advance = %s" % (indent, adv_id),
+                  "%s\t\t\thas_advance_available = %s" % (indent, adv_id),
                   "%s\t\t}" % indent,
                   "%s\t}" % indent,
                   "%s\tresearch_advance = advance_type:%s" % (indent, adv_id),

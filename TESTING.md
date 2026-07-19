@@ -1,5 +1,10 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 5 checks (from fourth test pass)
+
+- [ ] **Embraced scope no longer skips children of unresearched plain advances.** With *Unlock All Custom Advances* on and scope = *Embraced institutions only*, *Research All Custom Advances* now also researches the customs hanging off Classic Scholasticism (Genghisid Legacy, Pōchtēcayōtl, Byzantine Historiography, Legacy of Saint George, Buddhist Syncretism, Onmyōdō, Colonial Traditions, Master Masons, Genoese Galley, ...). Classic Scholasticism itself stays unresearched — plain advances remain locked behind normal research.
+- [ ] Verify the scope still filters correctly: nothing from unreached ages or unembraced institutions researches under *Embraced institutions only*. (The embraced branch now uses `has_advance_available` instead of `can_research_advance`; if anything from a future era slips through, report it — the fallback is an explicit institution check.)
+
 ## Round 4 checks (from third test pass)
 
 - [ ] **Research All Custom Advances now covers unique advances in the generic trees.** With *Unlock All Custom Advances* on, the button also researches the potential-gated entries of the building/ship/reform/cabinet trees (the leftovers from last round: Confucian School, Cathedral, Fortress Church, Lieutenancy, Order Headquarters, Republic/Tribal/Divine reform laws, Trade Caravans, Aqueduct System, Dhow, etc.). The Unique Advances counter should reach its maximum after clicking under *All advances* scope.
