@@ -93,7 +93,13 @@ settle_the_frontier_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				OR = {
 				country_type = location

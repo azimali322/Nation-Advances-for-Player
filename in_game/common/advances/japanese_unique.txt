@@ -6,7 +6,16 @@ kgk_omi_genji = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KGK
 			}
@@ -24,7 +33,16 @@ akt_march_of_akita = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = AKT
 			}
@@ -41,7 +59,16 @@ asa_legacy_of_emperor_keitai = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ASA
 			}
@@ -57,7 +84,16 @@ cba_lineage_of_taira = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CBA
 			}
@@ -73,7 +109,16 @@ cba_katori_jingu = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CBA
 			}
@@ -89,7 +134,16 @@ csk_clans_of_tosa = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CSK
 			}
@@ -106,7 +160,16 @@ dte_fujiwara_hokke = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DTE
 			}
@@ -123,7 +186,16 @@ htk_hatakeyama_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HTK
 			}
@@ -140,7 +212,16 @@ hsk_rising_clan = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSK
 			}
@@ -156,7 +237,16 @@ isk_sanindo_gate = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ISK
 			}
@@ -173,7 +263,16 @@ ito_gokenin_family = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ITO
 			}
@@ -189,7 +288,16 @@ kkc_disinguished_family_in_kyushu = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KKC
 			}
@@ -206,7 +314,16 @@ ktb_southern_court = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KTB
 			}
@@ -223,7 +340,16 @@ kno_shugo_of_iyo = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNO
 			}
@@ -241,7 +367,16 @@ mri_descendant_of_oe_hiromoto = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MRI
 			}
@@ -258,7 +393,16 @@ nbu_genji_in_the_north = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NBU
 			}
@@ -276,7 +420,16 @@ oda_uninspiring_clan = {
 	icon = hsk_rising_clan
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_hokurikudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ODA
 			}
@@ -294,7 +447,16 @@ ogs_ogasawara_ryu = {
 	icon = hsk_rising_clan
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OGS
 			}
@@ -311,7 +473,16 @@ otm_lord_of_bungo = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OTM
 			}
@@ -328,7 +499,16 @@ ouc_descendant_of_baekje = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OUC
 			}
@@ -345,7 +525,16 @@ stk_hitachi_genji = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = STK
 			}
@@ -362,7 +551,16 @@ sba_multiple_shugo = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SBA
 			}
@@ -379,7 +577,16 @@ smz_satsuma_shugo = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMZ
 			}
@@ -396,7 +603,16 @@ shn_vice_minister_of_dazaifu = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SHN
 			}
@@ -412,7 +628,16 @@ soo_tradition_of_wakou = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SOU
 			}
@@ -430,7 +655,16 @@ tkd_kai_shugo = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKD
 			}
@@ -447,7 +681,16 @@ tki_genji_in_mino = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKI
 			}
@@ -464,7 +707,16 @@ ues_strong_dynastic_ties = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UES
 			}
@@ -481,7 +733,16 @@ utn_fujiwara_descendant = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UTN
 			}
@@ -498,7 +759,16 @@ ymn_descendant_of_nitta = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YMN
 			}
@@ -518,7 +788,16 @@ kgk_emerging_clan = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KGK
 			}
@@ -535,7 +814,16 @@ akt_ezo_kanrei = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = AKT
 			}
@@ -552,7 +840,16 @@ asa_control_of_buddhist_sects = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ASA
 			}
@@ -569,7 +866,16 @@ cba_dream_of_masakado = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CBA
 			}
@@ -587,7 +893,16 @@ csk_god_of_arts = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CSK
 			}
@@ -604,7 +919,16 @@ dte_oshu_shugo = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DTE
 			}
@@ -621,7 +945,18 @@ htk_shogunate_ties = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+					has_variable = hafp_g_area_ou_area
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HTK
@@ -642,7 +977,16 @@ hsk_branches_and_retainers = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSK
 			}
@@ -659,7 +1003,16 @@ img_claim_to_shogunate = {
 	icon = htk_shogunate_ties
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = IMG
 			}
@@ -677,7 +1030,19 @@ isk_minister_of_samurai_dokoro = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+					has_variable = hafp_g_area_sanyoudou_area
+					has_variable = hafp_g_area_toukaidou_area
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ISK
@@ -699,7 +1064,16 @@ kkc_resistance_against_foreign_intervention = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KKC
 			}
@@ -717,7 +1091,16 @@ ktb_control_of_ise = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KTB
 			}
@@ -734,7 +1117,16 @@ ktb_blessing_of_amaterasu = {
 	icon = fukko_shinto
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KTB
 			}
@@ -751,7 +1143,17 @@ kno_ruler_of_inland_sea = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = KNO
@@ -771,7 +1173,16 @@ nbu_fight_against_famines = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NBU
 			}
@@ -788,7 +1199,16 @@ ogs_shinano_shugo = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OGS
 			}
@@ -805,7 +1225,16 @@ suw_suwa_taisha = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SUW
 			}
@@ -822,7 +1251,16 @@ otm_domination_of_kyushu = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OTM
 			}
@@ -838,7 +1276,16 @@ ouc_korea_trade = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OUC
 			}
@@ -855,7 +1302,16 @@ stk_kashima_jingu = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = STK
 			}
@@ -872,7 +1328,16 @@ sba_access_to_northern_japan = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SBA
 			}
@@ -889,7 +1354,16 @@ shn_defender_against_mongols = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SHN
 			}
@@ -907,7 +1381,16 @@ soo_fight_for_tsushima = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SOU
 			}
@@ -923,7 +1406,16 @@ tkd_takeda_ryu = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKD
 			}
@@ -939,7 +1431,16 @@ tki_banner_of_bellflower = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKI
 			}
@@ -955,7 +1456,16 @@ ues_double_shugo = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UES
 			}
@@ -972,7 +1482,16 @@ utn_legacy_of_nasu_no_yoichi = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UTN
 			}
@@ -989,7 +1508,16 @@ ymn_mediate_succession_disputes = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YMN
 			}
@@ -1009,7 +1537,16 @@ akt_ainu_trade = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = AKT
 			}
@@ -1026,7 +1563,16 @@ csk_unification_of_shikoku = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CSK
 			}
@@ -1043,7 +1589,16 @@ hsk_control_of_izumi_sea = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSK
 			}
@@ -1060,7 +1615,16 @@ img_supreme_ruler_of_tokaido = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = IMG
 			}
@@ -1077,7 +1641,16 @@ ktb_the_march_of_kitabatake_akiee = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KTB
 			}
@@ -1094,7 +1667,16 @@ nbu_northern_horses = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NBU
 			}
@@ -1111,7 +1693,16 @@ oda_generals = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_hokurikudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ODA
 			}
@@ -1128,7 +1719,16 @@ ogs_kiso_uma = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OGS
 			}
@@ -1144,7 +1744,16 @@ otm_nanban_trade = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OTM
 			}
@@ -1161,7 +1770,16 @@ ouc_fight_against_wokou = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OUC
 			}
@@ -1178,7 +1796,16 @@ sba_shiba_retainers = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SBA
 			}
@@ -1195,7 +1822,16 @@ smz_tsurinobuse = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMZ
 			}
@@ -1212,7 +1848,16 @@ shn_diplomacy_through_tsushima = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SHN
@@ -1232,7 +1877,16 @@ soo_bahan_ship = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SOU
 			}
@@ -1249,7 +1903,16 @@ tki_flood_control_of_three_rivers = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKI
 			}
@@ -1265,7 +1928,16 @@ ues_eastern_power = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UES
 			}
@@ -1282,7 +1954,16 @@ utn_mediator_of_kanto = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UTN
 			}
@@ -1299,7 +1980,16 @@ ymn_leader_of_western_army = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YMN
 			}
@@ -1319,7 +2009,15 @@ ask_defender_of_the_imperial_court = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ASK
 			}
@@ -1336,7 +2034,15 @@ ask_bugyoshu_and_hokushu = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ASK
 			}
@@ -1353,7 +2059,15 @@ ask_higashiyama_culture = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ASK
 			}
@@ -1370,7 +2084,16 @@ cba_irrigation_of_southern_kanto = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CBA
 			}
@@ -1387,7 +2110,16 @@ csk_expand_the_navy = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CSK
 			}
@@ -1403,7 +2135,16 @@ dte_dragon_of_oshu = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DTE
 			}
@@ -1420,7 +2161,16 @@ htk_clan_spread = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HTK
 			}
@@ -1437,7 +2187,16 @@ img_unlikely_alliances = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = IMG
 			}
@@ -1454,7 +2213,16 @@ ito_sympathy_to_foreign_faiths = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ITO
 			}
@@ -1471,7 +2239,17 @@ kno_murakami_suigun = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_nankaidou_area
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = KNO
@@ -1492,7 +2270,16 @@ mri_munakata_three_goddesses = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MRI
 			}
@@ -1508,7 +2295,16 @@ oda_tenka_fubu = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_hokurikudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ODA
 			}
@@ -1524,7 +2320,16 @@ oda_triple_firing = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_hokurikudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ODA
 			}
@@ -1541,7 +2346,16 @@ ogs_improvment_of_nakasendo = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_tousandou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OGS
 			}
@@ -1558,7 +2372,16 @@ otm_christian_conversion = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OTM
 			}
@@ -1576,7 +2399,16 @@ ouc_welcome_missionaries = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanyoudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = OUC
 			}
@@ -1594,7 +2426,16 @@ stk_eastern_coalitions = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = STK
 			}
@@ -1611,7 +2452,16 @@ smz_shimazu_charge = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMZ
 			}
@@ -1629,7 +2479,16 @@ smz_tanegashima = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMZ
 			}
@@ -1638,7 +2497,16 @@ smz_tanegashima = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				OR = {
 				NOT = { exists = international_organization:japanese_shogunate }
@@ -1657,7 +2525,16 @@ tkd_tiger_of_kai = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKD
 			}
@@ -1673,7 +2550,16 @@ tkd_fuurinkazan = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TKD
 			}
@@ -1689,7 +2575,16 @@ ues_dragon_of_echigo = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UES
 			}
@@ -1707,7 +2602,16 @@ ymn_isolated_heartland = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_sanindou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YMN
 			}
@@ -1727,7 +2631,15 @@ ask_shugo_system = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ASK
 			}
@@ -1744,7 +2656,16 @@ dte_intensive_domain_development = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_ou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DTE
 			}
@@ -1761,7 +2682,16 @@ img_march_to_kyoto = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_toukaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = IMG
 			}
@@ -1778,7 +2708,16 @@ oda_influential_strongholds = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_hokurikudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ODA
 			}
@@ -1795,7 +2734,16 @@ oda_patronization_of_the_west = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_hokurikudou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ODA
 			}
@@ -1812,7 +2760,16 @@ smz_early_westernization = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_area_saikaidou_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMZ
 			}

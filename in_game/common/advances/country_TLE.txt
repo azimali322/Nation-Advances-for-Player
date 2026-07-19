@@ -3,7 +3,16 @@
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_algiers_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TLE
 			}
@@ -22,7 +31,16 @@ qalat_al_mashwar_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_algiers_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TLE
 			}
@@ -41,7 +59,16 @@ hispano_moresque_style = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_algiers_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TLE
 			}
@@ -60,7 +87,16 @@ city_of_scholars = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_algiers_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TLE
 			}
@@ -80,7 +116,16 @@ entrepot_connections = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_algiers_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TLE
 			}

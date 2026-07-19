@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovene
@@ -25,7 +32,14 @@ cli_the_counts_ambition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				has_or_had_tag = CLI
 			}
@@ -44,7 +58,14 @@ slovene_the_dukes_chair_tradition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovene
@@ -66,7 +87,14 @@ cli_the_sanneck_condottieri = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				has_or_had_tag = CLI
 			}
@@ -86,7 +114,14 @@ slovene_the_tabor_defense_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovene
@@ -107,7 +142,14 @@ cli_the_last_counts_legacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				has_or_had_tag = CLI
 			}
@@ -126,7 +168,14 @@ slovene_the_catechismus_and_abecedarium = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovene
@@ -148,7 +197,14 @@ cli_the_windic_march_arsenal = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				has_or_had_tag = CLI
 			}
@@ -166,7 +222,14 @@ slovene_the_glory_of_carniola = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovene
@@ -188,7 +251,14 @@ cli_the_marble_palaces_of_celje = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				has_or_had_tag = CLI
 			}
@@ -207,7 +277,14 @@ slovene_the_zois_circle = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovene
@@ -229,7 +306,14 @@ cli_the_modernization_of_a_nation = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_slovene
+				}
+			}
 			AND = {
 				has_or_had_tag = CLI
 			}

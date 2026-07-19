@@ -5,7 +5,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vivaro_alpine
@@ -27,7 +34,14 @@ sal_the_alpine_passages = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				has_or_had_tag = SAL
 			}
@@ -47,7 +61,14 @@ vivaro_alpine_infantry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vivaro_alpine
@@ -70,7 +91,14 @@ sal_the_mountain_routes = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				has_or_had_tag = SAL
 			}
@@ -90,7 +118,14 @@ vivaro_alpine_passes = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vivaro_alpine
@@ -112,7 +147,14 @@ sal_the_saluzzo_chronicles = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				has_or_had_tag = SAL
 			}
@@ -132,7 +174,14 @@ vivaro_alpine_herbes_des_alpes = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vivaro_alpine
@@ -154,7 +203,14 @@ sal_the_alpine_strongholds = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				has_or_had_tag = SAL
 			}
@@ -174,7 +230,14 @@ vivaro_alpine_valley_councils = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vivaro_alpine
@@ -196,7 +259,14 @@ sal_the_alpine_regiments = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				has_or_had_tag = SAL
 			}
@@ -217,7 +287,14 @@ vivaro_alpine_nature = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vivaro_alpine
@@ -239,7 +316,14 @@ sal_the_alpine_crafts = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_vivaro_alpine
+				}
+			}
 			AND = {
 				has_or_had_tag = SAL
 			}

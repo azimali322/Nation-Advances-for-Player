@@ -5,7 +5,14 @@ religious_melting_pot = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -26,7 +33,14 @@ akson_thai = {
 	icon = trading_embassies
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -49,7 +63,14 @@ father_governs_children = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -69,7 +90,14 @@ thai_war_elephants = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -88,7 +116,14 @@ thai_royal_poets = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -111,7 +146,14 @@ trading_links = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -130,7 +172,14 @@ foreign_mercenaries = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -149,7 +198,14 @@ toi_muay = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -171,7 +227,14 @@ trading_embassies = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -190,7 +253,14 @@ photduang = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -202,7 +272,14 @@ photduang = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				num_locations > 0
 				capital = {
@@ -229,7 +306,14 @@ personal_executions = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture
@@ -251,7 +335,14 @@ close_subjects = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_thai
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:thai_culture

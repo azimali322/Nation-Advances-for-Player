@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -17,7 +26,16 @@ gra_nasrid_art = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -33,7 +51,16 @@ gra_skillful_envoys = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -49,7 +76,16 @@ gra_razzias = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -64,7 +100,16 @@ gra_muttavia_armies = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -80,7 +125,16 @@ gra_expand_qanahs = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -95,7 +149,16 @@ gra_adaptative_trade = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -111,7 +174,16 @@ gra_expand_the_frontier = {
 	age = age_4_reformation 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -126,7 +198,16 @@ gra_a_strong_rule = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -141,7 +222,16 @@ gra_modernized_economy = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -156,7 +246,16 @@ gra_ghazawat = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}
@@ -172,7 +271,16 @@ gra_a_new_golden_era = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_granada_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GRA
 			}

@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sicilian
@@ -27,7 +34,14 @@ maltese_the_rahal_watch = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:maltese
@@ -49,7 +63,14 @@ sic_constitions_of_melfi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				has_or_had_tag = SIC
 			}
@@ -69,7 +90,14 @@ maltese_the_korsa = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:maltese
@@ -91,7 +119,14 @@ sic_naval_vigilance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sicilian
@@ -113,7 +148,14 @@ sic_studium_generale = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				has_or_had_tag = SIC
 			}
@@ -132,7 +174,14 @@ maltese_the_bajada = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:maltese
@@ -153,7 +202,14 @@ sic_sicilian_silk = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sicilian
@@ -174,7 +230,14 @@ sic_the_court_of_the_royal_patrimony = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				has_or_had_tag = SIC
 			}
@@ -192,7 +255,14 @@ maltese_the_modernized_dejma = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:maltese
@@ -214,7 +284,14 @@ sicilian_the_cult_of_the_santuzze = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sicilian
@@ -238,7 +315,14 @@ sic_licentia_populandi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				has_or_had_tag = SIC
 			}
@@ -256,7 +340,14 @@ maltese_the_festa_ritualism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:maltese
@@ -278,7 +369,14 @@ sic_sicilian_enlightenment = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sicilian
@@ -299,7 +397,14 @@ sic_sicilian_baroque = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				has_or_had_tag = SIC
 			}
@@ -318,7 +423,14 @@ maltese_center_of_the_mediterranean = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:maltese
@@ -340,7 +452,14 @@ sic_sicilian_reforms = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sicilian
@@ -362,7 +481,14 @@ sic_the_marsala_wine_industry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_sicilian
+				}
+			}
 			AND = {
 				has_or_had_tag = SIC
 			}

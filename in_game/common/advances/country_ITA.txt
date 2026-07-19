@@ -4,7 +4,15 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ITA
 			}
@@ -22,7 +30,15 @@ ita_increased_recruitment = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ITA
 			}
@@ -41,7 +57,15 @@ ita_flourishing_urban_centers = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ITA
 			}
@@ -60,7 +84,15 @@ ita_influence_over_the_clergy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ITA
 			}
@@ -78,7 +110,15 @@ ita_enduring_hardship = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ITA
 			}
@@ -97,7 +137,15 @@ ita_attractive_migration = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ITA
 			}

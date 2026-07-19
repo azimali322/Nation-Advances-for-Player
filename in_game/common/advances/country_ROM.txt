@@ -4,7 +4,28 @@ rom_spqr = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -21,7 +42,28 @@ rom_pax_romana = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -39,7 +81,28 @@ rom_restore_the_legions = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -57,7 +120,28 @@ rom_revival_of_arts_and_culture = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -75,7 +159,28 @@ rom_new_corpus_juris_civilis = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -94,7 +199,28 @@ rom_bread_and_circuses = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -114,7 +240,28 @@ rom_citizenship = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -133,7 +280,28 @@ rom_all_roads_lead_to_rome = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -152,7 +320,28 @@ rom_provincial_governors = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -172,7 +361,28 @@ rom_imperium_sine_fine = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -192,7 +402,28 @@ rom_triumphs = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}
@@ -212,7 +443,28 @@ rom_roman_architecture = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_or_had_tag = ROM
 			}

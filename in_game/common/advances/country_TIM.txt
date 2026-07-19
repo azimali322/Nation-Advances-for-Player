@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -15,7 +24,16 @@ timurid_architecture = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -28,7 +46,16 @@ the_mantle_of_the_great_khan = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -42,7 +69,16 @@ turco_persian_tradition = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -55,7 +91,16 @@ tamerlane_chess = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -69,7 +114,17 @@ chagatai_literature = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+					has_variable = hafp_g_area_zhetysu_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TIM
@@ -85,7 +140,16 @@ nambardar_levy = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -98,7 +162,16 @@ timurid_renaissance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -111,7 +184,16 @@ riches_of_the_silk_road = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -124,7 +206,16 @@ reform_the_diwan = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}
@@ -137,7 +228,16 @@ conquerors_legacy = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIM
 			}

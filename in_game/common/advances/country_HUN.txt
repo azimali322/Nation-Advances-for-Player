@@ -5,7 +5,15 @@
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -29,7 +37,16 @@ hun_castle_warriors = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_area_transdanubia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUN
 			}
@@ -49,7 +66,15 @@ hun_multi_culturalism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -73,7 +98,16 @@ hun_renaissance_knowledge = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_area_transdanubia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUN
 			}
@@ -93,7 +127,15 @@ hun_reformed_coinage = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -116,7 +158,16 @@ hun_found_the_black_army = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_area_transdanubia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUN
 			}
@@ -134,7 +185,15 @@ hun_hungarian_hussars = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -157,7 +216,15 @@ hun_hungarian_reformation = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -188,7 +255,15 @@ hun_the_catholic_shield = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -213,7 +288,15 @@ hun_realm_of_many_religions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -243,7 +326,16 @@ hun_bulwark_of_christianity = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_area_transdanubia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUN
 			}
@@ -261,7 +353,15 @@ hun_revolutionized_military_tactics = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -285,7 +385,16 @@ hun_curtailed_peasantry = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_area_transdanubia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUN
 			}
@@ -304,7 +413,15 @@ hun_strengthened_towns = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:hungarian
@@ -329,7 +446,16 @@ hun_hungarian_unity = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_area_transdanubia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUN
 			}

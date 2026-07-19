@@ -4,7 +4,16 @@ hsa_holpfennige = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -19,7 +28,16 @@ hsa_the_cog = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -35,7 +53,16 @@ hsa_hanseatic_ties = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -49,7 +76,16 @@ hsa_seal_of_the_hansa = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -63,7 +99,16 @@ hsa_hanseatic_shipwrights = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -79,7 +124,16 @@ hsa_hanseatic_fortifications = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -96,7 +150,16 @@ hsa_draft_merchant_privileges = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -110,7 +173,16 @@ hsa_mastery_of_the_sea = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -126,7 +198,16 @@ hsa_exchange_of_ideas = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -140,7 +221,16 @@ hsa_global_reach = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -155,7 +245,16 @@ hsa_hanseatic_treasury = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -168,7 +267,16 @@ hsa_regularized_contributions = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -182,7 +290,16 @@ the_hansa_bank = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -198,7 +315,16 @@ hsa_reform_the_hanstag = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}
@@ -213,7 +339,16 @@ hsa_concept_of_mercantilism = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holstein_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HSA
 			}

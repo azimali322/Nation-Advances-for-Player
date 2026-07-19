@@ -2,7 +2,15 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -20,7 +28,15 @@ status_by_merit = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -39,7 +55,15 @@ expansion_merchant_guilds = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -57,7 +81,15 @@ centralized_city_governance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -75,7 +107,15 @@ wealth_of_mesoamerica = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -93,7 +133,15 @@ study_european_colonizers = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -111,7 +159,15 @@ new_fire_ceremonies = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}
@@ -126,7 +182,15 @@ sun_must_rise = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AZT
 			}

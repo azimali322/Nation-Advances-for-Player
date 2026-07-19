@@ -1,7 +1,16 @@
 ﻿birch_bark_manuscript = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -18,7 +27,16 @@
 novgorod_first_chronicle = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -40,7 +58,16 @@ ushkuiniks = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -48,7 +75,16 @@ ushkuiniks = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = ushkuiniks }
 			}
@@ -65,7 +101,16 @@ ushkuiniks = {
 northern_center_of_arts = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -82,7 +127,16 @@ northern_center_of_arts = {
 city_of_churches = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -98,7 +152,16 @@ city_of_churches = {
 reforms_of_the_posadnichestvo = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -106,7 +169,16 @@ reforms_of_the_posadnichestvo = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = reforms_of_the_posadnichestvo }
 			}
@@ -123,7 +195,16 @@ reforms_of_the_posadnichestvo = {
 novgorodian_fur_trade = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -139,7 +220,16 @@ novgorodian_fur_trade = {
 grand_dukes_army = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -158,7 +248,16 @@ grand_dukes_army = {
 baltic_shipyard = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}
@@ -173,7 +272,16 @@ baltic_shipyard = {
 defenses_of_novgorod = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_east_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = NOV
 			}

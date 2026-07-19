@@ -6,7 +6,14 @@ heian_kyo = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -26,7 +33,14 @@ matsuri = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -43,7 +57,14 @@ onmyodo = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -60,7 +81,14 @@ sumo = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -79,7 +107,14 @@ nanto_rokushuu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -96,7 +131,14 @@ shinbutsu_shuugou = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -113,7 +155,14 @@ honji_suijaku = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -133,7 +182,14 @@ hachiman_worship = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -151,7 +207,14 @@ gozan_jissetsu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -168,7 +231,14 @@ bodaiji = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -189,7 +259,14 @@ kagura = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -206,7 +283,14 @@ obon = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -224,7 +308,14 @@ neo_confucianism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -245,7 +336,14 @@ danka_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -262,7 +360,14 @@ harae = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -281,7 +386,14 @@ jisha_bugyou = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -301,7 +413,14 @@ kokugaku = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -318,7 +437,14 @@ home_shrines = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}
@@ -335,7 +461,14 @@ fukko_shinto = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_shinto
+				}
+			}
 			AND = {
 				religion = religion:shinto
 			}

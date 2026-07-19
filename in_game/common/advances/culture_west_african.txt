@@ -1,7 +1,14 @@
 ﻿griot_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_west_african
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:west_african_group }
 			}
@@ -16,7 +23,14 @@
 west_african_caravan_stop_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_west_african
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:west_african_group }
 			}
@@ -30,7 +44,14 @@ west_african_caravan_stop_advance = {
 sudano_sahelian_architecture_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_west_african
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:west_african_group }
 			}

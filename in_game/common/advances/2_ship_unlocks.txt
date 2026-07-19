@@ -83,7 +83,13 @@ unlock_war_galleon = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:europe }
 			}
@@ -105,7 +111,13 @@ unlock_baochuan = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				culture = {
 				has_culture_group = culture_group:chinese_group
@@ -188,7 +200,13 @@ unlock_dhow = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				original_capital ?= {
 				OR = {
@@ -225,7 +243,13 @@ unlock_traditional_galley_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:feudalism
 			}
@@ -256,7 +280,13 @@ unlock_galleass_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				NOT = { culture = { has_culture_group = culture_group:italian_group } }
 			}
@@ -282,7 +312,13 @@ italian_galleass = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:italian_group }
 			}
@@ -299,7 +335,13 @@ unlock_archipelago_frigate = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+				}
+			}
 			AND = {
 				original_capital ?= {
 				OR = {
@@ -325,7 +367,13 @@ unlock_cakradonya = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:acehnese_culture
@@ -346,7 +394,13 @@ unlock_galiot = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				original_capital ?= {
 				OR = {
@@ -375,7 +429,13 @@ unlock_sekibune = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				culture = {
 				has_culture_group = culture_group:japanese_group
@@ -395,7 +455,13 @@ unlock_atakebune = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				culture = {
 				has_culture_group = culture_group:japanese_group
@@ -415,7 +481,13 @@ unlock_long_fada = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				culture = {
 				OR = {
@@ -439,7 +511,13 @@ unlock_long_fada_2 = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				culture = {
 				OR = {

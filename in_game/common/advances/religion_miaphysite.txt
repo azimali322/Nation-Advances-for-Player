@@ -6,7 +6,14 @@ second_council_of_ephesus = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -23,7 +30,14 @@ rejection_of_chalcedon = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -40,7 +54,14 @@ monophysite_vs_miaphysite = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -57,7 +78,14 @@ original_christianity = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -74,7 +102,14 @@ beyond_the_borders = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -94,7 +129,14 @@ isolated_reaches = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -111,7 +153,14 @@ independent_leaders = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -128,7 +177,14 @@ jerusalem_focus = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -145,7 +201,14 @@ acceptance_of_old_testament = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -165,7 +228,14 @@ primacy_of_alexandria = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -182,7 +252,14 @@ school_of_alexandria = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -199,7 +276,14 @@ preserving_of_local_languages = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -216,7 +300,14 @@ double_patriarchate = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -237,7 +328,14 @@ eastern_christianity = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -254,7 +352,14 @@ life_among_infidels = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -271,7 +376,14 @@ gradual_departure = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -292,7 +404,14 @@ thrive_under_persecution = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -309,7 +428,14 @@ preserver_of_national_identity = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -326,7 +452,14 @@ defense_against_heretics = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -343,7 +476,14 @@ remote_patriarchates = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -360,7 +500,14 @@ further_reaches = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -381,7 +528,14 @@ internal_communion = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -398,7 +552,14 @@ cradle_of_monasticism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}
@@ -415,7 +576,14 @@ unique_architecture = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_miaphysite
+				}
+			}
 			AND = {
 				religion = religion:miaphysite
 			}

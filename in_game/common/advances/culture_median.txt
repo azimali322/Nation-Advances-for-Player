@@ -5,7 +5,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:median
@@ -30,7 +37,14 @@ pap_head_of_the_church = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PAP
 			}
@@ -49,7 +63,14 @@ pea_fontana_maggiore = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PEA
 			}
@@ -68,7 +89,14 @@ spl_duchy_of_spoleto = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = SPL
 			}
@@ -89,7 +117,14 @@ median_studio_generale = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:median
@@ -112,7 +147,14 @@ pap_the_word_of_the_lord = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PAP
 			}
@@ -131,7 +173,14 @@ pea_scuola_del_perugino = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PEA
 			}
@@ -150,7 +199,14 @@ spl_lippi_frescoes = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = SPL
 			}
@@ -170,7 +226,14 @@ median_bastioni_e_rocche = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:median
@@ -193,7 +256,14 @@ glory_of_rome = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PAP
 			}
@@ -210,7 +280,14 @@ pea_the_griffin_companies = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PEA
 			}
@@ -229,7 +306,14 @@ spl_ponte_delle_torri = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = SPL
 			}
@@ -249,7 +333,14 @@ median_baroque_sacred_patronage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:median
@@ -272,7 +363,14 @@ centralize_the_states = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PAP
 			}
@@ -289,7 +387,14 @@ pea_guerra_del_sale = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PEA
 			}
@@ -308,7 +413,14 @@ spl_cardinals_bulwark = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = SPL
 			}
@@ -328,7 +440,14 @@ median_jubilee_economy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:median
@@ -351,7 +470,14 @@ ecclesiastical_primacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PAP
 			}
@@ -370,7 +496,14 @@ pea_umbrian_academies = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PEA
 			}
@@ -389,7 +522,14 @@ spl_the_spoletine_silk = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = SPL
 			}
@@ -409,7 +549,14 @@ median_enlightenment_civic_reform = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:median
@@ -432,7 +579,14 @@ pap_the_concordat = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PAP
 			}
@@ -451,7 +605,14 @@ pea_the_old_university = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = PEA
 			}
@@ -470,7 +631,14 @@ spl_vale_of_spoleto = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_median
+				}
+			}
 			AND = {
 				has_or_had_tag = SPL
 			}

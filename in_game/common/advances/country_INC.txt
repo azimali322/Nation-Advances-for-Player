@@ -2,7 +2,17 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -21,7 +31,17 @@ mitma = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -37,7 +57,17 @@ inc_vertical_economy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -57,7 +87,17 @@ military_mita = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -74,7 +114,17 @@ warachikuy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -93,7 +143,17 @@ tambo_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				culture = { has_culture_group = culture_group:andean_group }
@@ -111,7 +171,17 @@ inc_tambo = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -129,7 +199,17 @@ quipu = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -144,7 +224,17 @@ llama_michis = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -159,7 +249,17 @@ drafted_hatun_runas = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC
@@ -175,7 +275,17 @@ adapted_incan_army = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_andes_region
+					has_variable = hafp_g_area_acamama_area
+					has_variable = hafp_g_area_puna_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = INC

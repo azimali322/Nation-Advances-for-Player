@@ -24,7 +24,13 @@ enlightenment_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:enlightenment
 			}
@@ -134,7 +140,13 @@ industrialization_advance = {
 	depth = 0
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:industrialization
 			}
@@ -268,7 +280,13 @@ levee_en_masse_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:levee_en_masse
 			}

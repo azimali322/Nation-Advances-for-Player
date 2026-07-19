@@ -11,7 +11,15 @@ ayu_prestigious_cavalry = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -27,7 +35,15 @@ ayu_white_elephant = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -44,7 +60,15 @@ ayu_ayutthaya_literature = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -63,7 +87,15 @@ ayu_phrai_luang = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -79,7 +111,15 @@ ayu_phrai_thaan = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -95,7 +135,15 @@ ayu_floating_rice = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -104,7 +152,15 @@ ayu_floating_rice = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				num_locations > 0
 				capital = {
@@ -130,7 +186,15 @@ ayu_sakdina = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}
@@ -148,7 +212,15 @@ ayu_cosmopolitan_trade = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = AYU
 			}

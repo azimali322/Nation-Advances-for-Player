@@ -25,7 +25,13 @@ confessionalism_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:confessionalism
 			}
@@ -106,7 +112,13 @@ generic_bureaucracy_4_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 			}
 		}
@@ -124,7 +136,13 @@ global_trade_advance = {
 	depth = 0
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:global_trade
 			}
@@ -274,7 +292,13 @@ artillery_institution_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:artillery_institution
 			}

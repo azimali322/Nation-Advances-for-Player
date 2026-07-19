@@ -3,7 +3,17 @@
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_left_bank_ukraine_area
+					has_variable = hafp_g_area_right_bank_ukraine_area
+				}
+			}
 			AND = {
 				any_owned_location = {
 				OR = {

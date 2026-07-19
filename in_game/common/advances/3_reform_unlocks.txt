@@ -2,7 +2,13 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				government = monarchy
 			}
@@ -17,7 +23,13 @@ republic_reform_traditions_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				government = republic
 			}
@@ -41,7 +53,13 @@ monarchy_royal_court_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				government = monarchy
 			}
@@ -55,7 +73,13 @@ theocracy_divine_cause_law_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -69,7 +93,13 @@ theocracy_nature_of_our_faith_law_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -84,7 +114,13 @@ steppe_horde_tribal_religious_values_law_advance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -96,7 +132,13 @@ steppe_horde_tribal_cultural_identity_law_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -108,7 +150,13 @@ steppe_horde_tribal_modernization_law_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -122,7 +170,13 @@ tribal_religious_values_law_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				government = tribe
 			}
@@ -135,7 +189,13 @@ tribal_migration_law_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				government = tribe
 			}
@@ -148,7 +208,13 @@ tribal_cultural_identity_law_advance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+				}
+			}
 			AND = {
 				government = tribe
 			}
@@ -161,7 +227,13 @@ tribal_modernization_law_advance = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+				}
+			}
 			AND = {
 				government = tribe
 			}
@@ -247,7 +319,13 @@ legitimization_of_power_law_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				government = monarchy
 			}

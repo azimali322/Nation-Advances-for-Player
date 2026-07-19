@@ -5,7 +5,14 @@ paik_system_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_indian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = AHO
@@ -31,7 +38,14 @@ samanta_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_indian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:indian_group }
 			}
@@ -50,7 +64,14 @@ kalaripayattu_advance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_indian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:indian_group }
 			}
@@ -67,7 +88,14 @@ paik_regiments_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_indian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = AHO
@@ -102,7 +130,14 @@ advanced_paik_system_advance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_indian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = AHO

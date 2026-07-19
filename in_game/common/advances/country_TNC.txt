@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -15,7 +24,16 @@ warrior_societies = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = AZT
@@ -33,7 +51,16 @@ chinampas = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -45,7 +72,16 @@ people_of_war = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -57,7 +93,16 @@ tlahtocayotl = {
 	age = age_3_discovery 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -69,7 +114,16 @@ calpixcayotl = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -82,7 +136,16 @@ reformed_telpochcalli = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -94,7 +157,16 @@ nahuatl_domination = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -106,7 +178,16 @@ the_return_of_quetzalcoatl = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -118,7 +199,16 @@ brave_as_hummingbird = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -131,7 +221,16 @@ new_trade_opportunities = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}
@@ -143,7 +242,16 @@ aztec_chargers = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_area_mexihko_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNC
 			}

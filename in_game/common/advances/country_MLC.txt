@@ -2,7 +2,15 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MLC
 			}
@@ -21,7 +29,15 @@ orang_laut = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MLC
 			}
@@ -39,7 +55,15 @@ congregation_of_merchants = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MLC
 			}
@@ -57,7 +81,15 @@ connections_with_china = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MLC
 			}
@@ -75,7 +107,15 @@ control_the_malacca_strait = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MLC
 			}
@@ -84,7 +124,15 @@ control_the_malacca_strait = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				owns = location:malacca
 			}
@@ -104,7 +152,15 @@ shahbandar = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MLC
 			}

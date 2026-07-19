@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}
@@ -10,7 +19,16 @@
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				religion = religion:tibetan_buddhism
 			}
@@ -27,7 +45,16 @@ monastic_dominance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}
@@ -44,7 +71,16 @@ the_yak = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}
@@ -62,7 +98,16 @@ drokpa = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}
@@ -85,7 +130,16 @@ tibetan_monastic_education = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}
@@ -104,7 +158,16 @@ tanye_guanxi = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}
@@ -121,7 +184,16 @@ great_three = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_area_tsang_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TIB
 			}

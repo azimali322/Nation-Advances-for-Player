@@ -6,7 +6,14 @@ protestant_invite_persecuted = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -24,7 +31,14 @@ protestant_administration_tax = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -42,7 +56,14 @@ confessio_augustana = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -60,7 +81,14 @@ devotionalism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -78,7 +106,14 @@ protect_the_new_faith = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -99,7 +134,14 @@ expulsion_of_heretics = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -117,7 +159,14 @@ repurposed_monasteries = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -136,7 +185,14 @@ involved_laity = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -154,7 +210,14 @@ protestant_cuius_regio_eius_religio = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -172,7 +235,14 @@ protestant_painters = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -192,7 +262,14 @@ protestant_sunday_schools = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -210,7 +287,14 @@ protestant_work_ethic = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -228,7 +312,14 @@ embrace_romanticism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -246,7 +337,14 @@ wary_of_heretic_preachers = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}
@@ -264,7 +362,14 @@ protestant_innovation = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_protestant
+				}
+			}
 			AND = {
 				is_protestant = yes
 			}

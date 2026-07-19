@@ -4,7 +4,16 @@ baihua = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -20,7 +29,16 @@ zaju = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -37,7 +55,16 @@ successors_of_genghis_khan = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:mongolian_group }
@@ -54,7 +81,16 @@ confucian_influences = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -71,7 +107,16 @@ chi_bureaucracy_advance = {
 	content_priority = 500
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -89,7 +134,16 @@ extensive_canal_works = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -104,7 +158,16 @@ tributary_system = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -120,7 +183,16 @@ zhongshu_sheng = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:mongolian_group }
@@ -138,7 +210,16 @@ lijia_system = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -155,7 +236,16 @@ yulin_tuce = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -173,7 +263,16 @@ weisuo_system = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -191,7 +290,16 @@ grand_coordinators = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -210,7 +318,16 @@ the_censorate = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -228,7 +345,16 @@ the_tea_trade = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -245,7 +371,16 @@ tu_bing = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -262,7 +397,16 @@ tusi_titles = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -278,7 +422,16 @@ salt_monopoly = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -296,7 +449,16 @@ reform_the_grand_secretariat = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:chinese_group }
@@ -314,7 +476,16 @@ grand_military_parades = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -330,7 +501,16 @@ silver_standard = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -346,7 +526,16 @@ nine_garrisons_of_the_great_wall = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -362,7 +551,16 @@ the_red_cannon = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -379,7 +577,16 @@ woodblock_printing = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:jurchen_group }
@@ -395,7 +602,16 @@ green_standard_army = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:jurchen_group }
@@ -414,7 +630,16 @@ great_tax_reform = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -430,7 +655,16 @@ junji_chu = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:jurchen_group }
@@ -447,7 +681,16 @@ jingdezhen_porcelain = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -466,7 +709,16 @@ sanxitang = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -482,7 +734,16 @@ monuments_to_greatness = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 			}
@@ -498,7 +759,16 @@ ten_great_campaigns = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_area_beiping_area
+				}
+			}
 			AND = {
 				has_or_had_tag = CHI
 				culture = { has_culture_group = culture_group:jurchen_group }

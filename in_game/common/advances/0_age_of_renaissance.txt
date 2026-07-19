@@ -11,7 +11,13 @@ renaissance_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:renaissance
 			}
@@ -129,7 +135,13 @@ banking_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:banking
 			}
@@ -234,7 +246,13 @@ route_to_the_indies_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				original_capital ?= { sub_continent = sub_continent:western_europe }
 			}
@@ -256,7 +274,13 @@ expanded_aqueduct_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = BYZ
@@ -284,7 +308,13 @@ professional_armies_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:professional_armies
 			}

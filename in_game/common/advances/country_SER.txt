@@ -4,7 +4,15 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:serbian
@@ -26,7 +34,16 @@ hum_a_sheep_surrounded_by_wolves = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUM
 			}
@@ -45,7 +62,16 @@ serbian_mining = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 			}
@@ -63,7 +89,16 @@ mimic_the_phoenix = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 				original_tag = SER
@@ -83,7 +118,16 @@ tro_zupa_administrative_reform = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TRO
 			}
@@ -101,7 +145,16 @@ zta_maritime_fiefdoms_of_the_adriatic = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZTA
 			}
@@ -120,7 +173,15 @@ home_of_hussars = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:serbian
@@ -142,7 +203,16 @@ hum_the_kosaca_iron_fist  = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUM
 			}
@@ -160,7 +230,16 @@ ser_vitestvo = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 			}
@@ -179,7 +258,16 @@ rallying_the_troops = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 				original_tag = SER
@@ -198,7 +286,16 @@ tro_the_defensive_network_of_klobuk = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TRO
 			}
@@ -217,7 +314,16 @@ zta_the_italian_condottieri = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZTA
 			}
@@ -236,7 +342,15 @@ serbian_serbian_epic_poetry  = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:serbian
@@ -258,7 +372,16 @@ hum_the_viticulture_of_the_sunny_scree  = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUM
 			}
@@ -277,7 +400,16 @@ ser_the_transcribers_of_resava  = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 			}
@@ -296,7 +428,16 @@ keepers_of_the_gate  = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 				original_tag = SER
@@ -315,7 +456,16 @@ tro_the_trebisnjica_bridges = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TRO
 			}
@@ -333,7 +483,16 @@ zta_the_retreat_to_the_karst = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZTA
 			}
@@ -351,7 +510,15 @@ serbian_the_icon_of_saint_sava = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:serbian
@@ -372,7 +539,16 @@ hum_the_humite_chancery_records = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUM
 			}
@@ -390,7 +566,16 @@ the_rebirth_of_the_patriarchate = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 			}
@@ -409,7 +594,16 @@ reform_the_ecclesiastical_authorities = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 				original_tag = SER
@@ -428,7 +622,16 @@ tro_the_aqueducts_of_popovo_polje = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TRO
 			}
@@ -446,7 +649,16 @@ zta_the_vladika_sovereignty = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZTA
 				religion = religion:orthodox
@@ -468,7 +680,15 @@ serbian_seobe = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:serbian
@@ -490,7 +710,16 @@ hum_the_ponor_storage_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUM
 			}
@@ -508,7 +737,16 @@ ser_serbian_national_militia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 			}
@@ -526,7 +764,16 @@ foreign_relations_bureau = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 				original_tag = SER
@@ -546,7 +793,16 @@ tro_the_zudiosca_network = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TRO
 			}
@@ -564,7 +820,16 @@ zta_guerillas_of_the_scrub = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZTA
 			}
@@ -582,7 +847,15 @@ serbian_enlightenment = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:serbian
@@ -603,7 +876,16 @@ hum_modernized_national_redoubt = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HUM
 			}
@@ -621,7 +903,16 @@ military_modernization = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 			}
@@ -640,7 +931,16 @@ ser_the_sumadija_agrarian_revolution = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SER
 				original_tag = SER
@@ -659,7 +959,16 @@ tro_the_constitution_of_trebinje = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TRO
 			}
@@ -677,7 +986,16 @@ zta_the_code_of_the_black_mountain = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_serbia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZTA
 			}

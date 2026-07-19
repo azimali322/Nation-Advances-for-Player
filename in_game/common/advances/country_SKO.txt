@@ -3,7 +3,17 @@
 	icon = independence_from_mali
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_north_hausa_area
+					has_variable = hafp_g_area_south_hausa_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SKO
 			}
@@ -22,7 +32,17 @@ sko_recruit_the_faithful = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_north_hausa_area
+					has_variable = hafp_g_area_south_hausa_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SKO
 			}
@@ -38,7 +58,17 @@ sko_education_for_all = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_north_hausa_area
+					has_variable = hafp_g_area_south_hausa_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SKO
 			}
@@ -56,7 +86,17 @@ sko_religious_court = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_north_hausa_area
+					has_variable = hafp_g_area_south_hausa_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SKO
 			}
@@ -75,7 +115,17 @@ sko_recruit_fulani_generals = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_north_hausa_area
+					has_variable = hafp_g_area_south_hausa_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SKO
 			}
@@ -92,7 +142,17 @@ sko_one_people_in_faith = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_north_hausa_area
+					has_variable = hafp_g_area_south_hausa_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SKO
 			}

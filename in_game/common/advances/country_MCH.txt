@@ -2,7 +2,21 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_area_liaodong_area
+					has_variable = hafp_g_area_lower_amur_area
+					has_variable = hafp_g_area_middle_amur_area
+					has_variable = hafp_g_area_songhua_area
+					has_variable = hafp_g_area_songnen_area
+					has_variable = hafp_g_area_ussuri_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MCH
 			}
@@ -21,7 +35,21 @@ warka_ties = {
     age = age_1_traditions
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_area_liaodong_area
+					has_variable = hafp_g_area_lower_amur_area
+					has_variable = hafp_g_area_middle_amur_area
+					has_variable = hafp_g_area_songhua_area
+					has_variable = hafp_g_area_songnen_area
+					has_variable = hafp_g_area_ussuri_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MCH
 			}
@@ -39,7 +67,21 @@ shadow_of_ambition = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_area_liaodong_area
+					has_variable = hafp_g_area_lower_amur_area
+					has_variable = hafp_g_area_middle_amur_area
+					has_variable = hafp_g_area_songhua_area
+					has_variable = hafp_g_area_songnen_area
+					has_variable = hafp_g_area_ussuri_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MCH
 			}
@@ -58,7 +100,21 @@ niyamniyan = {  #The Five Noble Talents
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_area_liaodong_area
+					has_variable = hafp_g_area_lower_amur_area
+					has_variable = hafp_g_area_middle_amur_area
+					has_variable = hafp_g_area_songhua_area
+					has_variable = hafp_g_area_songnen_area
+					has_variable = hafp_g_area_ussuri_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MCH
 			}
@@ -78,7 +134,21 @@ southern_campaigns = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_area_liaodong_area
+					has_variable = hafp_g_area_lower_amur_area
+					has_variable = hafp_g_area_middle_amur_area
+					has_variable = hafp_g_area_songhua_area
+					has_variable = hafp_g_area_songnen_area
+					has_variable = hafp_g_area_ussuri_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MCH
 			}
@@ -96,7 +166,21 @@ foreign_learning = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_area_liaodong_area
+					has_variable = hafp_g_area_lower_amur_area
+					has_variable = hafp_g_area_middle_amur_area
+					has_variable = hafp_g_area_songhua_area
+					has_variable = hafp_g_area_songnen_area
+					has_variable = hafp_g_area_ussuri_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MCH
 			}

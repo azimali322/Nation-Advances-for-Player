@@ -2,7 +2,15 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -19,7 +27,15 @@ zmw_stone_builders = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -36,7 +52,15 @@ zmw_encourage_new_settlements = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -53,7 +77,15 @@ zmw_rekindling_the_royal_fires = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -70,7 +102,15 @@ zmw_strict_gold_regulations = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -88,7 +128,15 @@ zmw_spokesman_before_the_dead = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -106,7 +154,15 @@ zmw_elected_administrators = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -123,7 +179,15 @@ zmw_discipline_and_traning = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -140,7 +204,15 @@ zmw_merchant_taxes = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -157,7 +229,15 @@ zmw_controlling_the_mutapan_riches = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:shona_culture
@@ -174,7 +254,16 @@ zmw_empowering_the_rozwi = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+					has_variable = hafp_g_area_save_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZMW
 			}
@@ -188,7 +277,16 @@ zmw_cow_horn_tactics = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_zimbabwe_region
+					has_variable = hafp_g_area_save_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZMW
 			}

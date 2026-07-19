@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -19,7 +28,16 @@ teu_teutonic_heavy_cavalry = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -35,7 +53,16 @@ teu_reformed_order_army = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -48,7 +75,16 @@ teu_peasants_recruitment = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -61,7 +97,16 @@ teu_infantry_tactics = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -74,7 +119,16 @@ teu_teutonic_religious_authority = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -88,7 +142,16 @@ teu_expanded_marches = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -103,7 +166,16 @@ teu_prussian_bishops = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -116,7 +188,16 @@ teu_one_state_one_religion = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}
@@ -129,7 +210,16 @@ teu_absolute_order = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TEU
 			}

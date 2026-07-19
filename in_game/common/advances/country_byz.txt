@@ -4,7 +4,16 @@
 		age = age_1_traditions
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -17,7 +26,16 @@
 	byz_cataphracts_advance = {
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -31,7 +49,16 @@
 	byz_akritai_advance = {
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -45,7 +72,16 @@
 	byz_historiography_advance = {
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -60,7 +96,16 @@
 		content_priority = 600
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 				has_dlc = "d008_fate_of_the_phoenix"
@@ -79,7 +124,16 @@
 		age = age_2_renaissance
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -93,7 +147,16 @@
 		age = age_2_renaissance
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -107,7 +170,16 @@
 		age = age_2_renaissance
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -121,7 +193,16 @@
 		age = age_2_renaissance
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -135,7 +216,16 @@
 		age = age_2_renaissance
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -152,7 +242,16 @@
 		age = age_3_discovery
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -169,7 +268,16 @@
 		age = age_4_reformation
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -183,7 +291,16 @@
 		age = age_4_reformation
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -199,7 +316,16 @@
 		age = age_4_reformation
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -215,7 +341,16 @@
 		age = age_5_absolutism
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -229,7 +364,16 @@
 		age = age_5_absolutism
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -245,7 +389,16 @@
 		age = age_6_revolutions
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -258,7 +411,16 @@
 		age = age_6_revolutions
 		potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}

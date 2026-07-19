@@ -6,7 +6,14 @@ sruti = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -23,7 +30,14 @@ vedah = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -40,7 +54,14 @@ smrti = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -57,7 +78,14 @@ mahabarata = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -75,7 +103,14 @@ ramayana = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -97,7 +132,14 @@ purana = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -115,7 +157,14 @@ atman = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion.group = religion_group:dharmic
 			}
@@ -134,7 +183,14 @@ nastika_schools = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion.group = religion_group:dharmic
 			}
@@ -152,7 +208,14 @@ astika_schools = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -173,7 +236,14 @@ diversity_of_beliefs = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -191,7 +261,14 @@ ishvara = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -213,7 +290,14 @@ sanskritization = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -231,7 +315,14 @@ bhakti_movement = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion.group = religion_group:dharmic
 			}
@@ -252,7 +343,14 @@ yoga = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion.group = religion_group:dharmic
 			}
@@ -269,7 +367,14 @@ diwali = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion.group = religion_group:dharmic
 			}
@@ -286,7 +391,14 @@ holi = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion.group = religion_group:dharmic
 			}
@@ -303,7 +415,14 @@ holy_rivers = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -323,7 +442,14 @@ advaita_vedanta = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -341,7 +467,14 @@ hindu_muslim_relations = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -358,7 +491,14 @@ hindu_unification = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -375,7 +515,14 @@ hindu_architecture = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -392,7 +539,14 @@ varna_system = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -413,7 +567,14 @@ extreme_pacifism = {
 	icon = bhakti_movement
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -430,7 +591,14 @@ hindu_empires = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}
@@ -447,7 +615,14 @@ sacred_cattle = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_hindu
+				}
+			}
 			AND = {
 				religion = religion:hindu
 			}

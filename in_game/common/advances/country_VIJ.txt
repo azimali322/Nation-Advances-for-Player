@@ -5,7 +5,16 @@ vij_city_of_victory = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -18,7 +27,16 @@ vij_an_army_for_city_of_victory = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -35,7 +53,16 @@ vij_arab_horses = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -49,7 +76,16 @@ vij_first_indian_artillery = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -63,7 +99,16 @@ vij_the_bunds = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -77,7 +122,16 @@ vij_adroit_diplomacy = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -94,7 +148,16 @@ vij_promotion_of_trade = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -107,7 +170,16 @@ vij_carnatic_music = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -124,7 +196,16 @@ vij_cultural_integration = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -138,7 +219,16 @@ vij_rule_in_accord_with_dharma = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ religion.group = religion_group:dharmic
 			}
@@ -157,7 +247,16 @@ vij_harsh_penal_code = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -170,7 +269,16 @@ vij_decentralized_rule = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}
@@ -187,7 +295,16 @@ vij_indian_throne = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_karnakassala_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VIJ
 			}

@@ -2,7 +2,14 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -16,7 +23,14 @@ colonial_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -33,7 +47,14 @@ founding_fathers = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -49,7 +70,14 @@ colonial_militia = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -66,7 +94,14 @@ new_frontiers = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -80,7 +115,14 @@ continental_trade = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -97,7 +139,14 @@ free_thinkers = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -111,7 +160,14 @@ manufacturing_center = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -129,7 +185,14 @@ colonial_assembly = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -144,7 +207,14 @@ liberty_heroes = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}
@@ -159,7 +229,14 @@ colonial_ambition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_colonial_nations
+				}
+			}
 			AND = {
 				is_subject_type = colonial_nation
 			}

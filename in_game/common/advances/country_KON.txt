@@ -2,7 +2,17 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KON
 			}
@@ -20,7 +30,17 @@ kon_lineage_lukeni_lua_nimi = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KON
 			}
@@ -39,7 +59,17 @@ kon_european_contact = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KON
 			}
@@ -59,7 +89,17 @@ kon_cultural_syncreticism = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KON
 			}
@@ -76,7 +116,17 @@ kon_study_european_firearms = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KON
 			}
@@ -94,7 +144,17 @@ kon_transatlantic_slave_trade = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KON
 			}
@@ -102,7 +162,17 @@ kon_transatlantic_slave_trade = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_kongo_region
+					has_variable = hafp_g_area_kongo_area
+					has_variable = hafp_g_area_west_kongo_area
+				}
+			}
 			AND = {
 				current_age_or_later = { age = age_5_absolutism }
 				modifier:slavery_blocked = no

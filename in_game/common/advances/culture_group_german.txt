@@ -8,7 +8,14 @@ swabian_league_of_cities = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:swabian
@@ -30,7 +37,14 @@ westphalian_monastic_traditions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:westphalian
@@ -54,7 +68,14 @@ north_german_hanseatic_traditions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:lower_saxon
@@ -79,7 +100,14 @@ custom_union_of_the_rhine = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:moselle_franconian
@@ -102,7 +130,14 @@ lub_hanseatic_coins = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HSA
@@ -124,7 +159,14 @@ hamburg_port_cities = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAM
@@ -145,7 +187,14 @@ german_baltic_sailors = {
 	icon = hol_sailors
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:western_pomeranian
@@ -170,7 +219,14 @@ franconian_proud_knights = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:rhine_franconian
@@ -192,7 +248,14 @@ saiger_process = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture ?= { has_culture_group = culture_group:german_group }
@@ -214,7 +277,14 @@ german_river_toll_castle_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture ?= { has_culture_group = culture_group:german_group }
@@ -233,7 +303,14 @@ german_mountain_toll_castle_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture ?= { has_culture_group = culture_group:german_group }
@@ -257,7 +334,14 @@ german_populating_the_countryside = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:saxon
@@ -284,7 +368,14 @@ german_imperial_roads = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = GER
 			}
@@ -301,7 +392,14 @@ landsknechte = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				culture ?= { has_culture_group = culture_group:german_group }
 			}
@@ -323,7 +421,14 @@ swabian_frugal_people = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:swabian
@@ -344,7 +449,14 @@ franconian_wine_bottles = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:rhine_franconian
@@ -367,7 +479,14 @@ german_fair_towns = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = GER
 			}
@@ -392,7 +511,14 @@ german_biedermeier = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = GER
 			}
@@ -410,7 +536,14 @@ noble_society_baden_palatine = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = PAL
@@ -429,7 +562,14 @@ noble_society_nassau = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NSI
@@ -453,7 +593,14 @@ noble_society_mainz = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -469,7 +616,14 @@ noble_society_franconia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = FKN
@@ -489,7 +643,14 @@ noble_society_tyrol = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TIR
@@ -511,7 +672,14 @@ noble_society_cologne = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = KOL
@@ -532,7 +700,14 @@ saxon_defensioner = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:saxon
@@ -550,7 +725,14 @@ bavarian_jager = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = BAV
 			}
@@ -565,7 +747,14 @@ hesse_jager = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:rhine_franconian
@@ -584,7 +773,14 @@ austrian_grenzhussar = {
 	content_priority = 900
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -599,7 +795,14 @@ austrian_grenzer = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 				OR = {
@@ -618,7 +821,14 @@ gebirgsschutzen_infantry = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_german
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:southern_bavarian

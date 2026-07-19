@@ -4,7 +4,16 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 			}
@@ -23,7 +32,16 @@ sav_house_of_savoy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 			}
@@ -41,7 +59,16 @@ sav_alpine_identity = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 			}
@@ -60,7 +87,16 @@ sav_the_shroud_of_turin = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 			}
@@ -78,7 +114,16 @@ sav_alpine_pass_control = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 			}
@@ -97,7 +142,16 @@ sav_fight_the_vaudois = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 				religion = religion:catholic
@@ -117,7 +171,16 @@ sav_embrace_the_vaudois = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 				OR = {
@@ -141,7 +204,16 @@ sav_repopulate_the_valleys = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_savoy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SAV
 			}

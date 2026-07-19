@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -18,7 +27,16 @@ bantu_and_perso_arabian = {
 	age = age_1_traditions 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -33,7 +51,16 @@ kilwan_trade_network = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -50,7 +77,16 @@ the_dhow = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -64,7 +100,16 @@ the_kilwan_zambuc = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -79,7 +124,16 @@ zanj_taxation = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 				country_has_estate = estate_type:dhimmi_estate
@@ -97,7 +151,16 @@ zan_food_imports = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -113,7 +176,16 @@ zan_kilwan_latitude_staves = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -130,7 +202,16 @@ shirazi_legacy = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -147,7 +228,16 @@ zan_gold_trade_of_africa = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}
@@ -163,7 +253,16 @@ zan_diplomacy_through_trade = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_swahili_coast_region
+					has_variable = hafp_g_area_rufiji_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ZAN
 			}

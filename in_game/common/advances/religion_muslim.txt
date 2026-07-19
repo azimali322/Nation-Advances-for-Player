@@ -6,7 +6,14 @@ people_of_allah = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -23,7 +30,14 @@ holy_revelation = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -40,7 +54,14 @@ islamic_calligraphy = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -58,7 +79,14 @@ islamic_prayer = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -75,7 +103,14 @@ zakah = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -97,7 +132,14 @@ muslim_lineage = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -119,7 +161,14 @@ muslim_caravans = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -137,7 +186,14 @@ islamic_golden_age = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -154,7 +210,14 @@ ramadan = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -171,7 +234,14 @@ sunnah = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion = religion:sunni
 			}
@@ -188,7 +258,14 @@ imamate = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion = religion:shia
 			}
@@ -209,7 +286,14 @@ indian_sea_trade = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -227,7 +311,14 @@ muslim_trade_communities = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -244,7 +335,14 @@ expansionist_faith = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -261,7 +359,14 @@ blend_of_influences = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -278,7 +383,14 @@ islamic_schoolars = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -299,7 +411,14 @@ gunpowder_empires = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -316,7 +435,14 @@ established_holy_sites = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -333,7 +459,14 @@ islamic_courts = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -350,7 +483,14 @@ schools_of_thought = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -367,7 +507,14 @@ distant_trade_ventures = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -388,7 +535,14 @@ resilient_merchants = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -405,7 +559,14 @@ jewels_of_the_desert = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -423,7 +584,14 @@ comprehensive_land_survey = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -441,7 +609,14 @@ counting_the_people = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -458,7 +633,14 @@ cosmopolitan_court = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -478,7 +660,14 @@ caliphate = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				NOT = { religion = religion:ibadi }
@@ -498,7 +687,14 @@ ibadi_imamate = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion = religion:ibadi
 			}
@@ -516,7 +712,14 @@ contacts_network = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -534,7 +737,14 @@ infiltration_tactics = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -553,7 +763,14 @@ unified_armies = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}
@@ -571,7 +788,14 @@ harsh_environments = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 			}

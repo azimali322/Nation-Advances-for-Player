@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				culture = culture:corsican
 			}
@@ -21,7 +28,14 @@ cor_the_pievi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				has_or_had_tag = COR
 			}
@@ -40,7 +54,14 @@ corsican_the_vindetta = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				culture = culture:corsican
 			}
@@ -58,7 +79,14 @@ cor_the_milizia_di_u_riamu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				has_or_had_tag = COR
 			}
@@ -76,7 +104,14 @@ corsican_the_castagniccia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				culture = culture:corsican
 			}
@@ -95,7 +130,14 @@ cor_capituli_di_corsica = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				has_or_had_tag = COR
 			}
@@ -116,7 +158,14 @@ corsican_the_corsican_baroque = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				culture = culture:corsican
 			}
@@ -135,7 +184,14 @@ cor_guardia_corsa = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				has_or_had_tag = COR
 			}
@@ -154,7 +210,14 @@ corsican_lamentu_and_voceru = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				culture = culture:corsican
 			}
@@ -174,7 +237,14 @@ cor_u_ginnasiu_corsu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				has_or_had_tag = COR
 			}
@@ -193,7 +263,14 @@ corsican_chjame_rispondi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				culture = culture:corsican
 			}
@@ -212,7 +289,14 @@ cor_the_corsican_constitution = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_corsican
+				}
+			}
 			AND = {
 				has_or_had_tag = COR
 			}

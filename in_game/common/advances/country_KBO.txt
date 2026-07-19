@@ -2,7 +2,16 @@
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_kanem_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KBO
 			}
@@ -20,7 +29,16 @@ kbo_permanent_sieges = {
 	icon = mandinka_warrior_spirit
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_kanem_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KBO
 			}
@@ -37,7 +55,16 @@ kbo_iron_helmet_musketeers = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_kanem_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KBO
 			}
@@ -53,7 +80,16 @@ kbo_council_clan_heads = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_kanem_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KBO
 			}
@@ -69,7 +105,16 @@ kbo_ribat_fortifications = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_kanem_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KBO
 			}

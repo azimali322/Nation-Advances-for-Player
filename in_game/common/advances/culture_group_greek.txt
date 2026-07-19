@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:greek_group }
 				NOR = {
@@ -27,7 +34,14 @@ epi_the_eagle_of_the_pindus_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = EPI
 			}
@@ -45,7 +59,14 @@ feo_gothic_hellenic_synthesis_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = FEO
 			}
@@ -64,7 +85,14 @@ gre_restoration_of_power_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = GRE
 			}
@@ -82,7 +110,14 @@ moe_the_court_of_mystras_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = MOE
 			}
@@ -101,7 +136,14 @@ ths_the_wallachian_scutari_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = THS
 			}
@@ -121,7 +163,14 @@ greek_group_hesychast_traditions_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:greek_group }
 				religion = religion:orthodox
@@ -145,7 +194,14 @@ epi_balkan_marriages_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = EPI
 			}
@@ -163,7 +219,14 @@ feo_the_bastion_of_mangup_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = FEO
 			}
@@ -181,7 +244,14 @@ gre_rebuilding_the_theme_system_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = GRE
 			}
@@ -199,7 +269,14 @@ moe_reclaiming_the_peloponnese_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = MOE
 			}
@@ -218,7 +295,14 @@ ths_meteora_sanctuaries_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = THS
 				religion = religion:orthodox
@@ -238,7 +322,14 @@ greek_group_stratioti_levies_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:greek_group }
 				NOR = {
@@ -261,7 +352,14 @@ epi_arvanite_communities_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = EPI
 			}
@@ -280,7 +378,14 @@ feo_black_sea_fur_trade_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = FEO
 			}
@@ -299,7 +404,14 @@ gre_greek_viticulture_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = GRE
 			}
@@ -318,7 +430,14 @@ moe_plethons_vision_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = MOE
 			}
@@ -337,7 +456,14 @@ ths_thessalian_horse_breeding_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = THS
 			}
@@ -356,7 +482,14 @@ greek_group_the_phanariote_network_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:greek_group }
 				NOR = {
@@ -379,7 +512,14 @@ epi_adriatic_gatekeepers_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = EPI
 			}
@@ -398,7 +538,14 @@ feo_the_northern_star_of_greece_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = FEO
 				religion = religion:orthodox
@@ -420,7 +567,14 @@ gre_the_new_stratikon_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = GRE
 			}
@@ -439,7 +593,14 @@ moe_the_hexamilion_modernization_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = MOE
 			}
@@ -458,7 +619,14 @@ ths_raiders_of_the_pindus_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = THS
 			}
@@ -476,7 +644,14 @@ greek_group_aegean_coastal_defence_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:greek_group }
 				NOR = {
@@ -499,7 +674,14 @@ epi_fortresses_of_ioannina_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = EPI
 			}
@@ -517,7 +699,14 @@ feo_the_gothic_red_guard_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = FEO
 			}
@@ -535,7 +724,14 @@ gre_the_hellenic_admiralty_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = GRE
 			}
@@ -554,7 +750,14 @@ moe_the_silk_road_of_morea_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = MOE
 			}
@@ -573,7 +776,14 @@ ths_armatole_administration_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = THS
 			}
@@ -591,7 +801,14 @@ greek_group_the_modern_greek_enlightenment_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:greek_group }
 				NOR = {
@@ -614,7 +831,14 @@ epi_the_sublime_diplomacy_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = EPI
 			}
@@ -633,7 +857,14 @@ feo_the_iron_harvest_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = FEO
 			}
@@ -651,7 +882,14 @@ gre_megali_idea_realized_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = GRE
 			}
@@ -669,7 +907,14 @@ moe_the_constitution_of_morea_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = MOE
 			}
@@ -687,7 +932,14 @@ ths_thessalian_grain_exchange_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_greek
+				}
+			}
 			AND = {
 				has_or_had_tag = THS
 			}

@@ -4,7 +4,15 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bosnian
@@ -25,7 +33,16 @@ bos_land_of_many_churches = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOS
 			}
@@ -43,7 +60,15 @@ bos_katun_communities = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bosnian
@@ -64,7 +89,16 @@ bos_influence_of_the_stanak = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOS
 			}
@@ -84,7 +118,15 @@ bos_defiant_terrain = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bosnian
@@ -105,7 +147,16 @@ bos_kingly_ambitions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOS
 			}
@@ -126,7 +177,15 @@ bosnian_bosancica = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bosnian
@@ -148,7 +207,16 @@ bos_the_srebrenica_mint_office = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOS
 			}
@@ -166,7 +234,15 @@ bosnian_people_from_the_hills = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bosnian
@@ -187,7 +263,16 @@ bos_bosnian_ljekaruse = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOS
 			}
@@ -206,7 +291,15 @@ bosnian_susjedsvto_of_bosnia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bosnian
@@ -228,7 +321,16 @@ bos_the_filigree_guilds = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bosnia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOS
 			}

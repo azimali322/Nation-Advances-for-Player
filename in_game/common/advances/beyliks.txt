@@ -5,7 +5,16 @@ uc_bey_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR
@@ -27,7 +36,16 @@ heirs_of_rum = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR
@@ -46,7 +64,16 @@ seljuk_roots = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR
@@ -64,7 +91,15 @@ fratricide_succesion_advance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:turkish_culture
@@ -83,7 +118,16 @@ splendor_of_anatolia = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR
@@ -101,7 +145,16 @@ persian_in_the_court = {
 	icon = ira_islamized_persia
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR
@@ -118,7 +171,16 @@ akinji_cavalry = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR
@@ -136,7 +198,16 @@ crossroads_of_commerce = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TUR

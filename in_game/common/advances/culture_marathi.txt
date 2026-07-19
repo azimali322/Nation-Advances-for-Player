@@ -13,7 +13,14 @@ mhr_tradition_of_military_service = {
     age = age_3_discovery
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_marathi
+				}
+			}
 			AND = {
 				culture.language = language:marathi_language
 			}
@@ -26,7 +33,14 @@ mhr_peasant_soldiers = {
     age = age_3_discovery
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_marathi
+				}
+			}
 			AND = {
 				culture.language = language:marathi_language
 			}
@@ -43,7 +57,14 @@ mhr_ashta_pradhan_advance = {
     age = age_4_reformation
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_marathi
+				}
+			}
 			AND = {
 				culture.language = language:marathi_language
 			}
@@ -56,7 +77,14 @@ mhr_office_of_the_peshwa = {
     age = age_4_reformation
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_marathi
+				}
+			}
 			AND = {
 				culture.language = language:marathi_language
 			}
@@ -73,7 +101,14 @@ mhr_forts_of_maharashtra = {
     age = age_5_absolutism
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_marathi
+				}
+			}
 			AND = {
 				culture.language = language:marathi_language
 			}
@@ -87,7 +122,14 @@ mhr_encourage_brahmin_ties = {
     age = age_5_absolutism
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_marathi
+				}
+			}
 			AND = {
 				culture.language = language:marathi_language
 			}

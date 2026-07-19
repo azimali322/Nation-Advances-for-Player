@@ -38,7 +38,13 @@ unlock_men_at_arms_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				any_market_present_in_country = {
 				OR = {
@@ -73,7 +79,13 @@ unlock_reformed_crusader_knights_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				modifier:allow_military_order_units = yes
 			}
@@ -212,7 +224,13 @@ unlock_armored_horsemen_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				any_market_present_in_country = {
 				OR = {

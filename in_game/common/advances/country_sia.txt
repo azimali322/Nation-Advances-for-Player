@@ -11,7 +11,17 @@ sia_experienced_ambassadors = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}
@@ -27,7 +37,17 @@ sia_rise_to_equal_heights = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}
@@ -47,7 +67,17 @@ sia_advanced_elephant_warfare = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}
@@ -63,7 +93,17 @@ sia_consolidation_of_state = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}
@@ -79,7 +119,17 @@ sia_education_reform = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}
@@ -98,7 +148,17 @@ sia_royal_absolutism = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}
@@ -118,7 +178,17 @@ sia_thai_unity = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_chao_phraya_area
+					has_variable = hafp_g_area_northern_tai_highland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SIA
 			}

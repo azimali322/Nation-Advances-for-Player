@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -19,7 +28,16 @@ bur_knightly_prowess = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -37,7 +55,16 @@ golden_fleece = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -58,7 +85,16 @@ promote_estates_general = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -76,7 +112,16 @@ reform_the_feudal_army = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -94,7 +139,16 @@ compagnie_d_ordonnance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -113,7 +167,16 @@ influence_of_the_burgundian_towns = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -132,7 +195,16 @@ create_the_regimental_system = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}
@@ -151,7 +223,16 @@ bur_rich_soil_of_burgundy = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_burgundy_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUR
 			}

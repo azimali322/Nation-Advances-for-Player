@@ -5,7 +5,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:venetian
@@ -31,7 +38,14 @@ ven_stato_da_mar = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VEN
 			}
@@ -50,7 +64,14 @@ perpetual_general_captain_of_the_people = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VER
 			}
@@ -70,7 +91,14 @@ pad_carraresi_dynasty = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAD
 			}
@@ -90,7 +118,14 @@ ven_state_inquisition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:venetian
@@ -113,7 +148,14 @@ ven_gothic_architecture = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VEN
 			}
@@ -133,7 +175,14 @@ court_of_great_refugees = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VER
 			}
@@ -151,7 +200,14 @@ pad_the_bo = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAD
 			}
@@ -171,7 +227,14 @@ ven_venetian_painting = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:venetian
@@ -195,7 +258,14 @@ ven_printing_industry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VEN
 			}
@@ -214,7 +284,14 @@ the_adige = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VER
 			}
@@ -233,7 +310,14 @@ pad_medical_school = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAD
 			}
@@ -253,7 +337,14 @@ ven_mixed_naval_tactics = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:venetian
@@ -276,7 +367,14 @@ ven_venetian_school_of_music = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VEN
 			}
@@ -295,7 +393,14 @@ scaligers_military_ambitions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VER
 			}
@@ -314,7 +419,14 @@ pad_paduan_philosophy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAD
 			}
@@ -334,7 +446,14 @@ ven_ship_mounted_gunpowder_weapons = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:venetian
@@ -357,7 +476,14 @@ ven_ridotto = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VEN
 			}
@@ -376,7 +502,14 @@ consolidate_italian_holdings = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VER
 			}
@@ -395,7 +528,14 @@ pad_the_accademia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAD
 			}
@@ -415,7 +555,14 @@ ven_venetian_thalassocracy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:venetian
@@ -438,7 +585,14 @@ ven_la_fenice = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VEN
 			}
@@ -457,7 +611,14 @@ marmorina = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = VER
 			}
@@ -476,7 +637,14 @@ pad_paduan_commune = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_venetian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAD
 			}

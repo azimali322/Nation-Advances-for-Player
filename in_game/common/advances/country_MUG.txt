@@ -17,7 +17,15 @@ mug_zamindar_system = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MUG
 			}
@@ -31,7 +39,15 @@ mug_mughal_ibadat_khana = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MUG
 			}
@@ -45,7 +61,15 @@ mug_mughal_architecture = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MUG
 			}
@@ -59,7 +83,15 @@ mug_fatawa_e_alamgiri = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MUG
 			}
@@ -77,7 +109,15 @@ mug_an_indian_padshah = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+				}
+			}
 			AND = {
 				has_or_had_tag = MUG
 			}

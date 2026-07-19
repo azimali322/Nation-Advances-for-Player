@@ -5,7 +5,17 @@
 	requires = unlock_footmen_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_hebrides_area
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				country_has_gallowglass_trigger = yes
 			}
@@ -20,7 +30,17 @@ unlock_reformed_gallowglass_advance = {
 	requires = unlock_peasant_levy_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_hebrides_area
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				country_has_gallowglass_trigger = yes
 			}
@@ -35,7 +55,17 @@ unlock_late_gallowglass_advance = {
 	requires = unlock_halberdiers_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_hebrides_area
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				country_has_gallowglass_trigger = yes
 			}
@@ -49,7 +79,16 @@ scottish_salmon = {
 	requires = agriculture_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -68,7 +107,16 @@ scottish_morale = {
 	requires = unlock_footmen_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SBL
@@ -80,7 +128,16 @@ scottish_morale = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				NOT = { is_subject_of = c:ENG } #to make it not available for Balliol when they are a subject of England after Civil War
 				NOT = { has_or_had_tag = SBL }
@@ -95,7 +152,16 @@ scottish_longbowmen = {
 	requires = unlock_footmen_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SBL
 				has_or_had_tag = SCO
@@ -105,7 +171,16 @@ scottish_longbowmen = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				is_subject_of = c:ENG #replacement for scottish_morale if Scotland submits to England
@@ -121,7 +196,15 @@ peel_towers_advance = {
 	requires = cultural_traditions_law_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = { has_culture_group = culture_group:scottish_group }
@@ -139,7 +222,16 @@ scottish_highland_tradition = {
 	requires = peel_towers_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -157,7 +249,16 @@ scottish_tenacity = {
 	requires = unlock_men_at_arms_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCO
 				culture = { has_culture_group = culture_group:scottish_group }
@@ -166,7 +267,16 @@ scottish_tenacity = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				NOT = { is_subject_of = c:ENG } #to make it not available for Balliol when they are a subject of England after Civil War
 				NOT = { has_or_had_tag = SBL }
@@ -180,7 +290,16 @@ influx_of_english_nobles = {
 	requires = unlock_men_at_arms_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCO
 				culture = { has_culture_group = culture_group:scottish_group }
@@ -189,7 +308,16 @@ influx_of_english_nobles = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				is_subject_of = c:ENG #replacement for scottish_tenacity if Scotland submits to England
 			}
@@ -203,7 +331,16 @@ scottish_trade_connections = {
 	requires = trade_range_advance_age_2
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -220,7 +357,16 @@ comets = {
 	requires = artists_advance_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -236,7 +382,17 @@ modernized_royal_scots_navy = {
 	requires = maritime_advance_age_3
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_hebrides_area
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -258,7 +414,16 @@ royal_revenue = {
 	requires = artists_advance_reformations
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -278,7 +443,16 @@ scottish_education = {
 	requires = crown_power_advance_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -296,7 +470,16 @@ act_of_revocation = {
 	requires = the_constitution
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -316,7 +499,16 @@ scottish_diplomacy = {
 	requires = maritime_advance_age_5
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -334,7 +526,16 @@ scottish_highlander_advance = {
 	requires = militiamen_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -351,7 +552,16 @@ scottish_whisky = {
 	requires = revolutions_subject_opinions_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO
@@ -371,7 +581,16 @@ scottish_enlightenment = {
 	requires = enlightened_court
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_scottish_lowlands_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = SCO

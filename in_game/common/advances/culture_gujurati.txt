@@ -11,7 +11,14 @@ guj_hub_of_the_indian_ocean_trade = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_gujurati
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:gujarati_language
@@ -25,7 +32,14 @@ guj_garba = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_gujurati
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:gujarati_language
@@ -39,7 +53,14 @@ guj_jain_routes = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_gujurati
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:gujarati_language
@@ -58,7 +79,14 @@ guj_gujarati_lipi = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_gujurati
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:gujarati_language
@@ -72,7 +100,14 @@ guj_gujarati_merchant_diaspora = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_gujurati
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:gujarati_language

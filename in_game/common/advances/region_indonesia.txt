@@ -8,7 +8,15 @@ indonesia_outer_islands_archipelago = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+				}
+			}
 			AND = {
 				original_capital ?= { region = region:indonesia_region }
 			}
@@ -28,7 +36,15 @@ indonesia_naval_supremacy = {
 	icon = glorious_arms
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+				}
+			}
 			AND = {
 				original_capital ?= { region = region:indonesia_region }
 			}
@@ -50,7 +66,15 @@ indonesia_trading_hub_of_the_east = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = NUS
 			}
@@ -72,7 +96,15 @@ indonesia_archipelago_of_many_faiths = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = NUS
 			}

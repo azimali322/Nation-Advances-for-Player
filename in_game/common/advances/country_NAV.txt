@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -20,7 +29,16 @@ nav_shipbuiling_experts = { #DIP
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -37,7 +55,16 @@ nav_memories_reconquista = { #MIL
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -55,7 +82,16 @@ nav_a_renaissance_realm = { #ADM
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -72,7 +108,16 @@ nav_fearless_seamen = { #DIP
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -89,7 +134,16 @@ nav_always_ready = { #MIL
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -107,7 +161,16 @@ nav_chartered_councils = { #ADM
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -124,7 +187,16 @@ nav_people_of_the_sea = { #DIP
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -141,7 +213,16 @@ nav_basque_ferocity = { #MIL
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -158,7 +239,16 @@ nav_an_industrious_folk = { #ADM
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -175,7 +265,16 @@ nav_mercantile_expansion = { #DIP
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -192,7 +291,16 @@ nav_navarrese_defense_force = { #MIL
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -209,7 +317,16 @@ nav_shipyards_ironworks = { #ADM
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -227,7 +344,16 @@ nav_adept_traders = { #DIP
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -244,7 +370,16 @@ nav_the_national_military_academy = { #MIL
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -261,7 +396,16 @@ nav_royal_basque_society = { #ADM
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -278,7 +422,16 @@ nav_efficient_bureaucracy = { #DIP
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV
@@ -296,7 +449,16 @@ nav_riflemen_march = { #MIL
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_navarre_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = NAV

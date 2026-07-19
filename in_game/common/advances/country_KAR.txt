@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_central_anatolia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KAR
 			}
@@ -21,7 +30,16 @@ mehmed_beys_firman = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_central_anatolia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KAR
 			}
@@ -32,7 +50,16 @@ mehmed_beys_firman = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_central_anatolia_area
+				}
+			}
 			AND = {
 				court_language ?= language:turkish_language
 			}
@@ -47,7 +74,16 @@ karamanid_cavalry = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_central_anatolia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KAR
 			}
@@ -64,7 +100,16 @@ home_of_the_whirling_dervishes = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_central_anatolia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KAR
 			}

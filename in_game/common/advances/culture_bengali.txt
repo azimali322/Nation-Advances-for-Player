@@ -5,7 +5,14 @@ bng_bengali_vassal_system = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -18,7 +25,14 @@ bng_bengali_paik = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -32,7 +46,14 @@ bng_bengali_architecture = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -50,7 +71,14 @@ bng_habshi_generals = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -64,7 +92,14 @@ bng_war_elephants = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -77,7 +112,14 @@ bng_rupees = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -94,7 +136,14 @@ bng_bengali_traders = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -107,7 +156,14 @@ bng_bengali_poetry = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -125,7 +181,14 @@ bng_religious_pluralism = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -138,7 +201,14 @@ bng_artillery_corps = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -155,7 +225,14 @@ bng_bengali_trade_fleet = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -168,7 +245,14 @@ bng_shipbuilding_industry = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}
@@ -185,7 +269,14 @@ bng_bengali_industrialization = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_bengali
+				}
+			}
 			AND = {
 				culture.language = language:bengali_language
 			}

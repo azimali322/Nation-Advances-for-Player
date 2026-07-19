@@ -4,7 +4,15 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bulgarian
@@ -26,7 +34,16 @@ legacy_of_ivan_asen_ii = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 			}
@@ -44,7 +61,16 @@ bul_the_bastion_of_tseverets = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 				original_tag = BUL
@@ -66,7 +92,16 @@ kvn_karvunan_maritime_heritage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KVN
 			}
@@ -85,7 +120,16 @@ vid_the_stronghold_of_baba_vida = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VID
 			}
@@ -104,7 +148,15 @@ reformation_of_the_bulgarian_patriarchate = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bulgarian
@@ -127,7 +179,16 @@ revival_of_the_literary_schools = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 			}
@@ -146,7 +207,16 @@ bul_the_chancery_of_the_asens = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 				original_tag = BUL
@@ -166,7 +236,16 @@ kvn_looking_for_friends = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KVN
 			}
@@ -185,7 +264,16 @@ vid_the_western_connection = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VID
 			}
@@ -204,7 +292,15 @@ bulgarian_the_danubian_river_merchants = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bulgarian
@@ -225,7 +321,16 @@ bul_the_boyar_council = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 			}
@@ -244,7 +349,16 @@ bul_the_hesychast_state_philosophy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 				original_tag = BUL
@@ -264,7 +378,16 @@ kvn_the_condotta_of_varna = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KVN
 			}
@@ -283,7 +406,16 @@ vid_the_order_of_the_danubian_dragon = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VID
 			}
@@ -301,7 +433,15 @@ fortress_of_the_balkans = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bulgarian
@@ -323,7 +463,16 @@ bul_the_silk_and_rose_guilds = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 			}
@@ -341,7 +490,16 @@ bul_the_bulgarian_gunpowder_foundries = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 				original_tag = BUL
@@ -360,7 +518,16 @@ kvn_the_cosmopolitan_code_of_karvuna = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KVN
 			}
@@ -378,7 +545,16 @@ vid_the_mining_grants = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VID
 			}
@@ -396,7 +572,15 @@ bulgarian_the_bulgarian_cloth_industry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bulgarian
@@ -418,7 +602,16 @@ bul_the_grand_academy_of_the_yantra = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 			}
@@ -437,7 +630,16 @@ bul_the_standing_drilled_infantry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 				original_tag = BUL
@@ -456,7 +658,16 @@ kvn_the_black_sea_admiralty = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KVN
 			}
@@ -475,7 +686,16 @@ vid_vidins_custom_houses = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VID
 			}
@@ -493,7 +713,15 @@ bulgarian_the_bulgarian_national_awakening = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:bulgarian
@@ -515,7 +743,16 @@ bul_the_imperial_restoration_doctrine = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 			}
@@ -533,7 +770,16 @@ bul_the_bulgarian_census_bureau = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BUL
 				original_tag = BUL
@@ -552,7 +798,16 @@ kvn_the_free_port_of_varna = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KVN
 			}
@@ -571,7 +826,16 @@ vid_the_codex_shishman = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_bulgaria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = VID
 			}

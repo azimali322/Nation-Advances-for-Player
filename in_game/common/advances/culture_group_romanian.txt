@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:romanian_group }
 			}
@@ -22,7 +29,14 @@ mol_the_moldavian_road = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOL
@@ -45,7 +59,14 @@ rmn_the_descendants_of_trajan = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				has_or_had_tag = RMN
 			}
@@ -63,7 +84,14 @@ tra_the_transylvanian_autonomy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TRA
@@ -85,7 +113,14 @@ wallachian_heritage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WAL
@@ -107,7 +142,14 @@ romanian_the_foundation_of_the_voivodeship_tradition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:romanian_group }
 			}
@@ -128,7 +170,14 @@ mol_the_banner_of_the_golden_bull = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOL
@@ -151,7 +200,14 @@ rmn_the_foundation_of_the_metropolises = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				has_or_had_tag = RMN
 			}
@@ -169,7 +225,14 @@ tra_unio_trium_nationum = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TRA
@@ -192,7 +255,14 @@ boyar_regime = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WAL
@@ -215,7 +285,14 @@ romanian_the_letter_of_neacsu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:romanian_group }
 			}
@@ -234,7 +311,14 @@ mol_the_great_military_reforms = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOL
@@ -256,7 +340,14 @@ rmn_the_byzantine_heirs = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				has_or_had_tag = RMN
 			}
@@ -275,7 +366,14 @@ tra_the_transylvanian_trade_guilds = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TRA
@@ -298,7 +396,14 @@ wal_the_order_of_the_dragon_influence = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WAL
@@ -321,7 +426,14 @@ romanian_the_postelnic_bureaucracy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:romanian_group }
 			}
@@ -340,7 +452,14 @@ mol_the_chronicles_of_grigore_ureche = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOL
@@ -363,7 +482,14 @@ rmn_cartea_romaneasca_de_invetatura = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				has_or_had_tag = RMN
 				religion = religion:orthodox
@@ -383,7 +509,14 @@ tra_the_edict_of_torda = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TRA
@@ -405,7 +538,14 @@ cunning_diplomacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WAL
@@ -428,7 +568,14 @@ romanian_the_romanian_renaissance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:romanian_group }
 			}
@@ -447,7 +594,14 @@ mol_the_moldovan_enlightment = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOL
@@ -470,7 +624,14 @@ rmn_the_bible_of_bucharest = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				has_or_had_tag = RMN
 			}
@@ -488,7 +649,14 @@ tra_the_vauban_transylvanian_bastion_synthesis = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TRA
@@ -511,7 +679,14 @@ wal_the_diplomat_schools = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WAL
@@ -534,7 +709,14 @@ romanian_the_scoala_ardeleana = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:romanian_group }
 			}
@@ -553,7 +735,14 @@ mol_the_cotnari_and_odobesti_wines = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOL
@@ -575,7 +764,14 @@ rmn_the_pandur_militias = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				has_or_had_tag = RMN
 			}
@@ -594,7 +790,14 @@ tra_the_national_mining_academy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = TRA
@@ -616,7 +819,14 @@ wal_the_abolition_of_serfdom = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_romanian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WAL

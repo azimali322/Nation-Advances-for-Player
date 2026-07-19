@@ -5,7 +5,16 @@ dlh_origin_of_hindustani = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -18,7 +27,16 @@ dlh_indo_persian_culture = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -32,7 +50,16 @@ dlh_turkic_conqueror_roots = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -49,7 +76,16 @@ dlh_revert_ghiyath_reforms = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -62,7 +98,16 @@ dlh_restore_the_delhi_empire = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -75,7 +120,16 @@ dlh_reintegrate_former_provinces = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -92,7 +146,16 @@ dlh_textile_innovation = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -105,7 +168,16 @@ dlh_afghan_nobility = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -123,7 +195,16 @@ dlh_grand_trunk = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -138,7 +219,16 @@ dlh_cosmopolitan_religions = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -155,7 +245,16 @@ dlh_revive_the_tughlaq_architecture = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -170,7 +269,16 @@ dlh_throne_of_india = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}
@@ -187,7 +295,16 @@ dlh_hindustani_identity = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_area_doab_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DLH
 			}

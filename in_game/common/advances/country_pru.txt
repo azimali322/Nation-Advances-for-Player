@@ -3,7 +3,16 @@
 	icon = defenses_of_novgorod
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -18,7 +27,16 @@ double_electorate = {
 	icon = pal_a_just_ruler
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -35,7 +53,16 @@ junker_officer_corps = {
 	icon = pike_and_shot_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -50,7 +77,16 @@ generalkriegskommissariat = {
 	icon = protect_the_new_faith
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -65,7 +101,16 @@ preussische_tugenden = {
 	icon = offensive_army
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -81,7 +126,16 @@ army_professionalism = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -98,7 +152,16 @@ standing_army = {
 	icon = flesh_is_weak
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -115,7 +178,16 @@ soldier_king = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				government = monarchy
 				has_or_had_tag = PRU
@@ -132,7 +204,16 @@ prussian_grenadiers = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -148,7 +229,16 @@ cantonment_system = {
 	icon = colonial_militia
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -164,7 +254,16 @@ goose_step = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -179,7 +278,16 @@ auftragstaktik = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}
@@ -195,7 +303,16 @@ scharnhorst_reforms = {
 	icon = siege_ability_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRU
 			}

@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 			}
@@ -21,7 +30,16 @@ coffea_arabica = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 			}
@@ -40,7 +58,16 @@ zaydi_scholarly_traditions = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 				religion.group = religion_group:muslim
@@ -59,7 +86,16 @@ rasulid_bureaucracy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 			}
@@ -78,7 +114,16 @@ control_of_the_red_sea = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 			}
@@ -96,7 +141,16 @@ yem_unite_the_tribes = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 			}
@@ -114,7 +168,16 @@ port_of_aden = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				has_or_had_tag = YEM
 			}
@@ -122,7 +185,16 @@ port_of_aden = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_area_south_yemen_area
+				}
+			}
 			AND = {
 				location:adan = {
 				owner ?= c:YEM

@@ -6,7 +6,14 @@ cha_matrilineal_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -21,7 +28,14 @@ cha_religious_tolerance = {
 	icon = religious_melting_pot
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -38,7 +52,14 @@ cha_dharmic_presence = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 				religion.group = religion_group:dharmic
@@ -53,7 +74,14 @@ cha_kshatriya = {	#https://en.wikipedia.org/wiki/Kshatriya
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -69,7 +97,14 @@ cha_veteran_shipbuilders = {	#https://en.wikipedia.org/wiki/Military_of_Champa#
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -82,7 +117,14 @@ cha_haluwbilau = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Haluwbilau
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -98,7 +140,14 @@ cha_commercial_state = {	#https://en.wikipedia.org/wiki/Champa#Economy
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -111,7 +160,14 @@ cha_boarding_tactics = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Confl
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -128,7 +184,14 @@ cha_towers_on_water = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Ships
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}
@@ -145,7 +208,14 @@ cha_cham_cultural_influence = {	#https://en.wikipedia.org/wiki/Champa#Cham_influ
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_cham
+				}
+			}
 			AND = {
 				culture.language = language:cham_language
 			}

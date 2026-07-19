@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -20,7 +29,16 @@ migrant_opportunities = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -37,7 +55,16 @@ warlord_dukes = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -55,7 +82,16 @@ two_realms = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -72,7 +108,16 @@ chacery_slavonic = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -91,7 +136,16 @@ supremus_dux_lithuaniae = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -107,7 +161,16 @@ ties_with_the_holy_see = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 				religion = religion:catholic
@@ -125,7 +188,16 @@ patriarchate_of_lithuania = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 				religion = religion:orthodox
@@ -144,7 +216,16 @@ statutes_of_lithuania = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -160,7 +241,16 @@ lithuanian_renaissance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}
@@ -178,7 +268,16 @@ columns_of_gediminids = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lithuania_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIT
 			}

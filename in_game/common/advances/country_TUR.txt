@@ -3,7 +3,16 @@
 	icon = seljuk_roots
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -20,7 +29,16 @@ turkic_traditions = {
 	icon = turco_mongol_tradition
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -36,7 +54,16 @@ ghazi = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -52,7 +79,16 @@ azeb_irregulars = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -69,7 +105,16 @@ millets = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -86,7 +131,16 @@ timariots = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -101,7 +155,16 @@ bashi_bazouks = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -116,7 +179,16 @@ ottoman_bureaucracy = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -129,7 +201,16 @@ autonomous_pashas = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -143,7 +224,16 @@ dragomans = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -159,7 +249,16 @@ lawcode_of_suleiman = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -171,7 +270,16 @@ ahdnames = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -185,7 +293,16 @@ kafes = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -199,7 +316,16 @@ ottoman_waystations = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -215,7 +341,16 @@ late_ottoman_bureaucracy = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -228,7 +363,16 @@ ottoman_tax_farming = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -242,7 +386,16 @@ tulip_period = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -258,7 +411,16 @@ imperial_school_of_naval_engineering = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -273,7 +435,16 @@ khedivates = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -286,7 +457,16 @@ ayans = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -304,7 +484,16 @@ ayans = {
 janissaries_advance = {
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -325,7 +514,16 @@ janissaries_advance = {
 a_renaissance_janissaries_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -341,7 +539,16 @@ a_renaissance_janissaries_advance = {
 a_discovery_janissaries_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -357,7 +564,16 @@ a_discovery_janissaries_advance = {
 a_reformation_janissaries_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -373,7 +589,16 @@ a_reformation_janissaries_advance = {
 a_absolutism_janissaries_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}
@@ -389,7 +614,16 @@ a_absolutism_janissaries_advance = {
 a_revolutions_janissaries_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_area_marmara_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUR
 			}

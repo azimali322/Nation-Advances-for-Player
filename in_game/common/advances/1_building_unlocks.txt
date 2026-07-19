@@ -10,7 +10,13 @@ cathedral_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				religion.group = religion_group:christian
 			}
@@ -122,7 +128,13 @@ porcelain_kiln_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				num_of_non_rural > 0
 				original_capital = { sub_continent = sub_continent:east_asia }
@@ -141,7 +153,13 @@ lacquerware_guild_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				num_of_non_rural > 0
 				original_capital = { sub_continent = sub_continent:east_asia }
@@ -990,7 +1008,13 @@ confucian_school_advance = {
 	requires = scriptorium_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				OR =  {
 				culture = { has_culture_group = culture_group:confucian_group }
@@ -1019,7 +1043,13 @@ confucian_academy_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+				}
+			}
 			AND = {
 				OR =  {
 				culture = { has_culture_group = culture_group:confucian_group }
@@ -1090,7 +1120,13 @@ order_headquarters_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				has_reform = government_reform:military_order_reform
 			}
@@ -1244,7 +1280,13 @@ lieutenancy_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -1261,7 +1303,13 @@ viceroyalty_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -1286,7 +1334,13 @@ fortress_church_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
 			AND = {
 				OR = {
 				AND = {

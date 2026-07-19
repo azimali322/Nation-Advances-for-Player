@@ -1,8 +1,0 @@
-﻿l_english:
- hafp_enable_all_advances: "Unlock All Advances (Handicap Advances for Player)"
- hafp_enable_all_advances_desc: "Makes every nation's unique advances available for you to research, alongside your own."
- hafp_enable_all_advances_desc_specific: "Makes every nation's unique advances available for you to research, alongside your own."
- hafp_disable_all_advances: "Remove Access to All Advances (Handicap Advances for Player)"
- hafp_disable_all_advances_desc: "Removes access to other nations' unique advances. Advances already researched are kept."
- hafp_disable_all_advances_desc_specific: "Removes access to other nations' unique advances. Advances already researched are kept."
- hafp_all_advances_enabled: "Has access to all advances"

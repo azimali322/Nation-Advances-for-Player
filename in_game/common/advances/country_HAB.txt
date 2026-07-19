@@ -2,7 +2,17 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+					has_variable = hafp_g_area_styria_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAB
@@ -20,7 +30,17 @@ austrian_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+					has_variable = hafp_g_area_styria_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAB
@@ -38,7 +58,18 @@ hab_expert_mountaineers = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+					has_variable = hafp_g_area_styria_area
+					has_variable = hafp_g_area_tirol_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAB
@@ -60,7 +91,17 @@ austrian_marriage_policy = {
 	content_priority = 800
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+					has_variable = hafp_g_area_styria_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAB
@@ -78,7 +119,18 @@ habsburg_dominance = {
 	content_priority = 1100
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+					has_variable = hafp_g_area_styria_area
+					has_variable = hafp_g_area_tirol_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAB
@@ -96,7 +148,18 @@ austrian_military_flexibility = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+					has_variable = hafp_g_area_styria_area
+					has_variable = hafp_g_area_tirol_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HAB
@@ -117,7 +180,16 @@ edict_of_restitution = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -131,7 +203,16 @@ austrian_court = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -146,7 +227,16 @@ geheimrat = {
 	content_priority = 500
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -162,7 +252,16 @@ hofkriegsrat = {
 	content_priority = 700
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -178,7 +277,16 @@ military_border = {
 	content_priority = 1000
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -194,7 +302,16 @@ austrian_ambition = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -209,7 +326,16 @@ austrian_state_industrialization = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -224,7 +350,16 @@ wiener_klassik = {
 	content_priority = 100
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -240,7 +375,16 @@ multicultural_empire = {
 	content_priority = 300
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}
@@ -254,7 +398,16 @@ imperial_artillery = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_austria_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAB
 			}

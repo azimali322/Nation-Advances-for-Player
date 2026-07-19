@@ -4,7 +4,20 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_abruzzo_area
+					has_variable = hafp_g_area_apulia_area
+					has_variable = hafp_g_area_basilicata_area
+					has_variable = hafp_g_area_campania_area
+					has_variable = hafp_g_area_sicily_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TWS
 			}
@@ -22,7 +35,20 @@ tws_ensure_loyal_families = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_abruzzo_area
+					has_variable = hafp_g_area_apulia_area
+					has_variable = hafp_g_area_basilicata_area
+					has_variable = hafp_g_area_campania_area
+					has_variable = hafp_g_area_sicily_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TWS
 			}
@@ -43,7 +69,20 @@ tws_revitalize_the_lands = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_abruzzo_area
+					has_variable = hafp_g_area_apulia_area
+					has_variable = hafp_g_area_basilicata_area
+					has_variable = hafp_g_area_campania_area
+					has_variable = hafp_g_area_sicily_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TWS
 			}
@@ -62,7 +101,20 @@ tws_oversea_ambitions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_abruzzo_area
+					has_variable = hafp_g_area_apulia_area
+					has_variable = hafp_g_area_basilicata_area
+					has_variable = hafp_g_area_campania_area
+					has_variable = hafp_g_area_sicily_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TWS
 			}
@@ -81,7 +133,20 @@ tws_capable_vicars = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_abruzzo_area
+					has_variable = hafp_g_area_apulia_area
+					has_variable = hafp_g_area_basilicata_area
+					has_variable = hafp_g_area_campania_area
+					has_variable = hafp_g_area_sicily_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TWS
 			}
@@ -100,7 +165,20 @@ tws_protect_the_coastline = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_abruzzo_area
+					has_variable = hafp_g_area_apulia_area
+					has_variable = hafp_g_area_basilicata_area
+					has_variable = hafp_g_area_campania_area
+					has_variable = hafp_g_area_sicily_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TWS
 			}

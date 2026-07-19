@@ -24,7 +24,13 @@ manufactories_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:manufactories
 			}
@@ -40,7 +46,13 @@ central_bank_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:banking
 			}
@@ -153,7 +165,13 @@ scientific_revolution_advance = {
 	depth = 0
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:scientific_revolution
 			}
@@ -337,7 +355,13 @@ military_revolution_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:military_revolution
 			}

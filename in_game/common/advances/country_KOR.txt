@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -18,7 +27,16 @@ kor_korean_artisanry = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -33,7 +51,16 @@ kor_korean_barracks_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -47,7 +74,16 @@ kor_metal_movable_type = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -61,7 +97,16 @@ kor_court_poetry = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -77,7 +122,16 @@ kor_gunpowder_engines = {
 	depth = 1
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -91,7 +145,16 @@ kor_korean_gunnery = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -106,7 +169,16 @@ kor_hwachas_advance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -120,7 +192,16 @@ kor_early_turtle_ship_advance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -134,7 +215,16 @@ kor_grand_code = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -148,7 +238,16 @@ kor_hangeul_alphabet = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -163,7 +262,16 @@ hyanyak_system = {
 	icon = vegetarianism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -177,7 +285,16 @@ kor_border_defense_council = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -191,7 +308,16 @@ kor_geobukseon = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -199,7 +325,16 @@ kor_geobukseon = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_advance = kor_early_turtle_ship_advance
 			}
@@ -213,7 +348,16 @@ kor_panokseon_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -226,7 +370,16 @@ kor_hopae_system = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -240,7 +393,16 @@ kor_korean_cannon = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}
@@ -255,7 +417,16 @@ kor_daedongbeop = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_area_gyeonggi_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOR
 			}

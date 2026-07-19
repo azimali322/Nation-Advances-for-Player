@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_smolensk_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMO
 			}
@@ -20,7 +29,16 @@ smolenskian_resolve = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_smolensk_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMO
 			}
@@ -38,7 +56,16 @@ link_the_steppes_trade = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_smolensk_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMO
 			}
@@ -55,7 +82,16 @@ hub_of_militarism = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_smolensk_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMO
 			}
@@ -74,7 +110,16 @@ armories_of_smolensk = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_smolensk_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SMO
 			}

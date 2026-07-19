@@ -22,7 +22,13 @@ new_world_advance = {
 	
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:new_world
 			}
@@ -257,7 +263,13 @@ printing_press_advance = {
 	depth = 0
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:printing_press
 			}
@@ -440,7 +452,13 @@ pike_and_shot_advance = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+				}
+			}
 			AND = {
 				has_embraced_institution = institution:pike_and_shot
 			}

@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -17,7 +26,16 @@ pal_castles_on_rhine = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -32,7 +50,16 @@ pal_cultivate_vineyards = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -48,7 +75,16 @@ pal_protection_of_exclaves = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -65,7 +101,16 @@ pal_fractured_territory = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -80,7 +125,16 @@ pal_a_just_ruler = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -95,7 +149,16 @@ pal_heaven_of_tolerance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -111,7 +174,16 @@ pal_mildness_to_the_commoners = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -129,7 +201,16 @@ pal_humanist_court = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -145,7 +226,16 @@ pal_heidelberg_catechism = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -160,7 +250,16 @@ pal_bilbiotheca_palatina = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}
@@ -176,7 +275,16 @@ palatinate_romanticism = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_upper_rhine_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PAL
 			}

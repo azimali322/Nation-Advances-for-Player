@@ -3,7 +3,14 @@
 	icon = mge_ghostly_horses_of_the_plain
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_nomadic
+				}
+			}
 			AND = {
 				is_former_or_current_nomadic_steppe_culture = yes
 			}

@@ -6,7 +6,14 @@ four_noble_truths = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -24,7 +31,14 @@ noble_eightfold_path = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -46,7 +60,14 @@ middle_way = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -67,7 +88,14 @@ three_jewels = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -88,7 +116,14 @@ buddhist_syncretism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -108,7 +143,14 @@ sutra = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion.group = religion_group:buddhist
@@ -128,7 +170,14 @@ buddhist_councils = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -149,7 +198,14 @@ buddhist_canon = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -170,7 +226,14 @@ pali_canon = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion = religion:theravada
 			}
@@ -187,7 +250,14 @@ buddhist_universities = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -208,7 +278,14 @@ xuanzang_travels = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion = religion:mahayana
 			}
@@ -229,7 +306,14 @@ silk_road_transmission = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -250,7 +334,14 @@ bodhisattva = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 				NOT = { religion = religion:bon }
@@ -268,7 +359,14 @@ avalokitesvara = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 				NOT = { religion = religion:bon }
@@ -286,7 +384,14 @@ maitreya = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -307,7 +412,14 @@ mount_meru = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -338,7 +450,14 @@ naraka = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 				NOT = { religion = religion:bon }
@@ -358,7 +477,14 @@ four_heavenly_kings = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 				NOT = { religion = religion:bon }
@@ -377,7 +503,14 @@ vegetarianism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -400,7 +533,14 @@ edicts_of_ashoka = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -422,7 +562,14 @@ five_precepts = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -448,7 +595,14 @@ monastic_communities = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -465,7 +619,14 @@ prestigious_schools = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -486,7 +647,14 @@ offerings = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -503,7 +671,14 @@ incense_burning = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -520,7 +695,14 @@ ascetic_practices = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -540,7 +722,14 @@ mindfulness = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -561,7 +750,14 @@ dana = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -583,7 +779,14 @@ ahimsa = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -605,7 +808,14 @@ resistance_to_persecution = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}
@@ -623,7 +833,14 @@ buddhist_meditation = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_buddhist
+				}
+			}
 			AND = {
 				religion.group = religion_group:buddhist
 			}

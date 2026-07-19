@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -14,7 +23,16 @@ assistance_to_the_suffering = {
 	age = age_1_traditions 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -26,7 +44,16 @@ reconquista_of_the_sea = {
 	age = age_2_renaissance 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -39,7 +66,16 @@ friends_in_need = {
 	age = age_2_renaissance 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -51,7 +87,16 @@ scourge_of_the_corsairs = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -63,7 +108,16 @@ crusader_tradition = {
 	age = age_3_discovery 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -75,7 +129,16 @@ ecumenical_defenders_of_christendom = {
 	age = age_4_reformation 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -87,7 +150,16 @@ a_neverending_crusade = {
 	age = age_4_reformation 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -99,7 +171,16 @@ inspired_builders = {
 	age = age_5_absolutism 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -113,7 +194,16 @@ the_right_hand_pope = {
 	icon = pap_head_of_the_church 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -126,7 +216,16 @@ a_brand_new_world = {
 	age = age_6_revolutions 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}
@@ -138,7 +237,16 @@ an_order_with_state = {
 	age = age_6_revolutions 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_aegean_archipelago_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KNI
 			}

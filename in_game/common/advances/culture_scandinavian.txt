@@ -2,7 +2,14 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_scandinavian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:scandinavian_group }
 			}
@@ -18,7 +25,14 @@ scandinavian_bergslag_privileges_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_scandinavian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:scandinavian_group }
 			}
@@ -34,7 +48,14 @@ scandinavian_thing_rights_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_scandinavian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:scandinavian_group }
 			}
@@ -50,7 +71,14 @@ scandinavian_tar_privileges_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_scandinavian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:scandinavian_group }
 			}

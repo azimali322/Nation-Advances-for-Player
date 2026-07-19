@@ -2,7 +2,16 @@
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_rhineland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOL
 			}
@@ -20,7 +29,16 @@ kol_school_of_painting = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_rhineland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOL
 			}

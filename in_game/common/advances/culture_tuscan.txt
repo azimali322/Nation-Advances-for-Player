@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:tuscan
@@ -26,7 +33,14 @@ florino_d_oro = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = FLO
 			}
@@ -45,7 +59,14 @@ luc_the_silk_republic = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = LUC
 			}
@@ -63,7 +84,14 @@ pis_maritimes_legacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = PIS
 			}
@@ -82,7 +110,14 @@ sie_artists = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = SIE
 			}
@@ -101,7 +136,14 @@ a_land_of_banks = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:tuscan
@@ -123,7 +165,14 @@ florentine_school = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = FLO
 			}
@@ -141,7 +190,14 @@ luc_the_towers_of_lucca = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = LUC
 			}
@@ -160,7 +216,14 @@ pis_the_university_of_pisa = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = PIS
 			}
@@ -179,7 +242,14 @@ sie_council_priori = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = SIE
 			}
@@ -201,7 +271,14 @@ tuscan_merchant_houses = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:tuscan
@@ -223,7 +300,14 @@ florentine_citizen_militia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = FLO
 			}
@@ -242,7 +326,14 @@ luc_the_city_walls = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = LUC
 			}
@@ -261,7 +352,14 @@ pis_marble_tradition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = PIS
@@ -273,7 +371,14 @@ pis_marble_tradition = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				custom_tooltip = {
@@ -301,7 +406,14 @@ sie_monte_dei_paschi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = SIE
 			}
@@ -321,7 +433,14 @@ tuscan_the_mezzadria = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:tuscan
@@ -343,7 +462,14 @@ flo_florentine_bastions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = FLO
 			}
@@ -362,7 +488,14 @@ luc_counter_reform_diplomacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = LUC
 			}
@@ -383,7 +516,14 @@ pis_natural_philosophy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = PIS
 			}
@@ -404,7 +544,14 @@ sie_santa_caterina = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = SIE
 			}
@@ -426,7 +573,14 @@ tuscan_literary_academies = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:tuscan
@@ -448,7 +602,14 @@ flo_camerata_fiorentina = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = FLO
 			}
@@ -467,7 +628,14 @@ luc_the_musical_tradition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = LUC
 			}
@@ -486,7 +654,14 @@ pis_medical_tradition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = PIS
 			}
@@ -504,7 +679,14 @@ sie_the_palio = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = SIE
 			}
@@ -524,7 +706,14 @@ tuscan_enlightenment = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:tuscan
@@ -546,7 +735,14 @@ flo_florentine_merchant_houses = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = FLO
 			}
@@ -565,7 +761,14 @@ luc_the_lucchese_constitution = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = LUC
 			}
@@ -584,7 +787,14 @@ pis_academic_prestige = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = PIS
 			}
@@ -603,7 +813,14 @@ sie_civic_pride = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_tuscan
+				}
+			}
 			AND = {
 				has_or_had_tag = SIE
 			}

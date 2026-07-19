@@ -5,7 +5,14 @@ jap_bushido = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -21,7 +28,14 @@ jap_land_of_the_rising_sun = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -37,7 +51,14 @@ jap_ancestral_legacy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -59,7 +80,14 @@ jap_shinobi = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -75,7 +103,14 @@ jap_head_hunting = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -91,7 +126,14 @@ jap_ichiban_yari = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -111,7 +153,14 @@ jap_ashigaru = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -127,7 +176,14 @@ jap_daiku_construction = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -143,7 +199,14 @@ jap_wandering_ronin = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -162,7 +225,14 @@ jap_reformed_land_holding = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -178,7 +248,14 @@ jap_jokamachi = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -200,7 +277,14 @@ jap_terakoya = {
 	icon = nanto_rokushuu
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}
@@ -219,7 +303,14 @@ jap_codified_bushido = {
 	icon = jap_bushido
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_japan
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:japanese_group }
 			}

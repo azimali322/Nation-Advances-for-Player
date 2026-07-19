@@ -4,7 +4,28 @@
 	requires = iron_working
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				has_or_had_tag = ROM
@@ -20,7 +41,28 @@ unlock_legionaries_2_advance = {
 	requires = armory_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				has_or_had_tag = ROM
@@ -36,7 +78,28 @@ unlock_legionaries_3_advance = {
 	requires = training_fields_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				has_or_had_tag = ROM
@@ -52,7 +115,28 @@ unlock_legionaries_4_advance = {
 	requires = barracks_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				has_or_had_tag = ROM
@@ -68,7 +152,28 @@ unlock_legionaries_5_advance = {
 	requires = military_revolution_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				has_or_had_tag = ROM
@@ -85,7 +190,28 @@ unlock_legionaries_6_advance = {
 	allow_children	= no
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_reg_carpathia_region
+					has_variable = hafp_g_reg_caucasus_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_south_german_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				has_or_had_tag = ROM
@@ -105,7 +231,16 @@ unlock_varangians_2_advance = {
 	requires = armory_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -120,7 +255,16 @@ unlock_varangians_3_advance = {
 	requires = training_fields_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -135,7 +279,16 @@ unlock_varangians_4_advance = {
 	requires = barracks_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -150,7 +303,16 @@ unlock_varangians_5_advance = {
 	requires = military_revolution_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -165,7 +327,16 @@ unlock_varangians_6_advance = {
 	requires = conscription_center_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_balkan_region
+					has_variable = hafp_g_area_thrace_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BYZ
 			}
@@ -184,7 +355,15 @@ unlock_byzantine_cataphracts_2_advance = {
 	requires = armory_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				culture = { has_culture_group = culture_group:greek_group }
@@ -200,7 +379,15 @@ unlock_byzantine_cataphracts_3_advance = {
 	requires = training_fields_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				culture = { has_culture_group = culture_group:greek_group }
@@ -216,7 +403,15 @@ unlock_byzantine_cataphracts_4_advance = {
 	requires = barracks_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				culture = { has_culture_group = culture_group:greek_group }
@@ -232,7 +427,15 @@ unlock_byzantine_cataphracts_5_advance = {
 	requires = military_revolution_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				culture = { has_culture_group = culture_group:greek_group }
@@ -249,7 +452,15 @@ unlock_byzantine_cataphracts_6_advance = {
 	allow_children	= no
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+				}
+			}
 			AND = {
 				has_societal_value = societal_value_type:latinization_vs_hellenization
 				culture = { has_culture_group = culture_group:greek_group }

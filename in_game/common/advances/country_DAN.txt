@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -20,7 +29,16 @@ dan_old_naval_traditions = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -37,7 +55,16 @@ dan_rulers_of_the_north = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -53,7 +80,16 @@ dan_reliance_mercenaries = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -69,7 +105,16 @@ dan_rentekammer_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -85,7 +130,16 @@ dan_royal_danish_navy = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -102,7 +156,16 @@ dan_danish_orthodoxy = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -119,7 +182,16 @@ dan_expanded_dockyards = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -134,7 +206,16 @@ dan_danish_legislation = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -150,7 +231,16 @@ dan_danish_agriculture = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -165,7 +255,16 @@ dan_royal_life_guards = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -181,7 +280,16 @@ dan_scanian_regiment = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -198,7 +306,16 @@ dan_admiralty_college = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}
@@ -215,7 +332,16 @@ dan_trading_economy = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_denmark_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAN
 			}

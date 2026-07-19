@@ -4,7 +4,16 @@ maj_bubu_and_jala = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -19,7 +28,16 @@ maj_home_of_the_sea_nomads = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -34,7 +52,16 @@ maj_jong_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -49,7 +76,16 @@ foreign_architectural_influence = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -66,7 +102,16 @@ maj_bajang_ratu = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -81,7 +126,16 @@ maj_late_karambit_warriors = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -96,7 +150,16 @@ maj_sumpah_palapa = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -113,7 +176,16 @@ maj_the_magic_arrow = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -130,7 +202,16 @@ maj_maritime_silk_road = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -146,7 +227,16 @@ maj_restore_candi_shrines = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -163,7 +253,16 @@ maj_the_ghali = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -172,7 +271,16 @@ maj_the_ghali = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_advance = maj_the_magic_arrow
 			}
@@ -189,7 +297,16 @@ maj_island_colonies = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}
@@ -204,7 +321,16 @@ maj_preservation_of_javanese_history = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAJ
 			}

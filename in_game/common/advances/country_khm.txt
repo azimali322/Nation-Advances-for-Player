@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -16,7 +25,16 @@ khm_royal_procession = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -32,7 +50,16 @@ khm_ballista_elephants = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -46,7 +73,16 @@ khm_great_builders = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -60,7 +96,16 @@ khm_recruitment_of_peasants = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -74,7 +119,16 @@ khm_foreign_production_skills = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -88,7 +142,16 @@ khm_utilize_the_rivers = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -102,7 +165,16 @@ khm_champa_mercenaries = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -116,7 +188,16 @@ khm_restore_angkor = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -131,7 +212,16 @@ khm_modern_navy = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -145,7 +235,16 @@ khm_invest_in_irrigation = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -159,7 +258,16 @@ khm_protection_from_raids = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}
@@ -173,7 +281,16 @@ khm_old_grudges = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_lower_mekong_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KHM
 			}

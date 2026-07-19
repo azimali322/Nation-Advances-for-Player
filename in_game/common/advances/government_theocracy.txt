@@ -6,7 +6,14 @@ servants_of_god = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -21,7 +28,14 @@ by_the_grace_of_god = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -37,7 +51,14 @@ state_of_clerics = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -57,7 +78,14 @@ friends_in_high_places = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -74,7 +102,14 @@ flesh_is_weak = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -92,7 +127,14 @@ alpha_and_omega = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -108,7 +150,14 @@ printing_of_religious_texts = {
 	icon = printing_press_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -126,7 +175,14 @@ conviction_of_sin = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -143,7 +199,14 @@ martyrs = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}
@@ -160,7 +223,14 @@ divine_passion = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_government_theocracy
+				}
+			}
 			AND = {
 				government = theocracy
 			}

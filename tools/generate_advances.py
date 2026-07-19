@@ -3,40 +3,58 @@
 
 For every advance in the vanilla `in_game/common/advances` folder this script
 rewrites the availability gates so the player can opt in to researching any
-nation's unique advances:
+nation's unique advances, at several granularities driven by CMM settings
+(see tools/build_groups.py for how advances are assigned to groups):
 
-  * `potential = { X }`  becomes  `potential = { OR = { has_variable = <VAR> AND = { X } } }`
-  * `allow = { X }`      becomes  `allow = { OR = { has_variable = <VAR> AND = { X } } }`
+  potential = { X }   becomes
+
+  potential = {
+      OR = {
+          AND = {
+              has_variable = hafp_enabled              # mod master switch
+              OR = {
+                  has_variable = hafp_all_advances_enabled   # unlock everything
+                  has_variable = hafp_g_age_<age>            # unlock whole era
+                  has_variable = hafp_g_cont_<continent>     # geography toggles
+                  has_variable = hafp_g_reg_<region>
+                  has_variable = hafp_g_area_<area>
+                  has_variable = hafp_g_f_<file>             # category toggles
+              }
+          }
+          AND = { X }                                  # original conditions
+      }
+  }
+
+  * `allow = { X }` gates get the same wrap (so institution requirements are
+    bypassed for unlocked advances, matching the original mod's behavior).
   * a top-level `government = <type>` gate is folded into the wrapped
-    `potential` block (the engine treats the key as a hard filter, so it must
-    be moved inside the OR for the unlock variable to bypass it)
+    `potential` (the engine treats the key as a hard filter otherwise).
+  * generic vanilla trees only get the master + era variables.
 
-Advances with none of those gates (and files containing only such advances)
-are left untouched and are not shipped by the mod, keeping the override
-footprint as small as possible.
-
-This reproduces the mechanism of the "All Advances Unlocked" workshop mod
-(id 3665391921) but regenerates everything from the local vanilla files, so
-re-running the script after a game patch re-baselines the mod automatically.
+Advances with none of those gates are left untouched; files with no changes
+are not shipped. Run tools/build_groups.py first (it writes
+tools/data/groups.json); re-run both after every game patch.
 
 Usage (defaults match a standard Steam install):
-  python tools/generate_advances.py \
-      --game "C:/Program Files (x86)/Steam/steamapps/common/Europa Universalis V" \
-      --out  "in_game/common/advances"
+  python tools/generate_advances.py [--game <EU5 folder>] [--out <folder>]
 """
 
 import argparse
+import json
 import os
 import re
 import sys
 
-UNLOCK_VARIABLE = "hafp_all_advances_enabled"
+MASTER_ENABLED = "hafp_enabled"
+UNLOCK_ALL = "hafp_all_advances_enabled"
 
 KEY_RE = re.compile(r"([A-Za-z0-9_.:]+)\s*=\s*(\{|\"[^\"]*\"|[^\s{}#]+)")
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+GROUPS_PATH = os.path.join(HERE, "data", "groups.json")
+
 
 def strip_positions(text):
-    """Return a bytearray mask: True where char is inside a comment or quote."""
     mask = [False] * len(text)
     in_comment = False
     in_quote = False
@@ -59,9 +77,21 @@ def strip_positions(text):
     return mask
 
 
+def match_brace(text, mask, open_brace):
+    depth = 0
+    for i in range(open_brace, len(text)):
+        if mask[i]:
+            continue
+        if text[i] == "{":
+            depth += 1
+        elif text[i] == "}":
+            depth -= 1
+            if depth == 0:
+                return i
+    raise ValueError("Unbalanced braces at offset %d" % open_brace)
+
+
 def find_blocks(text, mask, start, end):
-    """Yield (name, name_start, open_brace, close_brace) for `name = { ... }`
-    blocks at brace-depth 0 within [start, end)."""
     depth = 0
     i = start
     while i < end:
@@ -87,22 +117,7 @@ def find_blocks(text, mask, start, end):
         i += 1
 
 
-def match_brace(text, mask, open_brace):
-    depth = 0
-    for i in range(open_brace, len(text)):
-        if mask[i]:
-            continue
-        if text[i] == "{":
-            depth += 1
-        elif text[i] == "}":
-            depth -= 1
-            if depth == 0:
-                return i
-    raise ValueError("Unbalanced braces at offset %d" % open_brace)
-
-
 def find_scalar_keys(text, mask, start, end, key):
-    """Yield (key_start, value_end) for scalar `key = value` at depth 0 in range."""
     depth = 0
     i = start
     results = []
@@ -130,17 +145,16 @@ def find_scalar_keys(text, mask, start, end, key):
     return results
 
 
-def wrap_gate(inner, extra_lines=None):
+def wrap_gate(inner, unlock_vars, extra_lines=None):
     """Build the wrapped gate body from the original inner content."""
-    extra = ""
+    body = "\n\t\tOR = {\n\t\t\tAND = {\n\t\t\t\thas_variable = %s\n\t\t\t\tOR = {" % MASTER_ENABLED
+    for var in unlock_vars:
+        body += "\n\t\t\t\t\thas_variable = %s" % var
+    body += "\n\t\t\t\t}\n\t\t\t}\n\t\t\tAND = {"
     if extra_lines:
-        extra = "".join("\n\t\t\t\t%s" % line for line in extra_lines)
-    inner = inner.strip("\r\n")
-    inner = inner.strip() if inner.strip() else ""
-    body = "\n\t\tOR = {\n\t\t\thas_variable = %s\n\t\t\tAND = {%s" % (
-        UNLOCK_VARIABLE,
-        extra,
-    )
+        for line in extra_lines:
+            body += "\n\t\t\t\t%s" % line
+    inner = inner.strip()
     if inner:
         for line in inner.splitlines():
             body += "\n\t\t\t\t" + line.strip()
@@ -148,10 +162,7 @@ def wrap_gate(inner, extra_lines=None):
     return body
 
 
-def process_advance(block_text):
-    """Rewrite one advance body (text between its outer braces).
-
-    Returns (new_text, changed)."""
+def process_advance(adv_id, block_text, unlock_vars):
     mask = strip_positions(block_text)
 
     gov_entries = find_scalar_keys(block_text, mask, 0, len(block_text), "government")
@@ -166,21 +177,18 @@ def process_advance(block_text):
     if not gov_entries and potential_span is None and allow_span is None:
         return block_text, False
 
-    edits = []  # (start, end, replacement)
-
+    edits = []
     gov_lines = ["government = %s" % g[2] for g in gov_entries]
 
     if potential_span is not None:
         kstart, obrace, cbrace = potential_span
         inner = block_text[obrace + 1 : cbrace]
-        edits.append((obrace + 1, cbrace, wrap_gate(inner, gov_lines)))
-        # remove the original top-level government keys
+        edits.append((obrace + 1, cbrace, wrap_gate(inner, unlock_vars, gov_lines)))
         for gstart, gend, _ in gov_entries:
             edits.append((gstart, gend, ""))
     elif gov_entries:
-        # no potential block: synthesize one in place of the first government key
         gstart, gend, _ = gov_entries[0]
-        replacement = "potential = {%s}" % wrap_gate("", gov_lines)
+        replacement = "potential = {%s}" % wrap_gate("", unlock_vars, gov_lines)
         edits.append((gstart, gend, replacement))
         for extra_start, extra_end, _ in gov_entries[1:]:
             edits.append((extra_start, extra_end, ""))
@@ -188,7 +196,7 @@ def process_advance(block_text):
     if allow_span is not None:
         kstart, obrace, cbrace = allow_span
         inner = block_text[obrace + 1 : cbrace]
-        edits.append((obrace + 1, cbrace, wrap_gate(inner)))
+        edits.append((obrace + 1, cbrace, wrap_gate(inner, unlock_vars)))
 
     edits.sort(key=lambda e: e[0], reverse=True)
     new_text = block_text
@@ -197,15 +205,38 @@ def process_advance(block_text):
     return new_text, True
 
 
-def process_file(text):
-    """Rewrite a whole advances file. Returns (new_text, num_changed)."""
+def unlock_vars_for(adv_id, body, file_entry, fname):
+    """The list of has_variable unlocks for this advance, in a stable order."""
+    unlock = [UNLOCK_ALL]
+    age_m = re.search(r"\bage\s*=\s*(age_[a-z0-9_]+)", body)
+    if age_m:
+        unlock.append("hafp_g_age_%s" % age_m.group(1))
+    if file_entry is None:
+        return unlock  # generic vanilla tree: master + era only
+
+    kind = file_entry["kind"]
+    adv = file_entry["advances"].get(adv_id, {})
+    if kind in ("nation", "special"):
+        for c in adv.get("continents", []):
+            unlock.append("hafp_g_cont_%s" % c)
+        for r in adv.get("regions", []):
+            unlock.append("hafp_g_reg_%s" % r)
+        for a in adv.get("areas", []):
+            unlock.append("hafp_g_area_%s" % a)
+    if kind in ("culture", "culture_group", "religion", "government", "special"):
+        unlock.append("hafp_g_f_%s" % fname[:-4])
+    return unlock
+
+
+def process_file(text, file_entry, fname):
     mask = strip_positions(text)
     changed = 0
     pieces = []
     last = 0
     for name, kstart, obrace, cbrace in find_blocks(text, mask, 0, len(text)):
         body = text[obrace + 1 : cbrace]
-        new_body, did = process_advance(body)
+        unlock = unlock_vars_for(name, body, file_entry, fname)
+        new_body, did = process_advance(name, body, unlock)
         pieces.append(text[last : obrace + 1])
         pieces.append(new_body)
         last = cbrace
@@ -224,7 +255,7 @@ def main():
     )
     parser.add_argument(
         "--out",
-        default=os.path.join(os.path.dirname(__file__), "..", "in_game", "common", "advances"),
+        default=os.path.join(HERE, "..", "in_game", "common", "advances"),
         help="Output folder for the generated overrides",
     )
     args = parser.parse_args()
@@ -232,6 +263,10 @@ def main():
     src = os.path.join(args.game, "game", "in_game", "common", "advances")
     if not os.path.isdir(src):
         sys.exit("Vanilla advances folder not found: %s" % src)
+    if not os.path.isfile(GROUPS_PATH):
+        sys.exit("Missing %s - run tools/build_groups.py first" % GROUPS_PATH)
+    with open(GROUPS_PATH, encoding="utf-8") as fh:
+        groups = json.load(fh)
     os.makedirs(args.out, exist_ok=True)
 
     total_files = 0
@@ -242,7 +277,8 @@ def main():
             continue
         with open(os.path.join(src, fname), "r", encoding="utf-8-sig") as fh:
             text = fh.read()
-        new_text, changed = process_file(text)
+        file_entry = groups["files"].get(fname)
+        new_text, changed = process_file(text, file_entry, fname)
         if changed == 0:
             skipped.append(fname)
             continue
@@ -250,10 +286,7 @@ def main():
             fh.write(new_text)
         total_files += 1
         total_advances += changed
-        print("  %-45s %3d advances unlocked" % (fname, changed))
-
-    print()
-    print("Wrote %d files, %d advances gated behind %s" % (total_files, total_advances, UNLOCK_VARIABLE))
+    print("Wrote %d files, %d advances gated" % (total_files, total_advances))
     print("Skipped %d files with no availability gates: %s" % (len(skipped), ", ".join(skipped)))
 
 

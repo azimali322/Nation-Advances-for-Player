@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_red_river_delta_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAI
 			}
@@ -19,7 +28,16 @@ nghia_quan = {	#Nghĩa Quân
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_area_red_river_delta_area
+				}
+			}
 			AND = {
 				has_or_had_tag = DAI
 			}

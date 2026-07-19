@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ENG
 			}
@@ -16,7 +25,16 @@ english_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ENG
 			}
@@ -30,7 +48,16 @@ magna_carta_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ENG
 			}
@@ -45,7 +72,17 @@ unlock_early_longbowmen_advance = {
 	requires = city_building_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+					has_variable = hafp_g_area_wales_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WLS
@@ -68,7 +105,17 @@ unlock_longbowmen_advance = {
 	requires = unlock_men_at_arms_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+					has_variable = hafp_g_area_wales_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WLS
@@ -92,7 +139,17 @@ unlock_late_longbowmen_advance = {
 	requires = unlock_halberdiers_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+					has_variable = hafp_g_area_wales_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = WLS
@@ -113,7 +170,16 @@ royal_navy = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -129,7 +195,16 @@ secretaries_of_state = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -144,7 +219,16 @@ eltham_ordinance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -161,7 +245,16 @@ sick_and_hurt_board = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -177,7 +270,16 @@ british_bill_of_rights = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -193,7 +295,16 @@ navigation_acts = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -209,7 +320,16 @@ inigo_architecture = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -220,7 +340,16 @@ inigo_architecture = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = inigo_architecture }
 			}
@@ -235,7 +364,16 @@ sailing_and_fighting_instructions = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -246,7 +384,16 @@ sailing_and_fighting_instructions = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = sailing_and_fighting_instructions }
 			}
@@ -264,7 +411,16 @@ coke_smelting = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -275,7 +431,16 @@ coke_smelting = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				custom_tooltip = {
 				text = unlocked_advance_coke_smelting_tt
@@ -295,7 +460,16 @@ eng_red_coats = {
 	requires = unlock_fusiliers_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -312,7 +486,16 @@ eng_experimental_riflemen = {
 	requires = eng_red_coats
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -330,7 +513,16 @@ english_ambition = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -345,7 +537,16 @@ water_frame = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ENG
@@ -356,7 +557,16 @@ water_frame = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_great_britain_region
+					has_variable = hafp_g_area_home_counties_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = water_frame }
 			}

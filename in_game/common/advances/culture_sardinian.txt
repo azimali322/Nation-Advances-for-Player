@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sardinian
@@ -24,7 +31,14 @@ sar_the_giudicati = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				has_or_had_tag = SAR
 			}
@@ -45,7 +59,14 @@ sardinian_the_artizanu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sardinian
@@ -67,7 +88,14 @@ sar_the_stamenti = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				has_or_had_tag = SAR
 			}
@@ -88,7 +116,14 @@ sardinian_the_ademprivio = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sardinian
@@ -110,7 +145,14 @@ sar_university_of_cagliari = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				has_or_had_tag = SAR
 			}
@@ -129,7 +171,14 @@ sardinian_the_turres_costeras = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sardinian
@@ -151,7 +200,14 @@ sar_sardinian_tercios = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				has_or_had_tag = SAR
 			}
@@ -171,7 +227,14 @@ sardinian_the_hymnu_sardu = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sardinian
@@ -193,7 +256,14 @@ sar_the_cavalcadores = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				has_or_had_tag = SAR
 			}
@@ -212,7 +282,14 @@ sardinian_the_industrial_transition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:sardinian
@@ -233,7 +310,14 @@ sar_enlightened_reforms = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_sardinian
+				}
+			}
 			AND = {
 				has_or_had_tag = SAR
 			}

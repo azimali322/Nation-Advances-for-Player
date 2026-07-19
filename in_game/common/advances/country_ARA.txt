@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -23,7 +32,16 @@ ara_desperta_ferro = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -45,7 +63,16 @@ ara_a_mediterranean_trade_power = {
 	icon = a_central_power
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -66,7 +93,16 @@ ara_fleet_ordinances = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -85,7 +121,16 @@ ara_valencian_golden_age = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -105,7 +150,16 @@ ara_remenca = {
 	age = age_3_discovery 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -125,7 +179,16 @@ ara_chartered_merchant_companies = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -144,7 +207,16 @@ ara_stronger_united = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -163,7 +235,16 @@ ara_constellation_cities = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -183,7 +264,16 @@ ara_protection_of_the_little_folk = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -202,7 +292,16 @@ ara_gunpowder_souls = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -221,7 +320,16 @@ ara_mossos_esquadra = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA

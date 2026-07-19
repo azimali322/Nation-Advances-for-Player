@@ -8,7 +8,14 @@ arabian_horsemanship = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_arabian
+				}
+			}
 			AND = {
 				culture ?= { has_culture_group = culture_group:arabian_group }
 			}
@@ -29,7 +36,14 @@ arabian_desert_warfare = {
 	icon = glorious_arms
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_arabian
+				}
+			}
 			AND = {
 				culture ?= { has_culture_group = culture_group:arabian_group }
 			}
@@ -51,7 +65,14 @@ arabia_cradle_of_islam = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_arabian
+				}
+			}
 			AND = {
 				has_or_had_tag = AIA
 				religion.group = religion_group:muslim
@@ -75,7 +96,14 @@ arabia_red_sea_trade = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_arabian
+				}
+			}
 			AND = {
 				has_or_had_tag = AIA
 			}

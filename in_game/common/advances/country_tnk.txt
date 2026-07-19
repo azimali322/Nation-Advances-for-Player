@@ -5,7 +5,16 @@ tnk_legitimate_rule = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_tamil_land_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNK
 			}
@@ -18,7 +27,16 @@ tnk_resist_invaders = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_tamil_land_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNK
 			}
@@ -35,7 +53,16 @@ tnk_pearls_of_india = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_tamil_land_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNK
 			}
@@ -49,7 +76,16 @@ tnk_expertise_in_conflicts = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_tamil_land_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNK
 			}
@@ -67,7 +103,16 @@ tnk_imperial_legacy = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_area_tamil_land_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TNK
 			}

@@ -1,7 +1,16 @@
 ﻿LIV_crusader_forts = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_baltic_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIV
 			}
@@ -20,7 +29,16 @@ LIV_a_order_knights = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_baltic_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIV
 			}
@@ -36,7 +54,16 @@ LIV_a_order_knights_2 = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_baltic_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIV
 			}
@@ -55,7 +82,21 @@ lva_baltic_forestry = {
 	global_lumber_output_modifier = 0.1
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_baltic_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_west_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LVA
 			}
@@ -70,7 +111,21 @@ lva_baltic_forts = {
 	fort_maintenance_efficiency = 0.20
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_baltic_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_west_novgorod_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LVA
 			}

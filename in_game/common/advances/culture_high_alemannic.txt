@@ -3,7 +3,14 @@ swiss_oath_of_rutli = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -17,7 +24,14 @@ swiss_halberd_infantry = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -31,7 +45,14 @@ swiss_alpine_passes = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -46,7 +67,14 @@ swiss_eternal_alliance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:swiss_group }
 				OR = {
@@ -74,7 +102,14 @@ swiss_mercenaries = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -89,7 +124,14 @@ the_swiss_confederation = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -104,7 +146,14 @@ swiss_reislaufer = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -118,7 +167,14 @@ swiss_recovery_and_prosperity = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -134,7 +190,14 @@ alpine_defensiveness = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -150,7 +213,14 @@ swiss_religious_refuge = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -165,7 +235,14 @@ swiss_tolerance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -179,7 +256,14 @@ swiss_clockwork = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -194,7 +278,14 @@ swiss_ambition = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}
@@ -208,7 +299,14 @@ swiss_banking = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_high_alemannic
+				}
+			}
 			AND = {
 				is_swiss_for_advances = yes
 			}

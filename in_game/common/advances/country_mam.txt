@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -19,7 +28,16 @@ karimi_merchants = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -35,7 +53,16 @@ mamluk_soldiers = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -51,7 +78,16 @@ mamluk_halqah = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -66,7 +102,16 @@ reform_the_mamluk_corps = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -82,7 +127,16 @@ kashif = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -97,7 +151,16 @@ royal_mamluks = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -113,7 +176,16 @@ red_sea_trade = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -129,7 +201,16 @@ masters_of_the_nile = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -146,7 +227,16 @@ indian_networks = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -162,7 +252,16 @@ study_foreign_gunpowder_techniques = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -178,7 +277,16 @@ port_customs = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}
@@ -193,7 +301,16 @@ secure_mediterranean_ports = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_area_lower_egypt_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAM
 			}

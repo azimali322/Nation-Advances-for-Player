@@ -4,7 +4,20 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_reg_great_lakes_region
+					has_variable = hafp_g_reg_madagascar_region
+					has_variable = hafp_g_reg_nubia_region
+					has_variable = hafp_g_reg_somalia_region
+					has_variable = hafp_g_reg_swahili_coast_region
+				}
+			}
 			AND = {
 				original_capital ?= {
 				sub_continent = sub_continent:east_africa

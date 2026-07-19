@@ -6,7 +6,14 @@ the_pentarchy = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -23,7 +30,14 @@ imperial_creed = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -44,7 +58,14 @@ filioque_issue = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -61,7 +82,14 @@ septuagint = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -78,7 +106,14 @@ anagignoskomena = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -98,7 +133,14 @@ religious_icon_power_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -115,7 +157,14 @@ church_guidance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -132,7 +181,14 @@ unchanging_tradition = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -149,7 +205,14 @@ church_councils = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:orthodox
@@ -169,7 +232,14 @@ greek_rite = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -189,7 +259,14 @@ physical_body_of_christ = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -206,7 +283,14 @@ sight_veneration = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -223,7 +307,14 @@ theotokos = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:orthodox
@@ -243,7 +334,14 @@ heavenly_architecture = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -260,7 +358,14 @@ iconostasis = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -280,7 +385,14 @@ julian_calendar = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:orthodox
@@ -300,7 +412,14 @@ paschal_cycle = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -317,7 +436,14 @@ oktoechos = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -334,7 +460,14 @@ prestigious_monasticism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -351,7 +484,14 @@ national_rites = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:orthodox
@@ -374,7 +514,14 @@ heirs_of_rome = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -391,7 +538,14 @@ legacy_of_saint_andrew = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -408,7 +562,14 @@ christianization_of_the_slavs = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -425,7 +586,14 @@ cyril_and_methodius = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -443,7 +611,14 @@ interaction_between_church_and_state = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -467,7 +642,14 @@ outwards_expansion = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -484,7 +666,14 @@ justified_holy_wars = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -501,7 +690,14 @@ resistance_to_the_infidels = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				religion = religion:orthodox
 			}
@@ -518,7 +714,14 @@ eastern_ecumenism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:orthodox
@@ -539,7 +742,14 @@ structured_patriarchates = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_orthodox
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:orthodox

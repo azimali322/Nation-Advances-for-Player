@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:emilian
@@ -25,7 +32,14 @@ blg_la_dota = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = BLG
 			}
@@ -44,7 +58,14 @@ fer_the_curtesia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = FER
 			}
@@ -63,7 +84,14 @@ man_casa_gonzaga = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MAN
 			}
@@ -84,7 +112,14 @@ mod_the_ancient_commune = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MOD
 			}
@@ -105,7 +140,14 @@ par_commune_of_parma = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAR
 			}
@@ -124,7 +166,14 @@ pcz_commune_of_piacenza = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PCZ
 			}
@@ -143,7 +192,14 @@ emilian_the_via_emilia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:emilian
@@ -165,7 +221,14 @@ blg_la_grasa = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = BLG
 			}
@@ -184,7 +247,14 @@ fer_studio_di_ferrara = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = FER
 			}
@@ -203,7 +273,14 @@ man_gonzaga_patronage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MAN
 			}
@@ -222,7 +299,14 @@ mod_este_textiles = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MOD
 			}
@@ -241,7 +325,14 @@ par_the_bishop_of_parma = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAR
 			}
@@ -262,7 +353,14 @@ pcz_collegium_placentinum = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PCZ
 			}
@@ -281,7 +379,14 @@ emilian_dispenza_emigliana = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:emilian
@@ -303,7 +408,14 @@ blg_la_rassa = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = BLG
 			}
@@ -321,7 +433,14 @@ fer_ladizion_erculea = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = FER
 			}
@@ -341,7 +460,14 @@ man_studium_mantovano = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MAN
 			}
@@ -360,7 +486,14 @@ mod_estense_library = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MOD
 			}
@@ -379,7 +512,14 @@ par_the_new_duchy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAR
 			}
@@ -398,7 +538,14 @@ pcz_piacentine_soldiery = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PCZ
 			}
@@ -417,7 +564,14 @@ emilian_the_tera_cruda = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:emilian
@@ -439,7 +593,14 @@ blg_lacademia_di_incamine = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = BLG
 			}
@@ -458,7 +619,14 @@ fer_court_of_letters = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = FER
 			}
@@ -477,7 +645,14 @@ man_palazzo_te = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MAN
 			}
@@ -496,7 +671,14 @@ mod_palazzo_ducale = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MOD
 			}
@@ -515,7 +697,14 @@ par_the_opera_obsession = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAR
 			}
@@ -534,7 +723,14 @@ pcz_the_citadel = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PCZ
 			}
@@ -553,7 +749,14 @@ emilian_la_mzura_dal_sol = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:emilian
@@ -574,7 +777,14 @@ blg_the_bolognese_school_of_music = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = BLG
 			}
@@ -593,7 +803,14 @@ fer_ferrarese_silk = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = FER
 			}
@@ -611,7 +828,14 @@ man_monteverdi_orfeo = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MAN
 			}
@@ -629,7 +853,14 @@ mod_diplomazia_balsamica = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MOD
 			}
@@ -648,7 +879,14 @@ par_prosciutto_e_parmigiano = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAR
 			}
@@ -667,7 +905,14 @@ pcz_administrative_reform = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PCZ
 			}
@@ -686,7 +931,14 @@ emilian_al_melodram = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:emilian
@@ -708,7 +960,14 @@ blg_galvanism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = BLG
 			}
@@ -727,7 +986,14 @@ fer_po_delta_reclamation = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = FER
 			}
@@ -746,7 +1012,14 @@ man_po_agriculture = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MAN
 			}
@@ -765,7 +1038,14 @@ mod_accademia_militare = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = MOD
 			}
@@ -784,7 +1064,14 @@ par_enlightened_duchy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PAR
 			}
@@ -803,7 +1090,14 @@ pcz_new_industry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_emilian
+				}
+			}
 			AND = {
 				has_or_had_tag = PCZ
 			}

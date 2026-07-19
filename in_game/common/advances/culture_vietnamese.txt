@@ -6,7 +6,14 @@ dai_vietnamese_architecture = {	#https://en.wikipedia.org/wiki/Vietnamese_archit
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -22,7 +29,14 @@ dai_hung_dao_trans_military_feats = { #https://en.wikipedia.org/wiki/Tr%E1%BA%A7
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -41,7 +55,14 @@ dai_nha_nhac = { #https://en.wikipedia.org/wiki/Nh%C3%A3_nh%E1%BA%A1c
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -58,7 +79,14 @@ dai_confucian_administration = { #https://en.wikipedia.org/wiki/History_of_Vietn
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				government_type = government_type:monarchy
 				OR = {
@@ -78,7 +106,14 @@ dai_giao_chi_arquebus = {	#https://en.wikipedia.org/wiki/Jiaozhi_arquebus
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -95,7 +130,14 @@ dai_ca_tru = { #https://en.wikipedia.org/wiki/Ch%C3%A8o / https://en.wikipedia.o
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -114,7 +156,14 @@ dai_trade_advance = { #https://en.wikipedia.org/wiki/Japanese_Bridge
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -133,7 +182,14 @@ dai_literary_reform = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -149,7 +205,14 @@ dai_don_dien = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture
@@ -168,7 +231,14 @@ dai_thuan_thien = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_vietnamese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:vietnamese_culture

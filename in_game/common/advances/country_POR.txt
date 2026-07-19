@@ -4,7 +4,16 @@ por_battle_ourique = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -24,7 +33,16 @@ por_establishment_portuguese_navy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -43,7 +61,16 @@ por_estimulate_rural_areas = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -62,7 +89,16 @@ por_pursuing_waves = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -82,7 +118,16 @@ por_bombardeiros = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -102,7 +147,16 @@ por_feitorias = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -123,7 +177,16 @@ por_ordenancas = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -142,7 +205,16 @@ por_the_bandeirantes = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -161,7 +233,16 @@ por_colonial_governors = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -180,7 +261,16 @@ por_royal_absolutism = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -198,7 +288,16 @@ por_royal_military_academy = {
 	age = age_6_revolutions 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR
@@ -217,7 +316,16 @@ por_vinho_porto = {
 	age = age_6_revolutions 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR

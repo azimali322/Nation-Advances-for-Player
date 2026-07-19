@@ -3,7 +3,17 @@ bavarian_legitimacy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -26,7 +36,17 @@ bavarian_imperial_knights = {
 	icon = bavarian_stem_duchy
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -48,7 +68,17 @@ exploit_the_alpine_trade = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -72,7 +102,17 @@ bavarian_brewing_expertise = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -96,7 +136,17 @@ bavarian_culture_buildings = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -120,7 +170,17 @@ bavarian_culture_buildings = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -144,7 +204,17 @@ bavarian_zelousness = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -168,7 +238,17 @@ bavarian_hofkriegsrat = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -193,7 +273,17 @@ bavarian_flexible_diplomats = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -217,7 +307,17 @@ foundation_of_bavarian_army = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -241,7 +341,17 @@ bavarian_coinage = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV
@@ -265,7 +375,17 @@ bavarian_purity_law = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bavaria_area
+					has_variable = hafp_g_area_salzburg_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = UBV

@@ -2,7 +2,17 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -20,7 +30,17 @@ a_mining_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -38,7 +58,17 @@ meissner_groschen = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -54,7 +84,17 @@ a_resilient_soul = {
 	icon = bonded_by_loyalty
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -69,7 +109,17 @@ saxon_court = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -84,7 +134,17 @@ a_tolerant_society = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -99,7 +159,17 @@ furstenschule = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -115,7 +185,17 @@ bonded_by_loyalty = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -132,7 +212,17 @@ meissner_porcelain = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -148,7 +238,17 @@ saxon_baroque = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -163,7 +263,17 @@ retablissement = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI
@@ -178,7 +288,17 @@ saxon_industrialization = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_lower_saxony_area
+					has_variable = hafp_g_area_upper_saxony_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MEI

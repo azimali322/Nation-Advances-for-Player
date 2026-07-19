@@ -5,7 +5,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:ligurian
@@ -28,7 +35,14 @@ genoese_maritime_diplomacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				has_or_had_tag = GEN
 			}
@@ -50,7 +64,14 @@ ligurian_merchant_diaspora = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:ligurian
@@ -73,7 +94,14 @@ bank_of_saint_george = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = GEN
@@ -85,7 +113,14 @@ bank_of_saint_george = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				custom_tooltip = {
@@ -111,7 +146,14 @@ ligurian_spirit_of_navigation = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:ligurian
@@ -134,7 +176,14 @@ genoese_flexibility = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				has_or_had_tag = GEN
 			}
@@ -156,7 +205,14 @@ ligurian_artisan_craft = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:ligurian
@@ -179,7 +235,14 @@ the_age_of_the_genoese = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				has_or_had_tag = GEN
 			}
@@ -199,7 +262,14 @@ ligurian_communal_councils = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:ligurian
@@ -221,7 +291,14 @@ genoese_school = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				has_or_had_tag = GEN
 			}
@@ -241,7 +318,14 @@ ligurian_enlightenment = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:ligurian
@@ -263,7 +347,14 @@ gen_free_port = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_ligurian
+				}
+			}
 			AND = {
 				has_or_had_tag = GEN
 			}

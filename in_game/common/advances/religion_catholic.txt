@@ -4,7 +4,14 @@ res_publica_christiana = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion.group = religion_group:christian
 			}
@@ -22,7 +29,14 @@ roman_orthodoxy = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -39,7 +53,14 @@ marian_devotion = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -59,7 +80,14 @@ crusading_knights = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -77,7 +105,14 @@ catholic_pilgrimages = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -95,7 +130,14 @@ inquisition_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -112,7 +154,14 @@ preaching_friars = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -129,7 +178,14 @@ devotio_moderna = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -146,7 +202,14 @@ denounce_heretics = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -163,7 +226,14 @@ beguins_and_beghards = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -182,7 +252,14 @@ conquistador_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 				culture = { has_culture_group = culture_group:iberian_group }
@@ -201,7 +278,14 @@ grand_display_of_faith = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -218,7 +302,14 @@ monastery_productions = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -236,7 +327,14 @@ reform_church_music = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -253,7 +351,14 @@ frequent_councils = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -271,7 +376,14 @@ mendicant_orders = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -291,7 +403,14 @@ exsurge_domine = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -308,7 +427,14 @@ confutatio_augustana = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -326,7 +452,14 @@ roman_catechism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -343,7 +476,14 @@ oversea_missions = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -360,7 +500,14 @@ baptism_books = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -379,7 +526,14 @@ second_scholasticism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -397,7 +551,14 @@ catholic_sunday_schools = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -414,7 +575,14 @@ index_librorum_prohibitorum = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -432,7 +600,14 @@ catholic_cuius_regio_eius_religio = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -449,7 +624,14 @@ embellish_baroque_art = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -468,7 +650,14 @@ national_churches = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -486,7 +675,14 @@ entrenched_church = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -504,7 +700,14 @@ catholic_enlightenment = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -521,7 +724,14 @@ divine_church_music = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}
@@ -538,7 +748,14 @@ continue_missionary_works = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_religion_catholic
+				}
+			}
 			AND = {
 				religion = religion:catholic
 			}

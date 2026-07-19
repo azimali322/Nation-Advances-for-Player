@@ -2,7 +2,14 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				government = republic
 				culture = { has_culture_group = culture_group:russian_group }
@@ -19,7 +26,14 @@ russian_integration = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -32,7 +46,14 @@ russian_resiliance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -46,7 +67,14 @@ land_of_the_rus = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -59,7 +87,14 @@ the_mestnichestvo_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -72,7 +107,14 @@ voivode_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -86,7 +128,14 @@ siberian_frontier = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -102,7 +151,14 @@ russian_artillery_yard = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -118,7 +174,14 @@ table_of_ranks = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -132,7 +195,14 @@ ostrog_advance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}
@@ -145,7 +215,14 @@ russian_legitimization = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_russian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:russian_group }
 			}

@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_matrega_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CIR
@@ -21,7 +30,16 @@ cir_mercenary_employment = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_matrega_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CIR
@@ -40,7 +58,16 @@ cir_horsemen_of_the_steppe = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_matrega_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CIR
@@ -60,7 +87,16 @@ cir_city_and_fortress = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_matrega_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CIR
@@ -83,7 +119,16 @@ cir_grand_prince_of_circassia = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_matrega_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CIR
@@ -103,7 +148,16 @@ cir_multireligious_society = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_matrega_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CIR

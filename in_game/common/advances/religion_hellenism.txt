@@ -5,7 +5,14 @@ epic_poetry_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -24,7 +31,14 @@ makaron_nisoi_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -44,7 +58,14 @@ religious_dialects_hellenic_faith_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -63,7 +84,14 @@ offerings_to_the_moirai_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -81,7 +109,14 @@ on_hubris_and_morality_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -101,7 +136,14 @@ variety_in_divine_identity_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -119,7 +161,14 @@ mystai_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -140,7 +189,14 @@ preserve_theogony_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion
@@ -160,7 +216,14 @@ unify_priestly_class_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_religion_hellenism
+				}
+			}
 			AND = {
 				has_dlc = "d008_fate_of_the_phoenix"
 				religion = religion:hellenism_religion

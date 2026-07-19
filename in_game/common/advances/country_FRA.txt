@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -17,7 +26,16 @@ french_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -31,7 +49,16 @@ french_language_in_all_courts = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -44,7 +71,16 @@ elan = {
 	content_priority = 1100
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -59,7 +95,16 @@ estates_general = {
 	country_cabinet_efficiency = 0.1
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -72,7 +117,16 @@ fra_gendarmes = {
 	content_priority = 500
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -88,7 +142,16 @@ fra_integration_of_new_territories = {
 	content_priority = 200
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -101,7 +164,16 @@ fra_reliance_on_privateers = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -115,7 +187,16 @@ fra_reformation_of_taxation = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -128,7 +209,16 @@ fra_school_of_fontainebleau = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -143,7 +233,16 @@ vauban_fortifications = {
 	content_priority = 1000
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -157,7 +256,16 @@ the_philosophes = {
 	content_priority = 300
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -171,7 +279,16 @@ fra_expansion_of_france = {
 	content_priority = 700
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -184,7 +301,16 @@ liberty_egalite_fraternity = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 				is_revolutionary = yes
@@ -200,7 +326,16 @@ fra_code_civil = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}
@@ -212,7 +347,16 @@ french_ambition = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_ile_de_france_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FRA
 			}

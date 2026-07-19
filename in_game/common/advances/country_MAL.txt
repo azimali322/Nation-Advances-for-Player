@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -18,7 +27,16 @@ kouroukan_fouga_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -33,7 +51,16 @@ gold_of_bure = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -46,7 +73,16 @@ reclamation_of_land = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -59,7 +95,16 @@ accounts_of_the_atlantic_voyage = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -73,7 +118,16 @@ mandinka_warrior_spirit = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -86,7 +140,16 @@ markets_for_salt = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -100,7 +163,16 @@ west_african_slave_trade = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -115,7 +187,16 @@ kele_koun_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -130,7 +211,16 @@ mandekalu_levies = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -145,7 +235,16 @@ sofa_levies_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}
@@ -161,7 +260,16 @@ farari_corps_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_sahel_region
+					has_variable = hafp_g_area_mali_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAL
 			}

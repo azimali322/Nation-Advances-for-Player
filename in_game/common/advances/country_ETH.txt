@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 				religion.group = religion_group:christian
@@ -19,7 +28,16 @@ roof_of_africa = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -35,7 +53,16 @@ solomonid_claim = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -48,7 +75,16 @@ nagusa_negast = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -60,7 +96,16 @@ a_permanent_capital = {
 	age = age_3_discovery 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -77,7 +122,16 @@ external_friends = {
 	age = age_3_discovery 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -90,7 +144,16 @@ eternal_crusade = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 				religion.group = religion_group:christian
@@ -104,7 +167,16 @@ prester_john = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -116,7 +188,16 @@ an_iron_fist = {
 	age = age_5_absolutism 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -129,7 +210,16 @@ a_true_ethiopian_church = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -142,7 +232,16 @@ origin_of_coffee = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -155,7 +254,16 @@ a_modern_nation = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -171,7 +279,16 @@ cawa_advance = {
     content_priority = 1000
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -189,7 +306,16 @@ cawa_advance = {
 a_renaissance_cawa_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -205,7 +331,16 @@ a_renaissance_cawa_advance = {
 a_discovery_cawa_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -222,7 +357,16 @@ a_reformation_cawa_advance = {
 	content_priority = 900
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -239,7 +383,16 @@ a_absolutism_cawa_advance = {
 	content_priority = 800
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}
@@ -255,7 +408,16 @@ a_absolutism_cawa_advance = {
 a_revolutions_cawa_advance = {
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_ethiopia_region
+					has_variable = hafp_g_area_central_ethiopia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ETH
 			}

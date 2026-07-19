@@ -10,7 +10,14 @@ bah_arabian_horses = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -24,7 +31,14 @@ bah_amir_rebellion = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -39,7 +53,14 @@ bah_nobility_hindu_expansion = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -58,7 +79,14 @@ bah_gharbians = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -73,7 +101,14 @@ bah_legacy_of_gisu_daraz = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -92,7 +127,14 @@ bah_meltpot_of_languages = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -107,7 +149,14 @@ bah_karimis = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -125,7 +174,14 @@ bah_takht_e_firoza = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -139,7 +195,14 @@ bah_bahmani_primogeniture = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language
@@ -157,7 +220,14 @@ bah_madrasa_of_mahmud_gawan = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_kannada_muslim
+				}
+			}
 			AND = {
 				religion.group = religion_group:muslim
 				culture.language = language:kannada_language

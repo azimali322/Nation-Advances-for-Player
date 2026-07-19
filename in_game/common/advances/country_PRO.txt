@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}
@@ -19,7 +28,16 @@ lords_of_the_rhone_corridor = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}
@@ -37,7 +55,16 @@ angevin_heraldry = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}
@@ -54,7 +81,16 @@ le_livre_des_tournois = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}
@@ -73,7 +109,16 @@ statutes_of_aix = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}
@@ -90,7 +135,16 @@ rade_of_toulon = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}
@@ -109,7 +163,16 @@ piqure_de_marseilles = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_france_region
+					has_variable = hafp_g_area_provence_area
+				}
+			}
 			AND = {
 				has_or_had_tag = PRO
 			}

@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -18,7 +27,16 @@ zenata_roots = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -33,7 +51,16 @@ mor_atlas_strongholds = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -49,7 +76,16 @@ mor_marabouts = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 				religion.group = religion_group:muslim
@@ -68,7 +104,16 @@ trans_saharan_trade = {
 	icon = markets_for_salt
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -83,7 +128,16 @@ first_fleet_of_the_med = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -99,7 +153,16 @@ slave_soldiers = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -115,7 +178,16 @@ desert_power = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -132,7 +204,16 @@ atlantic_trade_routes = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -148,7 +229,16 @@ foreign_politics = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -165,7 +255,16 @@ saharan_gold_trade = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -182,7 +281,16 @@ jaysh_armies_advance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -197,7 +305,16 @@ black_guard = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 			}
@@ -213,7 +330,16 @@ shurfa_status = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 				religion.group = religion_group:muslim
@@ -231,7 +357,16 @@ maghrebi_administration = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_area_morocco_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOR
 				religion.group = religion_group:muslim

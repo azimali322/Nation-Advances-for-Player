@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -26,7 +33,14 @@ albanian_prokletije = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -48,7 +62,14 @@ alb_the_arberian_principality = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				is_subject = no
@@ -70,7 +91,14 @@ alb_angevin_legitimacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				original_tag = ALB
@@ -90,7 +118,14 @@ ant_born_in_the_highlands = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ANT
 			}
@@ -108,7 +143,14 @@ mtr_the_masters_of_the_karavasta = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MTR
 			}
@@ -126,7 +168,14 @@ mzk_the_agricultural_wealth_of_the_devoll = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MZK
 			}
@@ -144,7 +193,14 @@ thp_french_blood_claims = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = THP
 			}
@@ -162,7 +218,14 @@ albanian_the_stradioti_tradition = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -183,7 +246,14 @@ alb_eastern_and_western_heritage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				is_subject = no
@@ -203,7 +273,14 @@ alb_the_national_arsenal = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				original_tag = ALB
@@ -223,7 +300,14 @@ ant_the_iron_mines_of_the_interior = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ANT
 			}
@@ -241,7 +325,14 @@ mtr_lagoon_fisheries = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MTR
 			}
@@ -260,7 +351,14 @@ mzk_the_despots_of_berat = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MZK
 			}
@@ -279,7 +377,14 @@ thp_the_lion_of_thopia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = THP
 			}
@@ -298,7 +403,14 @@ albanian_the_sacred_oath = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -320,7 +432,14 @@ alb_the_champion_of_christ = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				is_subject = no
@@ -341,7 +460,14 @@ alb_the_catholic_bulwark = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				original_tag = ALB
@@ -361,7 +487,14 @@ ant_arianitis_defiance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ANT
 			}
@@ -379,7 +512,14 @@ mtr_marshland_guerillas = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MTR
 			}
@@ -398,7 +538,14 @@ mzk_the_muzaka_chronicle = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MZK
 			}
@@ -416,7 +563,14 @@ thp_a_centralized_levy_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = THP
 			}
@@ -435,7 +589,14 @@ albanian_the_transhumance_networks = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -457,7 +618,14 @@ alb_the_arbereshe_diaspora = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				is_subject = no
@@ -477,7 +645,14 @@ alb_diplomacy_of_the_two_shores = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				original_tag = ALB
@@ -497,7 +672,14 @@ ant_patronage_of_the_faith = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ANT
 			}
@@ -516,7 +698,14 @@ mtr_the_trade_monopolies = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MTR
 			}
@@ -534,7 +723,14 @@ mzk_silk_road_waystations = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MZK
 			}
@@ -553,7 +749,14 @@ thp_mecenas_of_the_arts = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = THP
 			}
@@ -572,7 +775,14 @@ albanian_the_fortified_kulla_houses = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -593,7 +803,14 @@ alb_the_albanian_merchant_class = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				is_subject = no
@@ -613,7 +830,14 @@ alb_the_expansion_of_the_regnum = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				original_tag = ALB
@@ -632,7 +856,14 @@ ant_the_eternal_resistance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ANT
 			}
@@ -650,7 +881,14 @@ mtr_reclamation_engineering = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MTR
 			}
@@ -668,7 +906,14 @@ mzk_literary_patronage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MZK
 			}
@@ -687,7 +932,14 @@ thp_princeps_albaniae = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = THP
 			}
@@ -706,7 +958,14 @@ albanian_the_albanian_alphabet_commission = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:albanian
@@ -728,7 +987,14 @@ alb_the_spirit_of_the_rilindja = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				is_subject = no
@@ -747,7 +1013,14 @@ alb_enlightened_albanian_absolutism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ALB
 				original_tag = ALB
@@ -767,7 +1040,14 @@ ant_the_professional_highland_grenadiers = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = ANT
 			}
@@ -785,7 +1065,14 @@ mtr_the_mataranga_port_authority = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MTR
 			}
@@ -804,7 +1091,14 @@ mzk_the_muzakan_industrialization = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = MZK
 			}
@@ -822,7 +1116,14 @@ thp_the_thopia_merchant_marine = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_albanian
+				}
+			}
 			AND = {
 				has_or_had_tag = THP
 			}

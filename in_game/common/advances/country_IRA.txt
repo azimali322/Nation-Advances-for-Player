@@ -6,7 +6,15 @@ ira_sasanian_heritage = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -22,7 +30,15 @@ ira_islamized_persia = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -39,7 +55,15 @@ ira_shahnameh = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -55,7 +79,15 @@ ira_persian_plateau = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -79,7 +111,15 @@ ira_restoration_of_cities =  {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -97,7 +137,15 @@ ira_improved_silk_road = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -113,7 +161,15 @@ ira_promotion_of_irrigation = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -134,7 +190,15 @@ ira_persian_horses = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -151,7 +215,15 @@ ira_spread_of_persian_influence = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -167,7 +239,15 @@ ira_persian_rug_production = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = IRA
@@ -183,7 +263,15 @@ ira_safaviyya_order_hall = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 				religion = religion:shia
@@ -197,7 +285,15 @@ ira_the_qizilbash = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 				religion = religion:shia
@@ -217,7 +313,15 @@ ira_the_qurchi = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 				religion = religion:shia
@@ -231,7 +335,15 @@ ira_religious_state = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				government = monarchy
 				has_or_had_tag = IRA
@@ -248,7 +360,15 @@ ira_the_ghilman = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 				religion.group = religion_group:muslim
@@ -267,7 +387,15 @@ ira_encouraged_art = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 			}
@@ -280,7 +408,15 @@ ira_nazir = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 			}
@@ -293,7 +429,15 @@ ira_the_tofangchi = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 			}
@@ -306,7 +450,15 @@ ira_the_tupchi = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 			}
@@ -323,7 +475,15 @@ ira_religious_unity_policy = {	#https://en.wikipedia.org/wiki/Afsharid_Iran#Reli
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 				religion.group = religion_group:muslim
@@ -337,7 +497,15 @@ ira_afsharid_navy = {	#https://en.wikipedia.org/wiki/Afsharid_navy
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 			}
@@ -350,7 +518,15 @@ ira_jazayerchi = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+				}
+			}
 			AND = {
 				has_or_had_tag = IRA
 			}

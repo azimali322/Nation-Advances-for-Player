@@ -7,7 +7,14 @@ horse_lords = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -31,7 +38,14 @@ kurultai_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -50,7 +64,14 @@ beyond_the_sun = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -67,7 +88,14 @@ steppe_slave_raiding = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -83,7 +111,14 @@ caravanserai_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -99,7 +134,14 @@ borjigin_blood = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -113,7 +155,14 @@ turco_mongol_tradition = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -127,7 +176,14 @@ yams_of_the_great_khan = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -147,7 +203,14 @@ mandate_of_the_khan = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -163,7 +226,14 @@ there_shall_be_no_grass = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -180,7 +250,14 @@ slavery_before_death = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -198,7 +275,14 @@ horde_loyalty = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -213,7 +297,14 @@ horde_loot_discovery_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -229,7 +320,14 @@ trampling_horde = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -247,7 +345,14 @@ watchers_of_the_silk_road = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -262,7 +367,14 @@ logistics_of_khan = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -278,7 +390,14 @@ populating_the_steppes = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -297,7 +416,14 @@ a_magnanimous_empire = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}
@@ -314,7 +440,14 @@ horde_ardor = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_government_steppe_horde
+				}
+			}
 			AND = {
 				government = steppe_horde
 			}

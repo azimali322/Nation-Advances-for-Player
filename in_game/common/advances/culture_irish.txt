@@ -5,7 +5,14 @@ celtic_raiders_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				culture = {
 				has_culture_group =  culture_group:celtic_group
@@ -24,7 +31,14 @@ irish_booleying_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:irish
@@ -46,7 +60,14 @@ irish_monastacism_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:irish
@@ -68,7 +89,14 @@ irish_travelling_bards_advance = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				culture = {
 				has_culture_group =  culture_group:celtic_group
@@ -87,7 +115,14 @@ guards_of_the_shannon_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = HYM
 			}
@@ -108,7 +143,14 @@ hiberno_norman_keeps_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:anglo_irish
@@ -130,7 +172,14 @@ irish_frontier_settlement_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:anglo_irish
@@ -152,7 +201,14 @@ ple_irish_viking_towns_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = PLE
 			}
@@ -171,7 +227,14 @@ ple_pale_defenseworks_advance = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = PLE
 			}
@@ -194,7 +257,14 @@ ire_grand_jury_system = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = IRE
 			}
@@ -211,7 +281,14 @@ ire_irish_establishment = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = IRE
 			}
@@ -228,7 +305,14 @@ ire_irish_volunteers = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = IRE
 			}
@@ -249,7 +333,14 @@ cel_defensive = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = CEL
 			}
@@ -266,7 +357,14 @@ cel_western_shore = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = CEL
 			}
@@ -282,7 +380,14 @@ cel_the_wests_awake = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = CEL
 			}
@@ -298,7 +403,14 @@ cel_celtic_nations = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = CEL
 			}
@@ -314,7 +426,14 @@ cel_celtic_diaspora = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = CEL
 			}
@@ -330,7 +449,14 @@ cel_pan_celtic_nationalism = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_irish
+				}
+			}
 			AND = {
 				has_or_had_tag = CEL
 			}

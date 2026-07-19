@@ -5,7 +5,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:neapolitan
@@ -29,7 +36,14 @@ university_naples = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				has_or_had_tag = NAP
 			}
@@ -49,7 +63,14 @@ consolidate_the_royal_domain = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:neapolitan
@@ -75,7 +96,14 @@ academia_pontaniana = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				has_or_had_tag = NAP
 			}
@@ -95,7 +123,14 @@ crush_the_barons = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:neapolitan
@@ -118,7 +153,14 @@ encouraged_city_living = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				has_or_had_tag = NAP
 			}
@@ -138,7 +180,14 @@ city_of_artists = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:neapolitan
@@ -162,7 +211,14 @@ expanded_arsenale = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				has_or_had_tag = NAP
 			}
@@ -182,7 +238,14 @@ a_central_power = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:neapolitan
@@ -206,7 +269,14 @@ institutional_reorganization = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				has_or_had_tag = NAP
 			}
@@ -225,7 +295,14 @@ neapolitan_army_reforms = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:neapolitan
@@ -248,7 +325,14 @@ neapolitan_industrialization = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_neapolitan
+				}
+			}
 			AND = {
 				has_or_had_tag = NAP
 			}

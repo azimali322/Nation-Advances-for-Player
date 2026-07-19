@@ -3,7 +3,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -16,7 +25,16 @@ mos_dynastic_ties = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -32,7 +50,16 @@ seat_of_metropolitan_bishop = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -48,7 +75,16 @@ pomestnoe_voisko = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -62,7 +98,16 @@ strength_of_the_boyars = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -75,7 +120,16 @@ zasechnaya_cherta = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -87,7 +141,18 @@ hurricane_hardy = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_reg_ural_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOS
@@ -98,7 +163,18 @@ hurricane_hardy = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_reg_ural_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = hurricane_hardy }
 			}
@@ -112,7 +188,18 @@ preobrazhensky_semyonovsky_imperial_guard = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_reg_ural_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = MOS
@@ -123,7 +210,18 @@ preobrazhensky_semyonovsky_imperial_guard = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_reg_ural_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = preobrazhensky_semyonovsky_imperial_guard }
 			}
@@ -140,7 +238,16 @@ mos_patrol_the_territories = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_area_moscow_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MOS
 			}
@@ -152,7 +259,17 @@ imperatorskiy_moskovskiy_universitet = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_reg_ural_region
+				}
+			}
 			AND = {
 				has_or_had_tag = RUS
 			}
@@ -161,7 +278,17 @@ imperatorskiy_moskovskiy_universitet = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_russian_region
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_reg_ural_region
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = imperatorskiy_moskovskiy_universitet }
 			}

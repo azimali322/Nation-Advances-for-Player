@@ -4,7 +4,16 @@ seren_taun = {	#Sérén Taun
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SUN
 			}
@@ -21,7 +30,16 @@ pepper_of_the_parahyangan = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SUN
 			}
@@ -38,7 +56,16 @@ pan_asian_trade = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SUN
 			}
@@ -55,7 +82,16 @@ extend_kampung_kampung = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_area_java_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SUN
 			}

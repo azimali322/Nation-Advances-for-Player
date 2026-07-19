@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:dalmatian
@@ -26,7 +33,14 @@ dal_comune_privileges = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = DAL
 			}
@@ -44,7 +58,14 @@ rag_the_statute_of_1272 = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = RAG
 			}
@@ -63,7 +84,14 @@ dalmatian_the_cult_of_the_local_patron_saint = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:dalmatian
@@ -85,7 +113,14 @@ dal_the_union_of_the_two_souls = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = DAL
 			}
@@ -103,7 +138,14 @@ rag_the_lazzaretto_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = RAG
 			}
@@ -121,7 +163,14 @@ dalmatian_the_guild_of_the_stone_master = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:dalmatian
@@ -143,7 +192,14 @@ dal_the_soldato_dalmantine = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = DAL
 			}
@@ -161,7 +217,14 @@ rag_the_arsenal_expansion = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = RAG
 			}
@@ -180,7 +243,14 @@ dalmatian_the_high_chancery_style = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:dalmatian
@@ -202,7 +272,14 @@ dal_adriatic_oak_galleys = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = DAL
 			}
@@ -221,7 +298,14 @@ rag_the_collegium_ragusinum = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = RAG
 			}
@@ -240,7 +324,14 @@ dalmatian_the_accademia_degli_oziosi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:dalmatian
@@ -262,7 +353,14 @@ dal_morlach_frontier_levies = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = DAL
 			}
@@ -281,7 +379,14 @@ rag_the_ragusan_porto_franco = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = RAG
 			}
@@ -300,7 +405,14 @@ dalmatian_mediterranean_cosmopolitanism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:dalmatian
@@ -322,7 +434,14 @@ dal_dalmatian_olive_pacts = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = DAL
 			}
@@ -340,7 +459,14 @@ rag_the_ragusan_maritime_insurance_code = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_dalmatian
+				}
+			}
 			AND = {
 				has_or_had_tag = RAG
 			}

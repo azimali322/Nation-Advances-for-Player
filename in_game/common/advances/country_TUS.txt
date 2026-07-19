@@ -4,7 +4,16 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_tuscany_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUS
 			}
@@ -23,7 +32,16 @@ tus_il_catasto = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_tuscany_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUS
 			}
@@ -42,7 +60,16 @@ porto_franco = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_tuscany_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUS
 			}
@@ -61,7 +88,16 @@ tuscan_uffizi = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_tuscany_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUS
 			}
@@ -81,7 +117,16 @@ accademia_cimento = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_tuscany_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUS
 			}
@@ -100,7 +145,16 @@ tuscan_physiocratic_reforms = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_italy_region
+					has_variable = hafp_g_area_tuscany_area
+				}
+			}
 			AND = {
 				has_or_had_tag = TUS
 			}

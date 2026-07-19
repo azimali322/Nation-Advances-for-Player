@@ -5,7 +5,14 @@ npl_himalayan_homeland = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_nepali
+				}
+			}
 			AND = {
 				OR = { culture.language = language:nepali_language has_or_had_tag = NPL }
 			}
@@ -41,7 +48,14 @@ npl_the_divya_upadesh = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_nepali
+				}
+			}
 			AND = {
 				OR = { culture.language = language:nepali_language has_or_had_tag = NPL }
 			}
@@ -54,7 +68,14 @@ npl_gurkhas = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_nepali
+				}
+			}
 			AND = {
 				OR = { culture.language = language:nepali_language has_or_had_tag = NPL }
 			}

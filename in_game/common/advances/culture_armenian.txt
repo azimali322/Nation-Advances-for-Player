@@ -5,7 +5,14 @@ arm_legacy_of_hayk = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -24,7 +31,14 @@ arm_mount_ararat = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -48,7 +62,14 @@ arm_apostolic_church = {
 	icon = life_among_infidels
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -68,7 +89,14 @@ arm_land_reclamation = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -90,7 +118,14 @@ arm_border_nation = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -109,7 +144,14 @@ arm_melikdom_organization = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -131,7 +173,14 @@ arm_mountain_armies = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -150,7 +199,14 @@ arm_nakharar_titles = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -172,7 +228,14 @@ arm_greater_armenia = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:armenian_culture
@@ -194,7 +257,14 @@ arm_highland_fortresses = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_armenian
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARM

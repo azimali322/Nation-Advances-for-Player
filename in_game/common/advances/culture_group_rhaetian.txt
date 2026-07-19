@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:rhaetian_group }
 			}
@@ -25,7 +32,14 @@ aqu_patriarchate_of_aquileia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				has_or_had_tag = AQU
 			}
@@ -44,7 +58,14 @@ rhaetian_the_tobia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:rhaetian_group }
 			}
@@ -63,7 +84,14 @@ aqu_amber_road = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				has_or_had_tag = AQU
 			}
@@ -82,7 +110,14 @@ rhaetian_the_mountain_warriors = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:rhaetian_group }
 			}
@@ -101,7 +136,14 @@ aqu_alpine_defense = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				has_or_had_tag = AQU
 			}
@@ -120,7 +162,14 @@ rhaetian_the_chanzun = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:rhaetian_group }
 			}
@@ -138,7 +187,14 @@ aqu_friulian_soldiery = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				has_or_had_tag = AQU
 			}
@@ -157,7 +213,14 @@ rhaetian_the_alpine_diplomacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:rhaetian_group }
 			}
@@ -176,7 +239,14 @@ aqu_patriarchal_legacy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				has_or_had_tag = AQU
 			}
@@ -195,7 +265,14 @@ rhaetian_the_national_revival = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:rhaetian_group }
 			}
@@ -214,7 +291,14 @@ aqu_enlightened_patriarchate = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_group_rhaetian
+				}
+			}
 			AND = {
 				has_or_had_tag = AQU
 			}

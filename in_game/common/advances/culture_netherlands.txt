@@ -4,7 +4,14 @@ flemish_cloth_making = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_netherlands
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:netherlandish_group }
 			}
@@ -20,7 +27,14 @@ polders_advance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_netherlands
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:netherlandish_group }
 			}
@@ -35,7 +49,14 @@ netherlandish_ship_building = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_netherlands
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:netherlandish_group }
 			}

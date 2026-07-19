@@ -5,7 +5,24 @@ hand_cannon_guild_advance  = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_east_china_region
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_reg_south_china_region
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_reg_west_china_region
+					has_variable = hafp_g_reg_xinjiang_region
+				}
+			}
 			AND = {
 				original_capital ?= { sub_continent = sub_continent:east_asia }
 			}
@@ -19,7 +36,32 @@ saquiyah = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_reg_bengal_region
+					has_variable = hafp_g_reg_central_india_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_reg_macaronesia_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_reg_western_india_region
+					has_variable = hafp_g_area_eastern_khorasan_area
+					has_variable = hafp_g_area_western_khorasan_area
+				}
+			}
 			AND = {
 				original_capital ?= {
 				OR = {
@@ -47,7 +89,14 @@ riches_of_asia = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -66,7 +115,14 @@ silk_road = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -83,7 +139,14 @@ exchange_of_ideas = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -100,7 +163,14 @@ legacy_of_great_empires = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -117,7 +187,14 @@ arduous_terrain = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -134,7 +211,14 @@ fertile_lands = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -152,7 +236,14 @@ crossroads_of_religions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -170,7 +261,14 @@ religious_syncretism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -187,7 +285,14 @@ source_of_knowledge = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -205,7 +310,14 @@ structured_society = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -224,7 +336,14 @@ incense_preeminence = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -241,7 +360,14 @@ incense_trade_route = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -258,7 +384,14 @@ wake_of_the_mongol_horde = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -276,7 +409,14 @@ cultural_melting_pot = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -293,7 +433,14 @@ rise_of_great_individuals = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:asia }
 			}
@@ -318,7 +465,16 @@ sepak_takraw = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_reg_indonesia_region
+				}
+			}
 			AND = {
 				original_capital ?= { sub_continent = sub_continent:south_east_asia }
 			}
@@ -334,7 +490,44 @@ three_teachings = { #https://en.wikipedia.org/wiki/Three_teachings
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_africa
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_reg_bengal_region
+					has_variable = hafp_g_reg_central_india_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_reg_east_china_region
+					has_variable = hafp_g_reg_egypt_region
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_reg_indochina_region
+					has_variable = hafp_g_reg_indonesia_region
+					has_variable = hafp_g_reg_japan_region
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_reg_korea_region
+					has_variable = hafp_g_reg_macaronesia_region
+					has_variable = hafp_g_reg_maghreb_region
+					has_variable = hafp_g_reg_manchuria_region
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_reg_north_china_region
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_reg_south_china_region
+					has_variable = hafp_g_reg_tibet_region
+					has_variable = hafp_g_reg_west_china_region
+					has_variable = hafp_g_reg_western_india_region
+					has_variable = hafp_g_reg_xinjiang_region
+					has_variable = hafp_g_area_eastern_khorasan_area
+					has_variable = hafp_g_area_western_khorasan_area
+				}
+			}
 			AND = {
 				OR = {
 				religion = religion:mahayana
@@ -362,7 +555,23 @@ baghlah_advance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_anatolia_region
+					has_variable = hafp_g_reg_arabia_region
+					has_variable = hafp_g_reg_bengal_region
+					has_variable = hafp_g_reg_central_india_region
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_reg_deccan_region
+					has_variable = hafp_g_reg_hindustan_region
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_reg_western_india_region
+				}
+			}
 			AND = {
 				original_capital ?= {
 				OR = {

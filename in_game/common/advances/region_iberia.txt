@@ -4,7 +4,15 @@ tercio = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -21,7 +29,16 @@ catalan_galley = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -46,7 +63,15 @@ early_iberian_caravel = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -61,7 +86,15 @@ iberian_caravel = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -76,7 +109,15 @@ early_iberian_galleon = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -91,7 +132,15 @@ square_rigged_caravel = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -101,7 +150,15 @@ square_rigged_caravel = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				OR = {
 				has_advance = iberian_caravel
@@ -116,7 +173,15 @@ iberian_galleon = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
 			}
@@ -134,7 +199,16 @@ ara_almogavars = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -156,7 +230,16 @@ ara_catalan_crossbowmen = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -178,7 +261,16 @@ ara_late_almogavars = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_catalonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = ARA
@@ -201,7 +293,16 @@ cas_lanzas_de_castilla = {
 	content_priority = 1000
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_castile_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = CAS
@@ -220,7 +321,16 @@ por_cacadores = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+					has_variable = hafp_g_area_south_portugal_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POR

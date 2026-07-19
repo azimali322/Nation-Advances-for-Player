@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}
@@ -20,7 +29,16 @@ hormuz_toll = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}
@@ -38,7 +56,16 @@ gate_of_the_persian_gulf = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}
@@ -55,7 +82,16 @@ moqarrariya = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}
@@ -73,7 +109,16 @@ develop_qeshm_and_ormuz = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}
@@ -91,7 +136,16 @@ ormuzi_navy = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}
@@ -109,7 +163,16 @@ mint_of_the_gulf = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_persia_region
+					has_variable = hafp_g_area_fars_area
+				}
+			}
 			AND = {
 				has_or_had_tag = ORM
 			}

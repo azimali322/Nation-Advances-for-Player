@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -18,7 +27,16 @@ mai_city_and_archbishop = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -35,7 +53,16 @@ mai_leader_rheinish_league = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 				religion = religion:catholic
@@ -52,7 +79,16 @@ mai_zealous_fight_against_heretics = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -70,7 +106,16 @@ mai_vicar_of_mainz = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -86,7 +131,16 @@ mai_mainz_kingdom = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -102,7 +156,16 @@ mai_center_of_printing = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}
@@ -118,7 +181,16 @@ mai_garrison_of_the_rhine = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_hesse_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MAI
 			}

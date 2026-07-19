@@ -3,7 +3,16 @@
 	icon = students_of_foreign_courts
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -19,7 +28,16 @@ wagenburg = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -37,7 +55,16 @@ bohemian_imperial_standing = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -54,7 +81,16 @@ urbanization_decrees = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -72,7 +108,16 @@ bohemian_crystal = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -89,7 +134,16 @@ fortified_towns = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -107,7 +161,16 @@ hussite_traditions = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 				OR = {
@@ -128,7 +191,16 @@ kutnohorian_deal = {
 	icon = kutnohorian_deal
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}
@@ -143,7 +215,16 @@ bohemian_thaler = {
 	icon = bohemian_thaler
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_south_german_region
+					has_variable = hafp_g_area_bohemia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BOH
 			}

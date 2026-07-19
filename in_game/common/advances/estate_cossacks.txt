@@ -5,7 +5,14 @@ cossack_raids = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -20,7 +27,14 @@ tamed_steppes = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -38,7 +52,14 @@ cossacks_recruitment = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -54,7 +75,14 @@ cossacks_escaped_serfs = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -69,7 +97,14 @@ cossacks_hetmanate = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -88,7 +123,14 @@ cossack_administration = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -105,7 +147,14 @@ steppe_riders = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -121,7 +170,14 @@ cossacks_exploration_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -139,7 +195,14 @@ cossacks_military_society = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -154,7 +217,14 @@ cossacks_serf_autonomy = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -169,7 +239,14 @@ cossacks_colonization_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -187,7 +264,14 @@ cossacks_registered = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}
@@ -205,7 +289,14 @@ cossack_reputation = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_estate_cossacks
+				}
+			}
 			AND = {
 				country_has_estate = estate_type:cossacks_estate
 			}

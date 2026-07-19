@@ -2,7 +2,16 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -17,7 +26,16 @@ northern_march = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -32,7 +50,16 @@ divide_estates = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -47,7 +74,16 @@ soldiers_fortune = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -62,7 +98,16 @@ iron_tooth = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -77,7 +122,16 @@ kammergericht = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -93,7 +147,16 @@ dispositio_achillea = {
 	icon = partition_inheritance_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -107,7 +170,16 @@ margrave_council = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -123,7 +195,16 @@ religious_toleration = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -139,7 +220,16 @@ hohenzollern_privy_council = {
 	icon = plutocracy
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -154,7 +244,16 @@ edict_of_potsdam = {
 	icon = a_tolerant_society
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -169,7 +268,16 @@ hohenzollern_court_culture = {
 	icon = protestant_administration_tax
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}
@@ -184,7 +292,16 @@ berliner_aufklarung = {
 	icon = protestant_innovation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brandenburg_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRA
 			}

@@ -2,7 +2,15 @@
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:netherlandish_group }
 			}
@@ -17,7 +25,16 @@ brb_the_four_quartiers = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRB
 			}
@@ -35,7 +52,16 @@ fla_cloth = {
 	icon = fla_cloth
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_flanders_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FLA
 			}
@@ -52,7 +78,15 @@ frisian_trading_traditions = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:frisian
@@ -71,7 +105,16 @@ gel_warring_spirit = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_rhineland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GEL
 			}
@@ -86,7 +129,16 @@ hai_expert_embassadors = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAI
 			}
@@ -103,7 +155,16 @@ hol_sailors = {
 	icon = ship_building_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HOL
 			}
@@ -118,7 +179,16 @@ lie_athens_north = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIE
 			}
@@ -133,7 +203,16 @@ lux_destined_rule = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LUX
 			}
@@ -150,7 +229,16 @@ utr_city_churches = {
 	icon = pop_promotion_speed_age_4
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UTR
 			}
@@ -166,7 +254,15 @@ a_dynamic_society = { #1337
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:netherlandish_group }
 			}
@@ -181,7 +277,16 @@ brb_brabantine_rights = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRB
 			}
@@ -204,7 +309,16 @@ fla_flemish_renaissance = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_flanders_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FLA
 			}
@@ -219,7 +333,15 @@ frisian_resisting_invader = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:frisian
@@ -238,7 +360,16 @@ gel_healthy_economy = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_rhineland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GEL
 			}
@@ -253,7 +384,16 @@ hai_frontier_march = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAI
 			}
@@ -269,7 +409,16 @@ hol_maritime_warfare = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HOL
 			}
@@ -284,7 +433,16 @@ lie_devoted_land = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIE
 			}
@@ -300,7 +458,16 @@ lux_fortress_europe = {
 	icon = recruitment_improvements_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LUX
 			}
@@ -315,7 +482,16 @@ utr_blessed_land = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UTR
 			}
@@ -331,7 +507,15 @@ an_early_urbanization = { #1437
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:netherlandish_group }
 			}
@@ -346,7 +530,16 @@ brb_land_culture = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = BRB
 			}
@@ -362,7 +555,16 @@ fla_prospering_agriculture = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_flanders_area
+				}
+			}
 			AND = {
 				has_or_had_tag = FLA
 			}
@@ -377,7 +579,15 @@ frisian_legend_grutte_pier = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:frisian
@@ -398,7 +608,16 @@ gel_expand_kwarteers = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_rhineland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = GEL
 			}
@@ -413,7 +632,16 @@ hai_bustling_towns = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HAI
 			}
@@ -429,7 +657,16 @@ hol_trading_spirit = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = HOL
 			}
@@ -444,7 +681,16 @@ lie_inspiring_mecenas = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LIE
 			}
@@ -459,7 +705,16 @@ lux_heirs_john_blind = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				has_or_had_tag = LUX
 			}
@@ -475,7 +730,16 @@ utr_skilled_diplomats = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_holland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = UTR
 			}
@@ -491,7 +755,20 @@ dutch_education = { #1537
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+					has_variable = hafp_g_area_flanders_area
+					has_variable = hafp_g_area_friesland_area
+					has_variable = hafp_g_area_holland_area
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HOL
@@ -511,7 +788,20 @@ platoon_fire = {
 	icon = military_revolution_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+					has_variable = hafp_g_area_flanders_area
+					has_variable = hafp_g_area_friesland_area
+					has_variable = hafp_g_area_holland_area
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HOL
@@ -533,7 +823,20 @@ dutch_golden_age_art = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+					has_variable = hafp_g_area_flanders_area
+					has_variable = hafp_g_area_friesland_area
+					has_variable = hafp_g_area_holland_area
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HOL
@@ -553,7 +856,20 @@ a_trading_hub = { #1637
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+					has_variable = hafp_g_area_flanders_area
+					has_variable = hafp_g_area_friesland_area
+					has_variable = hafp_g_area_holland_area
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HOL
@@ -573,7 +889,20 @@ concentration_power = { #1737
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+					has_variable = hafp_g_area_flanders_area
+					has_variable = hafp_g_area_friesland_area
+					has_variable = hafp_g_area_holland_area
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HOL
@@ -593,7 +922,20 @@ a_fortified_border = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_german_region
+					has_variable = hafp_g_area_brabant_area
+					has_variable = hafp_g_area_flanders_area
+					has_variable = hafp_g_area_friesland_area
+					has_variable = hafp_g_area_holland_area
+					has_variable = hafp_g_area_wallonia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = HOL

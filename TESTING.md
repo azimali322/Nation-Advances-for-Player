@@ -1,55 +1,65 @@
-# Handicap Advances for Player — In-Game Test Plan (v1.0)
+# Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
-Version 1.0 ships the all-or-nothing unlock toggle (character interactions). Work through the checklist in order; note results next to each box.
+Phase 2 replaces the character-interaction toggle with a full Community Mod Menu (CMM) integration. Work through the checklist in order; note results next to each box.
 
 ## Setup
 
-- [ ] The mod folder lives in `Documents/Paradox Interactive/Europa Universalis V/mod/Nation-Advances-for-Player` and the launcher lists **Handicap Advances for Player** version 1.0 for game version 1.3.
-- [ ] Subscribe to / enable **Community Mod Framework** (the mod declares it as a dependency).
-- [ ] Create a playset with both mods enabled (CMF first, then this mod) and launch the game.
-
-## Smoke test (no toggle yet — mod should be invisible)
-
+- [ ] Playset contains **Community Mod Framework** (2.x) *above* **Handicap Advances for Player**; both enabled; launcher shows game version 1.3.
 - [ ] Start a new game as **France**.
-- [ ] Open the Advances screen: France's own unique advances (e.g. *French Tradition*, *Élan*) appear exactly as in the base game.
-- [ ] Other nations' advances (e.g. English, Ottoman) are **not** visible/researchable.
-- [ ] Check `Documents/Paradox Interactive/Europa Universalis V/logs/error.log` for new errors mentioning `advances`, `hafp`, or `character_interactions`. A clean log here is the main 1.3-compatibility check.
+- [ ] Check `Documents/Paradox Interactive/Europa Universalis V/logs/error.log` for new errors mentioning `hafp`, `advances`, `cmm`, or `on_action`. **This is the most important check** — with ~300 generated settings and ~34k lines of research effects, script typos would show up here.
 
-## Enable toggle
+## Menu appears
 
-- [ ] On your own nation screen, find the character interaction **Unlock All Advances (Handicap Advances for Player)** and use it.
-- [ ] Advances screen now shows other nations' unique advances as researchable (spot-check a few: English, Ottoman/`TUR`, a culture advance, a religion advance, a government advance for a government type you don't have).
-- [ ] `monarchy_reform_traditions_advance` (Age of Traditions, unlocks the Autocracy reform) is researchable — this is the advance the original mod missed; verify it appears even for a non-monarchy country.
-- [ ] Institution-gated advances (e.g. the New World tree) are researchable without the institution embraced (the mod also bypasses `allow` institution gates, matching the original mod).
-- [ ] Start researching one foreign advance and confirm it completes and applies its modifier.
-- [ ] AI countries do **not** get access (spot-check an AI neighbor via observe/tag-switch if you use debug tools, or just confirm nothing odd in AI research).
+- [ ] Open the CMM (Community Mod Menu) — *Handicap Advances for Player* is listed.
+- [ ] Tabs present: **Europe, Asia, Africa, America, Cultures, Religions & Governments, Settings**.
+- [ ] Europe tab: "Entire Continent" group with *All of Europe*, then one group per region (Balkans, France, Italy, ...) each with *All of &lt;region&gt;* plus area toggles labeled with nation names (e.g. *Bosnia - Bosnia, Hum, Travunija*).
+- [ ] Hover a few toggles — tooltips describe what each unlocks.
 
-## Disable toggle
+## Mod disabled by default (base-game invisibility)
 
-- [ ] Use **Remove Access to All Advances (Handicap Advances for Player)**.
-- [ ] Newly-opened foreign advances are no longer researchable. (Note: Paradox notes advances do not become retroactively *visible*; some UI staleness right after toggling is acceptable — re-open the Advances screen.)
-- [ ] Advances already researched keep their effects.
+- [ ] Settings tab: **Enabled** is off by default.
+- [ ] With Enabled off, toggle *All of Europe* on: advances screen shows **no change** (no foreign advances) — the master switch gates everything.
+- [ ] France's own advances (French Tradition, Élan) appear exactly as in the base game.
 
-## Persistence
+## Area / region / continent toggles
 
-- [ ] With the toggle **enabled**, save, quit to menu, reload: foreign advances are still researchable (the `hafp_all_advances_enabled` variable persists in the save).
-- [ ] With the toggle **disabled**, save and reload: behavior stays vanilla.
+- [ ] Turn **Enabled** on. With no other toggles: still no foreign advances (base/current-nation preset).
+- [ ] Toggle the **area** containing England (British Isles region → its area shows "England"): English advances become researchable for France; other nations' do not.
+- [ ] Toggle it off, toggle **All of Balkans** (region): Serbian/Bosnian/Byzantine advances appear; English ones do not.
+- [ ] Toggle **All of Europe** (continent): everything European appears, including areas whose individual toggles are off.
+- [ ] Overlap check: turn on both a region and one of its areas — no errors, advances unlock once; turning the area off while the region stays on keeps them unlocked (OR semantics).
 
-## Localization
+## Cultures / Religions & Governments
 
-- [ ] Both interactions show proper English names/descriptions, not raw `hafp_...` keys.
+- [ ] Cultures tab: toggle *Venetian* — Venetian culture advances become researchable.
+- [ ] Religions & Governments tab: toggle *Orthodox* — Orthodox advances appear for Catholic France; toggle *Republic* — republic advances appear for a monarchy.
 
-## Multiplayer / edge cases (optional)
+## Settings tab
 
-- [ ] Hot-joining or MP: only the player who used the interaction gets the unlocks.
-- [ ] Country switch (e.g. after forming a nation / tag switch): unlocks persist, since `has_or_had_tag` original conditions and the variable both live on the country.
+- [ ] **Unlock All Custom Advances**: every custom tree becomes researchable (equivalent to all toggles on). Turn off: only individually-selected groups remain.
+- [ ] **Unlock by Era**: with everything else off, *Unlock Age of Renaissance* makes gated age-2 advances researchable (all nations), other ages unaffected.
+- [ ] **Research Scope** = *Embraced institutions only*, click **Research All Custom Advances**: custom advances instantly researched, except ones needing institutions you lack; default trees untouched.
+- [ ] Scope = *All advances*, click again: the institution-gated ones research too.
+- [ ] **Research Current Era**: every advance of the current age (including default trees) researches instantly.
+- [ ] **Research Previous Eras** (best tested with a later-age save or after advancing an age): all earlier-age advances research.
+- [ ] **Research All Advances**: everything researches.
 
-## Known limitations in v1.0 (expected, not bugs)
+## Persistence & multiplayer basics
 
-- No per-continent/region/area selection yet — only the global toggle (see REQUIREMENTS.md items 1–6 for the roadmap).
-- No CMM settings menu yet; the toggle is a character interaction, as in the original mod.
-- Advances that were already *visible* stay visible after disabling the toggle until the game refreshes the advances view.
+- [ ] Set a few toggles, save, reload: selections and unlocked advances persist.
+- [ ] Turn **Enabled** off after unlocking: foreign advances stop being researchable; already-researched ones keep their effects.
+- [ ] (Optional, MP) Second player's selections are independent (settings are per-country).
+
+## AI safety
+
+- [ ] AI countries never gain access: variables are only set through the CMM UI, which only the player uses. Spot-check via observe/tag-switch that an AI neighbor shows vanilla advances only.
+
+## Known limitations (expected, not bugs)
+
+- Advances do not become retroactively *visible* mid-session in some UI states — re-open the Advances screen after toggling.
+- An advance already researched stays researched when its group is toggled off (by design).
+- Area granularity follows each nation's 1337 capital (formables use their formable-definition regions), so a nation's area may differ from where its later conquests lie.
 
 ## Reporting
 
-When something fails, note: country played, advance id (hover tooltips usually show it with debug mode `-debug_mode`), what you expected, what happened, and paste any related `error.log` lines. Add findings to a `TEST-RESULTS.md` or straight into GitHub issues.
+When something fails, note: country played, the toggle/button used, the advance id involved, expected vs. actual, and paste related `error.log` lines. Keep results in a `TEST-RESULTS.md` or GitHub issues.

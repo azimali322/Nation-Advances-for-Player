@@ -2,7 +2,16 @@
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -18,7 +27,16 @@ mge_all_under_a_khan = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -34,7 +52,16 @@ mge_ghostly_horses_of_the_plain = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -50,7 +77,16 @@ mge_yeke_mongol_ulus = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -66,7 +102,16 @@ mge_life_of_steppe_warrior = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -82,7 +127,16 @@ mge_multicultural_empire = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -98,7 +152,16 @@ mge_improved_yam_system = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -116,7 +179,16 @@ mge_mongolian_mobility = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -133,7 +205,16 @@ mge_kheshig = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}
@@ -150,7 +231,16 @@ mge_glory_of_the_khan = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_mongolia_region
+					has_variable = hafp_g_area_upper_selenga_area
+				}
+			}
 			AND = {
 				has_or_had_tag = MGE
 			}

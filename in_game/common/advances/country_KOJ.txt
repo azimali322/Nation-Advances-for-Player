@@ -2,7 +2,16 @@
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_area_levant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOJ
 				religion = religion:catholic
@@ -19,7 +28,16 @@ protectors_of_jerusalem = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_area_levant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOJ
 			}
@@ -35,7 +53,16 @@ rites_holy_sepulchre = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_area_levant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOJ
 			}
@@ -55,7 +82,16 @@ latin_patriarch = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_area_levant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOJ
 				religion = religion:catholic
@@ -73,7 +109,16 @@ latinate_integration = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_crescent_region
+					has_variable = hafp_g_area_levant_area
+				}
+			}
 			AND = {
 				has_or_had_tag = KOJ
 			}

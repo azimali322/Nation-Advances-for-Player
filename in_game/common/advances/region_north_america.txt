@@ -6,7 +6,23 @@ three_sisters = {
 	
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				original_capital ?= { sub_continent = sub_continent:north_america }
@@ -23,7 +39,21 @@ moundbuilding_advance = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -52,7 +82,23 @@ medicinal_infusions = {
 	starting_technology_level = 2
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -80,7 +126,19 @@ canoe_travels = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_west_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -103,7 +161,23 @@ seasonal_economy = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -131,7 +205,19 @@ fishing_habits = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_west_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -153,7 +239,18 @@ whale_hunters = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_west_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -176,7 +273,16 @@ maple_syrup = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -196,7 +302,16 @@ stickball_game = { #Lacrosse
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -216,7 +331,23 @@ north_american_warrior_societies = {
 	icon = warrior_lodge
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -244,7 +375,20 @@ bison_hunters = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -268,7 +412,23 @@ federal_constitution = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -298,7 +458,23 @@ shared_knowledge = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -325,7 +501,23 @@ slash_and_burn = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -352,7 +544,23 @@ council_of_elders = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -379,7 +587,17 @@ experienced_fur_hunters = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -399,7 +617,16 @@ wampum = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				OR = {
@@ -420,7 +647,16 @@ shared_brotherhood = {
 	icon = warriors_unity
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+				}
+			}
 			AND = {
 				exists = capital
 				has_unlocked_advance_trigger = { type = shared_brotherhood }
@@ -433,7 +669,16 @@ shared_brotherhood = {
 	}
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_east_coast_region
+				}
+			}
 			AND = {
 				has_unlocked_advance_trigger = { type = inigo_architecture }
 			}
@@ -451,7 +696,25 @@ system_of_tributaries = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -466,7 +729,25 @@ pyramid_architecture = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -482,7 +763,25 @@ ball_game = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -499,7 +798,25 @@ war_bonfires = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -516,7 +833,25 @@ merchant_officials = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -534,7 +869,25 @@ copperworking = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -554,7 +907,25 @@ refined_obsidian_weaponry = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -571,7 +942,14 @@ precious_stones_art = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+				}
+			}
 			AND = {
 				original_capital ?= { continent = continent:america }
 			}
@@ -589,7 +967,25 @@ cultivate_the_land = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -606,7 +1002,25 @@ feathered_serpent = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -623,7 +1037,25 @@ ritual_bloodletting = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_mesoamerica = yes
 				# religion.group = religion_group:tonal_group
@@ -644,7 +1076,25 @@ valley_irrigation = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -657,7 +1107,25 @@ artisan_migration = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -673,7 +1141,25 @@ terrace_farming = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -688,7 +1174,25 @@ mountain_cities = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -703,7 +1207,25 @@ river_trade = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -718,7 +1240,25 @@ rainforests_and_mountaintops = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -734,7 +1274,25 @@ knot_system = {
 	icon = quipu
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -750,7 +1308,25 @@ llama_farming = {
 	icon = llama_michis
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america = yes
 			}
@@ -765,7 +1341,25 @@ mountain_roads = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america = yes
 			}
@@ -781,7 +1375,25 @@ tears_of_the_sun = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -796,7 +1408,25 @@ hidden_cities = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america_or_carribean = yes
 			}
@@ -811,7 +1441,25 @@ potato_production = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america = yes
 			}
@@ -826,7 +1474,25 @@ head_hunters = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america = yes
 			}
@@ -841,7 +1507,25 @@ border_raiders = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_america
+					has_variable = hafp_g_reg_alaska_region
+					has_variable = hafp_g_reg_aridoamerica_region
+					has_variable = hafp_g_reg_canada_region
+					has_variable = hafp_g_reg_caribbean_region
+					has_variable = hafp_g_reg_central_america_region
+					has_variable = hafp_g_reg_east_coast_region
+					has_variable = hafp_g_reg_great_plains_region
+					has_variable = hafp_g_reg_mesoamerica_region
+					has_variable = hafp_g_reg_west_coast_region
+					has_variable = hafp_g_area_xalisco_area
+					has_variable = hafp_g_area_zacatecas_area
+				}
+			}
 			AND = {
 				is_capital_in_south_america = yes
 			}

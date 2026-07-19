@@ -4,7 +4,17 @@ sca_unified_scandinavia = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 			}
@@ -21,7 +31,17 @@ sca_legacy_kalmar_union = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 			}
@@ -38,7 +58,17 @@ sca_sound_toll = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 			}
@@ -47,7 +77,17 @@ sca_sound_toll = {
 
 	allow = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				own_entire_province = province_definition:zealand_province
 			}
@@ -66,7 +106,17 @@ norwegian_heritage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 			}
@@ -87,7 +137,17 @@ danish_heritage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 			}
@@ -108,7 +168,17 @@ finnish_heritage = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 			}
@@ -127,7 +197,18 @@ swedish_roots = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_north_atlantic_islands_region
+					has_variable = hafp_g_reg_scandinavian_region
+					has_variable = hafp_g_area_iceland_area
+					has_variable = hafp_g_area_svealand_area
+				}
+			}
 			AND = {
 				has_or_had_tag = SCA
 				NOT = { has_or_had_tag = SWE } # Sweden-formed Scandinavia already has indelningsverket (+15% manpower); avoid double-dipping the identical bonus

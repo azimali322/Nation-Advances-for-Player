@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:piedmontese
@@ -25,7 +32,14 @@ mfa_the_paleologue_dynasty = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = MFA
 			}
@@ -45,7 +59,14 @@ pie_ordinanza_piedmontese = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = PIE
 			}
@@ -64,7 +85,14 @@ piedmontese_le_fere_del_piemont = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:piedmontese
@@ -86,7 +114,14 @@ mfa_casale_monferrato = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = MFA
 			}
@@ -105,7 +140,14 @@ pie_cavalleria_piemontese = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = PIE
 			}
@@ -125,7 +167,14 @@ piedmontese_the_piassafort = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:piedmontese
@@ -147,7 +196,14 @@ mfa_the_court_culture = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = MFA
 			}
@@ -166,7 +222,14 @@ pie_via_delle_gallie = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = PIE
 			}
@@ -185,7 +248,14 @@ piedmontese_the_nebbiolo_vigne = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:piedmontese
@@ -207,7 +277,14 @@ mfa_the_casale_citadel = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = MFA
 			}
@@ -225,7 +302,14 @@ pie_citadel_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = PIE
 			}
@@ -244,7 +328,14 @@ piedmontese_the_canal = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:piedmontese
@@ -265,7 +356,14 @@ mfa_the_marquisate_resilience = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = MFA
 			}
@@ -284,7 +382,14 @@ pie_enlightened_court = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = PIE
 			}
@@ -303,7 +408,14 @@ piedmontese_the_setajoj = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:piedmontese
@@ -324,7 +436,14 @@ mfa_the_monferrato_agricoltura = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = MFA
 			}
@@ -343,7 +462,14 @@ pie_industrial_base = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_piedmontese
+				}
+			}
 			AND = {
 				has_or_had_tag = PIE
 			}

@@ -4,7 +4,14 @@
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovak
@@ -26,7 +33,14 @@ slo_the_law_of_the_seven_towns = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				has_or_had_tag = SLO
 			}
@@ -45,7 +59,14 @@ slovak_the_slovensky_vernacular = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovak
@@ -66,7 +87,14 @@ slo_the_slovak_castle_system = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				has_or_had_tag = SLO
 			}
@@ -85,7 +113,14 @@ slovak_the_slovak_rome = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovak
@@ -106,7 +141,14 @@ slo_the_universitas_istropolitana = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				has_or_had_tag = SLO
 			}
@@ -125,7 +167,14 @@ slovak_the_slovak_sappers = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovak
@@ -146,7 +195,14 @@ slo_the_mining_captancy = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				has_or_had_tag = SLO
 			}
@@ -165,7 +221,14 @@ slovak_the_highland_architecture = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovak
@@ -187,7 +250,14 @@ slo_the_social_banditry = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				has_or_had_tag = SLO
 			}
@@ -205,7 +275,14 @@ slovak_the_slovak_romanticism = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				OR = {
 				culture = culture:slovak
@@ -228,7 +305,14 @@ slo_the_hron_valley_industries = {
 
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_slovak
+				}
+			}
 			AND = {
 				has_or_had_tag = SLO
 			}

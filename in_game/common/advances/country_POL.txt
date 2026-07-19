@@ -4,7 +4,16 @@ kasztelanowie = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -20,7 +29,16 @@ land_of_promise = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -38,7 +56,16 @@ statute_of_kalisz = {
 	age = age_1_traditions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -56,7 +83,16 @@ corona_regni_poloniae = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -74,7 +110,16 @@ krakow_grosz = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -90,7 +135,16 @@ stone_and_brick = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -106,7 +160,16 @@ folwark_system = {
 	age = age_2_renaissance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -126,7 +189,16 @@ council_of_three_lands_advance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -140,7 +212,16 @@ polish_renaissance = {
 	age = age_3_discovery
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -159,7 +240,27 @@ granary_of_europe = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_central_poland_area
+					has_variable = hafp_g_area_greater_poland_area
+					has_variable = hafp_g_area_lesser_poland_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_mazovia_area
+					has_variable = hafp_g_area_polesia_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_red_ruthenia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_silesia_area
+					has_variable = hafp_g_area_volhynia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POL
@@ -178,7 +279,27 @@ winged_hussars_advance = {
 	age = age_4_reformation
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_central_poland_area
+					has_variable = hafp_g_area_greater_poland_area
+					has_variable = hafp_g_area_lesser_poland_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_mazovia_area
+					has_variable = hafp_g_area_polesia_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_red_ruthenia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_silesia_area
+					has_variable = hafp_g_area_volhynia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POL
@@ -197,7 +318,16 @@ wojsko_komputoe = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_lesser_poland_area
+				}
+			}
 			AND = {
 				has_or_had_tag = POL
 			}
@@ -211,7 +341,27 @@ late_winged_hussars_advance = {
 	age = age_5_absolutism
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_central_poland_area
+					has_variable = hafp_g_area_greater_poland_area
+					has_variable = hafp_g_area_lesser_poland_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_mazovia_area
+					has_variable = hafp_g_area_polesia_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_red_ruthenia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_silesia_area
+					has_variable = hafp_g_area_volhynia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POL
@@ -230,7 +380,27 @@ komisja_edukacji_narodowej = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_central_poland_area
+					has_variable = hafp_g_area_greater_poland_area
+					has_variable = hafp_g_area_lesser_poland_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_mazovia_area
+					has_variable = hafp_g_area_polesia_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_red_ruthenia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_silesia_area
+					has_variable = hafp_g_area_volhynia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POL
@@ -247,7 +417,27 @@ szkola_rycerska = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_central_poland_area
+					has_variable = hafp_g_area_greater_poland_area
+					has_variable = hafp_g_area_lesser_poland_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_mazovia_area
+					has_variable = hafp_g_area_polesia_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_red_ruthenia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_silesia_area
+					has_variable = hafp_g_area_volhynia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POL
@@ -266,7 +456,27 @@ great_sejm_reforms = {
 	age = age_6_revolutions
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_reg_ruthenia_region
+					has_variable = hafp_g_area_central_poland_area
+					has_variable = hafp_g_area_greater_poland_area
+					has_variable = hafp_g_area_lesser_poland_area
+					has_variable = hafp_g_area_lithuania_area
+					has_variable = hafp_g_area_mazovia_area
+					has_variable = hafp_g_area_polesia_area
+					has_variable = hafp_g_area_prussia_area
+					has_variable = hafp_g_area_red_ruthenia_area
+					has_variable = hafp_g_area_samogitia_area
+					has_variable = hafp_g_area_silesia_area
+					has_variable = hafp_g_area_volhynia_area
+				}
+			}
 			AND = {
 				OR = {
 				has_or_had_tag = POL

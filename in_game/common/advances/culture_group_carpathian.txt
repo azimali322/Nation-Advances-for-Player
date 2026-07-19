@@ -3,7 +3,14 @@
 	icon = voivode_advance
 	potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_group_carpathian
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:carpathian_group }
 			}

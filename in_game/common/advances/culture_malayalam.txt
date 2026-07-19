@@ -10,7 +10,14 @@ nair_military_advance = {
     icon = vij_an_army_for_city_of_victory
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_culture_malayalam
+				}
+			}
 			AND = {
 				culture = { has_culture_group = culture_group:indian_group } culture.language = language:malayalam_language
 			}

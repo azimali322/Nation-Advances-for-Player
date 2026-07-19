@@ -13,7 +13,14 @@ pun_breadbasket_of_india = {
     age = age_3_discovery
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language capital = { area = area:punjab_area }
 			}
@@ -26,7 +33,14 @@ pun_encourage_indo_persian_trade = {
     age = age_3_discovery
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language
 			}
@@ -43,7 +57,14 @@ pun_gurmukhi_script = {
     age = age_4_reformation
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language religion = religion:sikhism
 			}
@@ -57,7 +78,14 @@ pun_foundation_of_the_khalsa = {
     age = age_4_reformation
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language religion = religion:sikhism
 			}
@@ -75,7 +103,14 @@ pun_punjabi_textile_industry = {
     age = age_5_absolutism
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language
 			}
@@ -89,7 +124,14 @@ pun_strength_of_the_misls = {
     age = age_5_absolutism
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language
 			}
@@ -106,7 +148,14 @@ pun_reforming_the_punjabi_army = {
     age = age_6_revolutions
     potential = {
 		OR = {
-			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_f_culture_punjabi
+				}
+			}
 			AND = {
 				culture.language = language:punjabi_language
 			}
