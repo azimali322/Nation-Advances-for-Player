@@ -272,24 +272,12 @@ photduang = {
 	}
 
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-					has_variable = hafp_g_f_culture_thai
-				}
-			}
-			AND = {
-				num_locations > 0
-				capital = {
-				market = {
-				OR = {
-				is_produced_in_market = goods:silver
-				is_traded_in_market = goods:silver
-				}
-				}
+		num_locations > 0
+		capital = {
+			market = {
+			OR = {
+					is_produced_in_market = goods:silver
+					is_traded_in_market = goods:silver
 				}
 			}
 		}

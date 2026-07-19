@@ -2538,23 +2538,8 @@ smz_tanegashima = {
 
 	allow = {
 		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_japan_region
-					has_variable = hafp_g_area_saikaidou_area
-				}
-			}
-			AND = {
-				OR = {
-				NOT = { exists = international_organization:japanese_shogunate }
-				international_organization:japanese_shogunate ?= { has_variable = firearms_production }
-				}
-			}
+			NOT = { exists = international_organization:japanese_shogunate }
+			international_organization:japanese_shogunate ?= { has_variable = firearms_production }
 		}
 	}
 

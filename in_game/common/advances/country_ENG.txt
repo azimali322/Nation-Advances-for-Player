@@ -342,23 +342,7 @@ inigo_architecture = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_5_absolutism
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_home_counties_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = inigo_architecture }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = inigo_architecture } }
 	allow_children = no
 	
 	cultural_tradition_modifier = 0.2
@@ -387,24 +371,7 @@ sailing_and_fighting_instructions = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_5_absolutism
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_home_counties_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = sailing_and_fighting_instructions }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = sailing_and_fighting_instructions } }
 	
 	allow_children = no
 
@@ -436,24 +403,10 @@ coke_smelting = {
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_5_absolutism
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_home_counties_area
-				}
-			}
-			AND = {
-				custom_tooltip = {
+		custom_tooltip = {
 				text = unlocked_advance_coke_smelting_tt
 				has_variable = unlocked_advance_coke_smelting
-				}
 			}
-		}
 	}
 
 	allow_children = no
@@ -563,23 +516,7 @@ water_frame = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_6_revolutions
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_home_counties_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = water_frame }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = water_frame } }
 
 	allow_children = no
 	

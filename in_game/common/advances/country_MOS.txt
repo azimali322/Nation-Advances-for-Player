@@ -163,25 +163,7 @@ hurricane_hardy = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_5_absolutism
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_russian_region
-					has_variable = hafp_g_reg_steppes_region
-					has_variable = hafp_g_reg_ural_region
-					has_variable = hafp_g_area_moscow_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = hurricane_hardy }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = hurricane_hardy } }
 	allow_children = no
 	naval_unit_attrition = -0.05
 }
@@ -210,25 +192,7 @@ preobrazhensky_semyonovsky_imperial_guard = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_5_absolutism
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_russian_region
-					has_variable = hafp_g_reg_steppes_region
-					has_variable = hafp_g_reg_ural_region
-					has_variable = hafp_g_area_moscow_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = preobrazhensky_semyonovsky_imperial_guard }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = preobrazhensky_semyonovsky_imperial_guard } }
 	allow_children = no
 	global_crown_estate_power = 0.1
 	military_tactics = 0.1
@@ -279,24 +243,7 @@ imperatorskiy_moskovskiy_universitet = {
 		}
 	}
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_6_revolutions
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_russian_region
-					has_variable = hafp_g_reg_steppes_region
-					has_variable = hafp_g_reg_ural_region
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = imperatorskiy_moskovskiy_universitet }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = imperatorskiy_moskovskiy_universitet } }
 	allow_children = no
 	cultural_tradition_modifier = 0.1
 	global_max_literacy  = 5

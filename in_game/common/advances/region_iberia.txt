@@ -156,22 +156,8 @@ square_rigged_caravel = {
 
 	allow = {
 		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_3_discovery
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_iberia_region
-				}
-			}
-			AND = {
-				OR = {
-				has_advance = iberian_caravel
-				has_advance = unlock_caravel_advance
-				}
-			}
+			has_advance = iberian_caravel
+			has_advance = unlock_caravel_advance
 		}
 	}
 }

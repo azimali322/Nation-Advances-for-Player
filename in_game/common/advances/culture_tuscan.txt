@@ -372,26 +372,14 @@ pis_marble_tradition = {
 
 	allow = {
 		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_3_discovery
-					has_variable = hafp_g_f_culture_tuscan
-				}
-			}
-			AND = {
-				OR = {
-				custom_tooltip = {
+			custom_tooltip = {
 				text = unlocked_advance_marble_tradition_tt
 				has_variable = unlocked_advance_pis_marble_tradition
-				}
-				has_or_had_tag = MTPSC
-				AND = {
+			}
+			has_or_had_tag = MTPSC
+			AND = {
 				has_or_had_tag = PIS
 				owns = location:siena
-				}
-				}
 			}
 		}
 	}

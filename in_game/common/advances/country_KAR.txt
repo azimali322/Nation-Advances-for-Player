@@ -48,23 +48,7 @@ mehmed_beys_firman = {
 
 	icon = islamic_calligraphy
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_anatolia_region
-					has_variable = hafp_g_area_central_anatolia_area
-				}
-			}
-			AND = {
-				court_language ?= language:turkish_language
-			}
-		}
-	}
+	allow = { court_language ?= language:turkish_language }
 	requires = cultural_traditions_law_advance
 
 	cultural_influence_modifier = 0.1

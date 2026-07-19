@@ -130,22 +130,8 @@ scottish_morale = {
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_scottish_lowlands_area
-				}
-			}
-			AND = {
-				NOT = { is_subject_of = c:ENG } #to make it not available for Balliol when they are a subject of England after Civil War
-				NOT = { has_or_had_tag = SBL }
-			}
-		}
+		NOT = { is_subject_of = c:ENG } #to make it not available for Balliol when they are a subject of England after Civil War
+		NOT = { has_or_had_tag = SBL }
 	}
 	land_morale_modifier = 0.15
 	ai_weight = { add = 10 }
@@ -175,23 +161,8 @@ scottish_longbowmen = {
 	}
 	allow = {
 		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_scottish_lowlands_area
-				}
-			}
-			AND = {
-				OR = {
-				is_subject_of = c:ENG #replacement for scottish_morale if Scotland submits to England
-				has_or_had_tag = SBL
-				}
-			}
+			is_subject_of = c:ENG #replacement for scottish_morale if Scotland submits to England
+			has_or_had_tag = SBL
 		}
 	}
 	unlock_levy = levy_a_early_longbowmen
@@ -271,22 +242,8 @@ scottish_tenacity = {
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_scottish_lowlands_area
-				}
-			}
-			AND = {
-				NOT = { is_subject_of = c:ENG } #to make it not available for Balliol when they are a subject of England after Civil War
-				NOT = { has_or_had_tag = SBL }
-			}
-		}
+		NOT = { is_subject_of = c:ENG } #to make it not available for Balliol when they are a subject of England after Civil War
+		NOT = { has_or_had_tag = SBL }
 	}
 	monthly_war_exhaustion = -0.05
 }
@@ -312,21 +269,7 @@ influx_of_english_nobles = {
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_great_britain_region
-					has_variable = hafp_g_area_scottish_lowlands_area
-				}
-			}
-			AND = {
-				is_subject_of = c:ENG #replacement for scottish_tenacity if Scotland submits to England
-			}
-		}
+		is_subject_of = c:ENG #replacement for scottish_tenacity if Scotland submits to England
 	}
 	global_monthly_control = 0.002
 }

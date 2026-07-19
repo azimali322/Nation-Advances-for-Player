@@ -75,24 +75,7 @@ sca_sound_toll = {
 		}
 	}
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_3_discovery
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_north_atlantic_islands_region
-					has_variable = hafp_g_reg_scandinavian_region
-					has_variable = hafp_g_area_iceland_area
-				}
-			}
-			AND = {
-				own_entire_province = province_definition:zealand_province
-			}
-		}
-	}
+	allow = { own_entire_province = province_definition:zealand_province }
 
 	requires = merchant_power_from_maritime_discovery_advance
 	

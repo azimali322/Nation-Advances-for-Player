@@ -122,22 +122,7 @@ control_the_malacca_strait = {
 		}
 	}
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_indochina_region
-				}
-			}
-			AND = {
-				owns = location:malacca
-			}
-		}
-	}
+	allow = { owns = location:malacca }
 
 	icon = bng_bengali_trade_fleet
 

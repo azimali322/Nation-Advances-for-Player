@@ -184,26 +184,12 @@ port_of_aden = {
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_arabia_region
-					has_variable = hafp_g_area_south_yemen_area
-				}
-			}
-			AND = {
-				location:adan = {
-				owner ?= c:YEM
-				OR = {
+		location:adan = {
+			owner ?= c:YEM
+			OR = {
 				location_rank ?= location_rank:city
 				location_rank ?= location_rank:megalopolis
 				is_market_center = yes
-				}
-				}
 			}
 		}
 	}

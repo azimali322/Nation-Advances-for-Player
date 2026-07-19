@@ -175,32 +175,7 @@ ilk_new_roots = {	#They move away from being horde-like to a more reformed state
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_anatolia_region
-					has_variable = hafp_g_reg_caucasus_region
-					has_variable = hafp_g_reg_crescent_region
-					has_variable = hafp_g_reg_persia_region
-					has_variable = hafp_g_area_armenia_area
-					has_variable = hafp_g_area_armenian_highlands_area
-					has_variable = hafp_g_area_cappadocia_area
-					has_variable = hafp_g_area_georgia_area
-					has_variable = hafp_g_area_iraq_arabi_area
-					has_variable = hafp_g_area_jazira_area
-					has_variable = hafp_g_area_pontus_area
-					has_variable = hafp_g_area_shirvan_area
-				}
-			}
-			AND = {
-				NOT = { country_type = army }
-			}
-		}
+		NOT = { country_type = army }
 	}
 	requires = early_modern_administation
 	icon = administrative_leadership

@@ -113,23 +113,11 @@ bank_of_saint_george = {
 
 	allow = {
 		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_f_culture_ligurian
-				}
-			}
-			AND = {
-				OR = {
-				custom_tooltip = {
+			custom_tooltip = {
 				text = unlocked_advance_bank_of_saint_george_tt
 				has_variable = unlocked_advance_bank_of_saint_george
-				}
-				has_or_had_tag = SAGEO
-				}
 			}
+			has_or_had_tag = SAGEO
 		}
 	}
 

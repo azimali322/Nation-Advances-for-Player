@@ -17,23 +17,7 @@
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_tibet_region
-					has_variable = hafp_g_area_tsang_area
-				}
-			}
-			AND = {
-				religion = religion:tibetan_buddhism
-			}
-		}
-	}
+	allow = { religion = religion:tibetan_buddhism }
 	requires = codified_laws
 
 	icon = buddhist_meditation

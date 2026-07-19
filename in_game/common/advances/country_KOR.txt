@@ -328,22 +328,7 @@ kor_geobukseon = {
 		}
 	}
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_korea_region
-					has_variable = hafp_g_area_gyeonggi_area
-				}
-			}
-			AND = {
-				has_advance = kor_early_turtle_ship_advance
-			}
-		}
+		has_advance = kor_early_turtle_ship_advance
 	}
 	naval_damage_taken = -0.10
 	unlock_unit = n_turtle_ship

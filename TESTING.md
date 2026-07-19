@@ -1,5 +1,12 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 8 checks (institution `allow` gates no longer bypassed)
+
+- [ ] With *Unlock All Custom Advances* on, the **Meritocracy advance** (and other institution-gated defaults: Legalism/Feudalism roots, Banking, New World tree, ...) is **not** researchable until its institution is actually embraced — identical to vanilla. Previously the unlock toggles bypassed these `allow` gates.
+- [ ] After embracing an institution normally in-game, its gated advances become researchable as usual.
+- [ ] *Research All Advances* under **All advances** scope still force-researches institution-gated advances (the effect steps over `allow`); under the embraced scopes it does not.
+- [ ] The mod no longer overrides three vanilla files at all (0_age_of_absolutism / discovery / revolutions had only `allow` gates); confirm no errors and that those ages' advances behave vanilla.
+
 ## Round 7 checks (new feature: Exclude Foreign Military Advances)
 
 - [ ] Settings > Master > **Exclude Foreign Military Advances** exists (off by default), with tooltip.

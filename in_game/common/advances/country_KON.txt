@@ -162,24 +162,9 @@ kon_transatlantic_slave_trade = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-					has_variable = hafp_g_cont_africa
-					has_variable = hafp_g_reg_kongo_region
-					has_variable = hafp_g_area_kongo_area
-					has_variable = hafp_g_area_west_kongo_area
-				}
-			}
-			AND = {
-				current_age_or_later = { age = age_5_absolutism }
-				modifier:slavery_blocked = no
-			}
-		}
+	allow = { 
+		current_age_or_later = { age = age_5_absolutism } 
+		modifier:slavery_blocked = no
 	}
 	requires = global_trade_advance
 

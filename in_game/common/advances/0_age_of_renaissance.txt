@@ -9,20 +9,7 @@ renaissance_advance = {
 
 	depth = 0
 	
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:renaissance
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:renaissance }
 
 }
 
@@ -133,20 +120,7 @@ banking_advance = {
 
 	depth = 0
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:banking
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:banking }
 }
 
 merchants_and_trade = {
@@ -306,21 +280,7 @@ professional_armies_advance = {
 	depth = 0
 	ai_weight = { add = 100 }
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:professional_armies
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:professional_armies }
 }
 
 gunpowder_advance = {

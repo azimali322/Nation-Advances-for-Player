@@ -244,20 +244,8 @@ unlock_traditional_galley_advance = {
 	starting_technology_level = 2
 	requires = ship_building_advance
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:feudalism
-			}
-		}
+	allow = { 
+		has_embraced_institution = institution:feudalism
 	}
 
 	unlock_unit = n_traditional_galley

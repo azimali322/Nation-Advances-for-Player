@@ -23,20 +23,7 @@ confessionalism_advance = {
 
 	depth = 0
 	
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:confessionalism
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:confessionalism }
 }
 
 gov_reform_reformation_a  = {
@@ -134,20 +121,7 @@ global_trade_advance = {
 		
 	merchant_maintenance_efficiency = 0.20
 	depth = 0
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:global_trade
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:global_trade }
 }
 
 merchant_power_from_maritime_reformation_advance = {
@@ -290,21 +264,7 @@ artillery_institution_advance = {
 	depth = 0
 	ai_weight = { add = 100 }
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:artillery_institution
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:artillery_institution }
 }
 
 flintlock_gun = {

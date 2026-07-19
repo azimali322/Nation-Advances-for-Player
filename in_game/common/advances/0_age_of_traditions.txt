@@ -126,20 +126,7 @@ legalism_advance = {
 	
 	requires = codified_laws
 	
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:legalism
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:legalism }
 }
 
 
@@ -275,32 +262,21 @@ ranching = {
 	starting_technology_level = 1
 	requires = windmills_advance
 	
-	allow = {
+	allow = { 
 		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				OR = {
-				has_embraced_institution = institution:feudalism
-				original_capital ?= { continent = continent:europe }
-				original_capital ?= { continent = continent:asia }
-				original_capital ?= { sub_continent = sub_continent:north_africa }
-				original_capital ?= { sub_continent = sub_continent:west_africa }
-				
-				original_capital ?= {
-				market ?= {
-				OR = {
-				is_produced_in_market = goods:horses
-				is_traded_in_market = goods:horses
-				}
-				}
-				}
-				}
+			has_embraced_institution = institution:feudalism
+			original_capital ?= { continent = continent:europe }
+			original_capital ?= { continent = continent:asia }
+			original_capital ?= { sub_continent = sub_continent:north_africa }
+			original_capital ?= { sub_continent = sub_continent:west_africa }
+			
+			original_capital ?= {
+				market ?= { 
+					OR = {
+						is_produced_in_market = goods:horses 
+						is_traded_in_market = goods:horses 
+					}
+				} 
 			}
 		}
 	}
@@ -337,20 +313,7 @@ feudalism_advance = {
 	military_tactics = 1.0 # WAD, decision by johan
 	ai_weight = { add = 20 }
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:feudalism
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:feudalism }
 }
 
 trade_caravans = {
@@ -430,19 +393,8 @@ iron_working = {
 	research_cost = 2.0
 	starting_technology_level = 1
 	
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:feudalism
-			}
-		}
+	allow = { 
+		has_embraced_institution = institution:feudalism
 	}
 	
 	can_extract_coal = yes
@@ -633,20 +585,7 @@ meritocracy_advance = {
 	depth = 0
 
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				has_embraced_institution = institution:meritocracy
-			}
-		}
-	}
+	allow = { has_embraced_institution = institution:meritocracy }
 }
 
 educated_bureaucrats = {

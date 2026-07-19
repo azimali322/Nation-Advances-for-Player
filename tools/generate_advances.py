@@ -25,10 +25,10 @@ nation's unique advances, at several granularities driven by CMM settings
       }
   }
 
-  * `allow = { X }` gates get the same wrap (so institution requirements are
-    bypassed for unlocked advances, matching the original mod's behavior).
   * a top-level `government = <type>` gate is folded into the wrapped
     `potential` (the engine treats the key as a hard filter otherwise).
+  * `allow = { X }` gates (institution requirements) are left untouched so
+    they behave exactly as in the base game.
   * generic vanilla trees only get the master + era variables.
 
 Advances with none of those gates are left untouched; files with no changes
@@ -214,14 +214,11 @@ def process_advance(adv_id, block_text, unlock_vars, military=False):
 
     gov_entries = find_scalar_keys(block_text, mask, 0, len(block_text), "government")
     potential_span = None
-    allow_span = None
     for name, kstart, obrace, cbrace in find_blocks(block_text, mask, 0, len(block_text)):
         if name == "potential":
             potential_span = (kstart, obrace, cbrace)
-        elif name == "allow":
-            allow_span = (kstart, obrace, cbrace)
 
-    if not gov_entries and potential_span is None and allow_span is None:
+    if not gov_entries and potential_span is None:
         return block_text, False
 
     edits = []
@@ -243,10 +240,10 @@ def process_advance(adv_id, block_text, unlock_vars, military=False):
         for extra_start, extra_end, _ in gov_entries[1:]:
             edits.append((extra_start, extra_end, ""))
 
-    if allow_span is not None:
-        kstart, obrace, cbrace = allow_span
-        inner = block_text[obrace + 1 : cbrace]
-        edits.append((obrace + 1, cbrace, wrap_gate(inner, unlock_vars, None, military)))
+    # NOTE: `allow` blocks are deliberately NOT wrapped. They carry institution
+    # requirements (e.g. meritocracy_advance), which must behave exactly as in
+    # the base game even for unlocked advances - only the research buttons'
+    # "All advances" scope may step over them (research_advance forces).
 
     edits.sort(key=lambda e: e[0], reverse=True)
     new_text = block_text
@@ -342,9 +339,17 @@ def main():
         total_files += 1
         total_advances += changed
         total_military += military
+    # remove stale overrides for files the current run no longer modifies
+    removed = []
+    for fname in sorted(os.listdir(args.out)):
+        if fname.endswith(".txt") and fname in skipped:
+            os.remove(os.path.join(args.out, fname))
+            removed.append(fname)
     print("Wrote %d files, %d advances gated (%d classified military)"
           % (total_files, total_advances, total_military))
     print("Skipped %d files with no availability gates: %s" % (len(skipped), ", ".join(skipped)))
+    if removed:
+        print("Removed %d stale overrides: %s" % (len(removed), ", ".join(removed)))
 
 
 if __name__ == "__main__":

@@ -73,23 +73,7 @@ ushkuiniks = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_russian_region
-					has_variable = hafp_g_area_east_novgorod_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = ushkuiniks }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = ushkuiniks } }
 	requires = dock_advance
 
 	privateer_maintenance_cost_modifier = -0.15
@@ -167,23 +151,7 @@ reforms_of_the_posadnichestvo = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_2_renaissance
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_russian_region
-					has_variable = hafp_g_area_east_novgorod_area
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = reforms_of_the_posadnichestvo }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = reforms_of_the_posadnichestvo } }
 	age = age_2_renaissance
 	requires = renaissance_court
 	allow_children = no

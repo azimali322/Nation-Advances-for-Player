@@ -669,23 +669,7 @@ shared_brotherhood = {
 			}
 		}
 	}
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-					has_variable = hafp_g_cont_america
-					has_variable = hafp_g_reg_canada_region
-					has_variable = hafp_g_reg_east_coast_region
-				}
-			}
-			AND = {
-				has_unlocked_advance_trigger = { type = inigo_architecture }
-			}
-		}
-	}
+	allow = { has_unlocked_advance_trigger = { type = inigo_architecture } }
 	global_pop_assimilation_speed_modifier = 0.1
 	stability_investment = small_stability_investment
 }

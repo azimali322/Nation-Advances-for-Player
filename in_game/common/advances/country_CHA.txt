@@ -49,23 +49,7 @@ my_son_sanctuary = {	#Mỹ Sơn Sanctuary
 
 	icon = hindu_architecture
 
-	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_indochina_region
-					has_variable = hafp_g_area_champa_area
-				}
-			}
-			AND = {
-				religion = religion:hindu
-			}
-		}
-	}
+	allow = { religion = religion:hindu }
 
 	monthly_self_control = 0.01
 	tolerance_own = 1

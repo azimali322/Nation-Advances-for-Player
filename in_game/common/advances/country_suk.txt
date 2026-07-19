@@ -156,26 +156,12 @@ suk_sukhothai_ceramics = {
 	}
 
 	allow = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-					has_variable = hafp_g_cont_asia
-					has_variable = hafp_g_reg_indochina_region
-					has_variable = hafp_g_area_chao_phraya_area
-				}
-			}
-			AND = {
-				num_locations > 0
-				capital = {
-				market = {
-				OR = {
-				is_produced_in_market = goods:clay
-				is_traded_in_market = goods:clay
-				}
-				}
+		num_locations > 0
+		capital = {
+			market = {
+			OR = {
+					is_produced_in_market = goods:clay
+					is_traded_in_market = goods:clay
 				}
 			}
 		}

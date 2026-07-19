@@ -45,7 +45,7 @@ potential = {
 }
 ```
 
-`allow` gates (institution requirements) get the same wrap, and top-level `government =` gates are folded into the wrapped potential. Each CMM toggle syncs to its `hafp_*` country variable via `cmm_sync_bool_alias`, re-synced on every CMM callback.
+Top-level `government =` gates are folded into the wrapped potential as `government_type` triggers. `allow` gates (institution requirements, e.g. the Meritocracy advance) are deliberately left untouched, so institution requirements behave exactly as in the base game — only the research buttons' *All advances* scope can step over them. Each CMM toggle syncs to its `hafp_*` country variable via `cmm_sync_bool_alias`, re-synced on every CMM callback.
 
 Where each advance belongs is computed by [tools/build_groups.py](tools/build_groups.py) from the game files: nation tags map through their 1337 capital (formables through their formable-definition regions, a small manual table covers the rest); region/area/continent scope references are used directly; culture and language gated advances map to where those cultures' pops live in the 1337 setup.
 
