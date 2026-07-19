@@ -265,6 +265,7 @@ weisuo_system = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -373,6 +374,7 @@ tu_bing = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -478,6 +480,7 @@ grand_military_parades = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -553,6 +556,7 @@ the_red_cannon = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -604,6 +608,7 @@ green_standard_army = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism

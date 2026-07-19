@@ -51,6 +51,12 @@ A second tab called **Settings** containing:
 
 - A settings option to **unlock** (make researchable, not auto-research) all advances in a **specific era**.
 
+## 7. Exclude foreign military advances (Settings)
+
+- A Settings toggle that, while on, keeps **other nations' army/navy custom advances locked** regardless of the continent/region/area/culture/religion selections (or Unlock All), and makes the research buttons skip them.
+- The player's **own nation's** military advances are unaffected (they flow through the base-game branch of the gate).
+- Classification: the whole `2_army_unlocks` / `2_ship_unlocks` trees, plus any advance that unlocks units/levies or whose modifiers are predominantly military stats (~578 of ~2,490 gated advances).
+
 ---
 
 ## Non-functional / setup requirements

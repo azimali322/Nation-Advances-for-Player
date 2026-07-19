@@ -173,6 +173,7 @@ sardinian_the_turres_costeras = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -202,6 +203,7 @@ sar_sardinian_tercios = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -258,6 +260,7 @@ sar_the_cavalcadores = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism

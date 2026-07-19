@@ -175,6 +175,7 @@ home_of_hussars = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -205,6 +206,7 @@ hum_the_kosaca_iron_fist  = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -232,6 +234,7 @@ ser_vitestvo = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -485,6 +488,7 @@ zta_the_retreat_to_the_karst = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -739,6 +743,7 @@ ser_serbian_national_militia = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -822,6 +827,7 @@ zta_guerillas_of_the_scrub = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -878,6 +884,7 @@ hum_modernized_national_redoubt = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -905,6 +912,7 @@ military_modernization = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions

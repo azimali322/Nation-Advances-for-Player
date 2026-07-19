@@ -680,6 +680,8 @@
  hafp__enabled_desc: "Master switch for the whole mod. While off, every advance behaves exactly as in the base game no matter what is selected in the other tabs. Turn on to apply your selections; your own nation's advances are always unaffected."
  hafp__unlock_all_name: "Unlock All Custom Advances"
  hafp__unlock_all_desc: "Unlock every nation, culture, religion, and government advance in the game for research - the same as selecting every continent, region, and area. Overrides the individual toggles in the other tabs (they stay as you set them)."
+ hafp__exclude_military_name: "Exclude Foreign Military Advances"
+ hafp__exclude_military_desc: "While on, other nations' army and navy advances stay locked even if their continent, region, area, culture, or religion is selected (or Unlock All is on) - and the research buttons skip them. Your own nation's military advances are unaffected."
  hafp__age_age_1_traditions_name: "Unlock Age of Traditions"
  hafp__age_age_1_traditions_desc: "Make every gated advance of the Age of Traditions researchable, for all nations, cultures, religions, and governments."
  hafp__age_age_2_renaissance_name: "Unlock Age of Renaissance"

@@ -85,6 +85,7 @@ unlock_war_galleon = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -113,6 +114,7 @@ unlock_baochuan = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -202,6 +204,7 @@ unlock_dhow = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -245,6 +248,7 @@ unlock_traditional_galley_advance = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -282,6 +286,7 @@ unlock_galleass_advance = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -314,6 +319,7 @@ italian_galleass = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -337,6 +343,7 @@ unlock_archipelago_frigate = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -369,6 +376,7 @@ unlock_cakradonya = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -396,6 +404,7 @@ unlock_galiot = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -431,6 +440,7 @@ unlock_sekibune = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -457,6 +467,7 @@ unlock_atakebune = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -483,6 +494,7 @@ unlock_long_fada = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -513,6 +525,7 @@ unlock_long_fada_2 = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance

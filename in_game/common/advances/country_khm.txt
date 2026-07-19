@@ -52,6 +52,7 @@ khm_ballista_elephants = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -98,6 +99,7 @@ khm_recruitment_of_peasants = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -167,6 +169,7 @@ khm_champa_mercenaries = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -214,6 +217,7 @@ khm_modern_navy = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
@@ -260,6 +264,7 @@ khm_protection_from_raids = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
@@ -283,6 +288,7 @@ khm_old_grudges = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
+				NOT = { has_variable = hafp_exclude_military }
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions

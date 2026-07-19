@@ -331,6 +331,12 @@ def main():
                "in the game for research - the same as selecting every "
                "continent, region, and area. Overrides the individual toggles "
                "in the other tabs (they stay as you set them).")
+    add_toggle("exclude_military", tab, "master", "hafp_exclude_military",
+               "Exclude Foreign Military Advances",
+               "While on, other nations' army and navy advances stay locked "
+               "even if their continent, region, area, culture, or religion is "
+               "selected (or Unlock All is on) - and the research buttons skip "
+               "them. Your own nation's military advances are unaffected.")
 
     for age_id, age_name in AGES:
         add_toggle("age_%s" % age_id, tab, "era_unlock",

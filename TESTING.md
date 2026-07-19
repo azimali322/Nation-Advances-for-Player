@@ -1,5 +1,13 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 7 checks (new feature: Exclude Foreign Military Advances)
+
+- [ ] Settings > Master > **Exclude Foreign Military Advances** exists (off by default), with tooltip.
+- [ ] With it ON and e.g. *All of Europe* selected (or Unlock All): foreign military advances (Élan, Gendarmes, Cataphracts, the unique ship/army unlocks like Dhow or Genoese Galley) are **not** researchable; foreign civilian advances (French Tradition, Estates General, religious/economic trees) still are.
+- [ ] Your **own nation's** military advances remain exactly as in the base game while the toggle is on.
+- [ ] Research buttons skip the excluded military advances under every scope; toggling it off makes them unlockable/researchable again.
+- [ ] Borderline classification spot-checks welcome: an advance is "military" if it's in the army/ship unlock trees, unlocks units/levies, or has mostly military-stat modifiers (e.g. French Heritage counts as military because its only effect is nobles levy size). Report any that feel wrongly classified either way.
+
 ## Round 6 checks (from fifth test pass)
 
 - [ ] **Unembraced institution branches stay unresearched.** As Tunis (Feudalism embraced, Meritocracy not), *Research All Custom Advances* under *Embraced institutions only* no longer researches custom advances chained under the Meritocracy root (e.g. the Mamluk `barid` tree requires the Meritocracy advance) — institution requirements are now inherited through the whole prerequisite chain. After embracing Meritocracy, the same click researches them.

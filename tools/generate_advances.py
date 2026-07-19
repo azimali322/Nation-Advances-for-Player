@@ -47,6 +47,50 @@ import sys
 
 MASTER_ENABLED = "hafp_enabled"
 UNLOCK_ALL = "hafp_all_advances_enabled"
+EXCLUDE_MILITARY = "hafp_exclude_military"
+
+# Military classification: these whole files are army/navy trees...
+MILITARY_FILES = {"2_army_unlocks.txt", "2_ship_unlocks.txt"}
+# ...elsewhere an advance is military if it unlocks units/levies or if its
+# modifiers are predominantly military stats.
+STRUCTURAL_KEYS = {
+    "age", "icon", "requires", "potential", "allow", "government", "depth",
+    "content_priority", "for", "country_type", "allow_children", "ai_weight",
+    "ai_will_do", "ai_preference_tags", "modifier_while_progressing",
+}
+MILITARY_TERMS = (
+    "army", "navy", "naval", "levy", "levies", "morale", "discipline",
+    "manpower", "sailor", "siege", "fort_", "_fort", "regiment", "cavalry",
+    "infantry", "artillery", "ship", "galley", "fleet", "marine", "mercenar",
+    "combat", "battle", "attrition", "reinforce", "garrison", "blockade",
+    "military", "supply_limit", "defensiveness", "war_", "_war", "admiral",
+    "general_", "unit_", "_unit", "shock", "casualt", "conscript",
+)
+
+
+def is_military_key(key):
+    return any(t in key for t in MILITARY_TERMS)
+
+
+def is_military_advance(fname, body):
+    if fname in MILITARY_FILES:
+        return True
+    if re.search(r"\bunlock_(unit|levy)\s*=", body):
+        return True
+    mil = 0
+    civ = 0
+    for line in body.splitlines():
+        m = re.match(r"\s*([a-z_0-9]+)\s*=", line.split("#")[0])
+        if not m:
+            continue
+        key = m.group(1)
+        if key in STRUCTURAL_KEYS or key.startswith(("unlock_", "ai_")):
+            continue
+        if is_military_key(key):
+            mil += 1
+        else:
+            civ += 1
+    return mil > 0 and mil >= civ
 
 KEY_RE = re.compile(r"([A-Za-z0-9_.:]+)\s*=\s*(\{|\"[^\"]*\"|[^\s{}#]+)")
 
@@ -145,9 +189,12 @@ def find_scalar_keys(text, mask, start, end, key):
     return results
 
 
-def wrap_gate(inner, unlock_vars, extra_lines=None):
+def wrap_gate(inner, unlock_vars, extra_lines=None, military=False):
     """Build the wrapped gate body from the original inner content."""
-    body = "\n\t\tOR = {\n\t\t\tAND = {\n\t\t\t\thas_variable = %s\n\t\t\t\tOR = {" % MASTER_ENABLED
+    body = "\n\t\tOR = {\n\t\t\tAND = {\n\t\t\t\thas_variable = %s" % MASTER_ENABLED
+    if military:
+        body += "\n\t\t\t\tNOT = { has_variable = %s }" % EXCLUDE_MILITARY
+    body += "\n\t\t\t\tOR = {"
     for var in unlock_vars:
         body += "\n\t\t\t\t\thas_variable = %s" % var
     body += "\n\t\t\t\t}\n\t\t\t}\n\t\t\tAND = {"
@@ -162,7 +209,7 @@ def wrap_gate(inner, unlock_vars, extra_lines=None):
     return body
 
 
-def process_advance(adv_id, block_text, unlock_vars):
+def process_advance(adv_id, block_text, unlock_vars, military=False):
     mask = strip_positions(block_text)
 
     gov_entries = find_scalar_keys(block_text, mask, 0, len(block_text), "government")
@@ -185,12 +232,13 @@ def process_advance(adv_id, block_text, unlock_vars):
     if potential_span is not None:
         kstart, obrace, cbrace = potential_span
         inner = block_text[obrace + 1 : cbrace]
-        edits.append((obrace + 1, cbrace, wrap_gate(inner, unlock_vars, gov_lines)))
+        edits.append((obrace + 1, cbrace,
+                      wrap_gate(inner, unlock_vars, gov_lines, military)))
         for gstart, gend, _ in gov_entries:
             edits.append((gstart, gend, ""))
     elif gov_entries:
         gstart, gend, _ = gov_entries[0]
-        replacement = "potential = {%s}" % wrap_gate("", unlock_vars, gov_lines)
+        replacement = "potential = {%s}" % wrap_gate("", unlock_vars, gov_lines, military)
         edits.append((gstart, gend, replacement))
         for extra_start, extra_end, _ in gov_entries[1:]:
             edits.append((extra_start, extra_end, ""))
@@ -198,7 +246,7 @@ def process_advance(adv_id, block_text, unlock_vars):
     if allow_span is not None:
         kstart, obrace, cbrace = allow_span
         inner = block_text[obrace + 1 : cbrace]
-        edits.append((obrace + 1, cbrace, wrap_gate(inner, unlock_vars)))
+        edits.append((obrace + 1, cbrace, wrap_gate(inner, unlock_vars, None, military)))
 
     edits.sort(key=lambda e: e[0], reverse=True)
     new_text = block_text
@@ -235,17 +283,21 @@ def process_file(text, file_entry, fname):
     changed = 0
     pieces = []
     last = 0
+    military_count = 0
     for name, kstart, obrace, cbrace in find_blocks(text, mask, 0, len(text)):
         body = text[obrace + 1 : cbrace]
         unlock = unlock_vars_for(name, body, file_entry, fname)
-        new_body, did = process_advance(name, body, unlock)
+        military = is_military_advance(fname, body)
+        new_body, did = process_advance(name, body, unlock, military)
         pieces.append(text[last : obrace + 1])
         pieces.append(new_body)
         last = cbrace
         if did:
             changed += 1
+            if military:
+                military_count += 1
     pieces.append(text[last:])
-    return "".join(pieces), changed
+    return "".join(pieces), changed, military_count
 
 
 def main():
@@ -273,6 +325,7 @@ def main():
 
     total_files = 0
     total_advances = 0
+    total_military = 0
     skipped = []
     for fname in sorted(os.listdir(src)):
         if not fname.endswith(".txt"):
@@ -280,7 +333,7 @@ def main():
         with open(os.path.join(src, fname), "r", encoding="utf-8-sig") as fh:
             text = fh.read()
         file_entry = groups["files"].get(fname)
-        new_text, changed = process_file(text, file_entry, fname)
+        new_text, changed, military = process_file(text, file_entry, fname)
         if changed == 0:
             skipped.append(fname)
             continue
@@ -288,7 +341,9 @@ def main():
             fh.write(new_text)
         total_files += 1
         total_advances += changed
-    print("Wrote %d files, %d advances gated" % (total_files, total_advances))
+        total_military += military
+    print("Wrote %d files, %d advances gated (%d classified military)"
+          % (total_files, total_advances, total_military))
     print("Skipped %d files with no availability gates: %s" % (len(skipped), ", ".join(skipped)))
 
 
