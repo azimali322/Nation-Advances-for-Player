@@ -112,18 +112,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = state_administration_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = state_administration_advance
-			}
-		}
-		research_advance = advance_type:state_administration_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = legalism_advance }
 			OR = {
 				AND = {
@@ -160,18 +148,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = banking_country_traditions }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = banking_country_traditions
-			}
-		}
-		research_advance = advance_type:banking_country_traditions
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = hospital_advance }
 			OR = {
 				AND = {
@@ -205,18 +181,6 @@ hafp_research_age_1_traditions_generic = {
 			}
 		}
 		research_advance = advance_type:windmills_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = aqueduct_system }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = aqueduct_system
-			}
-		}
-		research_advance = advance_type:aqueduct_system
 	}
 	if = {
 		limit = {
@@ -289,18 +253,6 @@ hafp_research_age_1_traditions_generic = {
 			}
 		}
 		research_advance = advance_type:feudalism_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = trade_caravans }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = trade_caravans
-			}
-		}
-		research_advance = advance_type:trade_caravans
 	}
 	if = {
 		limit = {
@@ -445,18 +397,6 @@ hafp_research_age_1_traditions_generic = {
 			}
 		}
 		research_advance = advance_type:more_merchants_age_of_trad
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = slave_raid_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = slave_raid_advance
-			}
-		}
-		research_advance = advance_type:slave_raid_advance
 	}
 	if = {
 		limit = {
@@ -628,18 +568,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = appointed_chain_of_command }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = appointed_chain_of_command
-			}
-		}
-		research_advance = advance_type:appointed_chain_of_command
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = temporary_appointments }
 			OR = {
 				AND = {
@@ -724,42 +652,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = cathedral_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = cathedral_advance
-			}
-		}
-		research_advance = advance_type:cathedral_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = porcelain_kiln_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = porcelain_kiln_advance
-			}
-		}
-		research_advance = advance_type:porcelain_kiln_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = lacquerware_guild_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = lacquerware_guild_advance
-			}
-		}
-		research_advance = advance_type:lacquerware_guild_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = scriptorium_advance }
 			OR = {
 				AND = {
@@ -808,18 +700,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = confucian_school_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = confucian_school_advance
-			}
-		}
-		research_advance = advance_type:confucian_school_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = royal_court_advance }
 			OR = {
 				AND = {
@@ -844,18 +724,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = order_headquarters_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = order_headquarters_advance
-			}
-		}
-		research_advance = advance_type:order_headquarters_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = weapon_guild_advance }
 			OR = {
 				AND = {
@@ -877,30 +745,6 @@ hafp_research_age_1_traditions_generic = {
 			}
 		}
 		research_advance = advance_type:chancery_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = lieutenancy_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = lieutenancy_advance
-			}
-		}
-		research_advance = advance_type:lieutenancy_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = fortress_church_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = fortress_church_advance
-			}
-		}
-		research_advance = advance_type:fortress_church_advance
 	}
 	if = {
 		limit = {
@@ -964,18 +808,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_dhow }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_dhow
-			}
-		}
-		research_advance = advance_type:unlock_dhow
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_traditional_galley_advance }
 			OR = {
 				AND = {
@@ -988,18 +820,6 @@ hafp_research_age_1_traditions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_long_fada }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_long_fada
-			}
-		}
-		research_advance = advance_type:unlock_long_fada
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_cog_advance }
 			OR = {
 				AND = {
@@ -1009,18 +829,6 @@ hafp_research_age_1_traditions_generic = {
 			}
 		}
 		research_advance = advance_type:unlock_cog_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = settle_the_frontier_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = settle_the_frontier_advance
-			}
-		}
-		research_advance = advance_type:settle_the_frontier_advance
 	}
 	if = {
 		limit = {
@@ -1045,66 +853,6 @@ hafp_research_age_1_traditions_generic = {
 			}
 		}
 		research_advance = advance_type:paper_guild_fiber_pulp_maintenance_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = monarchy_reform_traditions_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = monarchy_reform_traditions_advance
-			}
-		}
-		research_advance = advance_type:monarchy_reform_traditions_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = republic_reform_traditions_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = republic_reform_traditions_advance
-			}
-		}
-		research_advance = advance_type:republic_reform_traditions_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = monarchy_royal_court_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = monarchy_royal_court_advance
-			}
-		}
-		research_advance = advance_type:monarchy_royal_court_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = theocracy_divine_cause_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = theocracy_divine_cause_law_advance
-			}
-		}
-		research_advance = advance_type:theocracy_divine_cause_law_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = tribal_religious_values_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = tribal_religious_values_law_advance
-			}
-		}
-		research_advance = advance_type:tribal_religious_values_law_advance
 	}
 	if = {
 		limit = {
@@ -1145,6 +893,587 @@ hafp_research_age_1_traditions_generic = {
 }
 
 hafp_research_age_1_traditions_custom = {
+	if = {
+		limit = {
+			NOT = { has_advance = state_administration_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					has_tribal_government = no
+					}
+					}
+				}
+				can_research_advance = state_administration_advance
+			}
+		}
+		research_advance = advance_type:state_administration_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = banking_country_traditions }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					has_reform =government_reform:banking_country
+					}
+					}
+				}
+				can_research_advance = banking_country_traditions
+			}
+		}
+		research_advance = advance_type:banking_country_traditions
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = aqueduct_system }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					OR = {
+					has_or_had_tag = BYZ
+					has_or_had_tag = ROM
+					}
+					}
+					}
+				}
+				can_research_advance = aqueduct_system
+			}
+		}
+		research_advance = advance_type:aqueduct_system
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = trade_caravans }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					original_capital ?= { sub_continent = sub_continent:central_asia }
+					}
+					}
+				}
+				can_research_advance = trade_caravans
+			}
+		}
+		research_advance = advance_type:trade_caravans
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = slave_raid_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					OR = {
+					has_or_had_tag = MOR
+					has_or_had_tag = TUN
+					has_or_had_tag = TLE
+					has_or_had_tag = TRP
+					AND = {
+					num_locations > 0
+					capital = { region = region:maghreb_region }
+					}
+					}
+					}
+					}
+				}
+				can_research_advance = slave_raid_advance
+			}
+		}
+		research_advance = advance_type:slave_raid_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = appointed_chain_of_command }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					original_capital ?= { sub_continent = sub_continent:east_asia }
+					}
+					}
+				}
+				can_research_advance = appointed_chain_of_command
+			}
+		}
+		research_advance = advance_type:appointed_chain_of_command
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = cathedral_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					religion.group = religion_group:christian
+					}
+					}
+				}
+				can_research_advance = cathedral_advance
+			}
+		}
+		research_advance = advance_type:cathedral_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = porcelain_kiln_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					num_of_non_rural > 0
+					original_capital = { sub_continent = sub_continent:east_asia }
+					}
+					}
+				}
+				can_research_advance = porcelain_kiln_advance
+			}
+		}
+		research_advance = advance_type:porcelain_kiln_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = lacquerware_guild_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					num_of_non_rural > 0
+					original_capital = { sub_continent = sub_continent:east_asia }
+					}
+					}
+				}
+				can_research_advance = lacquerware_guild_advance
+			}
+		}
+		research_advance = advance_type:lacquerware_guild_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = confucian_school_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					OR =  {
+					culture = { has_culture_group = culture_group:confucian_group }
+					religion = religion:sanjiao
+					any_international_organizations_member_of = {
+					international_organization_type = international_organization_type:sect
+					international_organization_has_policy = policy:confucianism_policy
+					}
+					custom_tooltip = {
+					text = has_neo_confucianism_tt
+					has_variable = has_neo_confucianism
+					}
+					is_member_of_international_organization = international_organization:middle_kingdom
+					}
+					}
+					}
+				}
+				can_research_advance = confucian_school_advance
+			}
+		}
+		research_advance = advance_type:confucian_school_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = order_headquarters_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					has_reform = government_reform:military_order_reform
+					}
+					}
+				}
+				can_research_advance = order_headquarters_advance
+			}
+		}
+		research_advance = advance_type:order_headquarters_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = lieutenancy_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					culture = { has_culture_group = culture_group:iberian_group }
+					}
+					}
+				}
+				can_research_advance = lieutenancy_advance
+			}
+		}
+		research_advance = advance_type:lieutenancy_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = fortress_church_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					OR = {
+					AND = {
+					modifier:can_have_monasteries = yes
+					OR =  {
+					culture = { has_culture_group = culture_group:german_group }
+					culture = { has_culture_group = culture_group:french_group }
+					culture = { has_culture_group = culture_group:hungarian_group }
+					culture = { has_culture_group = culture_group:british_group }
+					culture = { has_culture_group = culture_group:iberian_group }
+					}
+					}
+					has_reform = government_reform:shield_of_the_faith_reform
+					}
+					}
+					}
+				}
+				can_research_advance = fortress_church_advance
+			}
+		}
+		research_advance = advance_type:fortress_church_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_dhow }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					original_capital ?= {
+					OR = {
+					region = region:arabia_region
+					region = region:persia_region
+					region = region:somalia_region
+					region = region:egypt_region
+					region = region:nubia_region
+					region = region:ethiopia_region
+					region = region:swahili_coast_region
+					region = region:deccan_region
+					region = region:western_india_region
+					}
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_dhow
+			}
+		}
+		research_advance = advance_type:unlock_dhow
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_long_fada }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					culture = {
+					OR = {
+					has_culture_group = culture_group:scottish_group
+					has_culture_group = culture_group:hibernian_group
+					}
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_long_fada
+			}
+		}
+		research_advance = advance_type:unlock_long_fada
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = settle_the_frontier_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					OR = {
+					country_type = location
+					country_type = army
+					}
+					OR = {
+					has_or_had_tag = MKU #Makua, is part of Swahili Coast region
+					has_or_had_tag = KAM
+					original_capital ?= {
+					OR = {
+					sub_continent = sub_continent:south_america
+					sub_continent = sub_continent:central_africa
+					region = region:great_lakes_region
+					region = region:southern_africa_region
+					region = region:zimbabwe_region
+					#North American Natives
+					region = region:east_coast_region
+					region = region:great_plains_region
+					area = area:shiewhibak_area
+					continent = continent:oceania
+					}
+					}
+					}
+					NOT = { is_subject_type = colonial_nation }
+					}
+					}
+				}
+				can_research_advance = settle_the_frontier_advance
+			}
+		}
+		research_advance = advance_type:settle_the_frontier_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = monarchy_reform_traditions_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					government_type = government_type:monarchy
+					}
+					}
+				}
+				can_research_advance = monarchy_reform_traditions_advance
+			}
+		}
+		research_advance = advance_type:monarchy_reform_traditions_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = republic_reform_traditions_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					government_type = government_type:republic
+					}
+					}
+				}
+				can_research_advance = republic_reform_traditions_advance
+			}
+		}
+		research_advance = advance_type:republic_reform_traditions_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = monarchy_royal_court_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					government_type = government_type:monarchy
+					}
+					}
+				}
+				can_research_advance = monarchy_royal_court_advance
+			}
+		}
+		research_advance = advance_type:monarchy_royal_court_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = theocracy_divine_cause_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					government_type = government_type:theocracy
+					}
+					}
+				}
+				can_research_advance = theocracy_divine_cause_law_advance
+			}
+		}
+		research_advance = advance_type:theocracy_divine_cause_law_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = tribal_religious_values_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					}
+					}
+					AND = {
+					government_type = government_type:tribe
+					}
+					}
+				}
+				can_research_advance = tribal_religious_values_law_advance
+			}
+		}
+		research_advance = advance_type:tribal_religious_values_law_advance
+	}
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_1_advance }
@@ -15830,18 +16159,6 @@ hafp_research_age_2_renaissance_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = route_to_the_indies_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = route_to_the_indies_advance
-			}
-		}
-		research_advance = advance_type:route_to_the_indies_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = pound_lock_canals_advance }
 			OR = {
 				AND = {
@@ -15851,18 +16168,6 @@ hafp_research_age_2_renaissance_generic = {
 			}
 		}
 		research_advance = advance_type:pound_lock_canals_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = expanded_aqueduct_system }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = expanded_aqueduct_system
-			}
-		}
-		research_advance = advance_type:expanded_aqueduct_system
 	}
 	if = {
 		limit = {
@@ -16370,18 +16675,6 @@ hafp_research_age_2_renaissance_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = confucian_academy_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = confucian_academy_advance
-			}
-		}
-		research_advance = advance_type:confucian_academy_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = university_advance }
 			OR = {
 				AND = {
@@ -16463,18 +16756,6 @@ hafp_research_age_2_renaissance_generic = {
 			}
 		}
 		research_advance = advance_type:unlock_crossbowmen_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = unlock_reformed_crusader_knights_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_reformed_crusader_knights_advance
-			}
-		}
-		research_advance = advance_type:unlock_reformed_crusader_knights_advance
 	}
 	if = {
 		limit = {
@@ -16574,18 +16855,6 @@ hafp_research_age_2_renaissance_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_long_fada_2 }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_long_fada_2
-			}
-		}
-		research_advance = advance_type:unlock_long_fada_2
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_hulk_advance }
 			OR = {
 				AND = {
@@ -16643,18 +16912,6 @@ hafp_research_age_2_renaissance_generic = {
 			}
 		}
 		research_advance = advance_type:national_assemblies_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = steppe_horde_tribal_religious_values_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = steppe_horde_tribal_religious_values_law_advance
-			}
-		}
-		research_advance = advance_type:steppe_horde_tribal_religious_values_law_advance
 	}
 	if = {
 		limit = {
@@ -17139,6 +17396,170 @@ hafp_research_age_2_renaissance_generic = {
 }
 
 hafp_research_age_2_renaissance_custom = {
+	if = {
+		limit = {
+			NOT = { has_advance = route_to_the_indies_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					}
+					}
+					AND = {
+					original_capital ?= { sub_continent = sub_continent:western_europe }
+					}
+					}
+				}
+				can_research_advance = route_to_the_indies_advance
+			}
+		}
+		research_advance = advance_type:route_to_the_indies_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = expanded_aqueduct_system }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					}
+					}
+					AND = {
+					OR = {
+					has_or_had_tag = BYZ
+					has_or_had_tag = ROM
+					}
+					}
+					}
+				}
+				can_research_advance = expanded_aqueduct_system
+			}
+		}
+		research_advance = advance_type:expanded_aqueduct_system
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = confucian_academy_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					}
+					}
+					AND = {
+					OR =  {
+					culture = { has_culture_group = culture_group:confucian_group }
+					religion = religion:sanjiao
+					any_international_organizations_member_of = {
+					international_organization_type = international_organization_type:sect
+					international_organization_has_policy = policy:confucianism_policy
+					}
+					custom_tooltip = {
+					text = has_neo_confucianism_tt
+					has_variable = has_neo_confucianism
+					}
+					is_member_of_international_organization = international_organization:middle_kingdom
+					}
+					}
+					}
+				}
+				can_research_advance = confucian_academy_advance
+			}
+		}
+		research_advance = advance_type:confucian_academy_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_reformed_crusader_knights_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					}
+					}
+					AND = {
+					modifier:allow_military_order_units = yes
+					}
+					}
+				}
+				can_research_advance = unlock_reformed_crusader_knights_advance
+			}
+		}
+		research_advance = advance_type:unlock_reformed_crusader_knights_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_long_fada_2 }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					}
+					}
+					AND = {
+					culture = {
+					OR = {
+					has_culture_group = culture_group:scottish_group
+					has_culture_group = culture_group:hibernian_group
+					}
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_long_fada_2
+			}
+		}
+		research_advance = advance_type:unlock_long_fada_2
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = steppe_horde_tribal_religious_values_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					}
+					}
+					AND = {
+					government_type = government_type:steppe_horde
+					}
+					}
+				}
+				can_research_advance = steppe_horde_tribal_religious_values_law_advance
+			}
+		}
+		research_advance = advance_type:steppe_horde_tribal_religious_values_law_advance
+	}
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_2_advance }
@@ -32682,18 +33103,6 @@ hafp_research_age_3_discovery_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_baochuan }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_baochuan
-			}
-		}
-		research_advance = advance_type:unlock_baochuan
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_caravel_advance }
 			OR = {
 				AND = {
@@ -32715,30 +33124,6 @@ hafp_research_age_3_discovery_generic = {
 			}
 		}
 		research_advance = advance_type:unlock_war_galley_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = unlock_sekibune }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_sekibune
-			}
-		}
-		research_advance = advance_type:unlock_sekibune
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = unlock_atakebune }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_atakebune
-			}
-		}
-		research_advance = advance_type:unlock_atakebune
 	}
 	if = {
 		limit = {
@@ -32799,18 +33184,6 @@ hafp_research_age_3_discovery_generic = {
 			}
 		}
 		research_advance = advance_type:fort_limit_3_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = steppe_horde_tribal_cultural_identity_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = steppe_horde_tribal_cultural_identity_law_advance
-			}
-		}
-		research_advance = advance_type:steppe_horde_tribal_cultural_identity_law_advance
 	}
 	if = {
 		limit = {
@@ -33295,6 +33668,108 @@ hafp_research_age_3_discovery_generic = {
 }
 
 hafp_research_age_3_discovery_custom = {
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_baochuan }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					}
+					}
+					AND = {
+					culture = {
+					has_culture_group = culture_group:chinese_group
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_baochuan
+			}
+		}
+		research_advance = advance_type:unlock_baochuan
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_sekibune }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					}
+					}
+					AND = {
+					culture = {
+					has_culture_group = culture_group:japanese_group
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_sekibune
+			}
+		}
+		research_advance = advance_type:unlock_sekibune
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_atakebune }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					}
+					}
+					AND = {
+					culture = {
+					has_culture_group = culture_group:japanese_group
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_atakebune
+			}
+		}
+		research_advance = advance_type:unlock_atakebune
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = steppe_horde_tribal_cultural_identity_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					}
+					}
+					AND = {
+					government_type = government_type:steppe_horde
+					}
+					}
+				}
+				can_research_advance = steppe_horde_tribal_cultural_identity_law_advance
+			}
+		}
+		research_advance = advance_type:steppe_horde_tribal_cultural_identity_law_advance
+	}
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_3_advance }
@@ -44163,18 +44638,6 @@ hafp_research_age_4_reformation_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = generic_bureaucracy_4_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = generic_bureaucracy_4_advance
-			}
-		}
-		research_advance = advance_type:generic_bureaucracy_4_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = global_trade_advance }
 			OR = {
 				AND = {
@@ -44931,18 +45394,6 @@ hafp_research_age_4_reformation_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = viceroyalty_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = viceroyalty_advance
-			}
-		}
-		research_advance = advance_type:viceroyalty_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_arquebusiers_advance }
 			OR = {
 				AND = {
@@ -45039,18 +45490,6 @@ hafp_research_age_4_reformation_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_war_galleon }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_war_galleon
-			}
-		}
-		research_advance = advance_type:unlock_war_galleon
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_pinnace_advance }
 			OR = {
 				AND = {
@@ -45060,54 +45499,6 @@ hafp_research_age_4_reformation_generic = {
 			}
 		}
 		research_advance = advance_type:unlock_pinnace_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = unlock_galleass_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_galleass_advance
-			}
-		}
-		research_advance = advance_type:unlock_galleass_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = italian_galleass }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = italian_galleass
-			}
-		}
-		research_advance = advance_type:italian_galleass
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = unlock_cakradonya }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_cakradonya
-			}
-		}
-		research_advance = advance_type:unlock_cakradonya
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = unlock_galiot }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_galiot
-			}
-		}
-		research_advance = advance_type:unlock_galiot
 	}
 	if = {
 		limit = {
@@ -45159,42 +45550,6 @@ hafp_research_age_4_reformation_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = theocracy_nature_of_our_faith_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = theocracy_nature_of_our_faith_law_advance
-			}
-		}
-		research_advance = advance_type:theocracy_nature_of_our_faith_law_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = steppe_horde_tribal_modernization_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = steppe_horde_tribal_modernization_law_advance
-			}
-		}
-		research_advance = advance_type:steppe_horde_tribal_modernization_law_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = tribal_migration_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = tribal_migration_law_advance
-			}
-		}
-		research_advance = advance_type:tribal_migration_law_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = clergy_rights_laws_advance }
 			OR = {
 				AND = {
@@ -45216,18 +45571,6 @@ hafp_research_age_4_reformation_generic = {
 			}
 		}
 		research_advance = advance_type:intelligence_agency_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = legitimization_of_power_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = legitimization_of_power_law_advance
-			}
-		}
-		research_advance = advance_type:legitimization_of_power_law_advance
 	}
 	if = {
 		limit = {
@@ -45616,6 +45959,283 @@ hafp_research_age_4_reformation_generic = {
 }
 
 hafp_research_age_4_reformation_custom = {
+	if = {
+		limit = {
+			NOT = { has_advance = generic_bureaucracy_4_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					}
+					}
+				}
+				can_research_advance = generic_bureaucracy_4_advance
+			}
+		}
+		research_advance = advance_type:generic_bureaucracy_4_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = viceroyalty_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					culture = { has_culture_group = culture_group:iberian_group }
+					}
+					}
+				}
+				can_research_advance = viceroyalty_advance
+			}
+		}
+		research_advance = advance_type:viceroyalty_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_war_galleon }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					original_capital ?= { continent = continent:europe }
+					}
+					}
+				}
+				can_research_advance = unlock_war_galleon
+			}
+		}
+		research_advance = advance_type:unlock_war_galleon
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_galleass_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					NOT = { culture = { has_culture_group = culture_group:italian_group } }
+					}
+					}
+				}
+				can_research_advance = unlock_galleass_advance
+			}
+		}
+		research_advance = advance_type:unlock_galleass_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = italian_galleass }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					culture = { has_culture_group = culture_group:italian_group }
+					}
+					}
+				}
+				can_research_advance = italian_galleass
+			}
+		}
+		research_advance = advance_type:italian_galleass
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_cakradonya }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					OR = {
+					culture = culture:acehnese_culture
+					culture = { merged_culture_group_contains_culture = culture:acehnese_culture }
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_cakradonya
+			}
+		}
+		research_advance = advance_type:unlock_cakradonya
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_galiot }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					original_capital ?= {
+					OR = {
+					region = region:iberia_region
+					region = region:france_region
+					region = region:italy_region
+					region = region:maghreb_region
+					region = region:balkan_region
+					region = region:anatolia_region
+					region = region:egypt_region
+					region = region:crescent_region
+					}
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_galiot
+			}
+		}
+		research_advance = advance_type:unlock_galiot
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = theocracy_nature_of_our_faith_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					government_type = government_type:theocracy
+					}
+					}
+				}
+				can_research_advance = theocracy_nature_of_our_faith_law_advance
+			}
+		}
+		research_advance = advance_type:theocracy_nature_of_our_faith_law_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = steppe_horde_tribal_modernization_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					government_type = government_type:steppe_horde
+					}
+					}
+				}
+				can_research_advance = steppe_horde_tribal_modernization_law_advance
+			}
+		}
+		research_advance = advance_type:steppe_horde_tribal_modernization_law_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = tribal_migration_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					government_type = government_type:tribe
+					}
+					}
+				}
+				can_research_advance = tribal_migration_law_advance
+			}
+		}
+		research_advance = advance_type:tribal_migration_law_advance
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = legitimization_of_power_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					government_type = government_type:monarchy
+					}
+					}
+				}
+				can_research_advance = legitimization_of_power_law_advance
+			}
+		}
+		research_advance = advance_type:legitimization_of_power_law_advance
+	}
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_4_advance }
@@ -57497,18 +58117,6 @@ hafp_research_age_5_absolutism_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = tribal_cultural_identity_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = tribal_cultural_identity_law_advance
-			}
-		}
-		research_advance = advance_type:tribal_cultural_identity_law_advance
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = crown_rights_laws_advance }
 			OR = {
 				AND = {
@@ -57930,6 +58538,30 @@ hafp_research_age_5_absolutism_generic = {
 }
 
 hafp_research_age_5_absolutism_custom = {
+	if = {
+		limit = {
+			NOT = { has_advance = tribal_cultural_identity_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					}
+					}
+					AND = {
+					government_type = government_type:tribe
+					}
+					}
+				}
+				can_research_advance = tribal_cultural_identity_law_advance
+			}
+		}
+		research_advance = advance_type:tribal_cultural_identity_law_advance
+	}
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_5_advance }
@@ -67748,18 +68380,6 @@ hafp_research_age_6_revolutions_generic = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_archipelago_frigate }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = unlock_archipelago_frigate
-			}
-		}
-		research_advance = advance_type:unlock_archipelago_frigate
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = unlock_eastindiaman_advance }
 			OR = {
 				AND = {
@@ -67805,18 +68425,6 @@ hafp_research_age_6_revolutions_generic = {
 			}
 		}
 		research_advance = advance_type:paper_guild_wood_pulp_maintenance_advance
-	}
-	if = {
-		limit = {
-			NOT = { has_advance = tribal_modernization_law_advance }
-			OR = {
-				AND = {
-					"variable_map(cmm|flag:hafp__research_scope)" >= 2
-				}
-				can_research_advance = tribal_modernization_law_advance
-			}
-		}
-		research_advance = advance_type:tribal_modernization_law_advance
 	}
 	if = {
 		limit = {
@@ -68217,6 +68825,61 @@ hafp_research_age_6_revolutions_generic = {
 }
 
 hafp_research_age_6_revolutions_custom = {
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_archipelago_frigate }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					}
+					}
+					AND = {
+					original_capital ?= {
+					OR = {
+					region = region:scandinavian_region
+					region = region:north_german_region
+					region = region:baltic_region
+					region = region:russian_region
+					}
+					}
+					}
+					}
+				}
+				can_research_advance = unlock_archipelago_frigate
+			}
+		}
+		research_advance = advance_type:unlock_archipelago_frigate
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = tribal_modernization_law_advance }
+			OR = {
+				AND = {
+					"variable_map(cmm|flag:hafp__research_scope)" >= 2
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					}
+					}
+					AND = {
+					government_type = government_type:tribe
+					}
+					}
+				}
+				can_research_advance = tribal_modernization_law_advance
+			}
+		}
+		research_advance = advance_type:tribal_modernization_law_advance
+	}
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_6_advance }

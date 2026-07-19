@@ -1,5 +1,11 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 4 checks (from third test pass)
+
+- [ ] **Research All Custom Advances now covers unique advances in the generic trees.** With *Unlock All Custom Advances* on, the button also researches the potential-gated entries of the building/ship/reform/cabinet trees (the leftovers from last round: Confucian School, Cathedral, Fortress Church, Lieutenancy, Order Headquarters, Republic/Tribal/Divine reform laws, Trade Caravans, Aqueduct System, Dhow, etc.). The Unique Advances counter should reach its maximum after clicking under *All advances* scope.
+- [ ] **Plain always-available advances stay unresearched** by that button (e.g. Horsemen, generic adm/dip/mil choices, institution-gated defaults like the New World tree) — they still need normal research (or the explicit Research All / era buttons).
+- [ ] **Mod Action Log** (Mod Menu > General > Session > Mod Action Log): every toggle change ("<Setting> turned ON/OFF (Handicap Advances)"), Research Scope changes, and each research button click are logged with your country as actor.
+
 ## Round 3 checks (from second test pass)
 
 - [ ] **Cascading selection.** Toggling *All of Balkans* checks every area under it; unchecking it unchecks them. *All of Europe* checks/unchecks every region and area in the Europe tab. New *Select All* toggles at the top of each Cultures group and of Religions / Governments / Special do the same for their group. (Cascade is downward only: unchecking a single area does not untick its region — and note the region toggle alone still unlocks the whole region while checked.)

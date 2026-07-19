@@ -69,6 +69,9 @@ A second tab called **Settings** containing:
 
 - Cascading selection (user enhancement, 2026-07-19): toggling a continent checks/unchecks every region and area beneath it, a region its areas, and each Cultures / Religions / Governments / Special group has a *Select All* parent. Cascade is downward-only and copies the parent's new value to all children.
 
+- "Custom advance" definition (2026-07-19, round 4): for the research buttons, custom = any advance with a `potential` (or government) gate — the game's "Unique Advances" concept. This includes unique entries inside the generic trees (buildings, ships, reform laws, cabinet actions). Advances with no potential gate (always-available trees, institution-`allow`-gated defaults) are non-custom and stay locked behind normal research.
+- All mod actions are recorded in CMF's Mod Action Log: toggle on/off, research-scope changes, and research button clicks.
+
 ## Changelog
 
 - **2026-07-19** — Initial requirements captured (items 1–6). v1.0 implements the all-or-nothing unlock toggle (port of "All Advances Unlocked" into CMF format, re-baselined to 1.3).

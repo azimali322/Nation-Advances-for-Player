@@ -3885,20 +3885,3019 @@ hafp_handle_callback = {
 		}
 	}
 	hafp_sync_aliases = yes
+	# Record every toggle/scope change in the CMF Mod Action Log
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_europe }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_europe)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cont_europe_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cont_europe_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_balkan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_balkan_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_balkan_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_balkan_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_aegean_archipelago_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_aegean_archipelago_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_aegean_archipelago_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_aegean_archipelago_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_bosnia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_bosnia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_bosnia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_bosnia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_bulgaria_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_bulgaria_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_bulgaria_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_bulgaria_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_croatia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_croatia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_croatia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_croatia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_macedonia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_macedonia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_macedonia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_macedonia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_morea_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_morea_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_morea_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_morea_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_northern_greece_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_northern_greece_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_northern_greece_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_northern_greece_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_serbia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_serbia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_serbia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_serbia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_slavonia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_slavonia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_slavonia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_slavonia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_thrace_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_thrace_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_thrace_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_thrace_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_baltic_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_baltic_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_baltic_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_baltic_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_baltic_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_baltic_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_baltic_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_baltic_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_central_poland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_central_poland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_central_poland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_central_poland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_greater_poland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_greater_poland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_greater_poland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_greater_poland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lesser_poland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lesser_poland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lesser_poland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lesser_poland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lithuania_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lithuania_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lithuania_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lithuania_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_mazovia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_mazovia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_mazovia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_mazovia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_prussia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_prussia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_prussia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_prussia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_samogitia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_samogitia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_samogitia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_samogitia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_silesia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_silesia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_silesia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_silesia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_great_britain_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_great_britain_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_great_britain_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_great_britain_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_hebrides_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_hebrides_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_hebrides_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_hebrides_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_home_counties_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_home_counties_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_home_counties_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_home_counties_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_scottish_lowlands_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_scottish_lowlands_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_scottish_lowlands_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_scottish_lowlands_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_wales_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_wales_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_wales_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_wales_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_carpathia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_carpathia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_carpathia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_carpathia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_transdanubia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_transdanubia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_transdanubia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_transdanubia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_caucasus_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_caucasus_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_caucasus_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_caucasus_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_armenia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_armenia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_armenia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_armenia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_armenian_highlands_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_armenian_highlands_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_armenian_highlands_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_armenian_highlands_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_georgia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_georgia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_georgia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_georgia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_shirvan_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_shirvan_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_shirvan_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_shirvan_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_france_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_france_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_france_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_france_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_brittany_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_brittany_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_brittany_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_brittany_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_burgundy_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_burgundy_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_burgundy_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_burgundy_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_normandy_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_normandy_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_normandy_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_normandy_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_provence_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_provence_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_provence_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_provence_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_savoy_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_savoy_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_savoy_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_savoy_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_ile_de_france_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_ile_de_france_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_ile_de_france_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_ile_de_france_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_iberia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_iberia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_iberia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_iberia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_granada_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_granada_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_granada_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_granada_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_castile_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_castile_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_castile_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_castile_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_catalonia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_catalonia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_catalonia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_catalonia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_navarre_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_navarre_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_navarre_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_navarre_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_south_portugal_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_south_portugal_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_south_portugal_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_south_portugal_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_italy_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_italy_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_italy_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_italy_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_abruzzo_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_abruzzo_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_abruzzo_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_abruzzo_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_apulia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_apulia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_apulia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_apulia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_basilicata_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_basilicata_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_basilicata_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_basilicata_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_campania_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_campania_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_campania_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_campania_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_liguria_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_liguria_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_liguria_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_liguria_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_sicily_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_sicily_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_sicily_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_sicily_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tuscany_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tuscany_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tuscany_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tuscany_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_north_atlantic_islands_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_north_atlantic_islands_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_north_atlantic_islands_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_north_atlantic_islands_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_iceland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_iceland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_iceland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_iceland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_north_german_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_north_german_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_north_german_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_north_german_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_brabant_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_brabant_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_brabant_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_brabant_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_brandenburg_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_brandenburg_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_brandenburg_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_brandenburg_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_flanders_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_flanders_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_flanders_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_flanders_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_friesland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_friesland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_friesland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_friesland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_hesse_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_hesse_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_hesse_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_hesse_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_holland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_holland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_holland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_holland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_holstein_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_holstein_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_holstein_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_holstein_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lower_saxony_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lower_saxony_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lower_saxony_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lower_saxony_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_rhineland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_rhineland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_rhineland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_rhineland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_upper_saxony_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_upper_saxony_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_upper_saxony_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_upper_saxony_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_wallonia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_wallonia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_wallonia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_wallonia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_steppes_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_steppes_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_steppes_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_steppes_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_azov_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_azov_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_azov_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_azov_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lower_don_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lower_don_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lower_don_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lower_don_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_matrega_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_matrega_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_matrega_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_matrega_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_russian_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_russian_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_russian_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_russian_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_east_novgorod_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_east_novgorod_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_east_novgorod_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_east_novgorod_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_moscow_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_moscow_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_moscow_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_moscow_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_smolensk_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_smolensk_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_smolensk_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_smolensk_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_west_novgorod_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_west_novgorod_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_west_novgorod_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_west_novgorod_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_ruthenia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_ruthenia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_ruthenia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_ruthenia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_left_bank_ukraine_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_left_bank_ukraine_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_left_bank_ukraine_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_left_bank_ukraine_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_polesia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_polesia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_polesia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_polesia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_red_ruthenia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_red_ruthenia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_red_ruthenia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_red_ruthenia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_right_bank_ukraine_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_right_bank_ukraine_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_right_bank_ukraine_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_right_bank_ukraine_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_volhynia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_volhynia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_volhynia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_volhynia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_scandinavian_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_scandinavian_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_scandinavian_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_scandinavian_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_denmark_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_denmark_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_denmark_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_denmark_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_finland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_finland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_finland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_finland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_svealand_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_svealand_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_svealand_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_svealand_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_syd_norge_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_syd_norge_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_syd_norge_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_syd_norge_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_south_german_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_south_german_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_south_german_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_south_german_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_bavaria_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_bavaria_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_bavaria_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_bavaria_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_bohemia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_bohemia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_bohemia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_bohemia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_austria_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_austria_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_austria_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_austria_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_salzburg_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_salzburg_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_salzburg_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_salzburg_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_styria_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_styria_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_styria_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_styria_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tirol_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tirol_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tirol_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tirol_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_upper_rhine_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_upper_rhine_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_upper_rhine_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_upper_rhine_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_ural_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_ural_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_ural_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_ural_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_asia }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_asia)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cont_asia_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cont_asia_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_anatolia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_anatolia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_anatolia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_anatolia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_cappadocia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_cappadocia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_cappadocia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_cappadocia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_central_anatolia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_central_anatolia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_central_anatolia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_central_anatolia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_marmara_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_marmara_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_marmara_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_marmara_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_pontus_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_pontus_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_pontus_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_pontus_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_arabia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_arabia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_arabia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_arabia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_oman_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_oman_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_oman_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_oman_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_south_yemen_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_south_yemen_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_south_yemen_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_south_yemen_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_bengal_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_bengal_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_bengal_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_bengal_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_orissa_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_orissa_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_orissa_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_orissa_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_central_india_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_central_india_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_central_india_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_central_india_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_crescent_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_crescent_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_crescent_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_crescent_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_iraq_arabi_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_iraq_arabi_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_iraq_arabi_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_iraq_arabi_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_jazira_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_jazira_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_jazira_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_jazira_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_levant_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_levant_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_levant_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_levant_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_deccan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_deccan_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_deccan_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_deccan_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_karnakassala_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_karnakassala_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_karnakassala_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_karnakassala_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tamil_land_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tamil_land_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tamil_land_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tamil_land_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_east_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_east_china_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_east_china_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_east_china_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_hindustan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_hindustan_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_hindustan_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_hindustan_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_doab_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_doab_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_doab_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_doab_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_indochina_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_indochina_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_indochina_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_indochina_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_champa_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_champa_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_champa_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_champa_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_chao_phraya_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_chao_phraya_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_chao_phraya_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_chao_phraya_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lower_mekong_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lower_mekong_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lower_mekong_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lower_mekong_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_malay_peninsula_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_malay_peninsula_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_malay_peninsula_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_malay_peninsula_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_northern_tai_highland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_northern_tai_highland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_northern_tai_highland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_northern_tai_highland_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_red_river_delta_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_red_river_delta_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_red_river_delta_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_red_river_delta_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_indonesia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_indonesia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_indonesia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_indonesia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_java_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_java_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_java_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_java_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_japan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_japan_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_japan_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_japan_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_hokurikudou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_hokurikudou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_hokurikudou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_hokurikudou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_nankaidou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_nankaidou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_nankaidou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_nankaidou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_saikaidou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_saikaidou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_saikaidou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_saikaidou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_sanindou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_sanindou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_sanindou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_sanindou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_sanyoudou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_sanyoudou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_sanyoudou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_sanyoudou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_toukaidou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_toukaidou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_toukaidou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_toukaidou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tousandou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tousandou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tousandou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tousandou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_ou_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_ou_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_ou_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_ou_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_khorasan_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_khorasan_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_khorasan_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_khorasan_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_eastern_khorasan_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_eastern_khorasan_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_eastern_khorasan_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_eastern_khorasan_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_transoxiana_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_transoxiana_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_transoxiana_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_transoxiana_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_western_khorasan_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_western_khorasan_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_western_khorasan_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_western_khorasan_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_zhetysu_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_zhetysu_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_zhetysu_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_zhetysu_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_korea_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_korea_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_korea_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_korea_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_gyeonggi_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_gyeonggi_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_gyeonggi_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_gyeonggi_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_manchuria_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_manchuria_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_manchuria_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_manchuria_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_liaodong_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_liaodong_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_liaodong_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_liaodong_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lower_amur_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lower_amur_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lower_amur_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lower_amur_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_middle_amur_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_middle_amur_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_middle_amur_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_middle_amur_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_songhua_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_songhua_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_songhua_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_songhua_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_songnen_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_songnen_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_songnen_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_songnen_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_ussuri_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_ussuri_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_ussuri_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_ussuri_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_mongolia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_mongolia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_mongolia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_mongolia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_upper_selenga_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_upper_selenga_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_upper_selenga_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_upper_selenga_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_north_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_north_china_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_north_china_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_north_china_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_beiping_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_beiping_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_beiping_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_beiping_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_persia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_persia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_persia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_persia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_fars_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_fars_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_fars_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_fars_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_kordestan_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_kordestan_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_kordestan_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_kordestan_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_south_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_south_china_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_south_china_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_south_china_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_tibet_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_tibet_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_tibet_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_tibet_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tsang_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tsang_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tsang_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tsang_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_west_china_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_west_china_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_west_china_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_west_china_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_western_india_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_western_india_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_western_india_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_western_india_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_xinjiang_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_xinjiang_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_xinjiang_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_xinjiang_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_africa }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_africa)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cont_africa_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cont_africa_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_central_africa_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_central_africa_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_central_africa_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_central_africa_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_egypt_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_egypt_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_egypt_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_egypt_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_lower_egypt_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_lower_egypt_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_lower_egypt_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_lower_egypt_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_ethiopia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_ethiopia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_ethiopia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_ethiopia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_central_ethiopia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_central_ethiopia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_central_ethiopia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_central_ethiopia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_great_lakes_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_great_lakes_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_great_lakes_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_great_lakes_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_guinea_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_guinea_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_guinea_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_guinea_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_gold_coast_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_gold_coast_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_gold_coast_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_gold_coast_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_kongo_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_kongo_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_kongo_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_kongo_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_kongo_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_kongo_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_kongo_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_kongo_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_west_kongo_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_west_kongo_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_west_kongo_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_west_kongo_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_macaronesia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_macaronesia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_macaronesia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_macaronesia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_madagascar_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_madagascar_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_madagascar_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_madagascar_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_maghreb_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_maghreb_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_maghreb_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_maghreb_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tunis_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tunis_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tunis_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tunis_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_morocco_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_morocco_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_morocco_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_morocco_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_algiers_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_algiers_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_algiers_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_algiers_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_tripolitania_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_tripolitania_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_tripolitania_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_tripolitania_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_nubia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_nubia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_nubia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_nubia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_sahel_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_sahel_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_sahel_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_sahel_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_gao_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_gao_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_gao_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_gao_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_kanem_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_kanem_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_kanem_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_kanem_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_mali_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_mali_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_mali_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_mali_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_north_hausa_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_north_hausa_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_north_hausa_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_north_hausa_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_south_hausa_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_south_hausa_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_south_hausa_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_south_hausa_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_somalia_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_somalia_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_somalia_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_somalia_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_southern_africa_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_southern_africa_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_southern_africa_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_southern_africa_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_southern_africa_islands_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_southern_africa_islands_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_southern_africa_islands_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_southern_africa_islands_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_swahili_coast_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_swahili_coast_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_swahili_coast_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_swahili_coast_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_rufiji_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_rufiji_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_rufiji_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_rufiji_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_zimbabwe_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_zimbabwe_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_zimbabwe_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_zimbabwe_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_save_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_save_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_save_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_save_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cont_america }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cont_america)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cont_america_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cont_america_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_alaska_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_alaska_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_alaska_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_alaska_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_andes_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_andes_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_andes_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_andes_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_acamama_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_acamama_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_acamama_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_acamama_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_puna_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_puna_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_puna_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_puna_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_aridoamerica_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_aridoamerica_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_aridoamerica_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_aridoamerica_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_zacatecas_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_zacatecas_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_zacatecas_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_zacatecas_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_canada_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_canada_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_canada_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_canada_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_caribbean_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_caribbean_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_caribbean_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_caribbean_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_central_america_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_central_america_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_central_america_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_central_america_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_east_coast_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_east_coast_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_east_coast_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_east_coast_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_great_plains_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_great_plains_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_great_plains_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_great_plains_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_mesoamerica_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_mesoamerica_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_mesoamerica_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_mesoamerica_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_mexihko_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_mexihko_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_mexihko_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_mexihko_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_xalisco_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_xalisco_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_xalisco_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_xalisco_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__reg_west_coast_region }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__reg_west_coast_region)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_west_coast_region_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_west_coast_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_europe }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_europe)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cul_all_europe_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cul_all_europe_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_albanian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_albanian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_albanian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_albanian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_corsican }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_corsican)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_corsican_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_corsican_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_dalmatian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_dalmatian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_dalmatian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_dalmatian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_emilian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_emilian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_emilian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_emilian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_georgian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_georgian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_georgian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_georgian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_carpathian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_carpathian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_carpathian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_carpathian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_german }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_german)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_german_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_german_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_polish }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_polish)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_polish_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_polish_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_rhaetian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_rhaetian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_rhaetian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_rhaetian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_romanian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_romanian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_romanian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_romanian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_south_slavic }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_south_slavic)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_south_slavic_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_south_slavic_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_high_alemannic }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_high_alemannic)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_high_alemannic_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_high_alemannic_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_irish }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_irish)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_irish_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_irish_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_ligurian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_ligurian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_ligurian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_ligurian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_lombard }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_lombard)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_lombard_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_lombard_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_median }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_median)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_median_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_median_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_neapolitan }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_neapolitan)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_neapolitan_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_neapolitan_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_netherlands }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_netherlands)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_netherlands_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_netherlands_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_piedmontese }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_piedmontese)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_piedmontese_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_piedmontese_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_romagnol }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_romagnol)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_romagnol_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_romagnol_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_russian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_russian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_russian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_russian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_ruthenian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_ruthenian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_ruthenian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_ruthenian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_sardinian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_sardinian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_sardinian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_sardinian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_scandinavian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_scandinavian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_scandinavian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_scandinavian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_sicilian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_sicilian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_sicilian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_sicilian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_slovak }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_slovak)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_slovak_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_slovak_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_slovene }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_slovene)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_slovene_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_slovene_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_tuscan }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_tuscan)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_tuscan_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_tuscan_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_venetian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_venetian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_venetian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_venetian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_vivaro_alpine }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_vivaro_alpine)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_vivaro_alpine_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_vivaro_alpine_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_asia }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_asia)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cul_all_asia_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cul_all_asia_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_arabian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_arabian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_arabian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_arabian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_armenian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_armenian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_armenian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_armenian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_bengali }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_bengali)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_bengali_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_bengali_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_cham }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_cham)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_cham_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_cham_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_arabian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_arabian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_arabian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_arabian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_chinese }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_chinese)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_chinese_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_chinese_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_group_greek }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_group_greek)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_greek_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_greek_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_gujurati }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_gujurati)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_gujurati_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_gujurati_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_indian }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_indian)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_indian_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_indian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_japan }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_japan)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_japan_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_japan_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_jurchen }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_jurchen)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_jurchen_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_jurchen_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_kannada_muslim }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_kannada_muslim)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_kannada_muslim_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_kannada_muslim_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_malayalam }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_malayalam)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_malayalam_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_malayalam_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_marathi }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_marathi)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_marathi_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_marathi_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_nepali }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_nepali)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_nepali_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_nepali_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_nomadic }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_nomadic)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_nomadic_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_nomadic_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_punjabi }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_punjabi)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_punjabi_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_punjabi_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_rajasthani }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_rajasthani)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_rajasthani_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_rajasthani_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_thai }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_thai)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_thai_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_thai_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_vietnamese }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_vietnamese)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_vietnamese_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_vietnamese_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_africa }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_africa)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cul_all_africa_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cul_all_africa_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_west_african }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_west_african)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_west_african_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_west_african_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_america }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_america)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cul_all_america_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cul_all_america_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_andean }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_andean)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_andean_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_andean_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_haudenosaunee }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_haudenosaunee)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_haudenosaunee_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_haudenosaunee_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__cul_all_oceania }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__cul_all_oceania)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__cul_all_oceania_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__cul_all_oceania_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_maori }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_maori)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_maori_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_maori_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__all_religions }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__all_religions)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__all_religions_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__all_religions_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_buddhist }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_buddhist)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_buddhist_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_buddhist_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_catholic }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_catholic)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_catholic_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_catholic_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_hellenism }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_hellenism)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_hellenism_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_hellenism_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_hindu }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_hindu)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_hindu_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_hindu_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_miaphysite }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_miaphysite)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_miaphysite_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_miaphysite_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_muslim }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_muslim)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_muslim_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_muslim_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_orthodox }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_orthodox)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_orthodox_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_orthodox_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_protestant }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_protestant)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_protestant_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_protestant_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_shinto }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_shinto)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_shinto_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_shinto_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__all_governments }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__all_governments)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__all_governments_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__all_governments_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_government_monarchy }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_government_monarchy)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_government_monarchy_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_government_monarchy_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_government_republic }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_government_republic)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_government_republic_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_government_republic_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_government_steppe_horde }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_government_steppe_horde)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_government_steppe_horde_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_government_steppe_horde_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_government_theocracy }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_government_theocracy)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_government_theocracy_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_government_theocracy_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__all_special }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__all_special)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__all_special_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__all_special_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_colonial_nations }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_colonial_nations)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_colonial_nations_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_colonial_nations_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_estate_cossacks }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_estate_cossacks)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_estate_cossacks_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_estate_cossacks_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__enabled }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__enabled)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__enabled_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__enabled_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__unlock_all }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__unlock_all)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__unlock_all_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__unlock_all_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__age_age_1_traditions }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__age_age_1_traditions)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__age_age_1_traditions_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__age_age_1_traditions_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__age_age_2_renaissance }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__age_age_2_renaissance)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__age_age_2_renaissance_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__age_age_2_renaissance_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__age_age_3_discovery }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__age_age_3_discovery)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__age_age_3_discovery_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__age_age_3_discovery_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__age_age_4_reformation }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__age_age_4_reformation)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__age_age_4_reformation_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__age_age_4_reformation_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__age_age_5_absolutism }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__age_age_5_absolutism)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__age_age_5_absolutism_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__age_age_5_absolutism_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__age_age_6_revolutions }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__age_age_6_revolutions)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__age_age_6_revolutions_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__age_age_6_revolutions_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__research_scope }
+		cmf_log_with_args = { action = hafp_log_changed arg1 = hafp__research_scope_name arg2 = hafp_log_suffix }
+	}
 	if = {
 		limit = { var:cmf_callback = flag:hafp__research_custom }
 		hafp_research_custom = yes
+		cmf_log = { action = hafp_log_research_custom }
 	}
 	if = {
 		limit = { var:cmf_callback = flag:hafp__research_all }
 		hafp_research_all = yes
+		cmf_log = { action = hafp_log_research_all }
 	}
 	if = {
 		limit = { var:cmf_callback = flag:hafp__research_current_era }
 		hafp_research_current_era = yes
+		cmf_log = { action = hafp_log_research_current_era }
 	}
 	if = {
 		limit = { var:cmf_callback = flag:hafp__research_previous_eras }
 		hafp_research_previous_eras = yes
+		cmf_log = { action = hafp_log_research_previous_eras }
 	}
 }

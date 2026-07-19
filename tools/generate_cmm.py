@@ -100,7 +100,7 @@ def main():
                 "custom": is_custom,
             }
 
-    # The availability gate the mod generated for each custom advance (its
+    # The availability gate the mod generated for each gated advance (its
     # rewritten `potential` body). The "All advances" research scope embeds it
     # so buttons research everything the player has unlocked, regardless of
     # age or institutions (has_advance_available/can_research_advance both
@@ -109,7 +109,7 @@ def main():
     gates = {}
     mod_adv_dir = os.path.join(ROOT, "in_game", "common", "advances")
     for fname in os.listdir(mod_adv_dir):
-        if fname not in files:
+        if not fname.endswith(".txt"):
             continue
         text = open(os.path.join(mod_adv_dir, fname), encoding="utf-8-sig").read()
         mask = strip_positions(text)
@@ -123,6 +123,15 @@ def main():
                     gates[name] = [ln.strip() for ln in
                                    body[bo + 1 : bc].strip().splitlines() if ln.strip()]
                     break
+
+    # "Custom" for the research buttons = any advance with a (rewritten)
+    # potential gate. This matches the game's Unique Advances concept and
+    # includes the potential-gated entries inside the generic trees (unique
+    # buildings, ships, reform laws, cabinet actions...). Advances with no
+    # potential - the plain always-available trees - stay non-custom, so
+    # Research All Custom Advances leaves them locked behind normal research.
+    for adv_id in order:
+        advs[adv_id]["custom"] = adv_id in gates
 
     def topo_sort(ids):
         """Order ids so prerequisites come before dependents (stable)."""
@@ -319,10 +328,10 @@ def main():
 
     buttons = [
         ("research_custom", "Research All Custom Advances",
-         "Instantly research every custom (nation, culture, religion, "
-         "government) advance available to you: your own nation's plus any "
-         "you unlocked in the other tabs. Default game advances stay "
-         "unresearched."),
+         "Instantly research every unique advance available to you - nation, "
+         "culture, religion, government, and the unique entries of the "
+         "building/ship/reform trees - your own plus any you unlocked in the "
+         "other tabs. Plain always-available advances stay unresearched."),
         ("research_all", "Research All Advances",
          "Instantly research every advance available to you, including the "
          "default trees."),
@@ -337,6 +346,13 @@ def main():
         loc["%s__%s_name" % (MOD_ID, bid)] = bname
         loc["%s__%s_desc" % (MOD_ID, bid)] = bdesc
         loc["%s__%s_text" % (MOD_ID, bid)] = bname
+        loc["%s_log_%s" % (MOD_ID, bid)] = "clicked %s (Handicap Advances)" % bname
+
+    # Mod Action Log phrasing (entries render as: [actor] [arg1] [action] [arg2])
+    loc["%s_log_turned_on" % MOD_ID] = "turned ON"
+    loc["%s_log_turned_off" % MOD_ID] = "turned OFF"
+    loc["%s_log_changed" % MOD_ID] = "changed"
+    loc["%s_log_suffix" % MOD_ID] = "(Handicap Advances)"
 
     # ------------------------------------------------------------------ #
     # Emit scripted effects: registration + alias sync + callback        #
@@ -396,10 +412,30 @@ def main():
         reg.append("\t\t}")
         reg.append("\t}")
     reg.append("\thafp_sync_aliases = yes")
+    reg.append("\t# Record every toggle/scope change in the CMF Mod Action Log")
+    for setting_id, tab, group, alias in toggles:
+        reg.append("\tif = {")
+        reg.append("\t\tlimit = { var:cmf_callback = flag:%s__%s }" % (MOD_ID, setting_id))
+        reg.append("\t\tif = {")
+        reg.append('\t\t\tlimit = { "variable_map(cmm|flag:%s__%s)" >= 1 }' % (MOD_ID, setting_id))
+        reg.append("\t\t\tcmf_log_with_args = { action = %s_log_turned_on arg1 = %s__%s_name arg2 = %s_log_suffix }"
+                   % (MOD_ID, MOD_ID, setting_id, MOD_ID))
+        reg.append("\t\t}")
+        reg.append("\t\telse = {")
+        reg.append("\t\t\tcmf_log_with_args = { action = %s_log_turned_off arg1 = %s__%s_name arg2 = %s_log_suffix }"
+                   % (MOD_ID, MOD_ID, setting_id, MOD_ID))
+        reg.append("\t\t}")
+        reg.append("\t}")
+    reg.append("\tif = {")
+    reg.append("\t\tlimit = { var:cmf_callback = flag:%s__research_scope }" % MOD_ID)
+    reg.append("\t\tcmf_log_with_args = { action = %s_log_changed arg1 = %s__research_scope_name arg2 = %s_log_suffix }"
+               % (MOD_ID, MOD_ID, MOD_ID))
+    reg.append("\t}")
     for bid, _, _ in buttons:
         reg.append("\tif = {")
         reg.append("\t\tlimit = { var:cmf_callback = flag:%s__%s }" % (MOD_ID, bid))
         reg.append("\t\thafp_%s = yes" % bid)
+        reg.append("\t\tcmf_log = { action = %s_log_%s }" % (MOD_ID, bid))
         reg.append("\t}")
     reg.append("}")
 
