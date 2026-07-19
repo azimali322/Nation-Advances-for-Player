@@ -1,5 +1,11 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 6 checks (from fifth test pass)
+
+- [ ] **Unembraced institution branches stay unresearched.** As Tunis (Feudalism embraced, Meritocracy not), *Research All Custom Advances* under *Embraced institutions only* no longer researches custom advances chained under the Meritocracy root (e.g. the Mamluk `barid` tree requires the Meritocracy advance) — institution requirements are now inherited through the whole prerequisite chain. After embracing Meritocracy, the same click researches them.
+- [ ] **New third scope option** — *Embraced institutions, current age only*: like option 1 but restricted to advances of the age the game is currently in (in Age of Traditions they're equivalent; the difference shows from Age 2 onward, where option 3 skips earlier-age advances).
+- [ ] The institutions themselves are never embraced/spawned by any button (the mod cannot do that — verify Meritocracy's embrace status is untouched by all buttons).
+
 ## Round 5 checks (from fourth test pass)
 
 - [ ] **Embraced scope no longer skips children of unresearched plain advances.** With *Unlock All Custom Advances* on and scope = *Embraced institutions only*, *Research All Custom Advances* now also researches the customs hanging off Classic Scholasticism (Genghisid Legacy, Pōchtēcayōtl, Byzantine Historiography, Legacy of Saint George, Buddhist Syncretism, Onmyōdō, Colonial Traditions, Master Masons, Genoese Galley, ...). Classic Scholasticism itself stays unresearched — plain advances remain locked behind normal research.
