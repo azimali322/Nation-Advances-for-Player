@@ -1,0 +1,45 @@
+﻿cha_go_tram_huong = {	#gỗ trầm hương
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_or_had_tag = CHA
+			}
+		}
+	}
+	requires = metallurgy
+
+	icon = rudimentary_coastal_ship_repair
+
+	global_lumber_output_modifier = 0.2
+}
+
+my_son_sanctuary = {	#Mỹ Sơn Sanctuary
+	age = age_1_traditions
+
+	requires = cha_go_tram_huong
+
+	potential = {
+		OR = {
+			has_variable = hafp_all_advances_enabled
+			AND = {
+				has_or_had_tag = CHA
+			}
+		}
+	}
+
+	icon = hindu_architecture
+
+	allow = {
+		OR = {
+			has_variable = hafp_all_advances_enabled
+			AND = {
+				religion = religion:hindu
+			}
+		}
+	}
+
+	monthly_self_control = 0.01
+	tolerance_own = 1
+}

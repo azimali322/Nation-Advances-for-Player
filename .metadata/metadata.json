@@ -1,0 +1,22 @@
+{
+	"name": "Handicap Advances for Player",
+	"id": "handicap_advances_for_player",
+	"version": "1.0",
+	"game_id": "eu5",
+	"supported_game_version": "1.3.*",
+	"short_description": "A handicap/cheat mod for EU5 that lets you unlock and research other nations' unique advances alongside your own - choose specific advances by continent, region, or area, or unlock them all at once. Built on the Community Mod Framework.",
+	"tags": [
+		"Gameplay",
+		"1.3"
+	],
+	"relationships": [
+		{
+			"rel_type": "dependency",
+			"id": "community_mod_framework",
+			"display_name": "Community Mod Framework",
+			"resource_type": "mod",
+			"version": "2.*"
+		}
+	],
+	"game_custom_data": {}
+}
