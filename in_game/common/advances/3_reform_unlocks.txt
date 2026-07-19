@@ -10,7 +10,7 @@
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -31,7 +31,7 @@ republic_reform_traditions_advance = {
 				}
 			}
 			AND = {
-				government = republic
+				government_type = government_type:republic
 			}
 		}
 	}
@@ -61,7 +61,7 @@ monarchy_royal_court_advance = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -81,7 +81,7 @@ theocracy_divine_cause_law_advance = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -101,7 +101,7 @@ theocracy_nature_of_our_faith_law_advance = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -122,7 +122,7 @@ steppe_horde_tribal_religious_values_law_advance = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -140,7 +140,7 @@ steppe_horde_tribal_cultural_identity_law_advance = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -158,7 +158,7 @@ steppe_horde_tribal_modernization_law_advance = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -178,7 +178,7 @@ tribal_religious_values_law_advance = {
 				}
 			}
 			AND = {
-				government = tribe
+				government_type = government_type:tribe
 			}
 		}
 	}
@@ -197,7 +197,7 @@ tribal_migration_law_advance = {
 				}
 			}
 			AND = {
-				government = tribe
+				government_type = government_type:tribe
 			}
 		}
 	}
@@ -216,7 +216,7 @@ tribal_cultural_identity_law_advance = {
 				}
 			}
 			AND = {
-				government = tribe
+				government_type = government_type:tribe
 			}
 		}
 	}
@@ -235,7 +235,7 @@ tribal_modernization_law_advance = {
 				}
 			}
 			AND = {
-				government = tribe
+				government_type = government_type:tribe
 			}
 		}
 	}
@@ -327,7 +327,7 @@ legitimization_of_power_law_advance = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}

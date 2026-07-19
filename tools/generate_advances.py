@@ -178,7 +178,9 @@ def process_advance(adv_id, block_text, unlock_vars):
         return block_text, False
 
     edits = []
-    gov_lines = ["government = %s" % g[2] for g in gov_entries]
+    # `government = X` is an engine FILTER KEY on advances, not a trigger; the
+    # trigger equivalent (valid inside potential) is government_type.
+    gov_lines = ["government_type = government_type:%s" % g[2] for g in gov_entries]
 
     if potential_span is not None:
         kstart, obrace, cbrace = potential_span

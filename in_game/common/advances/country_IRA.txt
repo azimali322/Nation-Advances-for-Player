@@ -345,7 +345,7 @@ ira_religious_state = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 				has_or_had_tag = IRA
 				religion = religion:shia
 			}

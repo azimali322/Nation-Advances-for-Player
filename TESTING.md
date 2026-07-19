@@ -1,5 +1,14 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 2 regression checks (bugfixes from first test pass)
+
+Fixes to verify first, from the 2026-07-19 test report:
+
+- [ ] **Steppe/government advances no longer visible with the mod off.** As France with *Enabled* unchecked, the Age of Traditions tree shows **no** Kurultai / Yams of the Great Khān / Steppe Slave Raiding / Caravanserai / Beyond the Sun (these were leaking from the `government = X` gate fold; now a proper `government_type` trigger). Monarchy advances (Noble Knights, Serfs) still show — France is a monarchy, that's vanilla.
+- [ ] **Research buttons respect your unlocks.** With *Enabled* on but nothing selected, *Research All Custom Advances* researches only advances you could see (your own nation's tree). Foreign customs research only after you toggle their group on.
+- [ ] **Embraced-institutions scope works.** With scope = *Embraced institutions only*, the research buttons use the game's own research rule (`can_research_advance`): nothing from unreached ages, nothing whose institutions you haven't embraced, and prerequisite chains complete in one click in order. With scope = *All advances*, everything **visible to you** force-researches regardless of institutions/age.
+- [ ] Watch `error.log` again for anything mentioning `hafp`, `government_type`, `has_advance_available`, or `can_research_advance`.
+
 Phase 2 replaces the character-interaction toggle with a full Community Mod Menu (CMM) integration. Work through the checklist in order; note results next to each box.
 
 ## Setup

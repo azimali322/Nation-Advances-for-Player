@@ -11,7 +11,7 @@
 				}
 			}
 			AND = {
-				government = republic
+				government_type = government_type:republic
 				culture = { has_culture_group = culture_group:russian_group }
 			}
 		}

@@ -78,24 +78,48 @@ def main():
     continents = groups["continents"]
 
     # ------------------------------------------------------------------ #
-    # Collect every advance in the game (id, age, institution, custom?)  #
+    # Collect every advance in the game                                  #
     # ------------------------------------------------------------------ #
+    # advance -> {age, insts (own), requires, custom, gate (mod potential)}
     adv_dir = os.path.join(game, "game", "in_game", "common", "advances")
-    all_advances = []  # (adv_id, age, institution, is_custom)
-    seen = set()
+    advs = {}
+    order = []
     for fname in sorted(os.listdir(adv_dir)):
         if not fname.endswith(".txt") or fname in ("readme.txt", "_advances_template.txt"):
             continue
         text = open(os.path.join(adv_dir, fname), encoding="utf-8-sig").read()
         is_custom = fname in files
         for adv_id, body in split_advances(text):
-            if adv_id in seen:
+            if adv_id in advs:
                 continue
-            seen.add(adv_id)
+            order.append(adv_id)
             age_m = re.search(r"\bage\s*=\s*(age_[a-z0-9_]+)", body)
-            inst_m = re.search(r"has_embraced_institution\s*=\s*institution:([a-z0-9_]+)", body)
-            all_advances.append((adv_id, age_m.group(1) if age_m else None,
-                                 inst_m.group(1) if inst_m else None, is_custom))
+            advs[adv_id] = {
+                "age": age_m.group(1) if age_m else None,
+                "requires": re.findall(r"\brequires\s*=\s*([A-Za-z0-9_.]+)", body),
+                "custom": is_custom,
+            }
+
+    def topo_sort(ids):
+        """Order ids so prerequisites come before dependents (stable)."""
+        idset = set(ids)
+        deps = {i: [r for r in advs[i]["requires"] if r in idset] for i in ids}
+        done = set()
+        out = []
+
+        def visit(i, stack):
+            if i in done or i in stack:
+                return
+            stack.add(i)
+            for r in deps[i]:
+                visit(r, stack)
+            stack.discard(i)
+            done.add(i)
+            out.append(i)
+
+        for i in ids:
+            visit(i, set())
+        return out
 
     # ------------------------------------------------------------------ #
     # Settings inventory                                                 #
@@ -239,25 +263,29 @@ def main():
         "Whether the research buttons below respect institution requirements.")
     loc["%s__research_scope_option_1_name" % MOD_ID] = "Embraced institutions only"
     loc["%s__research_scope_option_1_desc" % MOD_ID] = (
-        "Only instantly research advances whose institution requirements your "
-        "country already meets.")
+        "Only instantly research advances you could legitimately research "
+        "right now: reached age, embraced institutions, and prerequisite "
+        "advances (whole eligible chains complete in one click).")
     loc["%s__research_scope_option_2_name" % MOD_ID] = "All advances"
     loc["%s__research_scope_option_2_desc" % MOD_ID] = (
-        "Instantly research advances regardless of embraced institutions.")
+        "Instantly research advances regardless of age or embraced "
+        "institutions.")
 
     buttons = [
         ("research_custom", "Research All Custom Advances",
          "Instantly research every custom (nation, culture, religion, "
-         "government) advance. Default game advances stay unresearched."),
+         "government) advance available to you: your own nation's plus any "
+         "you unlocked in the other tabs. Default game advances stay "
+         "unresearched."),
         ("research_all", "Research All Advances",
-         "Instantly research every advance in the game, including the default "
-         "trees."),
+         "Instantly research every advance available to you, including the "
+         "default trees."),
         ("research_current_era", "Research Current Era",
-         "Instantly research every advance of the age your game is currently "
-         "in."),
+         "Instantly research every available advance of the age your game is "
+         "currently in."),
         ("research_previous_eras", "Research Previous Eras",
-         "Instantly research every advance of the ages before the current "
-         "one."),
+         "Instantly research every available advance of the ages before the "
+         "current one."),
     ]
     for bid, bname, bdesc in buttons:
         loc["%s__%s_name" % (MOD_ID, bid)] = bname
@@ -314,50 +342,85 @@ def main():
     # ------------------------------------------------------------------ #
     # Emit research effects                                              #
     # ------------------------------------------------------------------ #
-    def research_block(adv_id, institution, indent="\t"):
+    def research_block(adv_id, indent="\t"):
+        # Two paths through the limit:
+        #  * "All advances" scope (dropdown = 2): force-research anything the
+        #    player can SEE (has_advance_available respects the mod's unlock
+        #    gates and the vanilla potential), ignoring institutions and age.
+        #  * otherwise: can_research_advance - the game's full research rule
+        #    (reached age, embraced institutions, prerequisites researched).
+        #    Blocks are ordered prerequisites-first so whole eligible chains
+        #    cascade in a single click.
+        info = advs[adv_id]
         lines = ["%sif = {" % indent,
                  "%s\tlimit = {" % indent,
-                 "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id)]
-        if institution:
-            lines.append("%s\t\tOR = {" % indent)
-            lines.append('%s\t\t\t"variable_map(cmm|flag:%s__research_scope)" >= 2'
-                         % (indent, MOD_ID))
-            lines.append("%s\t\t\thas_embraced_institution = institution:%s"
-                         % (indent, institution))
-            lines.append("%s\t\t}" % indent)
-        lines.append("%s\t}" % indent)
-        lines.append("%s\tresearch_advance = advance_type:%s" % (indent, adv_id))
-        lines.append("%s}" % indent)
+                 "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id),
+                 "%s\t\tOR = {" % indent,
+                 "%s\t\t\tAND = {" % indent,
+                 '%s\t\t\t\t"variable_map(cmm|flag:%s__research_scope)" >= 2'
+                 % (indent, MOD_ID),
+                 "%s\t\t\t\thas_advance_available = %s" % (indent, adv_id),
+                 "%s\t\t\t}" % indent,
+                 "%s\t\t\tcan_research_advance = %s" % (indent, adv_id),
+                 "%s\t\t}" % indent,
+                 "%s\t}" % indent,
+                 "%s\tresearch_advance = advance_type:%s" % (indent, adv_id),
+                 "%s}" % indent]
         return lines
 
     res = ["﻿# Generated by tools/generate_cmm.py - do not edit by hand.",
            "# Root scope: country (the player clicking the CMM button)."]
 
+    # each advance's research block is emitted exactly once, in either the
+    # generic or custom half of its age effect; composite effects call these
     by_age = defaultdict(list)
-    for adv_id, age, inst, is_custom in all_advances:
-        if age:
-            by_age[age].append((adv_id, inst))
+    no_age = []
+    for adv_id in order:
+        if advs[adv_id]["age"]:
+            by_age[advs[adv_id]["age"]].append(adv_id)
+        else:
+            no_age.append(adv_id)
+
     for age_id, _ in AGES:
+        for half, is_custom in (("generic", False), ("custom", True)):
+            res.append("")
+            res.append("hafp_research_%s_%s = {" % (age_id, half))
+            half_ids = [a for a in by_age.get(age_id, [])
+                        if advs[a]["custom"] == is_custom]
+            for adv_id in topo_sort(half_ids):
+                res.extend(research_block(adv_id))
+            res.append("}")
         res.append("")
         res.append("hafp_research_%s = {" % age_id)
-        for adv_id, inst in by_age.get(age_id, []):
-            res.extend(research_block(adv_id, inst))
+        res.append("\thafp_research_%s_generic = yes" % age_id)
+        res.append("\thafp_research_%s_custom = yes" % age_id)
         res.append("}")
+
+    for half, is_custom in (("generic", False), ("custom", True)):
+        res.append("")
+        res.append("hafp_research_no_age_%s = {" % half)
+        half_ids = [a for a in no_age if advs[a]["custom"] == is_custom]
+        for adv_id in topo_sort(half_ids):
+            res.extend(research_block(adv_id))
+        res.append("}")
+    res.append("")
+    res.append("hafp_research_no_age = {")
+    res.append("\thafp_research_no_age_generic = yes")
+    res.append("\thafp_research_no_age_custom = yes")
+    res.append("}")
 
     res.append("")
     res.append("hafp_research_custom = {")
-    for adv_id, age, inst, is_custom in all_advances:
-        if is_custom:
-            res.extend(research_block(adv_id, inst))
+    for age_id, _ in AGES:
+        res.append("\thafp_research_%s_custom = yes" % age_id)
+    res.append("\thafp_research_no_age_custom = yes")
     res.append("}")
 
     res.append("")
     res.append("hafp_research_all = {")
     for age_id, _ in AGES:
         res.append("\thafp_research_%s = yes" % age_id)
-    ageless = [(a, i) for a, age, i, _ in all_advances if not age]
-    for adv_id, inst in ageless:
-        res.extend(research_block(adv_id, inst))
+    res.append("\thafp_research_no_age = yes")
     res.append("}")
 
     res.append("")
@@ -431,8 +494,8 @@ hafp_on_callback = {
     write("main_menu/localization/english/hafp_cmm_l_english.yml", "\n".join(loc_lines) + "\n")
 
     print("settings: %d toggles + 1 dropdown + %d buttons" % (len(toggles), len(buttons)))
-    print("advances known: %d (%d custom)" % (len(all_advances),
-                                              sum(1 for a in all_advances if a[3])))
+    print("advances known: %d (%d custom)" % (
+        len(advs), sum(1 for a in advs.values() if a["custom"])))
 
 
 if __name__ == "__main__":

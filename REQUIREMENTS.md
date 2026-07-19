@@ -64,7 +64,8 @@ A second tab called **Settings** containing:
 - Geography source: nations are placed by their **1337 capital** (formable nations by their formable-definition regions; a small manual table covers the few tags with neither). Confirmed by user 2026-07-19.
 - Cultures are placed by where their pops live in the 1337 setup (language- and culture-group-gated advances are expanded to member cultures first).
 - Because the selection UI spans four continent tabs, the "select all" control exists **once**, in the Settings tab (*Unlock All Custom Advances*), with per-continent *All of &lt;continent&gt;* toggles at the top of each continent tab. This satisfies the mirroring requirement (item 2) with a single shared setting instead of two synced buttons.
-- Instant research uses the engine effect `research_advance = advance_type:<id>`; the institution option is implemented per-advance from the vanilla `has_embraced_institution` requirements.
+- Instant research uses the engine effect `research_advance = advance_type:<id>`, guarded per advance: *Embraced institutions only* uses the engine's `can_research_advance` trigger (reached age + embraced institutions + prerequisites; blocks are emitted prerequisites-first so chains cascade in one click), *All advances* uses `has_advance_available` (anything visible to the player — which respects the mod's unlock toggles) regardless of institutions or age.
+- Advances gated by a top-level `government = X` key are wrapped using the trigger `government_type = government_type:X` (the bare key is an engine filter, not a trigger, and is silently ignored inside `potential` — the cause of the first-test visibility leak).
 
 ## Changelog
 

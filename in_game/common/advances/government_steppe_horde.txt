@@ -16,7 +16,7 @@ horse_lords = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -47,7 +47,7 @@ kurultai_advance = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -73,7 +73,7 @@ beyond_the_sun = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -97,7 +97,7 @@ steppe_slave_raiding = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -120,7 +120,7 @@ caravanserai_advance = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -143,7 +143,7 @@ borjigin_blood = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -164,7 +164,7 @@ turco_mongol_tradition = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -185,7 +185,7 @@ yams_of_the_great_khan = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -212,7 +212,7 @@ mandate_of_the_khan = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -235,7 +235,7 @@ there_shall_be_no_grass = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -259,7 +259,7 @@ slavery_before_death = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -284,7 +284,7 @@ horde_loyalty = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -306,7 +306,7 @@ horde_loot_discovery_advance = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -329,7 +329,7 @@ trampling_horde = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -354,7 +354,7 @@ watchers_of_the_silk_road = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -376,7 +376,7 @@ logistics_of_khan = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -399,7 +399,7 @@ populating_the_steppes = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -425,7 +425,7 @@ a_magnanimous_empire = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}
@@ -449,7 +449,7 @@ horde_ardor = {
 				}
 			}
 			AND = {
-				government = steppe_horde
+				government_type = government_type:steppe_horde
 			}
 		}
 	}

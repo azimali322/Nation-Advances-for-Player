@@ -15,7 +15,7 @@ servants_of_god = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -37,7 +37,7 @@ by_the_grace_of_god = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -60,7 +60,7 @@ state_of_clerics = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -87,7 +87,7 @@ friends_in_high_places = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -111,7 +111,7 @@ flesh_is_weak = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -136,7 +136,7 @@ alpha_and_omega = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -159,7 +159,7 @@ printing_of_religious_texts = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -184,7 +184,7 @@ conviction_of_sin = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -208,7 +208,7 @@ martyrs = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}
@@ -232,7 +232,7 @@ divine_passion = {
 				}
 			}
 			AND = {
-				government = theocracy
+				government_type = government_type:theocracy
 			}
 		}
 	}

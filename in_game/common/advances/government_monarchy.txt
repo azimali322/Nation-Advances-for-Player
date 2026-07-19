@@ -14,7 +14,7 @@ noble_knights = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -37,7 +37,7 @@ serfdom = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -60,7 +60,7 @@ feudal_de_jure_law_advance = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -81,7 +81,7 @@ salic_law_advance = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -102,7 +102,7 @@ semi_salic_law_advance = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -124,7 +124,7 @@ partition_inheritance_advance = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -149,7 +149,7 @@ aristocracy = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -194,7 +194,7 @@ local_nobility = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -219,7 +219,7 @@ military_traditions = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -245,7 +245,7 @@ noble_officers = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -271,7 +271,7 @@ noble_resilience = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}
@@ -297,7 +297,7 @@ international_nobility = {
 				}
 			}
 			AND = {
-				government = monarchy
+				government_type = government_type:monarchy
 			}
 		}
 	}

@@ -303,7 +303,7 @@ cth_sufet_rule = {
 				}
 			}
 			AND = {
-				government = republic
+				government_type = government_type:republic
 				has_or_had_tag = CTH
 			}
 		}
