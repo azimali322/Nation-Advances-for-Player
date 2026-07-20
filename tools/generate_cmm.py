@@ -351,18 +351,18 @@ def main():
     loc["%s__research_scope_name" % MOD_ID] = "Research Scope"
     loc["%s__research_scope_desc" % MOD_ID] = (
         "Which advances the research buttons below may instantly research.")
-    loc["%s__research_scope_option_1_name" % MOD_ID] = "Embraced Institutions"
+    loc["%s__research_scope_option_1_name" % MOD_ID] = "All Advances"
     loc["%s__research_scope_option_1_desc" % MOD_ID] = (
+        "Instantly research everything available to you, regardless of age "
+        "or embraced institutions - including advances from future ages and "
+        "institution branches you have not embraced.")
+    loc["%s__research_scope_option_2_name" % MOD_ID] = "Embraced Institutions"
+    loc["%s__research_scope_option_2_desc" % MOD_ID] = (
         "Only instantly research advances of ages you have reached whose "
         "institution requirements you have embraced - including institution "
         "requirements inherited from prerequisite advances further up the "
         "tree. Nothing from unreached ages or unembraced institution branches "
         "is researched.")
-    loc["%s__research_scope_option_2_name" % MOD_ID] = "All Advances"
-    loc["%s__research_scope_option_2_desc" % MOD_ID] = (
-        "Instantly research everything available to you, regardless of age "
-        "or embraced institutions - including advances from future ages and "
-        "institution branches you have not embraced.")
     loc["%s__research_scope_option_3_name" % MOD_ID] = "Current Age Institutions"
     loc["%s__research_scope_option_3_desc" % MOD_ID] = (
         "Like Embraced Institutions, but additionally restricted to advances "
@@ -421,7 +421,7 @@ def main():
     reg.append("\t\tsetting_id = research_scope")
     reg.append("\t\ttab_id = settings")
     reg.append("\t\tgroup_id = research")
-    reg.append("\t\tdefault_index = 2")
+    reg.append("\t\tdefault_index = 1")
     reg.append("\t\toption_count = 3")
     reg.append("\t}")
     for bid, _, _, _ in buttons:
@@ -492,10 +492,10 @@ def main():
     # ------------------------------------------------------------------ #
     def research_block(adv_id, indent="\t"):
         # Scope paths through the limit (dropdown values checked exactly):
-        #  * 2 "All advances": force-research anything the player has unlocked
+        #  * 1 "All Advances": force-research anything the player has unlocked
         #    (the advance's rewritten potential: own nation OR mod toggles),
         #    ignoring institutions and age.
-        #  * 1 "Embraced institutions only" / 3 "... current age only":
+        #  * 2 "Embraced Institutions" / 3 "Current Age Institutions":
         #    has_advance_available (unlocked + reached age + own institution
         #    requirement) PLUS the institution requirements inherited from
         #    prerequisite roots; option 3 additionally requires the advance to
@@ -510,7 +510,7 @@ def main():
                  "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id),
                  "%s\t\tOR = {" % indent,
                  "%s\t\t\tAND = {" % indent,
-                 "%s\t\t\t\t%s = 2" % (indent, scope)]
+                 "%s\t\t\t\t%s = 1" % (indent, scope)]
         for gl in gates.get(adv_id, ()):
             lines.append("%s\t\t\t\t%s" % (indent, gl))
         lines += ["%s\t\t\t}" % indent,
@@ -520,7 +520,7 @@ def main():
             lines.append("%s\t\t\t\thas_embraced_institution = institution:%s"
                          % (indent, inst))
         lines += ["%s\t\t\t\tOR = {" % indent,
-                  "%s\t\t\t\t\t%s = 1" % (indent, scope)]
+                  "%s\t\t\t\t\t%s = 2" % (indent, scope)]
         if info["age"]:
             lines += ["%s\t\t\t\t\tAND = {" % indent,
                       "%s\t\t\t\t\t\t%s = 3" % (indent, scope),
