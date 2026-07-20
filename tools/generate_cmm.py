@@ -288,7 +288,7 @@ def main():
 
     # --- categories tab -------------------------------------------------
     tab = "categories"
-    loc["%s__%s_name" % (MOD_ID, tab)] = "Religions & Governments"
+    loc["%s__%s_name" % (MOD_ID, tab)] = "Misc"
     loc["%s__%s_desc" % (MOD_ID, tab)] = (
         "Unlock religion, government, and special advance trees.")
     for gid, kind, gname in (("religions", "religion", "Religions"),
@@ -350,42 +350,50 @@ def main():
     # dropdown + buttons (registered separately from bool toggles)
     loc["%s__research_scope_name" % MOD_ID] = "Research Scope"
     loc["%s__research_scope_desc" % MOD_ID] = (
-        "Whether the research buttons below respect institution requirements.")
-    loc["%s__research_scope_option_1_name" % MOD_ID] = "Embraced institutions only"
+        "Which advances the research buttons below may instantly research.")
+    loc["%s__research_scope_option_1_name" % MOD_ID] = "Embraced Institutions"
     loc["%s__research_scope_option_1_desc" % MOD_ID] = (
         "Only instantly research advances of ages you have reached whose "
-        "institution requirements - including those inherited from their "
-        "prerequisite tree - you have embraced.")
-    loc["%s__research_scope_option_2_name" % MOD_ID] = "All advances"
+        "institution requirements you have embraced - including institution "
+        "requirements inherited from prerequisite advances further up the "
+        "tree. Nothing from unreached ages or unembraced institution branches "
+        "is researched.")
+    loc["%s__research_scope_option_2_name" % MOD_ID] = "All Advances"
     loc["%s__research_scope_option_2_desc" % MOD_ID] = (
-        "Instantly research advances regardless of age or embraced "
-        "institutions.")
-    loc["%s__research_scope_option_3_name" % MOD_ID] = (
-        "Embraced institutions, current age only")
+        "Instantly research everything available to you, regardless of age "
+        "or embraced institutions - including advances from future ages and "
+        "institution branches you have not embraced.")
+    loc["%s__research_scope_option_3_name" % MOD_ID] = "Current Age Institutions"
     loc["%s__research_scope_option_3_desc" % MOD_ID] = (
-        "Like Embraced institutions only, but restricted to advances of the "
-        "age the game is currently in.")
+        "Like Embraced Institutions, but additionally restricted to advances "
+        "belonging to the age the game is currently in - earlier ages' "
+        "advances are skipped too.")
 
+    # (setting_id, row name, tooltip, button label)
     buttons = [
         ("research_custom", "Research All Custom Advances",
          "Instantly research every unique advance available to you - nation, "
          "culture, religion, government, and the unique entries of the "
          "building/ship/reform trees - your own plus any you unlocked in the "
-         "other tabs. Plain always-available advances stay unresearched."),
+         "other tabs. Plain always-available advances stay unresearched.",
+         "All Custom Advances"),
         ("research_all", "Research All Advances",
          "Instantly research every advance available to you, including the "
-         "default trees."),
+         "default trees.",
+         "All Advances"),
         ("research_current_era", "Research Current Era",
          "Instantly research every available advance of the age your game is "
-         "currently in."),
+         "currently in.",
+         "Current Era"),
         ("research_previous_eras", "Research Previous Eras",
          "Instantly research every available advance of the ages before the "
-         "current one."),
+         "current one.",
+         "Previous Eras"),
     ]
-    for bid, bname, bdesc in buttons:
+    for bid, bname, bdesc, btext in buttons:
         loc["%s__%s_name" % (MOD_ID, bid)] = bname
         loc["%s__%s_desc" % (MOD_ID, bid)] = bdesc
-        loc["%s__%s_text" % (MOD_ID, bid)] = bname
+        loc["%s__%s_text" % (MOD_ID, bid)] = btext
         loc["%s_log_%s" % (MOD_ID, bid)] = "clicked %s (Handicap Advances)" % bname
 
     # Mod Action Log phrasing (entries render as: [actor] [arg1] [action] [arg2])
@@ -413,10 +421,10 @@ def main():
     reg.append("\t\tsetting_id = research_scope")
     reg.append("\t\ttab_id = settings")
     reg.append("\t\tgroup_id = research")
-    reg.append("\t\tdefault_index = 1")
+    reg.append("\t\tdefault_index = 2")
     reg.append("\t\toption_count = 3")
     reg.append("\t}")
-    for bid, _, _ in buttons:
+    for bid, _, _, _ in buttons:
         reg.append("\tcmm_register_button_setting = {")
         reg.append("\t\tmod_id = %s" % MOD_ID)
         reg.append("\t\tsetting_id = %s" % bid)
@@ -471,7 +479,7 @@ def main():
     reg.append("\t\tcmf_log_with_args = { action = %s_log_changed arg1 = %s__research_scope_name arg2 = %s_log_suffix }"
                % (MOD_ID, MOD_ID, MOD_ID))
     reg.append("\t}")
-    for bid, _, _ in buttons:
+    for bid, _, _, _ in buttons:
         reg.append("\tif = {")
         reg.append("\t\tlimit = { var:cmf_callback = flag:%s__%s }" % (MOD_ID, bid))
         reg.append("\t\thafp_%s = yes" % bid)

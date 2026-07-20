@@ -2106,7 +2106,7 @@ hafp_register_mod = {
 		setting_id = research_scope
 		tab_id = settings
 		group_id = research
-		default_index = 1
+		default_index = 2
 		option_count = 3
 	}
 	cmm_register_button_setting = {
