@@ -1,5 +1,14 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 11 checks (era leakage — future-age units)
+
+The Research Scope dropdown now has **four** options; existing saves store the scope by number, so **re-pick it once** after updating.
+
+- [ ] Scope **All, No Future Ages** (new, option 2) + *Research All Custom Advances* in Age of Traditions: **no** Age of Reformation ships (galleass, war galley) or any other future-age advance is researched; everything from your current age and earlier still is, institutions ignored.
+- [ ] Scope **All Advances** (option 1, the default) still deliberately researches future-age advances — that is what it is for. If you never want that, use option 2.
+- [ ] Scopes **Embraced Institutions** / **Current Age Institutions** also never research future-age advances (they now carry an explicit age check instead of relying on the engine's availability trigger).
+- [ ] After researching under option 2, check the navy build list: only ships of your current age and earlier are buildable.
+
 ## Round 10 checks (vassalization kept alongside Indian samanta)
 
 - [ ] As a **non-Indian** nation (e.g. Tunis) that has unlocked/researched `samanta_advance` through the mod: the **Vassalize** diplomatic action is available again, **and** the samanta / maha samanta / pradhana maha samanta subject types are also available.
