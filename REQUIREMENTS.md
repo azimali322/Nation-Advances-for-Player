@@ -60,6 +60,13 @@ A second tab called **Settings** containing:
 
 ---
 
+## 8. Keep base capabilities that unlocked advances would replace
+
+- Some vanilla advances **replace** a base capability instead of adding to it. The Indian `samanta_advance` is the main case: vanilla hides vassalization (and Byzantine pronoia) behind `NOT = { has_advance = samanta_advance }`, because an Indian realm is meant to use the samanta system instead.
+- When such an advance is obtained **through this mod** by a nation that would not qualify in the base game, the player must keep **both**: the base capability (vassals, pronoia) *and* the new one (samanta subject types).
+- Nations that qualify natively (here: Indian culture group) keep vanilla behavior — they still trade vassals for samanta.
+- Applies automatically, no setting.
+
 ## Non-functional / setup requirements
 
 - Mod format: Community Mod Framework (CMF) mod template/format, with CMF declared as a dependency in `.metadata/metadata.json`.

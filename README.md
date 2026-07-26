@@ -47,6 +47,8 @@ potential = {
 
 Top-level `government =` gates are folded into the wrapped potential as `government_type` triggers. `allow` gates (institution requirements, e.g. the Meritocracy advance) are deliberately left untouched, so institution requirements behave exactly as in the base game — only the research buttons' *All advances* scope can step over them. Each CMM toggle syncs to its `hafp_*` country variable via `cmm_sync_bool_alias`, re-synced on every CMM callback.
 
+A few vanilla advances *replace* a base capability rather than adding to it — researching the Indian `samanta_advance` hides vassalization (and Byzantine pronoia) in the base game. [tools/generate_exclusions.py](tools/generate_exclusions.py) relaxes those exclusions so they only apply to nations that qualify for the advance in vanilla, letting a mod-unlocked player keep both capabilities.
+
 Where each advance belongs is computed by [tools/build_groups.py](tools/build_groups.py) from the game files: nation tags map through their 1337 capital (formables through their formable-definition regions, a small manual table covers the rest); region/area/continent scope references are used directly; culture and language gated advances map to where those cultures' pops live in the 1337 setup.
 
 ## Generated files - do not edit by hand
@@ -54,6 +56,7 @@ Where each advance belongs is computed by [tools/build_groups.py](tools/build_gr
 | File | Generator |
 | --- | --- |
 | `in_game/common/advances/*` | `tools/generate_advances.py` |
+| `in_game/common/subject_types/*` | `tools/generate_exclusions.py` |
 | `in_game/common/scripted_effects/hafp_cmm_register.txt` | `tools/generate_cmm.py` |
 | `in_game/common/scripted_effects/hafp_research_effects.txt` | `tools/generate_cmm.py` |
 | `in_game/common/on_action/hafp_on_actions.txt` | `tools/generate_cmm.py` |
@@ -64,8 +67,11 @@ Regenerate after every game patch:
 ```
 python tools/build_groups.py
 python tools/generate_advances.py
+python tools/generate_exclusions.py
 python tools/generate_cmm.py
 ```
+
+`generate_exclusions.py` also reports any *new* "having advance X removes capability Y" site introduced by a patch, so it can be classified before release.
 
 Defaults assume a standard Steam install; pass the EU5 folder as `--game` / first argument otherwise.
 

@@ -1,5 +1,13 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 10 checks (vassalization kept alongside Indian samanta)
+
+- [ ] As a **non-Indian** nation (e.g. Tunis) that has unlocked/researched `samanta_advance` through the mod: the **Vassalize** diplomatic action is available again, **and** the samanta / maha samanta / pradhana maha samanta subject types are also available.
+- [ ] Same check for **pronoia** (Byzantine, Fate of the Phoenix): still offerable after gaining samanta through the mod.
+- [ ] As an **Indian-culture** nation researching samanta normally: vanilla behavior is unchanged — vassals (and pronoia) are replaced by the samanta system.
+- [ ] Without the mod's advances unlocked, nothing about vassalization changes for anyone.
+- [ ] `error.log` clean of anything mentioning `vassal`, `samanta`, `pronoia`, or `subject_types`.
+
 ## Round 9 checks (Exclude toggle narrowed to unit unlocks)
 
 - [ ] The Settings toggle is now labeled **Exclude Foreign Unit Unlocks**. With it ON and everything unlocked: foreign advances that unlock **units or levies** (ship unlocks like Dhow/Genoese Galley, levy unlocks like Noble Knights/Mailed Knights, unique regiment advances) stay locked.
