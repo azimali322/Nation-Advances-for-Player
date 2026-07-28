@@ -429,7 +429,7 @@ def main():
     reg.append("\t\tsetting_id = research_scope")
     reg.append("\t\ttab_id = settings")
     reg.append("\t\tgroup_id = research")
-    reg.append("\t\tdefault_index = 1")
+    reg.append("\t\tdefault_index = 2")
     reg.append("\t\toption_count = 4")
     reg.append("\t}")
     for bid, _, _, _ in buttons:

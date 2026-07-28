@@ -1,5 +1,14 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 13 checks (default scope is now era-safe)
+
+The **Research Scope default changed to *All, No Future Ages*** (was *All Advances*). Existing saves keep their stored pick — set it manually once.
+
+- [ ] As the Ottomans in Age of Traditions, scope *All, No Future Ages*, *Allow Foreign Unit Unlocks* off, All of Asia selected, *Research All Custom Advances*: the army list shows **no** Janissary Columns (age VI) or Akıncılar (age III), and the navy list shows **no** Galiot/Galleass (age IV) or Baghlah (age V) — only age-I units such as Footmen, Archers, Armored Horsemen, Cog.
+- [ ] Those units appear normally as you advance into their ages, and re-clicking the button in a later age researches the ones that have become current.
+- [ ] Foreign units (Bedouin cavalry etc.) stay absent in every age while the allow toggle is off — confirming the two filters are independent.
+- [ ] Switching the scope back to *All Advances* reproduces the old behavior (future-age own-nation units early), confirming it is a scope choice and not a leak.
+
 ## Round 12 checks (foreign unit unlocks are now opt-in)
 
 The setting was renamed, so existing saves start it at its new default (**off**) — no manual step needed.

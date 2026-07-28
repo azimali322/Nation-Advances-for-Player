@@ -81,7 +81,7 @@ A second tab called **Settings** containing:
 - Because the selection UI spans four continent tabs, the "select all" control exists **once**, in the Settings tab (*Unlock All Custom Advances*), with per-continent *All of &lt;continent&gt;* toggles at the top of each continent tab. This satisfies the mirroring requirement (item 2) with a single shared setting instead of two synced buttons.
 - Instant research uses the engine effect `research_advance = advance_type:<id>`, guarded per advance by the **Research Scope** dropdown (four options, all age limits stated explicitly rather than relying on engine triggers, so no scope can ever reach a future age):
   1. **All Advances** — the advance's own unlock gate only; ignores institutions *and* ages (future-age units can be obtained early).
-  2. **All, No Future Ages** — same, but never past the current age.
+  2. **All, No Future Ages** *(default)* — same, but never past the current age. Made the default 2026-07-19 after future-age own-nation units (age VI Janissaries, age IV–V ships) kept being reported as unlock bugs; the age filter and the foreign-unit filter are independent.
   3. **Embraced Institutions** — `has_advance_available` + institution requirements inherited through the `requires` chain + current age or earlier.
   4. **Current Age Institutions** — as 3, restricted to exactly the current age.
   
