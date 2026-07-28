@@ -1,5 +1,13 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 14 checks (research buttons skip ALL unique unit advances)
+
+- [ ] As the Ottomans with *Allow Unique Unit Advances* **off** (default) and anything unlocked, at **any** age and under **any** research scope: *Research All Custom Advances* grants **no** unique units at all — no Janissaries or Akıncılar (your own), no Galiot/Galleass/Baghlah, no foreign uniques. Non-military custom advances still research normally.
+- [ ] Your own unit advances are **still visible and researchable by hand** in the advances tree, at normal cost — the mod must not remove them (base game unchanged).
+- [ ] Generic base units are unaffected: Footmen, Archers, Cog, War Galley etc. still come from the ordinary trees and from *Research All Advances*.
+- [ ] Turn the toggle **on**: the buttons now grant unique units again (foreign ones too, for the groups you selected).
+- [ ] Setting name changed to *Allow Unique Unit Advances* but its id did not, so an existing save keeps your previous choice.
+
 ## Round 13 checks (default scope is now era-safe)
 
 The **Research Scope default changed to *All, No Future Ages*** (was *All Advances*). Existing saves keep their stored pick — set it manually once.

@@ -51,9 +51,12 @@ A second tab called **Settings** containing:
 
 - A settings option to **unlock** (make researchable, not auto-research) all advances in a **specific era**.
 
-## 7. Foreign unit unlocks are opt-in (Settings)
+## 7. Unique unit advances are opt-in (Settings)
 
-- Settings toggle **Allow Foreign Unit Unlocks**, **off by default**: other nations' unit-granting custom advances stay locked even with *Unlock All Custom Advances* or whole continents selected, and the research buttons skip them. The player opts in deliberately when they want foreign units.
+- Settings toggle **Allow Unique Unit Advances**, **off by default**, acting on two layers:
+  - **Unlock layer** — other nations' unit-granting custom advances stay locked even with *Unlock All Custom Advances* or whole continents selected.
+  - **Research layer** — the research buttons skip *every* unique unit advance, **including the player's own nation's** (age VI Janissaries, regional ships, ...), so army/navy progression stays a deliberate choice.
+- The player's own unit advances remain **normally researchable in the advances tree** whatever the toggle says — the mod never alters the base game's own-nation branch (requirement 4).
 - Foreign advances that only give military **stat buffs** (infantry power, morale, sailors, ...) are never affected — only actual unit-roster grants are.
 - The player's **own nation's** advances are unaffected (they flow through the base-game branch of the gate).
 - Classification: `unlock_unit`, `unlock_levy`, or a `may_build_*_units` modifier on the advance (~141 of ~2,470 gated advances).

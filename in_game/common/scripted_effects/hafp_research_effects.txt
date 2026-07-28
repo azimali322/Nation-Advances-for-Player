@@ -2682,6 +2682,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_dhow }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -2735,6 +2736,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_long_fada }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -3043,6 +3045,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_1_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -4659,6 +4662,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_early_longbowmen_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -4801,6 +4805,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = cawa_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6336,6 +6341,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = LIV_a_order_knights }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6424,6 +6430,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = maj_home_of_the_sea_nomads }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6469,6 +6476,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = maj_jong_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6601,6 +6609,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kele_koun_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6645,6 +6654,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = mandekalu_levies }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6689,6 +6699,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = sofa_levies_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -6733,6 +6744,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = farari_corps_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -8698,6 +8710,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_gallowglass_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -8838,6 +8851,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = scottish_longbowmen }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -10825,6 +10839,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kilwan_trade_network }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -11089,6 +11104,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = byz_cataphracts_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -11134,6 +11150,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = byz_akritai_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -11887,6 +11904,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = hsa_the_cog }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -12020,6 +12038,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = khm_ballista_elephants }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -12419,6 +12438,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = mamluk_soldiers }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -12464,6 +12484,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = mamluk_halqah }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -14183,6 +14204,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = bng_bengali_paik }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -16116,6 +16138,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = paik_system_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -16769,6 +16792,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = mounted_people }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -20202,6 +20226,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = noble_knights }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -20538,6 +20563,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = horse_lords }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -22863,6 +22889,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = catalan_galley }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -22918,6 +22945,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = early_iberian_caravel }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -22962,6 +22990,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ara_almogavars }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -23013,6 +23042,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ara_catalan_crossbowmen }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -23152,6 +23182,7 @@ hafp_research_age_1_traditions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = genoese_galley }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -29697,6 +29728,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_reformed_crusader_knights_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -29739,6 +29771,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_long_fada_2 }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -29825,6 +29858,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_2_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -29883,6 +29917,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_varangians_2_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -29928,6 +29963,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_byzantine_cataphracts_2_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -30424,6 +30460,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = wagenburg }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -31764,6 +31801,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_longbowmen_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -31904,6 +31942,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_renaissance_cawa_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -33393,6 +33432,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kor_hwachas_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -33438,6 +33478,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kor_early_turtle_ship_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -33570,6 +33611,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = LIV_a_order_knights_2 }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -33751,6 +33793,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = maj_late_karambit_warriors }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -36068,6 +36111,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_reformed_gallowglass_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -36250,6 +36294,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = home_of_hussars }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -37738,6 +37783,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_renaissance_janissaries_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -38183,6 +38229,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = the_dhow }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -38228,6 +38275,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = the_kilwan_zambuc }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -39954,6 +40002,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = reform_the_mamluk_corps }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -40401,6 +40450,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ori_lord_of_elephants }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -41552,6 +41602,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_bedouin_cavalry_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -41728,6 +41779,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = bng_war_elephants }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -45961,6 +46013,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = thai_war_elephants }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -47395,6 +47448,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = aristocracy }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -50286,6 +50340,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = iberian_caravel }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -50330,6 +50385,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ara_late_almogavars }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -50470,6 +50526,7 @@ hafp_research_age_2_renaissance_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = genoese_crossbowmen }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -56791,6 +56848,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_baochuan }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -56834,6 +56892,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_sekibune }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -56877,6 +56936,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_atakebune }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -56960,6 +57020,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_3_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -57018,6 +57079,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_varangians_3_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -57063,6 +57125,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_byzantine_cataphracts_3_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -57154,6 +57217,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = akinji_cavalry }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -58189,6 +58253,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = dahomey_amazons }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -58409,6 +58474,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_late_longbowmen_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -58641,6 +58707,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_discovery_cawa_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -59182,6 +59249,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = hun_found_the_black_army }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -59565,6 +59633,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ira_the_qizilbash }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -60134,6 +60203,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = maj_the_magic_arrow }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -61669,6 +61739,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_late_gallowglass_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -62827,6 +62898,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_discovery_janissaries_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -67092,6 +67164,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = landsknechte }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -67949,6 +68022,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = swiss_reislaufer }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -68034,6 +68108,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = paik_regiments_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -70104,6 +70179,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = florentine_citizen_militia }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -71366,6 +71442,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = military_traditions }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -72642,6 +72719,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = early_iberian_galleon }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -72685,6 +72763,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = square_rigged_caravel }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -72728,6 +72807,7 @@ hafp_research_age_3_discovery_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = cas_lanzas_de_castilla }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -77825,6 +77905,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_war_galleon }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -77866,6 +77947,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_galleass_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -77907,6 +77989,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = italian_galleass }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -77948,6 +78031,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_cakradonya }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -77992,6 +78076,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_galiot }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -78204,6 +78289,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_4_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -78262,6 +78348,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_varangians_4_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -78307,6 +78394,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_byzantine_cataphracts_4_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -79690,6 +79778,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_reformation_cawa_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -80167,6 +80256,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = hun_hungarian_hussars }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -80604,6 +80694,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ira_the_ghilman }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -80780,6 +80871,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kbo_iron_helmet_musketeers }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -81001,6 +81093,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kor_geobukseon }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -81046,6 +81139,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = kor_panokseon_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -81358,6 +81452,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = maj_the_ghali }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -82107,6 +82202,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = platoon_fire }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -82347,6 +82443,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = winged_hussars_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -83973,6 +84070,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_reformation_janissaries_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -84631,6 +84729,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = byz_the_new_helepolis }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -84937,6 +85036,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = the_red_cannon }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -86395,6 +86495,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = sia_advanced_elephant_warfare }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -88267,6 +88368,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = saxon_defensioner }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -88313,6 +88415,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = hesse_jager }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -88359,6 +88462,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = gebirgsschutzen_infantry }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -89257,6 +89361,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = the_eight_banners }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -92267,6 +92372,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = noble_officers }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -93694,6 +93800,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = tercio }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -93738,6 +93845,7 @@ hafp_research_age_4_reformation_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = iberian_galleon }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -99280,6 +99388,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_5_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -99338,6 +99447,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_varangians_5_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -99383,6 +99493,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_byzantine_cataphracts_5_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -100723,6 +100834,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_absolutism_cawa_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -101419,6 +101531,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ira_the_tofangchi }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -101463,6 +101576,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ira_the_tupchi }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -102534,6 +102648,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = late_winged_hussars_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -103037,6 +103152,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = scottish_highlander_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -103564,6 +103680,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = hakkapelitta }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -103612,6 +103729,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = caroleans_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -104047,6 +104165,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_absolutism_janissaries_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -105758,6 +105877,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = black_guard }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -106022,6 +106142,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = prussian_grenadiers }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -107500,6 +107621,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = bavarian_jager }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -108182,6 +108304,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = advanced_paik_system_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -111195,6 +111318,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = noble_resilience }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -111620,6 +111744,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = baghlah_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -111677,6 +111802,7 @@ hafp_research_age_5_absolutism_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = balkan_hajduks }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -116942,6 +117068,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_archipelago_frigate }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -117030,6 +117157,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_legionaries_6_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -117088,6 +117216,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_varangians_6_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -117133,6 +117262,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = unlock_byzantine_cataphracts_6_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -117847,6 +117977,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = eng_red_coats }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -117895,6 +118026,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = eng_experimental_riflemen }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -118121,6 +118253,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_revolutions_cawa_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -118907,6 +119040,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = ira_jazayerchi }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -120825,6 +120959,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = a_revolutions_janissaries_advance }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -123795,6 +123930,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = austrian_grenzhussar }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -123838,6 +123974,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = austrian_grenzer }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -125299,6 +125436,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = npl_gurkhas }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -127415,6 +127553,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = international_nobility }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -127580,6 +127719,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = cro_pandurs_recruitment }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {
@@ -127638,6 +127778,7 @@ hafp_research_age_6_revolutions_custom = {
 	if = {
 		limit = {
 			NOT = { has_advance = por_cacadores }
+			has_variable = hafp_allow_unit_unlocks
 			OR = {
 				AND = {
 					OR = {

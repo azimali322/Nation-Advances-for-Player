@@ -38,6 +38,7 @@ GAME_DEFAULT = r"C:\Program Files (x86)\Steam\steamapps\common\Europa Universali
 
 sys.path.insert(0, HERE)
 from build_groups import split_advances  # noqa: E402
+from generate_advances import is_military_advance  # noqa: E402
 
 MOD_ID = "hafp"
 
@@ -100,6 +101,7 @@ def main():
                     r"has_embraced_institution\s*=\s*institution:([a-z0-9_]+)", body)),
                 "requires": re.findall(r"\brequires\s*=\s*([A-Za-z0-9_.]+)", body),
                 "custom": is_custom,
+                "units": is_military_advance(fname, body),
             }
 
     # Institution requirements inherited through the requires chains: the
@@ -332,15 +334,17 @@ def main():
                "continent, region, and area. Overrides the individual toggles "
                "in the other tabs (they stay as you set them).")
     add_toggle("allow_unit_unlocks", tab, "master", "hafp_allow_unit_unlocks",
-               "Allow Foreign Unit Unlocks",
-               "Off by default: other nations' advances that grant army or "
-               "navy UNITS (unique regiments, ships, levies) stay locked even "
-               "with Unlock All or a whole continent selected, and the "
-               "research buttons skip them - so you decide when to take "
-               "foreign units. Turn on to unlock them along with everything "
-               "else. Foreign advances that only give military bonuses "
-               "(infantry power, morale, sailors, ...) are never affected, "
-               "and neither are your own nation's advances.")
+               "Allow Unique Unit Advances",
+               "Off by default, so army and navy choices stay yours: other "
+               "nations' advances that grant unique UNITS (regiments, ships, "
+               "levies) stay locked even with Unlock All or a whole continent "
+               "selected, and the research buttons skip every unique unit "
+               "advance - including your own nation's. Your own unit advances "
+               "remain researchable normally in the advances tree, exactly as "
+               "in the base game. Turn on to unlock foreign unit advances and "
+               "let the research buttons grant units too. Advances that only "
+               "give military bonuses (infantry power, morale, sailors, ...) "
+               "are never affected.")
 
     for age_id, age_name in AGES:
         add_toggle("age_%s" % age_id, tab, "era_unlock",
@@ -523,8 +527,14 @@ def main():
         scope = '"variable_map(cmm|flag:%s__research_scope)"' % MOD_ID
         lines = ["%sif = {" % indent,
                  "%s\tlimit = {" % indent,
-                 "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id),
-                 "%s\t\tOR = {" % indent,
+                 "%s\t\tNOT = { has_advance = %s }" % (indent, adv_id)]
+        # Unique unit advances - including the player's OWN nation's - are only
+        # instant-researched when the player opts in. They stay normally
+        # researchable in the advances tree either way, so the base game is
+        # untouched; the buttons just leave army/navy choices to the player.
+        if info["units"] and info["custom"]:
+            lines.append("%s\t\thas_variable = %s" % (indent, "hafp_allow_unit_unlocks"))
+        lines += ["%s\t\tOR = {" % indent,
                  "%s\t\t\tAND = {" % indent,
                  "%s\t\t\t\tOR = {" % indent,
                  "%s\t\t\t\t\t%s = 1" % (indent, scope)]
