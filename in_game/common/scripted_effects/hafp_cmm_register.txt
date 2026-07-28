@@ -2054,7 +2054,7 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = exclude_military
+		setting_id = allow_unit_unlocks
 		tab_id = settings
 		group_id = master
 		default_value = 0
@@ -2422,7 +2422,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__f_estate_cossacks alias = hafp_g_f_estate_cossacks }
 	cmm_sync_bool_alias = { setting = hafp__enabled alias = hafp_enabled }
 	cmm_sync_bool_alias = { setting = hafp__unlock_all alias = hafp_all_advances_enabled }
-	cmm_sync_bool_alias = { setting = hafp__exclude_military alias = hafp_exclude_military }
+	cmm_sync_bool_alias = { setting = hafp__allow_unit_unlocks alias = hafp_allow_unit_unlocks }
 	cmm_sync_bool_alias = { setting = hafp__age_age_1_traditions alias = hafp_g_age_age_1_traditions }
 	cmm_sync_bool_alias = { setting = hafp__age_age_2_renaissance alias = hafp_g_age_age_2_renaissance }
 	cmm_sync_bool_alias = { setting = hafp__age_age_3_discovery alias = hafp_g_age_age_3_discovery }
@@ -6825,13 +6825,13 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
-		limit = { var:cmf_callback = flag:hafp__exclude_military }
+		limit = { var:cmf_callback = flag:hafp__allow_unit_unlocks }
 		if = {
-			limit = { "variable_map(cmm|flag:hafp__exclude_military)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__exclude_military_name arg2 = hafp_log_suffix }
+			limit = { "variable_map(cmm|flag:hafp__allow_unit_unlocks)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__allow_unit_unlocks_name arg2 = hafp_log_suffix }
 		}
 		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__exclude_military_name arg2 = hafp_log_suffix }
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__allow_unit_unlocks_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {

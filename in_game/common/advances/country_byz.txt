@@ -28,7 +28,7 @@
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -52,7 +52,7 @@
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -272,7 +272,7 @@
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation

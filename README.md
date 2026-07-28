@@ -16,6 +16,7 @@ All controls live in the **Community Mod Menu** (CMM) under *Handicap Advances f
 - **Settings tab:**
   - **Enabled** - master switch, off by default. While off the mod is invisible: every nation sees exactly its base-game advances. Turning it on applies your selections; your own nation's advances are never affected.
   - **Unlock All Custom Advances** - one toggle that mimics the original "All Advances Unlocked" mod (equivalent to selecting every continent/region/area, culture, religion, and government).
+  - **Allow Foreign Unit Unlocks** - off by default, so other nations' unique regiments, ships, and levies stay locked even with everything else unlocked; turn it on to take foreign units too. Your own nation's units are never affected.
   - **Unlock by Era** - per-age toggles that make every gated advance of that age researchable.
   - **Research Scope** - what the buttons below may research: *All Advances* (ignores ages and institutions), *All, No Future Ages* (ignores institutions, keeps era progression), *Embraced Institutions*, or *Current Age Institutions*.
   - **Research buttons** - instantly research: all custom advances, all advances (including default trees), the current era, or all previous eras.

@@ -1,5 +1,15 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 12 checks (foreign unit unlocks are now opt-in)
+
+The setting was renamed, so existing saves start it at its new default (**off**) — no manual step needed.
+
+- [ ] Settings > Master shows **Allow Foreign Unit Unlocks**, off by default (the old *Exclude Foreign Unit Unlocks* is gone).
+- [ ] As the Ottomans with Asia + Europe selected **and** *Unlock All Custom Advances* on: *Research All Custom Advances* grants **no** foreign unique units — no Bedouin cavalry, no foreign unique ships, no foreign unique regiments. Foreign civilian and military-bonus advances still unlock/research normally.
+- [ ] Your **own** unique units are unaffected — as the Ottomans the Janissary line still behaves exactly as vanilla.
+- [ ] Turn **Allow Foreign Unit Unlocks** on: foreign unit advances become unlockable/researchable again for the groups you have selected.
+- [ ] Newly covered: Bengali `bng_bengali_paik` (grants paik units via a `may_build` modifier rather than `unlock_unit`) is now treated as a unit grant.
+
 ## Round 11 checks (era leakage — future-age units)
 
 The Research Scope dropdown now has **four** options; existing saves store the scope by number, so **re-pick it once** after updating.

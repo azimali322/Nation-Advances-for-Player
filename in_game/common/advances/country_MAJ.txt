@@ -30,7 +30,7 @@ maj_home_of_the_sea_nomads = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -55,7 +55,7 @@ maj_jong_advance = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -130,7 +130,7 @@ maj_late_karambit_warriors = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -181,7 +181,7 @@ maj_the_magic_arrow = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -259,7 +259,7 @@ maj_the_ghali = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation

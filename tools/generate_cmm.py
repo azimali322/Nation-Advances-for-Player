@@ -331,14 +331,16 @@ def main():
                "in the game for research - the same as selecting every "
                "continent, region, and area. Overrides the individual toggles "
                "in the other tabs (they stay as you set them).")
-    add_toggle("exclude_military", tab, "master", "hafp_exclude_military",
-               "Exclude Foreign Unit Unlocks",
-               "While on, other nations' advances that unlock army or navy "
-               "UNITS (including levies) stay locked even if their group is "
-               "selected or Unlock All is on - and the research buttons skip "
-               "them. Foreign advances that only give military bonuses "
-               "(infantry power, morale, sailors, ...) are not affected, and "
-               "your own nation's advances never are.")
+    add_toggle("allow_unit_unlocks", tab, "master", "hafp_allow_unit_unlocks",
+               "Allow Foreign Unit Unlocks",
+               "Off by default: other nations' advances that grant army or "
+               "navy UNITS (unique regiments, ships, levies) stay locked even "
+               "with Unlock All or a whole continent selected, and the "
+               "research buttons skip them - so you decide when to take "
+               "foreign units. Turn on to unlock them along with everything "
+               "else. Foreign advances that only give military bonuses "
+               "(infantry power, morale, sailors, ...) are never affected, "
+               "and neither are your own nation's advances.")
 
     for age_id, age_name in AGES:
         add_toggle("age_%s" % age_id, tab, "era_unlock",

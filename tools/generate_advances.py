@@ -47,15 +47,21 @@ import sys
 
 MASTER_ENABLED = "hafp_enabled"
 UNLOCK_ALL = "hafp_all_advances_enabled"
-EXCLUDE_MILITARY = "hafp_exclude_military"
+ALLOW_UNIT_UNLOCKS = "hafp_allow_unit_unlocks"
+
+# An advance grants units if it unlocks a unit or levy outright, or enables
+# building a unit family through a modifier (global_may_build_paik_units).
+UNIT_UNLOCK_RE = re.compile(
+    r"\bunlock_unit\s*=|\bunlock_levy\s*=|may_build_[a-z_]*units\s*=\s*yes")
+
 
 def is_military_advance(fname, body):
-    """True only for advances that unlock army/navy UNITS (or levies).
+    """True only for advances that grant army/navy UNITS.
 
     Deliberately narrow: advances that merely buff military stats (infantry
-    power, morale, sailors, ...) are NOT excluded - the toggle's purpose is to
+    power, morale, sailors, ...) are NOT affected - the toggle's purpose is to
     keep foreign unit rosters locked, not foreign military bonuses."""
-    return bool(re.search(r"\bunlock_(unit|levy)\s*=", body))
+    return bool(UNIT_UNLOCK_RE.search(body))
 
 KEY_RE = re.compile(r"([A-Za-z0-9_.:]+)\s*=\s*(\{|\"[^\"]*\"|[^\s{}#]+)")
 
@@ -158,7 +164,8 @@ def wrap_gate(inner, unlock_vars, extra_lines=None, military=False):
     """Build the wrapped gate body from the original inner content."""
     body = "\n\t\tOR = {\n\t\t\tAND = {\n\t\t\t\thas_variable = %s" % MASTER_ENABLED
     if military:
-        body += "\n\t\t\t\tNOT = { has_variable = %s }" % EXCLUDE_MILITARY
+        # unit-granting advances additionally require the opt-in toggle
+        body += "\n\t\t\t\thas_variable = %s" % ALLOW_UNIT_UNLOCKS
     body += "\n\t\t\t\tOR = {"
     for var in unlock_vars:
         body += "\n\t\t\t\t\thas_variable = %s" % var

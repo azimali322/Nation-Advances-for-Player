@@ -6,7 +6,7 @@ tercio = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -32,7 +32,7 @@ catalan_galley = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -67,7 +67,7 @@ early_iberian_caravel = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -91,7 +91,7 @@ iberian_caravel = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -115,7 +115,7 @@ early_iberian_galleon = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -139,7 +139,7 @@ square_rigged_caravel = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -168,7 +168,7 @@ iberian_galleon = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
@@ -195,7 +195,7 @@ ara_almogavars = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -227,7 +227,7 @@ ara_catalan_crossbowmen = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
@@ -259,7 +259,7 @@ ara_late_almogavars = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
@@ -292,7 +292,7 @@ cas_lanzas_de_castilla = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
@@ -321,7 +321,7 @@ por_cacadores = {
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
-				NOT = { has_variable = hafp_exclude_military }
+				has_variable = hafp_allow_unit_unlocks
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions

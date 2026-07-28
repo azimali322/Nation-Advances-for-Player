@@ -51,12 +51,13 @@ A second tab called **Settings** containing:
 
 - A settings option to **unlock** (make researchable, not auto-research) all advances in a **specific era**.
 
-## 7. Exclude foreign unit unlocks (Settings)
+## 7. Foreign unit unlocks are opt-in (Settings)
 
-- A Settings toggle that, while on, keeps **other nations' unit-unlocking custom advances locked** (army and navy units, including levies) regardless of the continent/region/area/culture/religion selections (or Unlock All), and makes the research buttons skip them.
-- Foreign advances that only give military **stat buffs** (infantry power, morale, sailors, ...) are deliberately NOT excluded — only actual unit-roster unlocks are (refined 2026-07-19 per user: originally any predominantly-military advance was excluded).
+- Settings toggle **Allow Foreign Unit Unlocks**, **off by default**: other nations' unit-granting custom advances stay locked even with *Unlock All Custom Advances* or whole continents selected, and the research buttons skip them. The player opts in deliberately when they want foreign units.
+- Foreign advances that only give military **stat buffs** (infantry power, morale, sailors, ...) are never affected — only actual unit-roster grants are.
 - The player's **own nation's** advances are unaffected (they flow through the base-game branch of the gate).
-- Classification: `unlock_unit` or `unlock_levy` present on the advance (~140 of ~2,470 gated advances).
+- Classification: `unlock_unit`, `unlock_levy`, or a `may_build_*_units` modifier on the advance (~141 of ~2,470 gated advances).
+- History: originally an *exclusion* toggle covering any predominantly-military advance (2026-07-19), narrowed to unit grants only, then inverted to an opt-in default-off toggle after unlock-all handed out Janissaries and Bedouin cavalry unasked.
 
 ---
 
