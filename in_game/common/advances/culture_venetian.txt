@@ -96,6 +96,7 @@ pad_carraresi_dynasty = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_venetian
 				}
 			}
@@ -263,6 +264,7 @@ ven_printing_industry = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_venetian
 				}
 			}

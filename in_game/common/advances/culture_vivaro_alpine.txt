@@ -10,6 +10,7 @@
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_vivaro_alpine
 				}
 			}
@@ -321,6 +322,7 @@ sal_the_alpine_crafts = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_vivaro_alpine
 				}
 			}

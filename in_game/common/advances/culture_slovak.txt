@@ -200,6 +200,7 @@ slo_the_mining_captancy = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_slovak
 				}
 			}
@@ -310,6 +311,7 @@ slo_the_hron_valley_industries = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_slovak
 				}
 			}

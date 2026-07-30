@@ -173,6 +173,7 @@ mzk_the_agricultural_wealth_of_the_devoll = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -305,6 +306,7 @@ ant_the_iron_mines_of_the_interior = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -330,6 +332,7 @@ mtr_lagoon_fisheries = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -594,6 +597,7 @@ albanian_the_transhumance_networks = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -728,6 +732,7 @@ mzk_silk_road_waystations = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -886,6 +891,7 @@ mtr_reclamation_engineering = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -1096,6 +1102,7 @@ mzk_the_muzakan_industrialization = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}

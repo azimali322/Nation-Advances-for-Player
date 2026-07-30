@@ -2040,6 +2040,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = tall
+		tab_id = categories
+		group_id = playstyle
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = enabled
 		tab_id = settings
 		group_id = master
@@ -2420,6 +2427,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__f_government_theocracy alias = hafp_g_f_government_theocracy }
 	cmm_sync_bool_alias = { setting = hafp__f_colonial_nations alias = hafp_g_f_colonial_nations }
 	cmm_sync_bool_alias = { setting = hafp__f_estate_cossacks alias = hafp_g_f_estate_cossacks }
+	cmm_sync_bool_alias = { setting = hafp__tall alias = hafp_g_tall }
 	cmm_sync_bool_alias = { setting = hafp__enabled alias = hafp_enabled }
 	cmm_sync_bool_alias = { setting = hafp__unlock_all alias = hafp_all_advances_enabled }
 	cmm_sync_bool_alias = { setting = hafp__allow_unit_unlocks alias = hafp_allow_unit_unlocks }
@@ -6802,6 +6810,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_estate_cossacks_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__tall }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__tall)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__tall_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__tall_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {

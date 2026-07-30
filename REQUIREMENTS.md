@@ -71,6 +71,18 @@ A second tab called **Settings** containing:
 - Nations that qualify natively (here: Indian culture group) keep vanilla behavior — they still trade vassals for samanta.
 - Applies automatically, no setting.
 
+## 9. Tall category (Misc tab)
+
+- A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
+- Qualifying modifiers (264 advances as of 1.3):
+  - development — `global_monthly_development`
+  - population — `global_population_growth`, `global_population_capacity_modifier`
+  - prosperity — `global_monthly_prosperity`
+  - food economy — `global_monthly_food_modifier`, `global_food_capacity`, `global_food_decay`, `food_purchase_efficiency`, `food_consumption_modifier`, `global_pop_food_consumption`, `global_clergy_food_consumption`
+  - raw materials / production — `global_raw_material_output`, `global_production_efficiency`, and every per-good `*_output_modifier`
+  - pop promotion — `global_pop_promotion_speed_modifier`
+- The per-good `*_output_modifier` family is included on the reading that "raw material productivity and bonuses" covers goods output; trim the list in `tools/generate_advances.py` (`TALL_KEYS` / `TALL_KEY_SUFFIXES`) if it should be narrower.
+
 ## Non-functional / setup requirements
 
 - Mod format: Community Mod Framework (CMF) mod template/format, with CMF declared as a dependency in `.metadata/metadata.json`.

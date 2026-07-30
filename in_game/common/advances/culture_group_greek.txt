@@ -274,6 +274,7 @@ moe_reclaiming_the_peloponnese_advance = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 				}
 			}
@@ -409,6 +410,7 @@ gre_greek_viticulture_advance = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 				}
 			}
@@ -755,6 +757,7 @@ moe_the_silk_road_of_morea_advance = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 				}
 			}
@@ -937,6 +940,7 @@ ths_thessalian_grain_exchange_advance = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 				}
 			}

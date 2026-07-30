@@ -209,6 +209,7 @@ masters_of_the_nile = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_egypt_region
 					has_variable = hafp_g_area_lower_egypt_area

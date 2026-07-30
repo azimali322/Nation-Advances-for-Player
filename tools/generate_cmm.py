@@ -313,6 +313,17 @@ def main():
             add_toggle("f_%s" % stem, tab, gid, "hafp_g_f_%s" % stem, name,
                        "Unlock the %d advances of this tree." % len(entry["advances"]))
 
+    gid = "playstyle"
+    loc["%s__%s__%s_name" % (MOD_ID, tab, gid)] = "Playstyle"
+    add_toggle("tall", tab, gid, "hafp_g_tall",
+               "Tall Empire Advances",
+               "Unlock every custom advance in the world that grows what you "
+               "already own - development, population growth and capacity, "
+               "prosperity, food production, food purchase efficiency, "
+               "reduced pop food consumption, raw material and goods output, "
+               "and pop promotion speed - no matter which continents, "
+               "cultures or religions you have selected.")
+
     # --- settings tab ---------------------------------------------------
     tab = "settings"
     loc["%s__%s_name" % (MOD_ID, tab)] = "Settings"

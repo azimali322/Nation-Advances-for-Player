@@ -173,6 +173,7 @@ swiss_recovery_and_prosperity = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_high_alemannic
 				}
 			}
@@ -262,6 +263,7 @@ swiss_clockwork = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_high_alemannic
 				}
 			}

@@ -232,6 +232,7 @@ there_shall_be_no_grass = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_steppe_horde
 				}
 			}
@@ -396,6 +397,7 @@ populating_the_steppes = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_steppe_horde
 				}
 			}

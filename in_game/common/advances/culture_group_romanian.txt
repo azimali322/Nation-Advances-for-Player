@@ -371,6 +371,7 @@ tra_the_transylvanian_trade_guilds = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}
@@ -740,6 +741,7 @@ mol_the_cotnari_and_odobesti_wines = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}
@@ -824,6 +826,7 @@ wal_the_abolition_of_serfdom = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}

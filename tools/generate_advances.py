@@ -55,6 +55,44 @@ UNIT_UNLOCK_RE = re.compile(
     r"\bunlock_unit\s*=|\bunlock_levy\s*=|may_build_[a-z_]*units\s*=\s*yes")
 
 
+# "Tall" advances: bonuses aimed at growing what you already own - development,
+# population, prosperity, the food economy, raw material / goods output, and pop
+# promotion speed. Any `*_output_modifier` (per-good output) counts as a raw
+# material / production bonus.
+TALL_KEYS = {
+    # development, population, prosperity
+    "global_monthly_development",
+    "global_population_growth",
+    "global_population_capacity_modifier",
+    "global_monthly_prosperity",
+    # food economy
+    "global_monthly_food_modifier",
+    "global_food_capacity",
+    "global_food_decay",
+    "food_purchase_efficiency",
+    "food_consumption_modifier",
+    "global_pop_food_consumption",
+    "global_clergy_food_consumption",
+    # raw materials / production
+    "global_raw_material_output",
+    "global_production_efficiency",
+    # pop promotion
+    "global_pop_promotion_speed_modifier",
+}
+TALL_KEY_SUFFIXES = ("_output_modifier",)
+
+
+def is_tall_advance(body):
+    """True if the advance carries any 'tall' economy/growth modifier."""
+    for line in body.splitlines():
+        m = re.match(r"\s*([a-z_0-9]+)\s*=\s*[^{\s]", line.split("#")[0])
+        if m:
+            key = m.group(1)
+            if key in TALL_KEYS or key.endswith(TALL_KEY_SUFFIXES):
+                return True
+    return False
+
+
 def is_military_advance(fname, body):
     """True only for advances that grant army/navy UNITS.
 
@@ -230,6 +268,8 @@ def unlock_vars_for(adv_id, body, file_entry, fname):
     age_m = re.search(r"\bage\s*=\s*(age_[a-z0-9_]+)", body)
     if age_m:
         unlock.append("hafp_g_age_%s" % age_m.group(1))
+    if is_tall_advance(body):
+        unlock.append("hafp_g_tall")
     if file_entry is None:
         return unlock  # generic vanilla tree: master + era only
 

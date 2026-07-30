@@ -60,6 +60,7 @@ the_yak = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_tibet_region
 					has_variable = hafp_g_area_tsang_area

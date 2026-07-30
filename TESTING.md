@@ -1,5 +1,14 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 15 checks (new Tall category)
+
+- [ ] Misc tab has a **Playstyle** group containing **Tall Empire Advances** (off by default), with tooltip.
+- [ ] With *Enabled* on, nothing else selected, and only **Tall Empire Advances** ticked: growth/economy advances from all over the world become researchable — e.g. Aztec *Chinampas*, Croatian *Swamp Drainage Projects*, Albanian *Agricultural Wealth of the Devoll*, Lombard *Manifattura*, North American *Slash and Burn*.
+- [ ] Military-only, diplomacy-only and other non-economic foreign advances stay locked (spot-check: Swiss *Reisläufer*, Dutch *Trading Spirit* should NOT appear from this toggle alone).
+- [ ] The toggle stacks with the geography tabs: an advance already unlocked by a continent stays unlocked when Tall is switched off, if that continent is still selected.
+- [ ] *Research All Custom Advances* researches the newly unlocked tall advances (unit-granting ones still excluded unless *Allow Unique Unit Advances* is on).
+- [ ] Report any advance that feels wrongly in/out — the modifier list is one table in `tools/generate_advances.py`.
+
 ## Round 14 checks (research buttons skip ALL unique unit advances)
 
 - [ ] As the Ottomans with *Allow Unique Unit Advances* **off** (default) and anything unlocked, at **any** age and under **any** research scope: *Research All Custom Advances* grants **no** unique units at all — no Janissaries or Akıncılar (your own), no Galiot/Galleass/Baghlah, no foreign uniques. Non-military custom advances still research normally.

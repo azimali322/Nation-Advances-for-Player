@@ -64,6 +64,7 @@ luc_the_silk_republic = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 				}
 			}
@@ -427,6 +428,7 @@ tuscan_the_mezzadria = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 				}
 			}
@@ -807,6 +809,7 @@ sie_civic_pride = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 				}
 			}
