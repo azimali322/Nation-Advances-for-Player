@@ -68,6 +68,7 @@ sic_constitions_of_melfi = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sicilian
 				}
 			}
@@ -347,6 +348,7 @@ maltese_the_festa_ritualism = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sicilian
 				}
 			}
@@ -459,6 +461,7 @@ sic_sicilian_reforms = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sicilian
 				}
 			}

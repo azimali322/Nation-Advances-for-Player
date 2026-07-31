@@ -10,6 +10,7 @@ usa_mayflower_compact = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_east_coast_region
 				}
@@ -176,6 +177,7 @@ usa_era_good_feelings = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_east_coast_region
 				}

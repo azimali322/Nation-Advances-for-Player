@@ -11,6 +11,7 @@ servants_of_god = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_theocracy
 				}
 			}
@@ -56,6 +57,7 @@ state_of_clerics = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_theocracy
 				}
 			}
@@ -83,6 +85,7 @@ friends_in_high_places = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_theocracy
 				}
 			}
@@ -180,6 +183,7 @@ conviction_of_sin = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_theocracy
 				}
 			}
@@ -228,6 +232,7 @@ divine_passion = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_government_theocracy
 				}
 			}

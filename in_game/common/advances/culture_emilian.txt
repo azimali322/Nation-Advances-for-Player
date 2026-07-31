@@ -38,6 +38,7 @@ blg_la_dota = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -118,6 +119,7 @@ mod_the_ancient_commune = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -915,6 +917,7 @@ pcz_administrative_reform = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}

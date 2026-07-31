@@ -424,6 +424,7 @@ act_of_revocation = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_great_britain_region
 					has_variable = hafp_g_area_scottish_lowlands_area

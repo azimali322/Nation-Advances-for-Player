@@ -294,6 +294,7 @@ ira_the_qizilbash = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_persia_region
 				}
@@ -344,6 +345,7 @@ ira_religious_state = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_persia_region
 				}
@@ -418,6 +420,7 @@ ira_nazir = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_persia_region
 				}

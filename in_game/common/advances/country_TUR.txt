@@ -136,6 +136,7 @@ timariots = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_anatolia_region
 					has_variable = hafp_g_area_marmara_area

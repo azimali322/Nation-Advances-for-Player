@@ -68,6 +68,7 @@ consolidate_the_royal_domain = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_neapolitan
 				}
 			}
@@ -101,6 +102,7 @@ academia_pontaniana = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_neapolitan
 				}
 			}
@@ -274,6 +276,7 @@ institutional_reorganization = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_neapolitan
 				}
 			}

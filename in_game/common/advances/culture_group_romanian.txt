@@ -64,6 +64,7 @@ rmn_the_descendants_of_trajan = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}
@@ -260,6 +261,7 @@ boyar_regime = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}
@@ -345,6 +347,7 @@ rmn_the_byzantine_heirs = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}
@@ -432,6 +435,7 @@ romanian_the_postelnic_bureaucracy = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}
@@ -488,6 +492,7 @@ rmn_cartea_romaneasca_de_invetatura = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 				}
 			}

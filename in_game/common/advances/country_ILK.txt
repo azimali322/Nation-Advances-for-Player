@@ -152,6 +152,7 @@ ilk_new_roots = {	#They move away from being horde-like to a more reformed state
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_anatolia_region

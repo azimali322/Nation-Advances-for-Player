@@ -55,10 +55,10 @@ UNIT_UNLOCK_RE = re.compile(
     r"\bunlock_unit\s*=|\bunlock_levy\s*=|may_build_[a-z_]*units\s*=\s*yes")
 
 
-# "Tall" advances: bonuses aimed at growing what you already own - development,
-# population, prosperity, the food economy, raw material / goods output, and pop
-# promotion speed. Any `*_output_modifier` (per-good output) counts as a raw
-# material / production bonus.
+# "Tall" advances: bonuses aimed at growing and governing what you already own -
+# development, population, prosperity, the food economy, raw material / goods
+# output, pop promotion, plus the cabinet, government reforms, crown power and
+# estate satisfaction equilibrium.
 TALL_KEYS = {
     # development, population, prosperity
     "global_monthly_development",
@@ -79,16 +79,22 @@ TALL_KEYS = {
     # pop promotion
     "global_pop_promotion_speed_modifier",
 }
-TALL_KEY_SUFFIXES = ("_output_modifier",)
+# per-good output (raw material bonuses) and estate satisfaction equilibrium
+# (the game's "target satisfaction")
+TALL_KEY_SUFFIXES = ("_output_modifier", "_target_satisfaction")
+# whole families: the cabinet (members, efficiency, actions), government
+# reforms (unlocks and slots), and crown power
+TALL_KEY_SUBSTRINGS = ("cabinet", "government_reform", "crown")
 
 
 def is_tall_advance(body):
-    """True if the advance carries any 'tall' economy/growth modifier."""
+    """True if the advance carries any 'tall' economy/growth/governance modifier."""
     for line in body.splitlines():
         m = re.match(r"\s*([a-z_0-9]+)\s*=\s*[^{\s]", line.split("#")[0])
         if m:
             key = m.group(1)
-            if key in TALL_KEYS or key.endswith(TALL_KEY_SUFFIXES):
+            if (key in TALL_KEYS or key.endswith(TALL_KEY_SUFFIXES)
+                    or any(s in key for s in TALL_KEY_SUBSTRINGS)):
                 return True
     return False
 

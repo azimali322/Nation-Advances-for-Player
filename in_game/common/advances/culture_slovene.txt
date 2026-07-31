@@ -63,6 +63,7 @@ slovene_the_dukes_chair_tradition = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_slovene
 				}
 			}
@@ -256,6 +257,7 @@ cli_the_marble_palaces_of_celje = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_slovene
 				}
 			}

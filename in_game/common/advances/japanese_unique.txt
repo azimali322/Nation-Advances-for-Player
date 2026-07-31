@@ -1805,6 +1805,7 @@ sba_shiba_retainers = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_japan_region
 					has_variable = hafp_g_area_ou_area
@@ -2044,6 +2045,7 @@ ask_bugyoshu_and_hokushu = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_japan_region
 				}

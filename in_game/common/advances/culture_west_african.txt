@@ -6,6 +6,7 @@
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_west_african
 				}
 			}

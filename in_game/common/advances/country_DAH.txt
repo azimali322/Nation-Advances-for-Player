@@ -165,6 +165,7 @@ dah_dahomey_palaces = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_guinea_region
 					has_variable = hafp_g_area_gold_coast_area

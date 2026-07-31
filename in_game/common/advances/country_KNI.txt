@@ -134,6 +134,7 @@ ecumenical_defenders_of_christendom = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_aegean_archipelago_area

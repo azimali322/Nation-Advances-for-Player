@@ -1,5 +1,13 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 16 checks (Tall category extended: governance)
+
+Tall now also covers cabinet, government reforms, crown power and estate satisfaction equilibrium — 264 → **438** advances.
+
+- [ ] With only **Tall Empire Advances** ticked, these become researchable: Bulgarian *The Boyar Council* (cabinet + estate satisfaction), Danish *Rentekammer* (cabinet), English *Magna Carta* (government reform), Breton *Estates of Brittany* (crown power), Bohemian *Kutnohorian Deal* (estate target satisfaction), Aragonese *Mossos d'Esquadra*, Chagatai *Matrilineal Heritage* (`allow_female_cabinet`).
+- [ ] Base-game advances are **not** affected — Feudalism, Meritocracy, Crown Power (Reformation), The Constitution etc. have no unique gate and still need normal research; the Tall toggle only unlocks *custom* advances.
+- [ ] Estate *satisfaction recovery* advances are intentionally excluded (only *target satisfaction* = equilibrium counts) — tell me if you want recovery included too.
+
 ## Round 15 checks (new Tall category)
 
 - [ ] Misc tab has a **Playstyle** group containing **Tall Empire Advances** (off by default), with tooltip.

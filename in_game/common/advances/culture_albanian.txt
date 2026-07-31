@@ -9,6 +9,7 @@
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -252,6 +253,7 @@ alb_eastern_and_western_heritage = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -359,6 +361,7 @@ mzk_the_despots_of_berat = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -681,6 +684,7 @@ ant_patronage_of_the_faith = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -1024,6 +1028,7 @@ alb_enlightened_albanian_absolutism = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}

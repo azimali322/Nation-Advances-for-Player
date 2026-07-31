@@ -317,12 +317,14 @@ def main():
     loc["%s__%s__%s_name" % (MOD_ID, tab, gid)] = "Playstyle"
     add_toggle("tall", tab, gid, "hafp_g_tall",
                "Tall Empire Advances",
-               "Unlock every custom advance in the world that grows what you "
-               "already own - development, population growth and capacity, "
-               "prosperity, food production, food purchase efficiency, "
-               "reduced pop food consumption, raw material and goods output, "
-               "and pop promotion speed - no matter which continents, "
-               "cultures or religions you have selected.")
+               "Unlock every custom advance in the world that grows and "
+               "governs what you already own - development, population growth "
+               "and capacity, prosperity, food production, food purchase "
+               "efficiency, reduced pop food consumption, raw material and "
+               "goods output, pop promotion speed, the cabinet (members, "
+               "efficiency, actions), government reforms and reform slots, "
+               "crown power, and estate satisfaction equilibrium - no matter "
+               "which continents, cultures or religions you have selected.")
 
     # --- settings tab ---------------------------------------------------
     tab = "settings"

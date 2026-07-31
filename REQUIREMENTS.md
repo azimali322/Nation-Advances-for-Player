@@ -74,13 +74,17 @@ A second tab called **Settings** containing:
 ## 9. Tall category (Misc tab)
 
 - A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
-- Qualifying modifiers (264 advances as of 1.3):
+- Qualifying modifiers (438 advances as of 1.3):
   - development — `global_monthly_development`
   - population — `global_population_growth`, `global_population_capacity_modifier`
   - prosperity — `global_monthly_prosperity`
   - food economy — `global_monthly_food_modifier`, `global_food_capacity`, `global_food_decay`, `food_purchase_efficiency`, `food_consumption_modifier`, `global_pop_food_consumption`, `global_clergy_food_consumption`
   - raw materials / production — `global_raw_material_output`, `global_production_efficiency`, and every per-good `*_output_modifier`
   - pop promotion — `global_pop_promotion_speed_modifier`
+  - cabinet (added 2026-07-19) — any key containing `cabinet`: `country_cabinet_efficiency`, `set_cabinet_member_cost_modifier`, `replace_cabinet_member_cost_modifier`, `head_of_cabinet_promotion_cost_modifier`, `allow_female_cabinet`, `estate_power_from_cabinet`, `unlock_cabinet_action`
+  - government reforms (added 2026-07-19) — any key containing `government_reform`: `unlock_government_reform`, `government_reform_slots`
+  - crown power (added 2026-07-19) — any key containing `crown`: `global_crown_estate_power`
+  - estate satisfaction equilibrium (added 2026-07-19) — any `*_target_satisfaction` key (the game's "target satisfaction" is the equilibrium value); satisfaction *recovery* keys are deliberately not included
 - The per-good `*_output_modifier` family is included on the reading that "raw material productivity and bonuses" covers goods output; trim the list in `tools/generate_advances.py` (`TALL_KEYS` / `TALL_KEY_SUFFIXES`) if it should be narrower.
 
 ## Non-functional / setup requirements
