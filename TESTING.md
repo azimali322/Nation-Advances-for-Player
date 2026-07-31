@@ -1,5 +1,11 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 17 checks (cabinet seats added to Tall)
+
+- [ ] With only **Tall Empire Advances** ticked, the six custom cabinet-seat advances are researchable: Habsburg *Geheimrat*, Chinese *Grand Coordinators*, Croatian *Royal Council of Croatia*, Serbian *Code of the Black Mountain*, Athenian *Bureaucracy* (Frankokratia), and *Colonial Assembly*.
+- [ ] Researching one actually raises your Cabinet Seats count in the government UI.
+- [ ] The base-game cabinet-seat advances (`government_size_renaissance`, `early_modern_administation`, etc.) are still ungated and need normal research.
+
 ## Round 16 checks (Tall category extended: governance)
 
 Tall now also covers cabinet, government reforms, crown power and estate satisfaction equilibrium — 264 → **438** advances.

@@ -74,13 +74,14 @@ A second tab called **Settings** containing:
 ## 9. Tall category (Misc tab)
 
 - A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
-- Qualifying modifiers (438 advances as of 1.3):
+- Qualifying modifiers (444 advances as of 1.3):
   - development — `global_monthly_development`
   - population — `global_population_growth`, `global_population_capacity_modifier`
   - prosperity — `global_monthly_prosperity`
   - food economy — `global_monthly_food_modifier`, `global_food_capacity`, `global_food_decay`, `food_purchase_efficiency`, `food_consumption_modifier`, `global_pop_food_consumption`, `global_clergy_food_consumption`
   - raw materials / production — `global_raw_material_output`, `global_production_efficiency`, and every per-good `*_output_modifier`
   - pop promotion — `global_pop_promotion_speed_modifier`
+  - cabinet seats (added 2026-07-19) — `government_size`. The game localizes this modifier as **"Cabinet Seats"**, so it contains neither "cabinet" nor "seat" and must be listed explicitly. Six custom advances grant seats: `colonial_assembly`, `geheimrat` (HAB), `zta_the_code_of_the_black_mountain` (SER), `grand_coordinators` (CHI), `cro_the_royal_council_of_croatia`, `ath_the_athenian_bureaucracy_advance`.
   - cabinet (added 2026-07-19) — any key containing `cabinet`: `country_cabinet_efficiency`, `set_cabinet_member_cost_modifier`, `replace_cabinet_member_cost_modifier`, `head_of_cabinet_promotion_cost_modifier`, `allow_female_cabinet`, `estate_power_from_cabinet`, `unlock_cabinet_action`
   - government reforms (added 2026-07-19) — any key containing `government_reform`: `unlock_government_reform`, `government_reform_slots`
   - crown power (added 2026-07-19) — any key containing `crown`: `global_crown_estate_power`

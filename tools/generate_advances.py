@@ -78,6 +78,9 @@ TALL_KEYS = {
     "global_production_efficiency",
     # pop promotion
     "global_pop_promotion_speed_modifier",
+    # cabinet seats - the game calls this modifier "Cabinet Seats", so it does
+    # not contain "cabinet" and is not caught by TALL_KEY_SUBSTRINGS
+    "government_size",
 }
 # per-good output (raw material bonuses) and estate satisfaction equilibrium
 # (the game's "target satisfaction")
