@@ -142,6 +142,7 @@ united_faith = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_ruthenian
 				}
 			}
@@ -245,6 +246,7 @@ ruthenia_commoner_education = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_ruthenian
 				}
 			}

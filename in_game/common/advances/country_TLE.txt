@@ -92,6 +92,7 @@ city_of_scholars = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_maghreb_region
 					has_variable = hafp_g_area_algiers_area

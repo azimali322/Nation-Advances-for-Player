@@ -204,6 +204,7 @@ spl_lippi_frescoes = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_median
 				}
 			}
@@ -419,6 +420,7 @@ spl_cardinals_bulwark = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_median
 				}
 			}
@@ -613,6 +615,7 @@ pea_the_old_university = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_median
 				}
 			}

@@ -106,6 +106,7 @@ state_administration_advance = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 				}
 			}
 			AND = {
@@ -332,6 +333,7 @@ trade_caravans = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 				}
 			}
 			AND = {

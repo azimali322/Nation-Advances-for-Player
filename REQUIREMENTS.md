@@ -74,7 +74,7 @@ A second tab called **Settings** containing:
 ## 9. Tall category (Misc tab)
 
 - A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
-- Qualifying modifiers (444 advances as of 1.3):
+- Qualifying modifiers (580 advances as of 1.3):
   - development — `global_monthly_development`
   - population — `global_population_growth`, `global_population_capacity_modifier`
   - prosperity — `global_monthly_prosperity`
@@ -85,7 +85,12 @@ A second tab called **Settings** containing:
   - cabinet (added 2026-07-19) — any key containing `cabinet`: `country_cabinet_efficiency`, `set_cabinet_member_cost_modifier`, `replace_cabinet_member_cost_modifier`, `head_of_cabinet_promotion_cost_modifier`, `allow_female_cabinet`, `estate_power_from_cabinet`, `unlock_cabinet_action`
   - government reforms (added 2026-07-19) — any key containing `government_reform`: `unlock_government_reform`, `government_reform_slots`
   - crown power (added 2026-07-19) — any key containing `crown`: `global_crown_estate_power`
-  - estate satisfaction equilibrium (added 2026-07-19) — any `*_target_satisfaction` key (the game's "target satisfaction" is the equilibrium value); satisfaction *recovery* keys are deliberately not included
+  - estate satisfaction equilibrium (added 2026-07-19) — any `*_target_satisfaction` key (the game's "target satisfaction" is the equilibrium value)
+  - estate satisfaction recovery (added 2026-07-19) — any key containing `satisfaction_recovery` (global and per-estate)
+  - literacy (added 2026-07-19) — any key containing `literacy`: `global_max_literacy`, the per-pop `global_<pop>_max_literacy` family, and `global_monthly_literacy` (gain rate)
+  - research (added 2026-07-19) — any key containing `research`: `research_cost`, `research_speed_modifier`
+  - masonry — already covered by the per-good `*_output_modifier` rule (`global_masonry_output_modifier`)
+  - tall building unlocks (added 2026-07-19) — advances whose `unlock_building` is one of `bund`, `calmecac`, `incamisana`, `polders`, `terraces`, even if the advance carries no tall modifier itself. **Oman's Falaj is not included**: `oma_falaj` is an event-only building granted by an event chain, with no advance unlocking it.
 - The per-good `*_output_modifier` family is included on the reading that "raw material productivity and bonuses" covers goods output; trim the list in `tools/generate_advances.py` (`TALL_KEYS` / `TALL_KEY_SUFFIXES`) if it should be narrower.
 
 ## Non-functional / setup requirements

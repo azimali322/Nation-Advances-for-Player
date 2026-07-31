@@ -153,6 +153,7 @@ sal_the_saluzzo_chronicles = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_vivaro_alpine
 				}
 			}

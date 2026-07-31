@@ -167,6 +167,7 @@ timurid_renaissance = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_khorasan_region
 					has_variable = hafp_g_area_transoxiana_area

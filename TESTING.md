@@ -1,5 +1,15 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 18 checks (Tall: buildings, literacy, research, satisfaction recovery)
+
+Tall now covers **580** advances (was 444).
+
+- [ ] With only **Tall Empire Advances** ticked, the tall building advances unlock: Vijayanagar *The Bunds*, Aztec *Warrior Societies* (Calmecac), Andean *Incamisana* and *Terraces*, Dutch *Polders*.
+- [ ] Literacy and research advances unlock — e.g. Aragonese *Valencian Golden Age*, Bulgarian *Grand Academy of the Yantra*, colonial *Free Thinkers*.
+- [ ] Estate satisfaction **recovery** advances now unlock too (e.g. Aztec *Status by Merit*), alongside the equilibrium ones.
+- [ ] Masonry output advances unlock (e.g. North American *Moundbuilding*) — masonry was already covered by the goods-output rule.
+- [ ] **Falaj is absent by design**: `oma_falaj` is an event-only Omani building with no advance behind it, so no toggle can unlock it. Confirm nothing in the menu claims otherwise.
+
 ## Round 17 checks (cabinet seats added to Tall)
 
 - [ ] With only **Tall Empire Advances** ticked, the six custom cabinet-seat advances are researchable: Habsburg *Geheimrat*, Chinese *Grand Coordinators*, Croatian *Royal Council of Croatia*, Serbian *Code of the Black Mountain*, Athenian *Bureaucracy* (Frankokratia), and *Colonial Assembly*.

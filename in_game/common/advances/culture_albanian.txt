@@ -68,6 +68,7 @@ alb_the_arberian_principality = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -921,6 +922,7 @@ mzk_literary_patronage = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}
@@ -973,6 +975,7 @@ albanian_the_albanian_alphabet_commission = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 				}
 			}

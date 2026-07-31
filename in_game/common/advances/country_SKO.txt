@@ -63,6 +63,7 @@ sko_education_for_all = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_sahel_region
 					has_variable = hafp_g_area_north_hausa_area

@@ -256,6 +256,7 @@ fer_studio_di_ferrara = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -363,6 +364,7 @@ pcz_collegium_placentinum = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -470,6 +472,7 @@ man_studium_mantovano = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -496,6 +499,7 @@ mod_estense_library = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -973,6 +977,7 @@ blg_galvanism = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}
@@ -1079,6 +1084,7 @@ par_enlightened_duchy = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 				}
 			}

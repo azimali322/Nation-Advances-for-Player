@@ -306,6 +306,7 @@ rag_the_collegium_ragusinum = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_dalmatian
 				}
 			}
@@ -332,6 +333,7 @@ dalmatian_the_accademia_degli_oziosi = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_dalmatian
 				}
 			}
@@ -467,6 +469,7 @@ rag_the_ragusan_maritime_insurance_code = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_dalmatian
 				}
 			}

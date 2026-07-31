@@ -267,6 +267,7 @@ cas_real_academia_espanola = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_castile_area

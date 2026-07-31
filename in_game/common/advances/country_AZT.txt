@@ -33,6 +33,7 @@ status_by_merit = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_mesoamerica_region
 				}
@@ -139,6 +140,7 @@ study_european_colonizers = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_mesoamerica_region
 				}

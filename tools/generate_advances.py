@@ -82,16 +82,29 @@ TALL_KEYS = {
     # not contain "cabinet" and is not caught by TALL_KEY_SUBSTRINGS
     "government_size",
 }
-# per-good output (raw material bonuses) and estate satisfaction equilibrium
-# (the game's "target satisfaction")
+# per-good output (raw material bonuses, incl. masonry) and estate satisfaction
+# equilibrium (the game's "target satisfaction")
 TALL_KEY_SUFFIXES = ("_output_modifier", "_target_satisfaction")
 # whole families: the cabinet (members, efficiency, actions), government
-# reforms (unlocks and slots), and crown power
-TALL_KEY_SUBSTRINGS = ("cabinet", "government_reform", "crown")
+# reforms (unlocks and slots), crown power, estate satisfaction recovery,
+# literacy (max and monthly gain, overall and per pop type), research
+# (cost and speed), and prosperity
+TALL_KEY_SUBSTRINGS = ("cabinet", "government_reform", "crown",
+                       "satisfaction_recovery", "literacy", "research",
+                       "prosperity")
+# Tall-play buildings whose unlocking advance should count, even when the
+# advance carries no tall modifier of its own. (Oman's Falaj is deliberately
+# absent: it is an event-only building, granted by an event chain rather than
+# by any advance, so there is nothing for the toggle to unlock.)
+TALL_BUILDINGS = {"bund", "calmecac", "incamisana", "polders", "terraces"}
+TALL_BUILDING_RE = re.compile(
+    r"unlock_building\s*=\s*(%s)\b" % "|".join(sorted(TALL_BUILDINGS)))
 
 
 def is_tall_advance(body):
     """True if the advance carries any 'tall' economy/growth/governance modifier."""
+    if TALL_BUILDING_RE.search(body):
+        return True
     for line in body.splitlines():
         m = re.match(r"\s*([a-z_0-9]+)\s*=\s*[^{\s]", line.split("#")[0])
         if m:

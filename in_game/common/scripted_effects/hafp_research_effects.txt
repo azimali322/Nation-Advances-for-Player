@@ -2131,6 +2131,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					}
 					}
 					AND = {
@@ -2255,6 +2256,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					}
 					}
 					AND = {
@@ -3395,6 +3397,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_mesoamerica_region
 					}
@@ -3438,6 +3441,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bohemia_area
@@ -5329,6 +5333,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_andes_region
 					has_variable = hafp_g_area_acamama_area
@@ -7624,6 +7629,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_north_german_region
 					has_variable = hafp_g_area_wallonia_area
@@ -7845,6 +7851,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_russian_region
 					has_variable = hafp_g_area_east_novgorod_area
@@ -10087,6 +10094,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_area_mexihko_area
@@ -11334,6 +11342,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_north_china_region
 					has_variable = hafp_g_area_beiping_area
@@ -11693,6 +11702,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_croatia_area
@@ -13759,6 +13769,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 					}
 					}
@@ -14094,6 +14105,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_andean
 					}
 					}
@@ -15157,6 +15169,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_german
 					}
 					}
@@ -15643,6 +15656,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_rhaetian
 					}
 					}
@@ -18968,6 +18982,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 					}
 					}
@@ -19137,6 +19152,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 					}
 					}
@@ -22748,6 +22764,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_central_africa_region
 					has_variable = hafp_g_reg_ethiopia_region
@@ -25062,6 +25079,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_hellenism
 					}
 					}
@@ -25146,6 +25164,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_hindu
 					}
 					}
@@ -25187,6 +25206,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_hindu
 					}
 					}
@@ -25925,6 +25945,7 @@ hafp_research_age_1_traditions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_orthodox
 					}
 					}
@@ -30824,6 +30845,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_bulgaria_area
@@ -32732,6 +32754,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_andes_region
 					has_variable = hafp_g_area_acamama_area
@@ -33360,6 +33383,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_korea_region
 					has_variable = hafp_g_area_gyeonggi_area
@@ -33403,6 +33427,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_korea_region
 					has_variable = hafp_g_area_gyeonggi_area
@@ -34557,6 +34582,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_navarre_area
@@ -37070,6 +37096,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_tibet_region
 					has_variable = hafp_g_area_tsang_area
@@ -37419,6 +37446,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_maghreb_region
 					has_variable = hafp_g_area_algiers_area
@@ -37993,6 +38021,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_italy_region
 					has_variable = hafp_g_area_abruzzo_area
@@ -38620,6 +38649,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_thrace_area
@@ -42389,6 +42419,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 					}
 					}
@@ -42558,6 +42589,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 					}
 					}
@@ -43284,6 +43316,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 					}
 					}
@@ -44997,6 +45030,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_median
 					}
 					}
@@ -45129,6 +45163,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_netherlands
 					}
 					}
@@ -45906,6 +45941,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sicilian
 					}
 					}
@@ -46215,6 +46251,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_thai
 					}
 					}
@@ -46389,6 +46426,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 					}
 					}
@@ -46474,6 +46512,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_venetian
 					}
 					}
@@ -46604,6 +46643,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_venetian
 					}
 					}
@@ -50174,6 +50214,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					}
 					}
@@ -51774,6 +51815,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_buddhist
 					}
 					}
@@ -51863,6 +51905,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_buddhist
 					}
 					}
@@ -53159,6 +53202,7 @@ hafp_research_age_2_renaissance_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_shinto
 					}
 					}
@@ -57581,6 +57625,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_catalonia_area
@@ -59489,6 +59534,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_anatolia_region
@@ -60183,6 +60229,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_korea_region
 					has_variable = hafp_g_area_gyeonggi_area
@@ -60631,6 +60678,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_manchuria_region
 					has_variable = hafp_g_area_liaodong_area
@@ -60908,6 +60956,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_north_german_region
 					has_variable = hafp_g_area_brabant_area
@@ -62183,6 +62232,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_serbia_area
@@ -64354,6 +64404,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_croatia_area
@@ -65642,6 +65693,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_anatolia_region
 					has_variable = hafp_g_area_pontus_area
@@ -65686,6 +65738,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_anatolia_region
 					has_variable = hafp_g_area_pontus_area
@@ -66919,6 +66972,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 					}
 					}
@@ -66961,6 +67015,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 					}
 					}
@@ -67825,6 +67880,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 					}
 					}
@@ -69903,6 +69959,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sardinian
 					}
 					}
@@ -70121,6 +70178,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_slovak
 					}
 					}
@@ -70732,6 +70790,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_venetian
 					}
 					}
@@ -70909,6 +70968,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_vivaro_alpine
 					}
 					}
@@ -71566,6 +71626,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_morea_area
@@ -73983,6 +74044,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_miaphysite
 					}
 					}
@@ -74277,6 +74339,7 @@ hafp_research_age_3_discovery_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_muslim
 					}
 					}
@@ -78704,6 +78767,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_colonial_nations
 					}
 					}
@@ -78883,6 +78947,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_mesoamerica_region
 					}
@@ -82431,6 +82496,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_north_german_region
 					has_variable = hafp_g_area_brabant_area
@@ -83174,6 +83240,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_great_britain_region
 					has_variable = hafp_g_area_scottish_lowlands_area
@@ -83442,6 +83509,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_serbia_area
@@ -83487,6 +83555,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_africa
 					has_variable = hafp_g_reg_sahel_region
 					has_variable = hafp_g_area_north_hausa_area
@@ -83750,6 +83819,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					}
@@ -84008,6 +84078,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_khorasan_region
 					has_variable = hafp_g_area_transoxiana_area
@@ -85465,6 +85536,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_croatia_area
@@ -85686,6 +85758,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_north_german_region
 					has_variable = hafp_g_area_holstein_area
@@ -86080,6 +86153,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_north_german_region
 					has_variable = hafp_g_area_lower_saxony_area
@@ -86883,6 +86957,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_indochina_region
 					has_variable = hafp_g_area_chao_phraya_area
@@ -88072,6 +88147,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_dalmatian
 					}
 					}
@@ -88814,6 +88890,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 					}
 					}
@@ -89927,6 +90004,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_lombard
 					}
 					}
@@ -90181,6 +90259,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_median
 					}
 					}
@@ -90481,6 +90560,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_punjabi
 					}
 					}
@@ -90648,6 +90728,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_romagnol
 					}
 					}
@@ -90735,6 +90816,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_romagnol
 					}
 					}
@@ -90859,6 +90941,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_ruthenian
 					}
 					}
@@ -94556,6 +94639,7 @@ hafp_research_age_4_reformation_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_catholic
 					}
 					}
@@ -100088,6 +100172,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_bulgaria_area
@@ -100310,6 +100395,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_castile_area
@@ -101258,6 +101344,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_france_region
 					has_variable = hafp_g_area_ile_de_france_area
@@ -104388,6 +104475,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_anatolia_region
 					has_variable = hafp_g_area_marmara_area
@@ -105884,6 +105972,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_baltic_region
 					has_variable = hafp_g_area_lithuania_area
@@ -106330,6 +106419,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_upper_rhine_area
@@ -107189,6 +107279,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 					}
 					}
@@ -107482,6 +107573,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_corsican
 					}
 					}
@@ -107524,6 +107616,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_dalmatian
 					}
 					}
@@ -108376,6 +108469,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 					}
 					}
@@ -108418,6 +108512,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_romanian
 					}
 					}
@@ -108776,6 +108871,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_japan
 					}
 					}
@@ -109592,6 +109688,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_piedmontese
 					}
 					}
@@ -110191,6 +110288,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sicilian
 					}
 					}
@@ -110364,6 +110462,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_slovene
 					}
 					}
@@ -110624,6 +110723,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 					}
 					}
@@ -110876,6 +110976,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_vietnamese
 					}
 					}
@@ -111142,6 +111243,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_morea_area
@@ -112054,6 +112156,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_japan_region
 					has_variable = hafp_g_area_hokurikudou_area
@@ -112097,6 +112200,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_asia
 					has_variable = hafp_g_reg_japan_region
 					has_variable = hafp_g_area_saikaidou_area
@@ -112344,6 +112448,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_buddhist
 					}
 					}
@@ -112469,6 +112574,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_catholic
 					}
 					}
@@ -112802,6 +112908,7 @@ hafp_research_age_5_absolutism_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_hindu
 					}
 					}
@@ -117848,6 +117955,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					}
@@ -118927,6 +119035,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_granada_area
@@ -119758,6 +119867,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_russian_region
 					has_variable = hafp_g_reg_steppes_region
@@ -119803,6 +119913,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_navarre_area
@@ -120177,6 +120288,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_baltic_region
 					has_variable = hafp_g_reg_ruthenia_region
@@ -120234,6 +120346,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_baltic_region
 					has_variable = hafp_g_reg_ruthenia_region
@@ -120549,6 +120662,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_great_britain_region
 					has_variable = hafp_g_area_scottish_lowlands_area
@@ -120595,6 +120709,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					}
@@ -121694,6 +121809,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					}
@@ -121785,6 +121901,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_north_german_region
 					has_variable = hafp_g_area_brandenburg_area
@@ -121828,6 +121945,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_thrace_area
@@ -123348,6 +123466,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_albanian
 					}
 					}
@@ -123944,6 +124063,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_dalmatian
 					}
 					}
@@ -124031,6 +124151,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 					}
 					}
@@ -124199,6 +124320,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_emilian
 					}
 					}
@@ -124460,6 +124582,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_greek
 					}
 					}
@@ -124716,6 +124839,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_group_rhaetian
 					}
 					}
@@ -125365,6 +125489,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_kannada_muslim
 					}
 					}
@@ -125667,6 +125792,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_median
 					}
 					}
@@ -126266,6 +126392,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_romagnol
 					}
 					}
@@ -126348,6 +126475,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_ruthenian
 					}
 					}
@@ -126437,6 +126565,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_sardinian
 					}
 					}
@@ -126915,6 +127044,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 					}
 					}
@@ -126957,6 +127087,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_tuscan
 					}
 					}
@@ -127171,6 +127302,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_venetian
 					}
 					}
@@ -127387,6 +127519,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_aegean_archipelago_area
@@ -127964,6 +128097,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_balkan_region
 					has_variable = hafp_g_area_macedonia_area
@@ -129430,6 +129564,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_protestant
 					}
 					}
@@ -129597,6 +129732,7 @@ hafp_research_age_6_revolutions_custom = {
 					OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_protestant
 					}
 					}

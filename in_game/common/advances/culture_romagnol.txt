@@ -253,6 +253,7 @@ romagnol_the_stampa_dpopul = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_romagnol
 				}
 			}
@@ -307,6 +308,7 @@ urb_the_mathematical_school = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_romagnol
 				}
 			}
@@ -472,6 +474,7 @@ urb_the_enlightened_university = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_romagnol
 				}
 			}

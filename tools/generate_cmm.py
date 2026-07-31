@@ -321,10 +321,13 @@ def main():
                "governs what you already own - development, population growth "
                "and capacity, prosperity, food production, food purchase "
                "efficiency, reduced pop food consumption, raw material and "
-               "goods output, pop promotion speed, the cabinet (members, "
+               "goods output including masonry, pop promotion speed, "
+               "literacy and research, the cabinet (seats, members, "
                "efficiency, actions), government reforms and reform slots, "
-               "crown power, and estate satisfaction equilibrium - no matter "
-               "which continents, cultures or religions you have selected.")
+               "crown power, estate satisfaction equilibrium and recovery, "
+               "and the tall building unlocks (Bunds, Calmecac, Incamisana, "
+               "Polders, Terraces) - no matter which continents, cultures or "
+               "religions you have selected.")
 
     # --- settings tab ---------------------------------------------------
     tab = "settings"
