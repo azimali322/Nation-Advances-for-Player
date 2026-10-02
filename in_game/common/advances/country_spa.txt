@@ -1,0 +1,166 @@
+﻿spa_visigothic_inheritance = {
+	age = age_1_traditions
+	icon = call_of_our_forefathers
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				has_or_had_tag = SPA
+			}
+		}
+	}
+
+	cultural_tradition_modifier = 0.1
+	monthly_devotion = 0.1
+	monthly_legitimacy = 0.1
+	monthly_republican_tradition = 0.1
+
+	requires = legalism_advance
+}
+
+spa_idea_de_hispania = {
+	age = age_2_renaissance
+	icon = smooth_administration
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				has_or_had_tag = SPA
+				religion.group = religion_group:christian
+			}
+		}
+	}
+
+	antagonism_received_modifier = -0.1
+	legislative_efficiency = 0.1
+
+	requires = renaissance_court
+}
+
+spa_revival_of_ecclesiastical_discipline = {
+	age = age_3_discovery
+	icon = spa_revival_of_ecclesiastical_discipline
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				has_or_had_tag = SPA
+			}
+		}
+	}
+
+	monthly_religious_influence = 0.2
+	tolerance_own = 1
+
+	requires = artists_advance_discovery
+}
+
+spa_school_salamanca = {
+	age = age_4_reformation
+	icon = spa_school_salamanca
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				has_or_had_tag = SPA
+			}
+		}
+	}
+
+	diplomatic_capacity = 1
+	research_speed_modifier = 0.1
+
+	requires = war_score_reformations_advance
+}
+
+spa_siglo_de_oro = {
+	age = age_5_absolutism
+	icon = spa_siglo_de_oro
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				has_or_had_tag = SPA
+			}
+		}
+	}
+
+	num_possible_artists = 1
+	skill_of_new_artists = 0.2
+
+	requires = absolutist_court
+}
+
+spa_spanish_enlightenment = {
+	age = age_6_revolutions
+	icon = spa_spanish_enlightenment
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				has_or_had_tag = SPA
+			}
+		}
+	}
+
+	country_cabinet_efficiency = 0.15
+	total_loan_capacity_modifier = 0.5
+
+	requires = enlightened_court
+}

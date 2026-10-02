@@ -20,7 +20,7 @@ four_noble_truths = {
 		}
 	}
 	
-	global_devastation_recovery = 0.005
+	global_devastation_recovery = 0.0025
 	
 	requires = organized_religion
 }

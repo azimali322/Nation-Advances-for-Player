@@ -3,6 +3,7 @@
 ############################
 jap_bushido = {
 	age = age_1_traditions
+	icon = jap_bushido
 	potential = {
 		OR = {
 			AND = {
@@ -26,6 +27,7 @@ jap_bushido = {
 
 jap_land_of_the_rising_sun = {
 	age = age_1_traditions
+	icon = jap_land_of_the_rising_sun
 	potential = {
 		OR = {
 			AND = {
@@ -49,6 +51,7 @@ jap_land_of_the_rising_sun = {
 
 jap_ancestral_legacy = {
 	age = age_1_traditions
+	icon = jap_ancestral_legacy
 	potential = {
 		OR = {
 			AND = {
@@ -78,6 +81,7 @@ jap_ancestral_legacy = {
 ############################
 jap_shinobi = {
 	age = age_2_renaissance
+	icon = jap_shinobi
 	potential = {
 		OR = {
 			AND = {
@@ -101,6 +105,7 @@ jap_shinobi = {
 
 jap_head_hunting = {
 	age = age_2_renaissance
+	icon = jap_head_hunting
 	potential = {
 		OR = {
 			AND = {
@@ -124,6 +129,7 @@ jap_head_hunting = {
 
 jap_ichiban_yari = {
 	age = age_2_renaissance
+	icon = jap_ichiban_yari
 	potential = {
 		OR = {
 			AND = {
@@ -151,6 +157,7 @@ jap_ichiban_yari = {
 ############################
 jap_ashigaru = {
 	age = age_3_discovery
+	icon = jap_ashigaru
 	potential = {
 		OR = {
 			AND = {
@@ -174,6 +181,7 @@ jap_ashigaru = {
 
 jap_daiku_construction = {
 	age = age_3_discovery
+	icon = jap_daiku_construction
 	potential = {
 		OR = {
 			AND = {
@@ -198,6 +206,7 @@ jap_daiku_construction = {
 
 jap_wandering_ronin = {
 	age = age_3_discovery
+	icon = jap_wandering_ronin
 	potential = {
 		OR = {
 			AND = {
@@ -224,6 +233,7 @@ jap_wandering_ronin = {
 ############################
 jap_reformed_land_holding = {
 	age = age_4_reformation
+	icon = jap_reformed_land_holding
 	potential = {
 		OR = {
 			AND = {
@@ -247,6 +257,7 @@ jap_reformed_land_holding = {
 
 jap_jokamachi = {
 	age = age_4_reformation
+	icon = jap_jokamachi
 	potential = {
 		OR = {
 			AND = {

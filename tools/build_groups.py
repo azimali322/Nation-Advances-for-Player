@@ -71,6 +71,24 @@ MANUAL_FILE_HOMES = {
 }
 
 
+# The campaign start whose capitals and pops define the mod's geography mapping.
+# 1.3 kept this data in main_menu/setup/start/; 1.4 split it into per-start-date
+# folders (1337, 1658, ...). Nations are mapped by their 1337 capital (see
+# REQUIREMENTS.md), so prefer 1337 and fall back to the old layout.
+SETUP_START_DIRS = ("1337", "start")
+
+
+def setup_path(game, filename):
+    """Locate a start-setup file across the 1.3 and 1.4+ folder layouts."""
+    base = os.path.join(game, "game", "main_menu", "setup")
+    for sub in SETUP_START_DIRS:
+        candidate = os.path.join(base, sub, filename)
+        if os.path.isfile(candidate):
+            return candidate
+    sys.exit("Could not find %s under %s (tried: %s)"
+             % (filename, base, ", ".join(SETUP_START_DIRS)))
+
+
 def strip_comments(text):
     return re.sub(r"#[^\n]*", "", text)
 
@@ -147,15 +165,23 @@ def load_hierarchy(game):
 
 
 def load_capitals(game):
-    path = os.path.join(game, "game", "main_menu", "setup", "start", "10_countries.txt")
+    """tag -> home location.
+
+    Uses the declared capital where there is one. Pop-type nations (the Tuareg
+    confederations, the Guanche, and ~360 others) declare no capital at all and
+    are seeded from a location list instead, so fall back to the first location
+    they are seeded from - that still places them on the map correctly."""
+    path = setup_path(game, "10_countries.txt")
     text = strip_comments(open(path, encoding="utf-8-sig").read())
     capitals = {}
-    current = None
-    for m in re.finditer(r"^\t([A-Z0-9]{3}) = \{|^\t\tcapital = ([a-z0-9_]+)", text, re.M):
-        if m.group(1):
-            current = m.group(1)
-        elif current and current not in capitals:
-            capitals[current] = m.group(2)
+    seeded = re.compile(
+        r"(?:add_pops_from_locations|own_control_core)\s*=\s*\{\s*([a-z0-9_]+)")
+    for tag, body in re.findall(r"^\t([A-Z0-9]{3}) = \{(.*?)^\t\}", text, re.M | re.S):
+        if tag in capitals:
+            continue
+        m = re.search(r"^\t\tcapital = ([a-z0-9_]+)", body, re.M) or seeded.search(body)
+        if m:
+            capitals[tag] = m.group(1)
     return capitals
 
 
@@ -179,9 +205,15 @@ def load_formables(game):
             for blk in entry.get("areas", []):
                 if isinstance(blk, dict):
                     areas.extend(blk.keys())
-            info = formables.setdefault(tag, {"regions": [], "areas": []})
+            # some formables (e.g. the Tuareg) list bare locations instead
+            locations = []
+            for blk in entry.get("locations", []):
+                if isinstance(blk, dict):
+                    locations.extend(blk.keys())
+            info = formables.setdefault(tag, {"regions": [], "areas": [], "locations": []})
             info["regions"].extend(r for r in regions if r not in info["regions"])
             info["areas"].extend(a for a in areas if a not in info["areas"])
+            info["locations"].extend(l for l in locations if l not in info["locations"])
     return formables
 
 
@@ -214,7 +246,7 @@ def load_culture_groups(game):
 
 
 def load_pops_culture_areas(game, loc_to_area):
-    path = os.path.join(game, "game", "main_menu", "setup", "start", "06_pops.txt")
+    path = setup_path(game, "06_pops.txt")
     culture_area = defaultdict(lambda: defaultdict(float))
     current_area = None
     with open(path, encoding="utf-8-sig") as fh:
@@ -249,6 +281,35 @@ def load_loc_names(game):
 def humanize(ident):
     ident = re.sub(r"_(area|region|province|group|culture)$", "", ident)
     return ident.replace("_", " ").title()
+
+
+def strip_negated(text):
+    """Drop NOT/NOR blocks before reading geography and culture references.
+
+    A negated reference means the opposite of membership - Panama's canal is
+    gated `NOT = { continent = continent:oceania }`, i.e. available to everyone
+    EXCEPT Oceania - so scraping it blindly would file the advance under the one
+    continent that cannot have it."""
+    out = []
+    i = 0
+    pat = re.compile(r"(?<![A-Za-z_])(?:NOT|NOR)\s*=\s*\{")
+    while True:
+        m = pat.search(text, i)
+        if not m:
+            out.append(text[i:])
+            return "".join(out)
+        out.append(text[i:m.start()])
+        depth = 0
+        j = m.end() - 1
+        while j < len(text):
+            if text[j] == "{":
+                depth += 1
+            elif text[j] == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            j += 1
+        i = j + 1
 
 
 def split_advances(text):
@@ -302,6 +363,10 @@ def main():
         if f:
             regions = [r for r in f["regions"] if r in region_info]
             areas = [a for a in f["areas"] if a in area_info]
+            for loc in f.get("locations", []):
+                a = loc_to_area.get(loc)
+                if a and a not in areas:
+                    areas.append(a)
             for a in areas:
                 if area_info[a][0] not in regions:
                     regions.append(area_info[a][0])
@@ -365,7 +430,8 @@ def main():
             inst_m = re.search(r"has_embraced_institution\s*=\s*institution:([a-z0-9_]+)", body)
             adv["institution"] = inst_m.group(1) if inst_m else None
 
-            tags = sorted(set(re.findall(r"has_or_had_tag\s*=\s*([A-Za-z0-9]{3})", body)))
+            geo_body = strip_negated(body)
+            tags = sorted(set(re.findall(r"has_or_had_tag\s*=\s*([A-Za-z0-9]{3})", geo_body)))
             adv["tags"] = tags
             areas, regions, conts = set(), set(), set()
             for tag in tags:
@@ -377,16 +443,16 @@ def main():
                 areas.update(a)
                 regions.update(r)
                 conts.update(c)
-            for rid in re.findall(r"region:([a-z0-9_]+)", body):
+            for rid in re.findall(r"region:([a-z0-9_]+)", geo_body):
                 if rid in region_info:
                     regions.add(rid)
                     conts.add(region_info[rid])
-            for aid in re.findall(r"area:([a-z0-9_]+)", body):
+            for aid in re.findall(r"area:([a-z0-9_]+)", geo_body):
                 if aid in area_info:
                     areas.add(aid)
                     regions.add(area_info[aid][0])
                     conts.add(area_info[aid][1])
-            for cid in re.findall(r"continent:([a-z0-9_]+)", body):
+            for cid in re.findall(r"continent:([a-z0-9_]+)", geo_body):
                 if cid in continents:
                     conts.add(cid)
                 elif cid in subcont_info:
@@ -394,10 +460,10 @@ def main():
                     conts.add(parent)
                     regions.update(sub_regions)
 
-            cults = set(re.findall(r"culture\s*=\s*culture:([a-z0-9_]+)", body))
-            cults.update(re.findall(r"contains_culture\s*=\s*culture:([a-z0-9_]+)", body))
-            grps = set(re.findall(r"culture_group:([a-z0-9_]+)", body))
-            langs = set(re.findall(r"language:([a-z0-9_]+)", body))
+            cults = set(re.findall(r"culture\s*=\s*culture:([a-z0-9_]+)", geo_body))
+            cults.update(re.findall(r"contains_culture\s*=\s*culture:([a-z0-9_]+)", geo_body))
+            grps = set(re.findall(r"culture_group:([a-z0-9_]+)", geo_body))
+            langs = set(re.findall(r"language:([a-z0-9_]+)", geo_body))
             all_cultures.update(cults)
             all_groups.update(grps)
             all_languages.update(langs)

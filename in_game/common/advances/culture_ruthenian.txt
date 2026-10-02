@@ -3,6 +3,7 @@
 ############################
 flexible_loyalty = {
 	age = age_1_traditions
+	icon = flexible_loyalty
 	potential = {
 		OR = {
 			AND = {
@@ -27,6 +28,7 @@ flexible_loyalty = {
 }
 heritage_of_the_rus = {
 	age = age_1_traditions
+	icon = heritage_of_the_rus
 	potential = {
 		OR = {
 			AND = {
@@ -54,6 +56,7 @@ heritage_of_the_rus = {
 ############################
 mother_of_russian_cities = {
 	age = age_2_renaissance
+	icon = mother_of_russian_cities
 	potential = {
 		OR = {
 			AND = {
@@ -73,12 +76,13 @@ mother_of_russian_cities = {
 		}
 	}
 	global_urban_build_buildings_efficiency = 0.1
-	global_devastation_recovery = 0.005
+	global_devastation_recovery = 0.0025
 
 	requires = power_projection_advance_2
 }
 international_influences = {
 	age = age_2_renaissance
+	icon = international_influences
 	potential = {
 		OR = {
 			AND = {
@@ -107,6 +111,7 @@ international_influences = {
 ############################
 reuniting_rus = {
 	age = age_3_discovery
+	icon = reuniting_rus
 	potential = {
 		OR = {
 			AND = {
@@ -135,6 +140,7 @@ reuniting_rus = {
 ############################
 united_faith = {
 	age = age_4_reformation
+	icon = united_faith
 	potential = {
 		OR = {
 			AND = {
@@ -161,6 +167,7 @@ united_faith = {
 }
 east_and_west = {
 	age = age_4_reformation
+	icon = east_and_west
 	potential = {
 		OR = {
 			AND = {
@@ -188,6 +195,7 @@ east_and_west = {
 ############################
 ruthenian_state_advance = {
 	age = age_5_absolutism
+	icon = ruthenian_state_advance
 	potential = {
 		OR = {
 			AND = {
@@ -212,6 +220,7 @@ ruthenian_state_advance = {
 }
 ruthenian_rural_buildings = {
 	age = age_5_absolutism
+	icon = ruthenian_rural_buildings
 	potential = {
 		OR = {
 			AND = {
@@ -239,6 +248,7 @@ ruthenian_rural_buildings = {
 ############################
 ruthenia_commoner_education = {
 	age = age_6_revolutions
+	icon = ruthenia_commoner_education
 	potential = {
 		OR = {
 			AND = {

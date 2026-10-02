@@ -1,5 +1,36 @@
 ﻿#Iberian Shared Land
 
+cas_the_reconquista = {
+	content_priority = 900
+	age = age_1_traditions
+	icon = cas_the_reconquista
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
+			}
+		}
+	}
+
+	damage_done_versus_heathens_modifier = 0.1
+	global_heathen_pop_conversion_speed_modifier = 0.2
+
+	ai_weight = { add = 10 }
+
+	requires = feudalism_advance
+}
+
 tercio = {
 	age = age_4_reformation
 	potential = {
@@ -16,11 +47,12 @@ tercio = {
 			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
 			}
 		}
 	}
 	unlock_unit = a_tercio
-	
+
 	requires = unlock_pikemen_advance
 }
 
@@ -125,6 +157,7 @@ early_iberian_galleon = {
 			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
 			}
 		}
 	}
@@ -149,6 +182,7 @@ square_rigged_caravel = {
 			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
 			}
 		}
 	}
@@ -178,12 +212,102 @@ iberian_galleon = {
 			}
 			AND = {
 				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
 			}
 		}
 	}
 	unlock_unit = n_iberian_galleon
-	
+
 	requires = unlock_galleon_advance
+}
+
+spa_naval_reforms = {
+	age = age_5_absolutism
+	icon = spa_naval_reforms
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				culture = { has_culture_group = culture_group:iberian_group }
+			}
+		}
+	}
+
+	monthly_navy_tradition = 0.1
+	navy_heavy_ship_power = 0.15
+
+	requires = maritime_advance_age_5
+}
+
+#Iberian Shared Colonial
+
+lieutenancy_advance = {
+	age = age_1_traditions
+	icon = government_size
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
+			}
+		}
+	}
+
+	improve_relation_impact = 0.1
+
+	unlock_building = lieutenancy
+
+	requires = feudalism_advance
+}
+
+spa_viceroyalties = {
+	age = age_3_discovery
+	icon = spa_viceroyalties
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_iberia_region
+				}
+			}
+			AND = {
+				culture = { has_culture_group = culture_group:iberian_group }
+				religion.group = religion_group:christian
+			}
+		}
+	}
+
+	colonial_migration_size_modifier = 0.25
+	colonial_range_modifier = 0.2
+
+	unlock_building = viceroyalty
+
+	requires = crown_power_advance_discovery
+
 }
 
 #Iberian Unique
@@ -212,6 +336,7 @@ ara_almogavars = {
 				culture = { merged_culture_group_contains_culture = culture:aragonese }
 				culture = { merged_culture_group_contains_culture = culture:catalan }
 				}
+				religion.group = religion_group:christian
 			}
 		}
 	}
@@ -237,6 +362,7 @@ ara_catalan_crossbowmen = {
 				}
 			}
 			AND = {
+				has_dlc = "d009_across_the_pillars"
 				OR = {
 				has_or_had_tag = ARA
 				culture = culture:aragonese
@@ -244,10 +370,12 @@ ara_catalan_crossbowmen = {
 				culture = { merged_culture_group_contains_culture = culture:aragonese }
 				culture = { merged_culture_group_contains_culture = culture:catalan }
 				}
+				religion.group = religion_group:christian
 			}
 		}
 	}
 	unlock_unit = a_catalan_crossbowmen
+	unlock_levy = levy_sometent
 
 	requires = feudalism_advance
 }
@@ -276,6 +404,7 @@ ara_late_almogavars = {
 				culture = { merged_culture_group_contains_culture = culture:aragonese }
 				culture = { merged_culture_group_contains_culture = culture:catalan }
 				}
+				religion.group = religion_group:christian
 			}
 		}
 	}
@@ -307,11 +436,12 @@ cas_lanzas_de_castilla = {
 				culture = culture:castilian
 				culture = { merged_culture_group_contains_culture = culture:castilian }
 				}
+				religion.group = religion_group:christian
 			}
 		}
 	}
 	unlock_unit = a_lanzas_de_castilla
-	
+
 	requires = unlock_lancers_advance
 }
 
@@ -336,10 +466,11 @@ por_cacadores = {
 				culture = culture:portuguese
 				culture = { merged_culture_group_contains_culture = culture:portuguese }
 				}
+				religion.group = religion_group:christian
 			}
 		}
 	}
 	unlock_unit = a_cacadores
-	
+
 	requires = unlock_fusiliers_advance
 }

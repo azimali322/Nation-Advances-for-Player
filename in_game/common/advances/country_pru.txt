@@ -125,6 +125,7 @@ preussische_tugenden = {
 
 army_professionalism = {
 	age = age_5_absolutism
+	icon = army_professionalism
 	potential = {
 		OR = {
 			AND = {
@@ -174,6 +175,7 @@ standing_army = {
 
 soldier_king = {
 	age = age_5_absolutism
+	icon = soldier_king
 
 	
 
@@ -202,31 +204,6 @@ soldier_king = {
 	requires = the_constitution
 }
 
-prussian_grenadiers = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				has_variable = hafp_allow_unit_unlocks
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_5_absolutism
-					has_variable = hafp_g_cont_europe
-					has_variable = hafp_g_reg_baltic_region
-					has_variable = hafp_g_area_prussia_area
-				}
-			}
-			AND = {
-				has_or_had_tag = PRU
-			}
-		}
-	}
-	unlock_unit = a_prussian_grenadiers
-
-	requires = soldier_king
-}
-
 cantonment_system = {
 	age = age_5_absolutism
 	icon = colonial_militia
@@ -250,11 +227,37 @@ cantonment_system = {
 	global_manpower_modifier = 0.15
 	regiment_recruit_speed = 0.2
 
-	requires = soldier_king
+	requires = the_constitution
+}
+
+prussian_grenadiers = {
+	age = age_5_absolutism
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				has_variable = hafp_allow_unit_unlocks
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_baltic_region
+					has_variable = hafp_g_area_prussia_area
+				}
+			}
+			AND = {
+				has_or_had_tag = PRU
+			}
+		}
+	}
+	unlock_unit = a_prussian_grenadiers
+
+	requires = cantonment_system
 }
 
 goose_step = {
 	age = age_6_revolutions
+	icon = goose_step
 	potential = {
 		OR = {
 			AND = {
@@ -279,6 +282,7 @@ goose_step = {
 
 auftragstaktik = {
 	age = age_6_revolutions
+	icon = auftragstaktik
 	potential = {
 		OR = {
 			AND = {

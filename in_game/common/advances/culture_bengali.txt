@@ -3,6 +3,7 @@
 ############################
 bng_bengali_vassal_system = {
 	age = age_1_traditions
+	icon = bng_bengali_vassal_system
 	potential = {
 		OR = {
 			AND = {
@@ -23,6 +24,7 @@ bng_bengali_vassal_system = {
 }
 bng_bengali_paik = {
 	age = age_1_traditions
+	icon = bng_bengali_paik
 	potential = {
 		OR = {
 			AND = {
@@ -45,6 +47,7 @@ bng_bengali_paik = {
 }
 bng_bengali_architecture = {
 	age = age_1_traditions
+	icon = bng_bengali_architecture
 	potential = {
 		OR = {
 			AND = {
@@ -70,6 +73,7 @@ bng_bengali_architecture = {
 ############################
 bng_habshi_generals = {
 	age = age_2_renaissance
+	icon = bng_habshi_generals
 	potential = {
 		OR = {
 			AND = {
@@ -112,6 +116,7 @@ bng_war_elephants = {
 }
 bng_rupees = {
 	age = age_2_renaissance
+	icon = bng_rupees
 	potential = {
 		OR = {
 			AND = {
@@ -136,6 +141,7 @@ bng_rupees = {
 ############################
 bng_bengali_traders = {
 	age = age_3_discovery
+	icon = bng_bengali_traders
 	potential = {
 		OR = {
 			AND = {
@@ -156,6 +162,7 @@ bng_bengali_traders = {
 }
 bng_bengali_poetry = {
 	age = age_3_discovery
+	icon = bng_bengali_poetry
 	potential = {
 		OR = {
 			AND = {
@@ -181,6 +188,7 @@ bng_bengali_poetry = {
 ############################
 bng_religious_pluralism = {
 	age = age_4_reformation
+	icon = bng_religious_pluralism
 	potential = {
 		OR = {
 			AND = {
@@ -201,6 +209,7 @@ bng_religious_pluralism = {
 }
 bng_artillery_corps = {
 	age = age_4_reformation
+	icon = bng_artillery_corps
 	potential = {
 		OR = {
 			AND = {
@@ -225,6 +234,7 @@ bng_artillery_corps = {
 ############################
 bng_bengali_trade_fleet = {
 	age = age_5_absolutism
+	icon = bng_bengali_trade_fleet
 	potential = {
 		OR = {
 			AND = {
@@ -245,6 +255,7 @@ bng_bengali_trade_fleet = {
 }
 bng_shipbuilding_industry = {
 	age = age_5_absolutism
+	icon = bng_shipbuilding_industry
 	potential = {
 		OR = {
 			AND = {
@@ -269,6 +280,7 @@ bng_shipbuilding_industry = {
 ############################
 bng_bengali_industrialization = {
 	age = age_6_revolutions
+	icon = bng_bengali_industrialization
 	potential = {
 		OR = {
 			AND = {

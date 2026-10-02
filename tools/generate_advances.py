@@ -64,6 +64,7 @@ TALL_KEYS = {
     "global_monthly_development",
     "global_population_growth",
     "global_population_capacity_modifier",
+    "global_migration_attraction",   # 1.4: pulls pops in = population growth
     "global_monthly_prosperity",
     # food economy
     "global_monthly_food_modifier",
@@ -354,6 +355,19 @@ def main():
         groups = json.load(fh)
     os.makedirs(args.out, exist_ok=True)
 
+    # Drop any override whose filename no longer matches a vanilla file EXACTLY
+    # (case-sensitive). Paradox renamed most country advance files between 1.3
+    # and 1.4 (country_FRA.txt -> country_fra.txt); on Windows's case-insensitive
+    # filesystem a plain regenerate would write into the old spelling and keep
+    # shipping an override that no longer lines up with its vanilla file.
+    vanilla_names = {f for f in os.listdir(src) if f.endswith(".txt")}
+    renamed = []
+    if os.path.isdir(args.out):
+        for fname in sorted(os.listdir(args.out)):
+            if fname.endswith(".txt") and fname not in vanilla_names:
+                os.remove(os.path.join(args.out, fname))
+                renamed.append(fname)
+
     total_files = 0
     total_advances = 0
     total_military = 0
@@ -384,6 +398,13 @@ def main():
     print("Skipped %d files with no availability gates: %s" % (len(skipped), ", ".join(skipped)))
     if removed:
         print("Removed %d stale overrides: %s" % (len(removed), ", ".join(removed)))
+    if renamed:
+        print("Removed %d overrides renamed/dropped by the game: %s"
+              % (len(renamed), ", ".join(renamed)))
+    # every shipped override must mirror a vanilla filename exactly
+    bad = [f for f in os.listdir(args.out) if f.endswith(".txt") and f not in vanilla_names]
+    if bad:
+        sys.exit("Override filenames do not match vanilla exactly: %s" % ", ".join(bad))
 
 
 if __name__ == "__main__":

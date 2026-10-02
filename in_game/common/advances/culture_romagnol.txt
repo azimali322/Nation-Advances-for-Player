@@ -14,8 +14,8 @@
 			}
 			AND = {
 				OR = {
-				culture = culture:romagnol
-				culture = { merged_culture_group_contains_culture = culture:romagnol }
+				culture ?= culture:romagnol
+				culture ?= { merged_culture_group_contains_culture = culture:romagnol }
 				}
 			}
 		}
@@ -96,8 +96,8 @@ romagnol_mura_malatestiani = {
 			}
 			AND = {
 				OR = {
-				culture = culture:romagnol
-				culture = { merged_culture_group_contains_culture = culture:romagnol }
+				culture ?= culture:romagnol
+				culture ?= { merged_culture_group_contains_culture = culture:romagnol }
 				}
 			}
 		}
@@ -154,8 +154,9 @@ urb_the_hill_fortresses = {
 		}
 	}
 
-	fort_maintenance_efficiency = 0.15
+	fort_maintenance_efficiency = 0.20
 	military_tactics = 0.1
+	
 	ai_weight = { add = 10 }
 
 	requires = recovery_efforts
@@ -178,8 +179,8 @@ romagnol_the_sangiovese_viticulture = {
 			}
 			AND = {
 				OR = {
-				culture = culture:romagnol
-				culture = { merged_culture_group_contains_culture = culture:romagnol }
+				culture ?= culture:romagnol
+				culture ?= { merged_culture_group_contains_culture = culture:romagnol }
 				}
 			}
 		}
@@ -212,7 +213,7 @@ rav_battle_of_ravenna = {
 	}
 
 	discipline = 0.05
-	fort_maintenance_efficiency = 0.1
+	fort_maintenance_efficiency = 0.20
 
 	requires = diplomatic_training
 }
@@ -259,8 +260,8 @@ romagnol_the_stampa_dpopul = {
 			}
 			AND = {
 				OR = {
-				culture = culture:romagnol
-				culture = { merged_culture_group_contains_culture = culture:romagnol }
+				culture ?= culture:romagnol
+				culture ?= { merged_culture_group_contains_culture = culture:romagnol }
 				}
 			}
 		}
@@ -340,8 +341,8 @@ romagnol_the_agricultural_academies = {
 			}
 			AND = {
 				OR = {
-				culture = culture:romagnol
-				culture = { merged_culture_group_contains_culture = culture:romagnol }
+				culture ?= culture:romagnol
+				culture ?= { merged_culture_group_contains_culture = culture:romagnol }
 				}
 			}
 		}
@@ -374,7 +375,7 @@ rav_bonifiche_ravennati = {
 	}
 
 	global_max_rgo_size_modifier = 0.15
-	global_monthly_food_modifier = 0.15
+	global_monthly_food_modifier = monthly_food_productivity_severe_bonus
 
 	requires = scientific_mapping_advance
 }
@@ -421,8 +422,8 @@ romagnol_la_streda_rumegna = {
 			}
 			AND = {
 				OR = {
-				culture = culture:romagnol
-				culture = { merged_culture_group_contains_culture = culture:romagnol }
+				culture ?= culture:romagnol
+				culture ?= { merged_culture_group_contains_culture = culture:romagnol }
 				}
 			}
 		}
@@ -432,7 +433,7 @@ romagnol_la_streda_rumegna = {
 	build_modern_road_cost_modifier = -0.1
 	build_paved_road_cost_modifier = -0.1
 	build_railroad_cost_modifier = -0.1
-	global_trade_through_owned_territory_efficiency = 0.10
+	trade_land_efficiency = tiny_trade_land_efficiency_bonus
 
 	requires = steel_mill_advance
 }

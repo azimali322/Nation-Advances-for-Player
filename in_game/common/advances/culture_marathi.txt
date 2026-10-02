@@ -11,6 +11,7 @@
 ############################
 mhr_tradition_of_military_service = {
     age = age_3_discovery
+    icon = mhr_tradition_of_military_service
     potential = {
 		OR = {
 			AND = {
@@ -31,6 +32,7 @@ mhr_tradition_of_military_service = {
 }
 mhr_peasant_soldiers = {
     age = age_3_discovery
+    icon = mhr_peasant_soldiers
     potential = {
 		OR = {
 			AND = {
@@ -55,6 +57,7 @@ mhr_peasant_soldiers = {
 ############################
 mhr_ashta_pradhan_advance = {
     age = age_4_reformation
+    icon = mhr_ashta_pradhan_advance
     potential = {
 		OR = {
 			AND = {
@@ -76,6 +79,7 @@ mhr_ashta_pradhan_advance = {
 }
 mhr_office_of_the_peshwa = {
     age = age_4_reformation
+    icon = mhr_office_of_the_peshwa
     potential = {
 		OR = {
 			AND = {
@@ -101,6 +105,7 @@ mhr_office_of_the_peshwa = {
 ############################
 mhr_forts_of_maharashtra = {
     age = age_5_absolutism
+    icon = mhr_forts_of_maharashtra
     potential = {
 		OR = {
 			AND = {
@@ -122,6 +127,7 @@ mhr_forts_of_maharashtra = {
 
 mhr_encourage_brahmin_ties = {
     age = age_5_absolutism
+    icon = mhr_encourage_brahmin_ties
     potential = {
 		OR = {
 			AND = {

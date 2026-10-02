@@ -3,7 +3,7 @@
 A handicap/cheat mod for EU5 that lets you unlock and research other nations' unique advances alongside your own - choose specific advances by continent, region, or area, or unlock them all at once. Built on the [Community Mod Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3692202776).
 
 - **Mod version:** 1.0
-- **Supported game version:** 1.3.*
+- **Supported game version:** 1.4.* (open beta)
 - **Mod id:** `handicap_advances_for_player` (script prefix `hafp_`, CMM mod id `hafp`)
 
 ## Features (phase 2 - CMM menu)
@@ -80,7 +80,7 @@ Defaults assume a standard Steam install; pass the EU5 folder as `--game` / firs
 
 ```
 .metadata/metadata.json      mod metadata + CMF dependency
-in_game/common/advances/     generated advance overrides (200 files, ~2,500 advances)
+in_game/common/advances/     generated advance overrides (209 files, ~2,844 advances)
 in_game/common/scripted_effects/
 in_game/common/on_action/
 main_menu/localization/english/

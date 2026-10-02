@@ -458,7 +458,7 @@ horde_ardor = {
 		}
 	}
 
-	army_heavy_cavalry_power = 0.2
+	army_light_cavalry_power = 0.2
 }
 
 

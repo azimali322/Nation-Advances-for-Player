@@ -1,6 +1,7 @@
 ﻿
 bavarian_legitimacy = {
 	age = age_1_traditions
+	icon = bavarian_legitimacy
 	potential = {
 		OR = {
 			AND = {
@@ -12,6 +13,7 @@ bavarian_legitimacy = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -45,6 +47,7 @@ bavarian_imperial_knights = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -66,6 +69,7 @@ bavarian_imperial_knights = {
 }
 exploit_the_alpine_trade = {
 	age = age_2_renaissance
+	icon = exploit_the_alpine_trade
 	potential = {
 		OR = {
 			AND = {
@@ -77,6 +81,7 @@ exploit_the_alpine_trade = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -100,6 +105,7 @@ exploit_the_alpine_trade = {
 }
 bavarian_brewing_expertise = {
 	age = age_2_renaissance
+	icon = bavarian_brewing_expertise
 	potential = {
 		OR = {
 			AND = {
@@ -111,6 +117,7 @@ bavarian_brewing_expertise = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -134,6 +141,7 @@ bavarian_brewing_expertise = {
 }
 bavarian_culture_buildings = {
 	age = age_3_discovery
+	icon = bavarian_culture_buildings
 	potential = {
 		OR = {
 			AND = {
@@ -145,6 +153,7 @@ bavarian_culture_buildings = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -179,6 +188,7 @@ bavarian_culture_buildings = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -202,6 +212,7 @@ bavarian_culture_buildings = {
 
 bavarian_zelousness = {
 	age = age_4_reformation
+	icon = bavarian_zelousness
 	potential = {
 		OR = {
 			AND = {
@@ -213,6 +224,7 @@ bavarian_zelousness = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -236,6 +248,7 @@ bavarian_zelousness = {
 
 bavarian_hofkriegsrat = {
 	age = age_4_reformation
+	icon = bavarian_hofkriegsrat
 	potential = {
 		OR = {
 			AND = {
@@ -247,6 +260,7 @@ bavarian_hofkriegsrat = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -271,6 +285,7 @@ bavarian_hofkriegsrat = {
 
 bavarian_flexible_diplomats = {
 	age = age_5_absolutism
+	icon = bavarian_flexible_diplomats
 	potential = {
 		OR = {
 			AND = {
@@ -282,6 +297,7 @@ bavarian_flexible_diplomats = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -305,6 +321,7 @@ bavarian_flexible_diplomats = {
 
 foundation_of_bavarian_army = {
 	age = age_5_absolutism
+	icon = foundation_of_bavarian_army
 	potential = {
 		OR = {
 			AND = {
@@ -316,6 +333,7 @@ foundation_of_bavarian_army = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -339,6 +357,7 @@ foundation_of_bavarian_army = {
 
 bavarian_coinage = {
 	age = age_6_revolutions
+	icon = bavarian_coinage
 	potential = {
 		OR = {
 			AND = {
@@ -350,6 +369,7 @@ bavarian_coinage = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {
@@ -373,6 +393,7 @@ bavarian_coinage = {
 
 bavarian_purity_law = {
 	age = age_6_revolutions
+	icon = bavarian_purity_law
 	potential = {
 		OR = {
 			AND = {
@@ -384,6 +405,7 @@ bavarian_purity_law = {
 					has_variable = hafp_g_reg_south_german_region
 					has_variable = hafp_g_area_bavaria_area
 					has_variable = hafp_g_area_salzburg_area
+					has_variable = hafp_g_area_upper_austria_area
 				}
 			}
 			AND = {

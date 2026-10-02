@@ -46,6 +46,7 @@ npl_himalayan_homeland = {
 ############################
 npl_the_divya_upadesh = {
 	age = age_6_revolutions
+	icon = npl_the_divya_upadesh
 	potential = {
 		OR = {
 			AND = {

@@ -429,7 +429,7 @@ paschal_cycle = {
 		}
 	}
 	
-	global_devastation_recovery = 0.005
+	global_devastation_recovery = 0.0025
 
 	requires = julian_calendar
 }

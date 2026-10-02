@@ -4,6 +4,7 @@
 ############################
 cha_matrilineal_heritage = {
 	age = age_1_traditions
+	icon = cha_matrilineal_heritage
 	potential = {
 		OR = {
 			AND = {
@@ -51,6 +52,7 @@ cha_religious_tolerance = {
 ############################
 cha_dharmic_presence = {
 	age = age_2_renaissance
+	icon = cha_dharmic_presence
 	potential = {
 		OR = {
 			AND = {
@@ -73,6 +75,7 @@ cha_dharmic_presence = {
 }
 cha_kshatriya = {	#https://en.wikipedia.org/wiki/Kshatriya
 	age = age_2_renaissance
+	icon = cha_kshatriya
 	potential = {
 		OR = {
 			AND = {
@@ -97,6 +100,7 @@ cha_kshatriya = {	#https://en.wikipedia.org/wiki/Kshatriya
 ############################
 cha_veteran_shipbuilders = {	#https://en.wikipedia.org/wiki/Military_of_Champa#
 	age = age_3_discovery
+	icon = cha_veteran_shipbuilders
 	potential = {
 		OR = {
 			AND = {
@@ -117,6 +121,7 @@ cha_veteran_shipbuilders = {	#https://en.wikipedia.org/wiki/Military_of_Champa#
 }
 cha_haluwbilau = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Haluwbilau
 	age = age_3_discovery
+	icon = cha_haluwbilau
 	potential = {
 		OR = {
 			AND = {
@@ -140,6 +145,7 @@ cha_haluwbilau = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Haluwbilau
 ############################
 cha_commercial_state = {	#https://en.wikipedia.org/wiki/Champa#Economy
 	age = age_4_reformation
+	icon = cha_commercial_state
 	potential = {
 		OR = {
 			AND = {
@@ -156,10 +162,11 @@ cha_commercial_state = {	#https://en.wikipedia.org/wiki/Champa#Economy
 		}
 	}
 	requires = leader_recruit_cost_advance
-	selling_efficiency = small_trade_efficiency_bonus
+	selling_efficiency = small_selling_efficiency_bonus
 }
 cha_boarding_tactics = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Conflict_with_the_Europeans
 	age = age_4_reformation
+	icon = cha_boarding_tactics
 	potential = {
 		OR = {
 			AND = {
@@ -184,6 +191,7 @@ cha_boarding_tactics = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Confl
 ############################
 cha_towers_on_water = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Ships
 	age = age_5_absolutism
+	icon = cha_towers_on_water
 	potential = {
 		OR = {
 			AND = {
@@ -208,6 +216,7 @@ cha_towers_on_water = {	#https://en.wikipedia.org/wiki/Military_of_Champa#Ships
 ############################
 cha_cham_cultural_influence = {	#https://en.wikipedia.org/wiki/Champa#Cham_influences_on_Vietnamese_culture
 	age = age_6_revolutions
+	icon = cha_cham_cultural_influence
 	potential = {
 		OR = {
 			AND = {

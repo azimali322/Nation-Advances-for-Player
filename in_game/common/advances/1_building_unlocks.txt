@@ -28,8 +28,9 @@ cathedral_advance = {
 
 medical_school_advance = {
 	age = age_5_absolutism
-	
+
 	unlock_building = medical_school
+	casualty_pop_losses = -0.1
 	requires = newspapers_advance
 }
 
@@ -234,18 +235,20 @@ slave_center_advance = {
 
 weapon_workshop_advance = {
 	age = age_3_discovery
-	
+
 	unlock_building = weapon_workshop
-	
+
 	requires = lumber_improvements_discovery
+	requires = pike_and_shot_advance
 }
 
 naval_supplies_workshop_advance = {
 	age = age_3_discovery
-	
+
 	unlock_building = naval_supplies_workshop
-	
+
 	requires = lumber_improvements_discovery
+	requires = pike_and_shot_advance
 }
 
 
@@ -253,10 +256,11 @@ naval_supplies_workshop_advance = {
 
 paper_workshop_advance = {
 	age = age_3_discovery
-	
+
 	unlock_building = paper_workshop
-	
+
 	requires = print_culture
+	requires = printing_press_advance
 }
 
 printing_press_shop_advance = {
@@ -270,34 +274,38 @@ printing_press_shop_advance = {
 
 beer_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = beer_workshop
-	
+
 	requires = bole_smelting
+	requires = global_trade_advance
 }
 
 saltpeter_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = saltpeter_workshop
-	
+
 	requires = slitting_mills
+	requires = global_trade_advance
 }
 
 distillers_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = distillers_workshop
-	
+
 	requires = pop_promotion_speed_age_4
+	requires = global_trade_advance
 }
 
 tanning_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = tanning_workshop
-	
+
 	requires = spy_construction_reformation
+	requires = global_trade_advance
 }
 
 cloth_workshop_advance = {
@@ -318,18 +326,20 @@ fine_cloth_workshop_advance = {
 
 tools_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = tools_workshop
-	
+
 	requires = bole_smelting
+	requires = global_trade_advance
 }
 
 pottery_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = pottery_workshop
-	
+
 	requires = slitting_mills
+	requires = global_trade_advance
 }
 
 glass_workshop_advance = {
@@ -342,34 +352,38 @@ glass_workshop_advance = {
 
 dyes_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = dyes_workshop
-	
+
 	requires = global_trade_routes_advance
+	requires = global_trade_advance
 }
 
 furniture_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = furniture_workshop
-	
+
 	requires = merchant_power_from_maritime_reformation_advance
+	requires = global_trade_advance
 }
 
 cannon_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = cannon_workshop
-	
+
 	requires = flintlock_gun
+	requires = artillery_institution_advance
 }
 
 guns_workshop_advance = {
 	age = age_4_reformation
-	
+
 	unlock_building = guns_workshop
-	
+
 	requires = assault_ability_reformation
+	requires = artillery_institution_advance
 }
 
 
@@ -383,6 +397,7 @@ guns_workshop_advance = {
 
 naval_supplies_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = naval_supplies_manufactory
 	
@@ -391,6 +406,7 @@ naval_supplies_manufactory_advance = {
 
 firearms_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = firearms_manufactory
 	
@@ -401,7 +417,8 @@ firearms_manufactory_advance = {
 
 cloth_manufactory_advance = {
 	age = age_5_absolutism
-	
+	research_cost = -0.5
+
 	unlock_building = cloth_manufactory
 	
 	requires = ostentatious_clothing
@@ -409,6 +426,7 @@ cloth_manufactory_advance = {
 
 printing_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = printing_manufactory
 	
@@ -418,6 +436,7 @@ printing_manufactory_advance = {
 
 putrefaction_works_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = putrefaction_works
 	
@@ -426,6 +445,7 @@ putrefaction_works_advance = {
 
 fine_cloth_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.75
 	
 	unlock_building = fine_cloth_manufactory
 	
@@ -434,6 +454,7 @@ fine_cloth_manufactory_advance = {
 
 perfumery_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = perfumery
 	
@@ -442,6 +463,7 @@ perfumery_advance = {
 
 glassworks_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = glassworks
 	
@@ -450,6 +472,7 @@ glassworks_advance = {
 
 dyesworks_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = dyesworks
 	
@@ -458,7 +481,8 @@ dyesworks_advance = {
 
 porcelain_manufactor_advance = {
 	age = age_5_absolutism
-
+	research_cost = -0.5
+	
 	unlock_building = porcelain_manufactory
 
 	in_tree_of = manufactories_advance
@@ -466,6 +490,7 @@ porcelain_manufactor_advance = {
 
 tannery_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = tannery_manufactory
 	
@@ -474,6 +499,7 @@ tannery_manufactory_advance = {
 
 pottery_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = pottery_manufactory
 	
@@ -482,6 +508,7 @@ pottery_manufactory_advance = {
 
 furniture_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = furniture_manufactory
 	
@@ -491,6 +518,7 @@ furniture_manufactory_advance = {
 
 distiller_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = distiller_manufactory
 	
@@ -499,6 +527,7 @@ distiller_manufactory_advance = {
 
 brewery_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = brewery_manufactory
 	
@@ -507,6 +536,7 @@ brewery_manufactory_advance = {
 
 winery_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = winery_manufactory
 	
@@ -516,6 +546,7 @@ winery_manufactory_advance = {
 
 lacquerware_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.75
 	
 	unlock_building = lacquerware_manufactory
 	
@@ -525,6 +556,7 @@ lacquerware_manufactory_advance = {
 
 iron_foundry_advance = {
 	age = age_5_absolutism
+	research_cost = -0.5
 	
 	unlock_building = iron_foundry
 	
@@ -534,6 +566,7 @@ iron_foundry_advance = {
 
 weapon_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.75
 	
 	unlock_building = weapon_manufactory
 	
@@ -542,6 +575,7 @@ weapon_manufactory_advance = {
 
 cannon_foundry_advance = {
 	age = age_5_absolutism
+	research_cost = -0.75
 	
 	unlock_building = cannon_foundry
 	
@@ -550,6 +584,7 @@ cannon_foundry_advance = {
 
 paper_manufactory_advance = {
 	age = age_5_absolutism
+	research_cost = -0.75
 	
 	unlock_building = paper_manufactory
 	
@@ -736,6 +771,8 @@ training_fields_advance = {
 barracks_advance = {
 	age = age_4_reformation
 	requires = assault_ability_reformation
+
+	ai_weight = { add = 100 }
 	
 	unlock_building = barracks
 }
@@ -743,6 +780,8 @@ barracks_advance = {
 regimental_camp_advance = {
 	age = age_5_absolutism
 	in_tree_of = military_revolution_advance
+
+	ai_weight = { add = 100 }
 
 	unlock_building = regimental_camp
 }
@@ -752,6 +791,8 @@ conscription_center_advance = {
 	age = age_6_revolutions
 	requires = napoleonic_warfare
 	
+	ai_weight = { add = 100 }
+
 	unlock_building = conscription_center
 }
 
@@ -1249,6 +1290,16 @@ customs_house_advance = {
 	
 	requires = development_of_maritime_law
 	
+	ai_weight = { 
+		if = {
+			limit = {
+				has_markets = yes
+			}
+
+			add = 250
+		}
+	}
+
 	unlock_building = customs_house
 }
 
@@ -1256,6 +1307,16 @@ stock_exchange_advance = {
 	age = age_5_absolutism
 
 	requires = absolutist_court
+
+	ai_weight = { 
+		if = {
+			limit = {
+				has_markets = yes
+			}
+
+			add = 250
+		}
+	}
 
 	unlock_building = stock_exchange
 	max_bonds = 1
@@ -1267,6 +1328,16 @@ clearing_house_advance = {
 	
 	requires = insurance_companies
 	
+	ai_weight = { 
+		if = {
+			limit = {
+				has_markets = yes
+			}
+
+			add = 250
+		}
+	}
+	
 	unlock_building = clearing_house
 }
 
@@ -1274,52 +1345,6 @@ clearing_house_advance = {
 ###################################
 # Government Buildings
 ###################################
-
-lieutenancy_advance = {
-	age = age_1_traditions
-
-	potential = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_1_traditions
-				}
-			}
-			AND = {
-				culture = { has_culture_group = culture_group:iberian_group }
-			}
-		}
-	}
-	
-	requires = feudalism_advance
-	
-	unlock_building = lieutenancy
-}
-
-viceroyalty_advance = {
-	age = age_4_reformation
-
-	potential = {
-		OR = {
-			AND = {
-				has_variable = hafp_enabled
-				OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_4_reformation
-				}
-			}
-			AND = {
-				culture = { has_culture_group = culture_group:iberian_group }
-			}
-		}
-	}
-	
-	requires = global_trade_advance
-	
-	unlock_building = viceroyalty
-}
 
 house_of_parliament_advance = {
 	age = age_3_discovery
@@ -1372,7 +1397,7 @@ early_council_hall_advance = {
 	age = age_2_renaissance
 	
 	requires = renaissance_court 
-	ai_weight = { add = 10 }
+	ai_weight = { add = 20 }
 	unlock_building = early_council_hall
 	
 }
@@ -1381,7 +1406,7 @@ council_hall_advance = {
 	age = age_3_discovery
 	
 	requires = town_rights_enable
-	ai_weight = { add = 10 }
+	ai_weight = { add = 20 }
 	unlock_building = council_hall
 }
 
@@ -1389,6 +1414,6 @@ modern_council_hall_advance = {
 	age = age_5_absolutism
 	
 	requires = town_rights_abs_advance
-	ai_weight = { add = 10 }
+	ai_weight = { add = 20 }
 	unlock_building = modern_council_hall
 }

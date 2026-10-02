@@ -3,6 +3,7 @@
 ############################
 paik_system_advance = {
 	age = age_1_traditions
+	icon = paik_system_advance
 	potential = {
 		OR = {
 			AND = {
@@ -37,6 +38,7 @@ paik_system_advance = {
 
 samanta_advance = {
 	age = age_1_traditions
+	icon = samanta_advance
 	potential = {
 		OR = {
 			AND = {

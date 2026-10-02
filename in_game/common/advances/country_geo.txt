@@ -3,6 +3,7 @@
 ############################
 geo_legacy_of_saint_george = {
 	age = age_1_traditions
+	icon = geo_legacy_of_saint_george
 	potential = {
 		OR = {
 			AND = {
@@ -28,6 +29,7 @@ geo_legacy_of_saint_george = {
 
 geo_bagrationi_dynasty = {
 	age = age_1_traditions
+	icon = geo_bagrationi_dynasty
 	potential = {
 		OR = {
 			AND = {
@@ -56,6 +58,7 @@ geo_bagrationi_dynasty = {
 ############################
 geo_georgian_golden_age = {
 	age = age_2_renaissance
+	icon = geo_georgian_golden_age
 	potential = {
 		OR = {
 			AND = {
@@ -81,6 +84,7 @@ geo_georgian_golden_age = {
 
 geo_legacy_of_tamar = {
 	age = age_2_renaissance
+	icon = geo_legacy_of_tamar
 	potential = {
 		OR = {
 			AND = {
@@ -106,6 +110,7 @@ geo_legacy_of_tamar = {
 
 geo_david_the_builder = {
 	age = age_2_renaissance
+	icon = geo_david_the_builder
 	potential = {
 		OR = {
 			AND = {
@@ -134,6 +139,7 @@ geo_david_the_builder = {
 ############################
 geo_georgian_titles = {
 	age = age_3_discovery
+	icon = geo_georgian_titles
 	potential = {
 		OR = {
 			AND = {
@@ -162,6 +168,7 @@ geo_georgian_titles = {
 ############################
 geo_georgian_numismatics = {
 	age = age_4_reformation
+	icon = geo_georgian_numismatics
 	potential = {
 		OR = {
 			AND = {
@@ -188,6 +195,7 @@ geo_georgian_numismatics = {
 
 geo_beacon_of_christianity = {
 	age = age_4_reformation
+	icon = geo_beacon_of_christianity
 	potential = {
 		OR = {
 			AND = {
@@ -217,6 +225,7 @@ geo_beacon_of_christianity = {
 ############################
 geo_georgian_principalities = {
 	age = age_5_absolutism
+	icon = geo_georgian_principalities
 	potential = {
 		OR = {
 			AND = {
@@ -245,6 +254,7 @@ geo_georgian_principalities = {
 ############################
 geo_georgian_resilience = {
 	age = age_6_revolutions
+	icon = geo_georgian_resilience
 	potential = {
 		OR = {
 			AND = {

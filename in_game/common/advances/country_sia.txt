@@ -9,6 +9,7 @@
 ############################
 sia_experienced_ambassadors = {
 	age = age_3_discovery
+	icon = sia_experienced_ambassadors
 	potential = {
 		OR = {
 			AND = {
@@ -35,6 +36,7 @@ sia_experienced_ambassadors = {
 
 sia_rise_to_equal_heights = {
 	age = age_3_discovery
+	icon = sia_rise_to_equal_heights
 	potential = {
 		OR = {
 			AND = {
@@ -93,6 +95,7 @@ sia_advanced_elephant_warfare = {
 
 sia_consolidation_of_state = {
 	age = age_4_reformation
+	icon = sia_consolidation_of_state
 	potential = {
 		OR = {
 			AND = {
@@ -119,6 +122,7 @@ sia_consolidation_of_state = {
 
 sia_education_reform = {
 	age = age_4_reformation
+	icon = sia_education_reform
 	potential = {
 		OR = {
 			AND = {
@@ -149,6 +153,7 @@ sia_education_reform = {
 ############################
 sia_royal_absolutism = {
 	age = age_5_absolutism
+	icon = sia_royal_absolutism
 	potential = {
 		OR = {
 			AND = {
@@ -180,6 +185,7 @@ sia_royal_absolutism = {
 ############################
 sia_thai_unity = {
 	age = age_6_revolutions
+	icon = sia_thai_unity
 	potential = {
 		OR = {
 			AND = {

@@ -3,6 +3,7 @@
 ############################
 suk_breaker_of_chains = {
 	age = age_1_traditions
+	icon = suk_breaker_of_chains
 	potential = {
 		OR = {
 			AND = {
@@ -28,6 +29,7 @@ suk_breaker_of_chains = {
 
 suk_akson_sukhothai = {
 	age = age_1_traditions
+	icon = suk_akson_sukhothai
 	potential = {
 		OR = {
 			AND = {
@@ -56,6 +58,7 @@ suk_akson_sukhothai = {
 ############################
 suk_birthplace_of_a_culture = {
 	age = age_2_renaissance
+	icon = suk_birthplace_of_a_culture
 	potential = {
 		OR = {
 			AND = {
@@ -81,6 +84,7 @@ suk_birthplace_of_a_culture = {
 
 suk_ram_khamhaeng_stele = {
 	age = age_2_renaissance
+	icon = suk_ram_khamhaeng_stele
 	potential = {
 		OR = {
 			AND = {
@@ -109,6 +113,7 @@ suk_ram_khamhaeng_stele = {
 ############################
 suk_wat_si_sawai = {
 	age = age_3_discovery
+	icon = suk_wat_si_sawai
 	potential = {
 		OR = {
 			AND = {
@@ -137,6 +142,7 @@ suk_wat_si_sawai = {
 ############################
 suk_sukhothai_ceramics = {
 	age = age_4_reformation
+	icon = suk_sukhothai_ceramics
 	potential = {
 		OR = {
 			AND = {
@@ -177,6 +183,7 @@ suk_sukhothai_ceramics = {
 ############################
 suk_military_history = {
 	age = age_5_absolutism
+	icon = suk_military_history
 	potential = {
 		OR = {
 			AND = {
@@ -206,6 +213,7 @@ suk_military_history = {
 
 suk_unstoppable_army = {
 	age = age_6_revolutions
+	icon = suk_unstoppable_army
 	potential = {
 		OR = {
 			AND = {

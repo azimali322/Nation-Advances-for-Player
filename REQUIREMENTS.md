@@ -74,7 +74,7 @@ A second tab called **Settings** containing:
 ## 9. Tall category (Misc tab)
 
 - A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
-- Qualifying modifiers (580 advances as of 1.3):
+- Qualifying modifiers (755 advances as of 1.4):
   - development — `global_monthly_development`
   - population — `global_population_growth`, `global_population_capacity_modifier`
   - prosperity — `global_monthly_prosperity`
@@ -96,7 +96,7 @@ A second tab called **Settings** containing:
 ## Non-functional / setup requirements
 
 - Mod format: Community Mod Framework (CMF) mod template/format, with CMF declared as a dependency in `.metadata/metadata.json`.
-- Game version: **1.3**, mod version: **1.0**, name: **Handicap Advances for Player**.
+- Game version: **1.4** (open beta; 1.3 remains on `main`), mod version: **1.0**, name: **Handicap Advances for Player**.
 - Advance overrides are regenerated from the local vanilla game files via `tools/generate_advances.py` so the mod re-baselines cleanly after game patches.
 
 ## Implementation notes / accepted adaptations
@@ -123,3 +123,4 @@ A second tab called **Settings** containing:
 - **2026-07-19** — Initial requirements captured (items 1–6). v1.0 implements the all-or-nothing unlock toggle (port of "All Advances Unlocked" into CMF format, re-baselined to 1.3).
 - **2026-07-19 (phase 2)** — CMM menu implemented: continent/region/area toggles (items 1), Settings tab with Enabled master switch, unlock-all, era unlocks, research buttons with institution scope (items 2, 5, 6), tooltips (item 3), base-game invisibility when nothing is selected (item 4). Character-interaction toggle from v1.0 removed in favor of the CMM.
 - **2026-07-19 (round 3)** — Cascading selection added (parent toggles check/uncheck their children; Select All parents for Cultures and category groups). Fixed "All advances" research scope: `has_advance_available` also enforces age/institution limits engine-side, so the all-scope branch now embeds the advance's own unlock gate instead, researching everything unlocked regardless of era or institutions.
+- **2026-10-02 (1.4 open beta)** — ported to EU5 1.4 on branch `update/1.4-open-beta`; `main` stays on 1.3. Game changes handled: start-setup data moved from `setup/start/` to per-start-date folders (`1337`, `1658`) — the mod keeps mapping geography from **1337**; most country advance files were renamed to lowercase (`country_FRA.txt` → `country_fra.txt`, 20 staying uppercase), so the generator now purges any override whose filename no longer matches a vanilla file case-sensitively and asserts the result before finishing; pop-type nations (Tuareg confederations, Guanche) that declare no capital are placed by their seed location; formables listing bare `locations` (Tuareg) now resolve; and negated references — `NOT = { continent = continent:oceania }` on the Panama canal — no longer file an advance under the one continent that cannot have it (this had produced a phantom Oceania tab). New 1.4 modifier `global_migration_attraction` added to Tall as population growth. Scale: 209 override files, 2,844 gated advances, 318 toggles, 755 tall, 156 unit-granting.

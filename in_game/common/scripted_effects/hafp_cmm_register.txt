@@ -164,13 +164,6 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = area_hebrides_area
-		tab_id = europe
-		group_id = reg_great_britain_region
-		default_value = 0
-	}
-	cmm_register_bool_setting = {
-		mod_id = hafp
 		setting_id = area_home_counties_area
 		tab_id = europe
 		group_id = reg_great_britain_region
@@ -304,6 +297,20 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = area_toledo_area
+		tab_id = europe
+		group_id = reg_iberia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_andalusia_area
+		tab_id = europe
+		group_id = reg_iberia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = area_castile_area
 		tab_id = europe
 		group_id = reg_iberia_region
@@ -312,6 +319,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = area_catalonia_area
+		tab_id = europe
+		group_id = reg_iberia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_murcia_area
 		tab_id = europe
 		group_id = reg_iberia_region
 		default_value = 0
@@ -389,6 +403,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = reg_north_atlantic_islands_region
+		tab_id = europe
+		group_id = reg_north_atlantic_islands_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_greenland_area
 		tab_id = europe
 		group_id = reg_north_atlantic_islands_region
 		default_value = 0
@@ -500,6 +521,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = area_kursk_area
+		tab_id = europe
+		group_id = reg_steppes_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = area_lower_don_area
 		tab_id = europe
 		group_id = reg_steppes_region
@@ -578,6 +606,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = area_right_bank_ukraine_area
+		tab_id = europe
+		group_id = reg_ruthenia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_severia_area
 		tab_id = europe
 		group_id = reg_ruthenia_region
 		default_value = 0
@@ -675,16 +710,16 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = area_upper_rhine_area
+		setting_id = area_upper_austria_area
 		tab_id = europe
 		group_id = reg_south_german_region
 		default_value = 0
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = reg_ural_region
+		setting_id = area_upper_rhine_area
 		tab_id = europe
-		group_id = reg_ural_region
+		group_id = reg_south_german_region
 		default_value = 0
 	}
 	cmm_register_bool_setting = {
@@ -1102,6 +1137,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = area_baluchistan_area
+		tab_id = asia
+		group_id = reg_persia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = area_fars_area
 		tab_id = asia
 		group_id = reg_persia_region
@@ -1110,6 +1152,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = area_kordestan_area
+		tab_id = asia
+		group_id = reg_persia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_sistan_area
 		tab_id = asia
 		group_id = reg_persia_region
 		default_value = 0
@@ -1249,6 +1298,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = area_canary_islands_area
+		tab_id = africa
+		group_id = reg_macaronesia_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = reg_madagascar_region
 		tab_id = africa
 		group_id = reg_madagascar_region
@@ -1257,6 +1313,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = reg_maghreb_region
+		tab_id = africa
+		group_id = reg_maghreb_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_sus_area
 		tab_id = africa
 		group_id = reg_maghreb_region
 		default_value = 0
@@ -1284,6 +1347,20 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = area_atlas_high_plateau
+		tab_id = africa
+		group_id = reg_maghreb_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_desert_area
+		tab_id = africa
+		group_id = reg_maghreb_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = area_tripolitania_area
 		tab_id = africa
 		group_id = reg_maghreb_region
@@ -1305,7 +1382,28 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = area_air_area
+		tab_id = africa
+		group_id = reg_sahel_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_bornu_area
+		tab_id = africa
+		group_id = reg_sahel_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = area_gao_area
+		tab_id = africa
+		group_id = reg_sahel_region
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = area_ghana_area
 		tab_id = africa
 		group_id = reg_sahel_region
 		default_value = 0
@@ -1431,13 +1529,6 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = area_zacatecas_area
-		tab_id = america
-		group_id = reg_aridoamerica_region
-		default_value = 0
-	}
-	cmm_register_bool_setting = {
-		mod_id = hafp
 		setting_id = reg_canada_region
 		tab_id = america
 		group_id = reg_canada_region
@@ -1487,13 +1578,6 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = area_xalisco_area
-		tab_id = america
-		group_id = reg_mesoamerica_region
-		default_value = 0
-	}
-	cmm_register_bool_setting = {
-		mod_id = hafp
 		setting_id = reg_west_coast_region
 		tab_id = america
 		group_id = reg_west_coast_region
@@ -1509,6 +1593,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = f_culture_albanian
+		tab_id = cultures
+		group_id = cul_europe
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = f_culture_catalan
 		tab_id = cultures
 		group_id = cul_europe
 		default_value = 0
@@ -1536,14 +1627,14 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = f_culture_georgian
+		setting_id = f_culture_galician
 		tab_id = cultures
 		group_id = cul_europe
 		default_value = 0
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = f_culture_group_carpathian
+		setting_id = f_culture_georgian
 		tab_id = cultures
 		group_id = cul_europe
 		default_value = 0
@@ -1578,13 +1669,6 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
-		setting_id = f_culture_group_south_slavic
-		tab_id = cultures
-		group_id = cul_europe
-		default_value = 0
-	}
-	cmm_register_bool_setting = {
-		mod_id = hafp
 		setting_id = f_culture_high_alemannic
 		tab_id = cultures
 		group_id = cul_europe
@@ -1599,6 +1683,20 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = f_culture_jewish
+		tab_id = cultures
+		group_id = cul_europe
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = f_culture_leonese
+		tab_id = cultures
+		group_id = cul_europe
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_culture_ligurian
 		tab_id = cultures
 		group_id = cul_europe
@@ -1607,6 +1705,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = f_culture_lombard
+		tab_id = cultures
+		group_id = cul_europe
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = f_culture_maltese
 		tab_id = cultures
 		group_id = cul_europe
 		default_value = 0
@@ -1872,6 +1977,13 @@ hafp_register_mod = {
 	}
 	cmm_register_bool_setting = {
 		mod_id = hafp
+		setting_id = f_culture_hassaniya
+		tab_id = cultures
+		group_id = cul_africa
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
 		setting_id = f_culture_west_african
 		tab_id = cultures
 		group_id = cul_africa
@@ -1943,6 +2055,13 @@ hafp_register_mod = {
 	cmm_register_bool_setting = {
 		mod_id = hafp
 		setting_id = f_religion_hindu
+		tab_id = categories
+		group_id = religions
+		default_value = 0
+	}
+	cmm_register_bool_setting = {
+		mod_id = hafp
+		setting_id = f_religion_judaism
 		tab_id = categories
 		group_id = religions
 		default_value = 0
@@ -2167,7 +2286,6 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_samogitia_area alias = hafp_g_area_samogitia_area }
 	cmm_sync_bool_alias = { setting = hafp__area_silesia_area alias = hafp_g_area_silesia_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_great_britain_region alias = hafp_g_reg_great_britain_region }
-	cmm_sync_bool_alias = { setting = hafp__area_hebrides_area alias = hafp_g_area_hebrides_area }
 	cmm_sync_bool_alias = { setting = hafp__area_home_counties_area alias = hafp_g_area_home_counties_area }
 	cmm_sync_bool_alias = { setting = hafp__area_scottish_lowlands_area alias = hafp_g_area_scottish_lowlands_area }
 	cmm_sync_bool_alias = { setting = hafp__area_wales_area alias = hafp_g_area_wales_area }
@@ -2187,8 +2305,11 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_ile_de_france_area alias = hafp_g_area_ile_de_france_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_iberia_region alias = hafp_g_reg_iberia_region }
 	cmm_sync_bool_alias = { setting = hafp__area_granada_area alias = hafp_g_area_granada_area }
+	cmm_sync_bool_alias = { setting = hafp__area_toledo_area alias = hafp_g_area_toledo_area }
+	cmm_sync_bool_alias = { setting = hafp__area_andalusia_area alias = hafp_g_area_andalusia_area }
 	cmm_sync_bool_alias = { setting = hafp__area_castile_area alias = hafp_g_area_castile_area }
 	cmm_sync_bool_alias = { setting = hafp__area_catalonia_area alias = hafp_g_area_catalonia_area }
+	cmm_sync_bool_alias = { setting = hafp__area_murcia_area alias = hafp_g_area_murcia_area }
 	cmm_sync_bool_alias = { setting = hafp__area_navarre_area alias = hafp_g_area_navarre_area }
 	cmm_sync_bool_alias = { setting = hafp__area_south_portugal_area alias = hafp_g_area_south_portugal_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_italy_region alias = hafp_g_reg_italy_region }
@@ -2200,6 +2321,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_sicily_area alias = hafp_g_area_sicily_area }
 	cmm_sync_bool_alias = { setting = hafp__area_tuscany_area alias = hafp_g_area_tuscany_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_north_atlantic_islands_region alias = hafp_g_reg_north_atlantic_islands_region }
+	cmm_sync_bool_alias = { setting = hafp__area_greenland_area alias = hafp_g_area_greenland_area }
 	cmm_sync_bool_alias = { setting = hafp__area_iceland_area alias = hafp_g_area_iceland_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_north_german_region alias = hafp_g_reg_north_german_region }
 	cmm_sync_bool_alias = { setting = hafp__area_brabant_area alias = hafp_g_area_brabant_area }
@@ -2215,6 +2337,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_wallonia_area alias = hafp_g_area_wallonia_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_steppes_region alias = hafp_g_reg_steppes_region }
 	cmm_sync_bool_alias = { setting = hafp__area_azov_area alias = hafp_g_area_azov_area }
+	cmm_sync_bool_alias = { setting = hafp__area_kursk_area alias = hafp_g_area_kursk_area }
 	cmm_sync_bool_alias = { setting = hafp__area_lower_don_area alias = hafp_g_area_lower_don_area }
 	cmm_sync_bool_alias = { setting = hafp__area_matrega_area alias = hafp_g_area_matrega_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_russian_region alias = hafp_g_reg_russian_region }
@@ -2227,6 +2350,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_polesia_area alias = hafp_g_area_polesia_area }
 	cmm_sync_bool_alias = { setting = hafp__area_red_ruthenia_area alias = hafp_g_area_red_ruthenia_area }
 	cmm_sync_bool_alias = { setting = hafp__area_right_bank_ukraine_area alias = hafp_g_area_right_bank_ukraine_area }
+	cmm_sync_bool_alias = { setting = hafp__area_severia_area alias = hafp_g_area_severia_area }
 	cmm_sync_bool_alias = { setting = hafp__area_volhynia_area alias = hafp_g_area_volhynia_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_scandinavian_region alias = hafp_g_reg_scandinavian_region }
 	cmm_sync_bool_alias = { setting = hafp__area_denmark_area alias = hafp_g_area_denmark_area }
@@ -2240,8 +2364,8 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_salzburg_area alias = hafp_g_area_salzburg_area }
 	cmm_sync_bool_alias = { setting = hafp__area_styria_area alias = hafp_g_area_styria_area }
 	cmm_sync_bool_alias = { setting = hafp__area_tirol_area alias = hafp_g_area_tirol_area }
+	cmm_sync_bool_alias = { setting = hafp__area_upper_austria_area alias = hafp_g_area_upper_austria_area }
 	cmm_sync_bool_alias = { setting = hafp__area_upper_rhine_area alias = hafp_g_area_upper_rhine_area }
-	cmm_sync_bool_alias = { setting = hafp__reg_ural_region alias = hafp_g_reg_ural_region }
 	cmm_sync_bool_alias = { setting = hafp__cont_asia alias = hafp_g_cont_asia }
 	cmm_sync_bool_alias = { setting = hafp__reg_anatolia_region alias = hafp_g_reg_anatolia_region }
 	cmm_sync_bool_alias = { setting = hafp__area_cappadocia_area alias = hafp_g_area_cappadocia_area }
@@ -2301,8 +2425,10 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__reg_north_china_region alias = hafp_g_reg_north_china_region }
 	cmm_sync_bool_alias = { setting = hafp__area_beiping_area alias = hafp_g_area_beiping_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_persia_region alias = hafp_g_reg_persia_region }
+	cmm_sync_bool_alias = { setting = hafp__area_baluchistan_area alias = hafp_g_area_baluchistan_area }
 	cmm_sync_bool_alias = { setting = hafp__area_fars_area alias = hafp_g_area_fars_area }
 	cmm_sync_bool_alias = { setting = hafp__area_kordestan_area alias = hafp_g_area_kordestan_area }
+	cmm_sync_bool_alias = { setting = hafp__area_sistan_area alias = hafp_g_area_sistan_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_south_china_region alias = hafp_g_reg_south_china_region }
 	cmm_sync_bool_alias = { setting = hafp__reg_tibet_region alias = hafp_g_reg_tibet_region }
 	cmm_sync_bool_alias = { setting = hafp__area_tsang_area alias = hafp_g_area_tsang_area }
@@ -2322,15 +2448,22 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_kongo_area alias = hafp_g_area_kongo_area }
 	cmm_sync_bool_alias = { setting = hafp__area_west_kongo_area alias = hafp_g_area_west_kongo_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_macaronesia_region alias = hafp_g_reg_macaronesia_region }
+	cmm_sync_bool_alias = { setting = hafp__area_canary_islands_area alias = hafp_g_area_canary_islands_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_madagascar_region alias = hafp_g_reg_madagascar_region }
 	cmm_sync_bool_alias = { setting = hafp__reg_maghreb_region alias = hafp_g_reg_maghreb_region }
+	cmm_sync_bool_alias = { setting = hafp__area_sus_area alias = hafp_g_area_sus_area }
 	cmm_sync_bool_alias = { setting = hafp__area_tunis_area alias = hafp_g_area_tunis_area }
 	cmm_sync_bool_alias = { setting = hafp__area_morocco_area alias = hafp_g_area_morocco_area }
 	cmm_sync_bool_alias = { setting = hafp__area_algiers_area alias = hafp_g_area_algiers_area }
+	cmm_sync_bool_alias = { setting = hafp__area_atlas_high_plateau alias = hafp_g_area_atlas_high_plateau }
+	cmm_sync_bool_alias = { setting = hafp__area_desert_area alias = hafp_g_area_desert_area }
 	cmm_sync_bool_alias = { setting = hafp__area_tripolitania_area alias = hafp_g_area_tripolitania_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_nubia_region alias = hafp_g_reg_nubia_region }
 	cmm_sync_bool_alias = { setting = hafp__reg_sahel_region alias = hafp_g_reg_sahel_region }
+	cmm_sync_bool_alias = { setting = hafp__area_air_area alias = hafp_g_area_air_area }
+	cmm_sync_bool_alias = { setting = hafp__area_bornu_area alias = hafp_g_area_bornu_area }
 	cmm_sync_bool_alias = { setting = hafp__area_gao_area alias = hafp_g_area_gao_area }
+	cmm_sync_bool_alias = { setting = hafp__area_ghana_area alias = hafp_g_area_ghana_area }
 	cmm_sync_bool_alias = { setting = hafp__area_kanem_area alias = hafp_g_area_kanem_area }
 	cmm_sync_bool_alias = { setting = hafp__area_mali_area alias = hafp_g_area_mali_area }
 	cmm_sync_bool_alias = { setting = hafp__area_north_hausa_area alias = hafp_g_area_north_hausa_area }
@@ -2348,7 +2481,6 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__area_acamama_area alias = hafp_g_area_acamama_area }
 	cmm_sync_bool_alias = { setting = hafp__area_puna_area alias = hafp_g_area_puna_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_aridoamerica_region alias = hafp_g_reg_aridoamerica_region }
-	cmm_sync_bool_alias = { setting = hafp__area_zacatecas_area alias = hafp_g_area_zacatecas_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_canada_region alias = hafp_g_reg_canada_region }
 	cmm_sync_bool_alias = { setting = hafp__reg_caribbean_region alias = hafp_g_reg_caribbean_region }
 	cmm_sync_bool_alias = { setting = hafp__reg_central_america_region alias = hafp_g_reg_central_america_region }
@@ -2356,23 +2488,25 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__reg_great_plains_region alias = hafp_g_reg_great_plains_region }
 	cmm_sync_bool_alias = { setting = hafp__reg_mesoamerica_region alias = hafp_g_reg_mesoamerica_region }
 	cmm_sync_bool_alias = { setting = hafp__area_mexihko_area alias = hafp_g_area_mexihko_area }
-	cmm_sync_bool_alias = { setting = hafp__area_xalisco_area alias = hafp_g_area_xalisco_area }
 	cmm_sync_bool_alias = { setting = hafp__reg_west_coast_region alias = hafp_g_reg_west_coast_region }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_albanian alias = hafp_g_f_culture_albanian }
+	cmm_sync_bool_alias = { setting = hafp__f_culture_catalan alias = hafp_g_f_culture_catalan }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_corsican alias = hafp_g_f_culture_corsican }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_dalmatian alias = hafp_g_f_culture_dalmatian }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_emilian alias = hafp_g_f_culture_emilian }
+	cmm_sync_bool_alias = { setting = hafp__f_culture_galician alias = hafp_g_f_culture_galician }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_georgian alias = hafp_g_f_culture_georgian }
-	cmm_sync_bool_alias = { setting = hafp__f_culture_group_carpathian alias = hafp_g_f_culture_group_carpathian }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_group_german alias = hafp_g_f_culture_group_german }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_group_polish alias = hafp_g_f_culture_group_polish }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_group_rhaetian alias = hafp_g_f_culture_group_rhaetian }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_group_romanian alias = hafp_g_f_culture_group_romanian }
-	cmm_sync_bool_alias = { setting = hafp__f_culture_group_south_slavic alias = hafp_g_f_culture_group_south_slavic }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_high_alemannic alias = hafp_g_f_culture_high_alemannic }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_irish alias = hafp_g_f_culture_irish }
+	cmm_sync_bool_alias = { setting = hafp__f_culture_jewish alias = hafp_g_f_culture_jewish }
+	cmm_sync_bool_alias = { setting = hafp__f_culture_leonese alias = hafp_g_f_culture_leonese }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_ligurian alias = hafp_g_f_culture_ligurian }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_lombard alias = hafp_g_f_culture_lombard }
+	cmm_sync_bool_alias = { setting = hafp__f_culture_maltese alias = hafp_g_f_culture_maltese }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_median alias = hafp_g_f_culture_median }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_neapolitan alias = hafp_g_f_culture_neapolitan }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_netherlands alias = hafp_g_f_culture_netherlands }
@@ -2408,6 +2542,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__f_culture_rajasthani alias = hafp_g_f_culture_rajasthani }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_thai alias = hafp_g_f_culture_thai }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_vietnamese alias = hafp_g_f_culture_vietnamese }
+	cmm_sync_bool_alias = { setting = hafp__f_culture_hassaniya alias = hafp_g_f_culture_hassaniya }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_west_african alias = hafp_g_f_culture_west_african }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_andean alias = hafp_g_f_culture_andean }
 	cmm_sync_bool_alias = { setting = hafp__f_culture_haudenosaunee alias = hafp_g_f_culture_haudenosaunee }
@@ -2416,6 +2551,7 @@ hafp_sync_aliases = {
 	cmm_sync_bool_alias = { setting = hafp__f_religion_catholic alias = hafp_g_f_religion_catholic }
 	cmm_sync_bool_alias = { setting = hafp__f_religion_hellenism alias = hafp_g_f_religion_hellenism }
 	cmm_sync_bool_alias = { setting = hafp__f_religion_hindu alias = hafp_g_f_religion_hindu }
+	cmm_sync_bool_alias = { setting = hafp__f_religion_judaism alias = hafp_g_f_religion_judaism }
 	cmm_sync_bool_alias = { setting = hafp__f_religion_miaphysite alias = hafp_g_f_religion_miaphysite }
 	cmm_sync_bool_alias = { setting = hafp__f_religion_muslim alias = hafp_g_f_religion_muslim }
 	cmm_sync_bool_alias = { setting = hafp__f_religion_orthodox alias = hafp_g_f_religion_orthodox }
@@ -2500,13 +2636,11 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_great_britain_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_great_britain_region)" >= 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 1 }
 		}
 		else = {
-			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 0 }
@@ -2563,15 +2697,21 @@ hafp_handle_callback = {
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_iberia_region)" >= 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toledo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_andalusia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_murcia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 1 }
 		}
 		else = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toledo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_andalusia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_murcia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 0 }
 		}
@@ -2602,9 +2742,11 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_north_atlantic_islands_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_north_atlantic_islands_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greenland_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 1 }
 		}
 		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greenland_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 0 }
 		}
 	}
@@ -2643,11 +2785,13 @@ hafp_handle_callback = {
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_steppes_region)" >= 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kursk_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 1 }
 		}
 		else = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kursk_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 0 }
 		}
@@ -2676,6 +2820,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_severia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 1 }
 		}
 		else = {
@@ -2683,6 +2828,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_severia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 0 }
 		}
 	}
@@ -2712,6 +2858,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_austria_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 1 }
 		}
 		else = {
@@ -2721,15 +2868,8 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_austria_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 0 }
-		}
-	}
-	if = {
-		limit = { var:cmf_callback = flag:hafp__reg_ural_region }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__reg_ural_region)" >= 1 }
-		}
-		else = {
 		}
 	}
 	if = {
@@ -2758,7 +2898,6 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_samogitia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_silesia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_britain_region value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 1 }
@@ -2778,8 +2917,11 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_ile_de_france_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_iberia_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toledo_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_andalusia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_murcia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_italy_region value = 1 }
@@ -2791,6 +2933,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_sicily_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tuscany_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_atlantic_islands_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greenland_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_german_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_brabant_area value = 1 }
@@ -2806,6 +2949,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_wallonia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_steppes_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kursk_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_russian_region value = 1 }
@@ -2818,6 +2962,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_severia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_scandinavian_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_denmark_area value = 1 }
@@ -2831,8 +2976,8 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_austria_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__reg_ural_region value = 1 }
 		}
 		else = {
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_balkan_region value = 0 }
@@ -2857,7 +3002,6 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_samogitia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_silesia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_britain_region value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_hebrides_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_home_counties_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_scottish_lowlands_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_wales_area value = 0 }
@@ -2877,8 +3021,11 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_ile_de_france_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_iberia_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_granada_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_toledo_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_andalusia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_castile_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_catalonia_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_murcia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_navarre_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_south_portugal_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_italy_region value = 0 }
@@ -2890,6 +3037,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_sicily_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tuscany_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_atlantic_islands_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_greenland_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_iceland_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_german_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_brabant_area value = 0 }
@@ -2905,6 +3053,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_wallonia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_steppes_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_azov_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_kursk_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_lower_don_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_matrega_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_russian_region value = 0 }
@@ -2917,6 +3066,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_polesia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_red_ruthenia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_right_bank_ukraine_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_severia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_volhynia_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_scandinavian_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_denmark_area value = 0 }
@@ -2930,8 +3080,8 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_salzburg_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_styria_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tirol_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_austria_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_upper_rhine_area value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__reg_ural_region value = 0 }
 		}
 	}
 	if = {
@@ -3148,12 +3298,16 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_persia_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_persia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baluchistan_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sistan_area value = 1 }
 		}
 		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baluchistan_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sistan_area value = 0 }
 		}
 	}
 	if = {
@@ -3260,8 +3414,10 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_china_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_beiping_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_persia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baluchistan_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sistan_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_south_china_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_tibet_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tsang_area value = 1 }
@@ -3328,8 +3484,10 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_north_china_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_beiping_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_persia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_baluchistan_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_fars_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kordestan_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sistan_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_south_china_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_tibet_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tsang_area value = 0 }
@@ -3400,8 +3558,10 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_macaronesia_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_macaronesia_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_canary_islands_area value = 1 }
 		}
 		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_canary_islands_area value = 0 }
 		}
 	}
 	if = {
@@ -3416,15 +3576,21 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_maghreb_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_maghreb_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sus_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_atlas_high_plateau value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_desert_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 1 }
 		}
 		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sus_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_atlas_high_plateau value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_desert_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 0 }
 		}
 	}
@@ -3440,14 +3606,20 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_sahel_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_sahel_region)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_air_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bornu_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ghana_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_south_hausa_area value = 1 }
 		}
 		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__area_air_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bornu_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ghana_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 0 }
@@ -3514,15 +3686,22 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kongo_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_west_kongo_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_macaronesia_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_canary_islands_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_madagascar_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_maghreb_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sus_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_atlas_high_plateau value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_desert_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_nubia_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_sahel_region value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_air_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bornu_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ghana_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 1 }
@@ -3548,15 +3727,22 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kongo_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_west_kongo_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_macaronesia_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_canary_islands_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_madagascar_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_maghreb_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_sus_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tunis_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_morocco_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_algiers_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_atlas_high_plateau value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_desert_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_tripolitania_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_nubia_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_sahel_region value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_air_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_bornu_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_gao_area value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__area_ghana_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_kanem_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mali_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_north_hausa_area value = 0 }
@@ -3594,10 +3780,8 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__reg_aridoamerica_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_aridoamerica_region)" >= 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 1 }
 		}
 		else = {
-			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 0 }
 		}
 	}
 	if = {
@@ -3645,11 +3829,9 @@ hafp_handle_callback = {
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_mesoamerica_region)" >= 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 1 }
 		}
 		else = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 0 }
 		}
 	}
 	if = {
@@ -3669,7 +3851,6 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_acamama_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_puna_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_aridoamerica_region value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_canada_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_caribbean_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_america_region value = 1 }
@@ -3677,7 +3858,6 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_plains_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_mesoamerica_region value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_west_coast_region value = 1 }
 		}
 		else = {
@@ -3686,7 +3866,6 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__area_acamama_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_puna_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_aridoamerica_region value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_zacatecas_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_canada_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_caribbean_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_central_america_region value = 0 }
@@ -3694,7 +3873,6 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_great_plains_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_mesoamerica_region value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__area_mexihko_area value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__area_xalisco_area value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__reg_west_coast_region value = 0 }
 		}
 	}
@@ -3703,20 +3881,23 @@ hafp_handle_callback = {
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__cul_all_europe)" >= 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_albanian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_catalan value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_corsican value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_dalmatian value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_emilian value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_galician value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_georgian value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_carpathian value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_german value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_polish value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_rhaetian value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_romanian value = 1 }
-			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_south_slavic value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_high_alemannic value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_irish value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_jewish value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_leonese value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_ligurian value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_lombard value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_maltese value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_median value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_neapolitan value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_netherlands value = 1 }
@@ -3735,20 +3916,23 @@ hafp_handle_callback = {
 		}
 		else = {
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_albanian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_catalan value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_corsican value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_dalmatian value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_emilian value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_galician value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_georgian value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_carpathian value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_german value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_polish value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_rhaetian value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_romanian value = 0 }
-			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_group_south_slavic value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_high_alemannic value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_irish value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_jewish value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_leonese value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_ligurian value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_lombard value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_maltese value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_median value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_neapolitan value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_netherlands value = 0 }
@@ -3818,9 +4002,11 @@ hafp_handle_callback = {
 		limit = { var:cmf_callback = flag:hafp__cul_all_africa }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__cul_all_africa)" >= 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_hassaniya value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_west_african value = 1 }
 		}
 		else = {
+			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_hassaniya value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_culture_west_african value = 0 }
 		}
 	}
@@ -3854,6 +4040,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_catholic value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hellenism value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hindu value = 1 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_judaism value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_miaphysite value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_muslim value = 1 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_orthodox value = 1 }
@@ -3865,6 +4052,7 @@ hafp_handle_callback = {
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_catholic value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hellenism value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_hindu value = 0 }
+			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_judaism value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_miaphysite value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_muslim value = 0 }
 			add_to_variable_map = { name = cmm key = flag:hafp__f_religion_orthodox value = 0 }
@@ -4133,16 +4321,6 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
-		limit = { var:cmf_callback = flag:hafp__area_hebrides_area }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__area_hebrides_area)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_hebrides_area_name arg2 = hafp_log_suffix }
-		}
-		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_hebrides_area_name arg2 = hafp_log_suffix }
-		}
-	}
-	if = {
 		limit = { var:cmf_callback = flag:hafp__area_home_counties_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_home_counties_area)" >= 1 }
@@ -4333,6 +4511,26 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_toledo_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_toledo_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_toledo_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_toledo_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_andalusia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_andalusia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_andalusia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_andalusia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__area_castile_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_castile_area)" >= 1 }
@@ -4350,6 +4548,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_catalonia_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_murcia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_murcia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_murcia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_murcia_area_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -4460,6 +4668,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_north_atlantic_islands_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_greenland_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_greenland_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_greenland_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_greenland_area_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -4613,6 +4831,16 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_kursk_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_kursk_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_kursk_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_kursk_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__area_lower_don_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_lower_don_area)" >= 1 }
@@ -4730,6 +4958,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_right_bank_ukraine_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_severia_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_severia_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_severia_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_severia_area_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -4863,6 +5101,16 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_upper_austria_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_upper_austria_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_upper_austria_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_upper_austria_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__area_upper_rhine_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_upper_rhine_area)" >= 1 }
@@ -4870,16 +5118,6 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_upper_rhine_area_name arg2 = hafp_log_suffix }
-		}
-	}
-	if = {
-		limit = { var:cmf_callback = flag:hafp__reg_ural_region }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__reg_ural_region)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__reg_ural_region_name arg2 = hafp_log_suffix }
-		}
-		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_ural_region_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -5473,6 +5711,16 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_baluchistan_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_baluchistan_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_baluchistan_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_baluchistan_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__area_fars_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_fars_area)" >= 1 }
@@ -5490,6 +5738,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_kordestan_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_sistan_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_sistan_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_sistan_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_sistan_area_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -5683,6 +5941,16 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_canary_islands_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_canary_islands_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_canary_islands_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_canary_islands_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__reg_madagascar_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_madagascar_region)" >= 1 }
@@ -5700,6 +5968,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__reg_maghreb_region_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_sus_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_sus_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_sus_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_sus_area_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -5733,6 +6011,26 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_atlas_high_plateau }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_atlas_high_plateau)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_atlas_high_plateau_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_atlas_high_plateau_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_desert_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_desert_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_desert_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_desert_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__area_tripolitania_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_tripolitania_area)" >= 1 }
@@ -5763,6 +6061,26 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__area_air_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_air_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_air_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_air_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_bornu_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_bornu_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_bornu_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_bornu_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__area_gao_area }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__area_gao_area)" >= 1 }
@@ -5770,6 +6088,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_gao_area_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__area_ghana_area }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__area_ghana_area)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_ghana_area_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_ghana_area_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -5943,16 +6271,6 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
-		limit = { var:cmf_callback = flag:hafp__area_zacatecas_area }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__area_zacatecas_area)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_zacatecas_area_name arg2 = hafp_log_suffix }
-		}
-		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_zacatecas_area_name arg2 = hafp_log_suffix }
-		}
-	}
-	if = {
 		limit = { var:cmf_callback = flag:hafp__reg_canada_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_canada_region)" >= 1 }
@@ -6023,16 +6341,6 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
-		limit = { var:cmf_callback = flag:hafp__area_xalisco_area }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__area_xalisco_area)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__area_xalisco_area_name arg2 = hafp_log_suffix }
-		}
-		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__area_xalisco_area_name arg2 = hafp_log_suffix }
-		}
-	}
-	if = {
 		limit = { var:cmf_callback = flag:hafp__reg_west_coast_region }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__reg_west_coast_region)" >= 1 }
@@ -6060,6 +6368,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_albanian_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_catalan }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_catalan)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_catalan_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_catalan_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -6093,6 +6411,16 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_galician }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_galician)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_galician_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_galician_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__f_culture_georgian }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__f_culture_georgian)" >= 1 }
@@ -6100,16 +6428,6 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_georgian_name arg2 = hafp_log_suffix }
-		}
-	}
-	if = {
-		limit = { var:cmf_callback = flag:hafp__f_culture_group_carpathian }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__f_culture_group_carpathian)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_carpathian_name arg2 = hafp_log_suffix }
-		}
-		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_carpathian_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -6153,16 +6471,6 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
-		limit = { var:cmf_callback = flag:hafp__f_culture_group_south_slavic }
-		if = {
-			limit = { "variable_map(cmm|flag:hafp__f_culture_group_south_slavic)" >= 1 }
-			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_group_south_slavic_name arg2 = hafp_log_suffix }
-		}
-		else = {
-			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_group_south_slavic_name arg2 = hafp_log_suffix }
-		}
-	}
-	if = {
 		limit = { var:cmf_callback = flag:hafp__f_culture_high_alemannic }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__f_culture_high_alemannic)" >= 1 }
@@ -6183,6 +6491,26 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_jewish }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_jewish)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_jewish_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_jewish_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_leonese }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_leonese)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_leonese_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_leonese_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__f_culture_ligurian }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__f_culture_ligurian)" >= 1 }
@@ -6200,6 +6528,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_lombard_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_maltese }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_maltese)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_maltese_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_maltese_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {
@@ -6573,6 +6911,16 @@ hafp_handle_callback = {
 		}
 	}
 	if = {
+		limit = { var:cmf_callback = flag:hafp__f_culture_hassaniya }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_culture_hassaniya)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_culture_hassaniya_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_culture_hassaniya_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
 		limit = { var:cmf_callback = flag:hafp__f_culture_west_african }
 		if = {
 			limit = { "variable_map(cmm|flag:hafp__f_culture_west_african)" >= 1 }
@@ -6680,6 +7028,16 @@ hafp_handle_callback = {
 		}
 		else = {
 			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_hindu_name arg2 = hafp_log_suffix }
+		}
+	}
+	if = {
+		limit = { var:cmf_callback = flag:hafp__f_religion_judaism }
+		if = {
+			limit = { "variable_map(cmm|flag:hafp__f_religion_judaism)" >= 1 }
+			cmf_log_with_args = { action = hafp_log_turned_on arg1 = hafp__f_religion_judaism_name arg2 = hafp_log_suffix }
+		}
+		else = {
+			cmf_log_with_args = { action = hafp_log_turned_off arg1 = hafp__f_religion_judaism_name arg2 = hafp_log_suffix }
 		}
 	}
 	if = {

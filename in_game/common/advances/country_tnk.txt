@@ -3,6 +3,7 @@
 ############################
 tnk_legitimate_rule = {
 	age = age_1_traditions
+	icon = tnk_legitimate_rule
 	potential = {
 		OR = {
 			AND = {
@@ -25,6 +26,7 @@ tnk_legitimate_rule = {
 }
 tnk_resist_invaders = {
 	age = age_1_traditions
+	icon = tnk_resist_invaders
 	potential = {
 		OR = {
 			AND = {
@@ -51,6 +53,7 @@ tnk_resist_invaders = {
 ############################
 tnk_pearls_of_india = {
 	age = age_2_renaissance
+	icon = tnk_pearls_of_india
 	potential = {
 		OR = {
 			AND = {
@@ -75,6 +78,7 @@ tnk_pearls_of_india = {
 }
 tnk_expertise_in_conflicts = { 
 	age = age_2_renaissance
+	icon = tnk_expertise_in_conflicts
 	potential = {
 		OR = {
 			AND = {
@@ -103,6 +107,7 @@ tnk_expertise_in_conflicts = {
 ############################
 tnk_imperial_legacy = {
 	age = age_3_discovery
+	icon = tnk_imperial_legacy
 	potential = {
 		OR = {
 			AND = {

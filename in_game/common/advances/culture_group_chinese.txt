@@ -82,7 +82,7 @@ chi_great_rivers_of_china = {
 			}
 		}
 	}
-	global_monthly_food_modifier = 0.1
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 
 	requires = supply_lines
 }

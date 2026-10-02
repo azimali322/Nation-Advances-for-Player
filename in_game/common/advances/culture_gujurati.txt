@@ -9,6 +9,7 @@
 ############################
 guj_hub_of_the_indian_ocean_trade = {
 	age = age_2_renaissance
+	icon = guj_hub_of_the_indian_ocean_trade
 	potential = {
 		OR = {
 			AND = {
@@ -30,6 +31,7 @@ guj_hub_of_the_indian_ocean_trade = {
 }
 guj_garba = {
 	age = age_2_renaissance
+	icon = guj_garba
 	potential = {
 		OR = {
 			AND = {
@@ -51,6 +53,7 @@ guj_garba = {
 }
 guj_jain_routes = {
 	age = age_2_renaissance
+	icon = guj_jain_routes
 	potential = {
 		OR = {
 			AND = {
@@ -77,6 +80,7 @@ guj_jain_routes = {
 ############################
 guj_gujarati_lipi = {
 	age = age_3_discovery
+	icon = guj_gujarati_lipi
 	potential = {
 		OR = {
 			AND = {
@@ -98,6 +102,7 @@ guj_gujarati_lipi = {
 }
 guj_gujarati_merchant_diaspora = {
 	age = age_3_discovery
+	icon = guj_gujarati_merchant_diaspora
 	potential = {
 		OR = {
 			AND = {

@@ -8,6 +8,7 @@
 ############################
 bah_arabian_horses = {
 	age = age_2_renaissance
+	icon = bah_arabian_horses
 	potential = {
 		OR = {
 			AND = {
@@ -29,6 +30,7 @@ bah_arabian_horses = {
 }
 bah_amir_rebellion = {
 	age = age_2_renaissance
+	icon = bah_amir_rebellion
 	potential = {
 		OR = {
 			AND = {
@@ -52,6 +54,7 @@ bah_amir_rebellion = {
 }
 bah_nobility_hindu_expansion = {
 	age = age_2_renaissance
+	icon = bah_nobility_hindu_expansion
 	potential = {
 		OR = {
 			AND = {
@@ -79,6 +82,7 @@ bah_nobility_hindu_expansion = {
 ############################
 bah_gharbians = {
 	age = age_3_discovery
+	icon = bah_gharbians
 	potential = {
 		OR = {
 			AND = {
@@ -101,6 +105,7 @@ bah_gharbians = {
 }
 bah_legacy_of_gisu_daraz = {
 	age = age_3_discovery
+	icon = bah_legacy_of_gisu_daraz
 	potential = {
 		OR = {
 			AND = {
@@ -127,6 +132,7 @@ bah_legacy_of_gisu_daraz = {
 ############################
 bah_meltpot_of_languages = {
 	age = age_4_reformation
+	icon = bah_meltpot_of_languages
 	potential = {
 		OR = {
 			AND = {
@@ -149,6 +155,7 @@ bah_meltpot_of_languages = {
 }
 bah_karimis = {
 	age = age_4_reformation
+	icon = bah_karimis
 	potential = {
 		OR = {
 			AND = {
@@ -174,6 +181,7 @@ bah_karimis = {
 ############################
 bah_takht_e_firoza = {
 	age = age_5_absolutism
+	icon = bah_takht_e_firoza
 	potential = {
 		OR = {
 			AND = {
@@ -195,6 +203,7 @@ bah_takht_e_firoza = {
 }
 bah_bahmani_primogeniture = {
 	age = age_5_absolutism
+	icon = bah_bahmani_primogeniture
 	potential = {
 		OR = {
 			AND = {
@@ -220,6 +229,7 @@ bah_bahmani_primogeniture = {
 ############################
 bah_madrasa_of_mahmud_gawan = {
 	age = age_6_revolutions
+	icon = bah_madrasa_of_mahmud_gawan
 	potential = {
 		OR = {
 			AND = {

@@ -3,6 +3,7 @@
 ############################
 raj_militaristic_society = {
 	age = age_1_traditions
+	icon = raj_militaristic_society
 	potential = {
 		OR = {
 			AND = {
@@ -23,6 +24,7 @@ raj_militaristic_society = {
 }
 raj_combat_training = {
 	age = age_1_traditions
+	icon = raj_combat_training
 	potential = {
 		OR = {
 			AND = {
@@ -48,6 +50,7 @@ raj_combat_training = {
 ############################
 raj_clan_loyalties = {
 	age = age_2_renaissance
+	icon = raj_clan_loyalties
 	potential = {
 		OR = {
 			AND = {
@@ -69,6 +72,7 @@ raj_clan_loyalties = {
 }
 raj_monumental_architecture = {
 	age = age_2_renaissance
+	icon = raj_monumental_architecture
 	potential = {
 		OR = {
 			AND = {
@@ -89,6 +93,7 @@ raj_monumental_architecture = {
 }
 raj_marwari_horses = {
 	age = age_2_renaissance
+	icon = raj_marwari_horses
 	potential = {
 		OR = {
 			AND = {
@@ -109,6 +114,7 @@ raj_marwari_horses = {
 }
 raj_reorganized_rajput_regiments = {
 	age = age_2_renaissance
+	icon = raj_reorganized_rajput_regiments
 	potential = {
 		OR = {
 			AND = {
@@ -134,6 +140,7 @@ raj_reorganized_rajput_regiments = {
 ############################
 raj_martial_smiths = {
 	age = age_3_discovery
+	icon = raj_martial_smiths
 	potential = {
 		OR = {
 			AND = {
@@ -155,6 +162,7 @@ raj_martial_smiths = {
 }
 raj_fortress_architecture = {
 	age = age_3_discovery
+	icon = raj_fortress_architecture
 	potential = {
 		OR = {
 			AND = {
@@ -180,6 +188,7 @@ raj_fortress_architecture = {
 ############################
 raj_expanded_artillery_arm = {
 	age = age_4_reformation
+	icon = raj_expanded_artillery_arm
 	potential = {
 		OR = {
 			AND = {
@@ -200,6 +209,7 @@ raj_expanded_artillery_arm = {
 }
 raj_the_purbias = {
 	age = age_4_reformation
+	icon = raj_the_purbias
 	potential = {
 		OR = {
 			AND = {
@@ -224,6 +234,7 @@ raj_the_purbias = {
 ############################
 raj_mandatory_firearm_drilling = {
 	age = age_5_absolutism
+	icon = raj_mandatory_firearm_drilling
 	potential = {
 		OR = {
 			AND = {
@@ -244,6 +255,7 @@ raj_mandatory_firearm_drilling = {
 }
 raj_painting_school = {
 	age = age_5_absolutism
+	icon = raj_painting_school
 	potential = {
 		OR = {
 			AND = {
@@ -268,6 +280,7 @@ raj_painting_school = {
 ############################
 raj_rajput_resistance = {
 	age = age_6_revolutions
+	icon = raj_rajput_resistance
 	potential = {
 		OR = {
 			AND = {
@@ -288,6 +301,7 @@ raj_rajput_resistance = {
 }
 raj_martial_ethos = {
 	age = age_6_revolutions
+	icon = raj_martial_ethos
 	potential = {
 		OR = {
 			AND = {

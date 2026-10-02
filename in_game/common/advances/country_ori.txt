@@ -3,6 +3,7 @@
 ############################
 ori_bulwark_of_the_hindu = {
 	age = age_1_traditions
+	icon = ori_bulwark_of_the_hindu
 	potential = {
 		OR = {
 			AND = {
@@ -25,6 +26,7 @@ ori_bulwark_of_the_hindu = {
 }
 ori_anka_year_system = {
 	age = age_1_traditions
+	icon = ori_anka_year_system
 	potential = {
 		OR = {
 			AND = {
@@ -75,6 +77,7 @@ ori_lord_of_elephants = {
 }
 ori_servitor_of_jagganath = {
 	age = age_2_renaissance
+	icon = ori_servitor_of_jagganath
 	potential = {
 		OR = {
 			AND = {
@@ -102,6 +105,7 @@ ori_servitor_of_jagganath = {
 ############################
 ori_parikshas = {
 	age = age_3_discovery
+	icon = ori_parikshas
 	potential = {
 		OR = {
 			AND = {
@@ -125,6 +129,7 @@ ori_parikshas = {
 }
 ori_odia_militarization = {
 	age = age_3_discovery
+	icon = ori_odia_militarization
 	potential = {
 		OR = {
 			AND = {
@@ -151,6 +156,7 @@ ori_odia_militarization = {
 ############################
 ori_patronize_temple_construction = {
 	age = age_4_reformation
+	icon = ori_patronize_temple_construction
 	potential = {
 		OR = {
 			AND = {
@@ -174,6 +180,7 @@ ori_patronize_temple_construction = {
 }
 ori_refined_cloth_production = {
 	age = age_4_reformation
+	icon = ori_refined_cloth_production
 	potential = {
 		OR = {
 			AND = {
@@ -202,6 +209,7 @@ ori_refined_cloth_production = {
 ############################
 ori_encourage_salt_trade = {
 	age = age_5_absolutism
+	icon = ori_encourage_salt_trade
 	potential = {
 		OR = {
 			AND = {
@@ -230,6 +238,7 @@ ori_encourage_salt_trade = {
 ############################
 ori_expansion_of_infrastructure = {
 	age = age_6_revolutions
+	icon = ori_expansion_of_infrastructure
 	potential = {
 		OR = {
 			AND = {

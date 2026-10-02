@@ -93,14 +93,14 @@ islamic_prayer = {
 		}
 	}
 	
-	pilgrimage_action_cost_modifier = -0.1
+	stability_investment = small_stability_investment
 	
 	requires = holy_revelation
 }
 
 zakah = {
 	age = age_1_traditions
-	
+
 	potential = {
 		OR = {
 			AND = {
@@ -116,11 +116,13 @@ zakah = {
 			}
 		}
 	}
-	
+
 	minting_inflation_threshold = 0.01
-	
+
 	unemployed_slave_promotion = 0.001
-	
+
+	bayt_al_mal_bureaucracy_impact_modifier = 0.25
+
 	requires = holy_revelation
 }
 
@@ -256,7 +258,7 @@ sunnah = {
 
 imamate = {
 	age = age_2_renaissance
-	
+
 	potential = {
 		OR = {
 			AND = {
@@ -272,10 +274,36 @@ imamate = {
 			}
 		}
 	}
-	
+
 	antagonism_received_modifier = -0.1
-	
+
 	requires = rgo_construction_ren
+}
+
+islamic_jurisprudence = {
+	age = age_2_renaissance
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_f_religion_muslim
+				}
+			}
+			AND = {
+				religion.group = religion_group:muslim
+			}
+		}
+	}
+	allow = { has_policy = sharia_law_policy }
+
+	global_max_bureaucracy_slots = 1
+
+	requires = renaissance_development
+	allow_children = no
 }
 
 ############################

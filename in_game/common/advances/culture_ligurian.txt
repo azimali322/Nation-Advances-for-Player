@@ -24,6 +24,7 @@
 
 	export_efficiency = small_trade_efficiency_bonus
 	navy_galley_power = 0.15
+	max_tariff = 0.1
 
 	requires = trade_advance_age_of_trad
 }
@@ -351,7 +352,7 @@ gen_free_port = {
 		}
 	}
 
-	global_trade_through_owned_territory_efficiency = 0.20
+	trade_sea_efficiency = small_trade_sea_efficiency_bonus
 	global_trade_center_power = 0.10
 
 	requires = industrialization_advance

@@ -1,0 +1,262 @@
+﻿timurid_cavalry = {
+	age = age_1_traditions
+	icon = timurid_cavalry
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	army_light_cavalry_maintenance_cost_modifier = -0.1
+	requires = horse_riding_advance
+}
+timurid_architecture = {
+	age = age_2_renaissance
+	icon = timurid_architecture
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	monthly_prestige = 0.1
+	requires = crown_power_advance_renaissance
+}
+the_mantle_of_the_great_khan = {
+	age = age_2_renaissance
+	icon = the_mantle_of_the_great_khan
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	land_morale_modifier = 0.1
+	ai_weight = { add = 10 }
+	requires = gunpowder_advance
+}
+turco_persian_tradition = {
+	age = age_2_renaissance
+	icon = turco_persian_tradition
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	cultural_tradition_modifier = 0.1
+	requires = vibrant_court_advance
+}
+tamerlane_chess = {
+	age = age_2_renaissance
+	icon = tamerlane_chess
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	military_tactics = 0.1
+	ai_weight = { add = 10 }
+	requires = recruitment_improvements_renaissance
+}
+chagatai_literature = {
+	age = age_3_discovery
+	icon = chagatai_literature
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+					has_variable = hafp_g_area_zhetysu_area
+				}
+			}
+			AND = {
+				OR = {
+				has_or_had_tag = TIM
+				has_or_had_tag = CHG
+				}
+			}
+		}
+	}
+	cultural_influence_modifier = 0.1
+	requires = print_culture
+}
+nambardar_levy = {
+	age = age_3_discovery
+	icon = nambardar_levy
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	wrong_culture_levy_size = 0.1
+	requires = supply_depot_advance_age_3_discovery
+}
+timurid_renaissance = {
+	age = age_4_reformation
+	icon = timurid_renaissance
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	research_speed_modifier = 0.05
+	requires = artists_advance_reformations
+}
+riches_of_the_silk_road = {
+	age = age_4_reformation
+	icon = riches_of_the_silk_road
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	global_merchant_power = 0.2
+	requires = pop_promotion_speed_age_4
+}
+reform_the_diwan = {
+	age = age_5_absolutism
+	icon = reform_the_diwan
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	country_cabinet_efficiency = 0.1
+	diwan_al_insha_bureaucracy_impact_modifier = 0.25
+	requires = the_constitution
+}
+conquerors_legacy = {
+	age = age_6_revolutions
+	icon = conquerors_legacy
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_cont_asia
+					has_variable = hafp_g_reg_khorasan_region
+					has_variable = hafp_g_area_transoxiana_area
+				}
+			}
+			AND = {
+				has_or_had_tag = TIM
+			}
+		}
+	}
+	discipline = 0.05
+	requires = siege_ability_revolutions
+}

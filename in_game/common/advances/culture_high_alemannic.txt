@@ -1,6 +1,7 @@
 ﻿#Age of Traditions
 swiss_oath_of_rutli = {
 	age = age_1_traditions
+	icon = swiss_oath_of_rutli
 	potential = {
 		OR = {
 			AND = {
@@ -22,6 +23,7 @@ swiss_oath_of_rutli = {
 }
 swiss_halberd_infantry = {
 	age = age_1_traditions
+	icon = swiss_halberd_infantry
 	potential = {
 		OR = {
 			AND = {
@@ -65,6 +67,7 @@ swiss_alpine_passes = {
 }
 swiss_eternal_alliance = {
 	age = age_1_traditions
+	icon = swiss_eternal_alliance
 	potential = {
 		OR = {
 			AND = {
@@ -100,6 +103,7 @@ swiss_eternal_alliance = {
 #Age of Renaissance
 swiss_mercenaries = {
 	age = age_2_renaissance
+	icon = swiss_mercenaries
 	potential = {
 		OR = {
 			AND = {
@@ -116,12 +120,13 @@ swiss_mercenaries = {
 		}
 	}
 	global_mercenaries_modifier = 0.25
-	mercenary_maintenance_efficiency = 0.2
+	mercenary_payment_to_owner = 0.5
 
 	requires = medieval_military
 }
 the_swiss_confederation = {
 	age = age_2_renaissance
+	icon = the_swiss_confederation
 	potential = {
 		OR = {
 			AND = {
@@ -166,6 +171,7 @@ swiss_reislaufer = {
 }
 swiss_recovery_and_prosperity = {
 	age = age_3_discovery
+	icon = swiss_recovery_and_prosperity
 	potential = {
 		OR = {
 			AND = {
@@ -190,6 +196,7 @@ swiss_recovery_and_prosperity = {
 #Age of Reformation
 alpine_defensiveness = {
 	age = age_4_reformation
+	icon = alpine_defensiveness
 	potential = {
 		OR = {
 			AND = {
@@ -213,6 +220,7 @@ alpine_defensiveness = {
 }
 swiss_religious_refuge = {
 	age = age_4_reformation
+	icon = swiss_religious_refuge
 	potential = {
 		OR = {
 			AND = {
@@ -235,6 +243,7 @@ swiss_religious_refuge = {
 #Age of Absolutism
 swiss_tolerance = {
 	age = age_5_absolutism
+	icon = swiss_tolerance
 	potential = {
 		OR = {
 			AND = {
@@ -256,6 +265,7 @@ swiss_tolerance = {
 }
 swiss_clockwork = {
 	age = age_5_absolutism
+	icon = swiss_clockwork
 	potential = {
 		OR = {
 			AND = {
@@ -279,6 +289,7 @@ swiss_clockwork = {
 #Age of Revolutions
 swiss_ambition = {
 	age = age_6_revolutions
+	icon = swiss_ambition
 	potential = {
 		OR = {
 			AND = {
@@ -300,6 +311,7 @@ swiss_ambition = {
 }
 swiss_banking = {
 	age = age_6_revolutions
+	icon = swiss_banking
 	potential = {
 		OR = {
 			AND = {

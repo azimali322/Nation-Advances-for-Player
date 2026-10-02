@@ -3,7 +3,7 @@
 three_sisters = {
 	age = age_1_traditions
 	starting_technology_level = 1
-	
+
 	potential = {
 		OR = {
 			AND = {
@@ -26,6 +26,7 @@ three_sisters = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				original_capital ?= { sub_continent = sub_continent:north_america }
 			}
 		}
@@ -50,14 +51,12 @@ moundbuilding_advance = {
 					has_variable = hafp_g_reg_aridoamerica_region
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -95,14 +94,12 @@ medicinal_infusions = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -143,6 +140,7 @@ canoe_travels = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -175,14 +173,12 @@ seasonal_economy = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -198,7 +194,7 @@ seasonal_economy = {
 			}
 		}
 	}
-	global_monthly_food_modifier = 0.10
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 	global_monthly_prosperity = 0.001
 
 	requires = medicinal_infusions
@@ -224,6 +220,7 @@ fishing_habits = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -257,6 +254,7 @@ whale_hunters = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -290,6 +288,7 @@ maple_syrup = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -297,7 +296,7 @@ maple_syrup = {
 			}
 		}
 	}
-	global_monthly_food_modifier = 0.1
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 	global_estate_target_satisfaction = tiny_permanent_target_satisfaction
 
 	requires = rgo_size_advance_renaissance
@@ -319,6 +318,7 @@ stickball_game = { #Lacrosse
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -347,14 +347,12 @@ north_american_warrior_societies = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -389,14 +387,12 @@ bison_hunters = {
 					has_variable = hafp_g_cont_america
 					has_variable = hafp_g_reg_aridoamerica_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:great_plains_region
 				original_capital.region = region:aridoamerica_region
@@ -429,14 +425,12 @@ federal_constitution = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -475,14 +469,12 @@ shared_knowledge = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -519,14 +511,12 @@ slash_and_burn = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -542,7 +532,7 @@ slash_and_burn = {
 			}
 		}
 	}
-	global_monthly_food_modifier = 0.1
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 
 	requires = law_making_renaissance
 }
@@ -563,14 +553,12 @@ council_of_elders = {
 					has_variable = hafp_g_reg_canada_region
 					has_variable = hafp_g_reg_east_coast_region
 					has_variable = hafp_g_reg_great_plains_region
-					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -609,6 +597,7 @@ experienced_fur_hunters = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -638,6 +627,7 @@ wampum = {
 			}
 			AND = {
 				exists = capital
+				NOT = { is_subject_type = colonial_nation }
 				OR = {
 				original_capital.region = region:east_coast_region
 				original_capital.region = region:canada_region
@@ -704,8 +694,6 @@ system_of_tributaries = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -737,8 +725,6 @@ pyramid_architecture = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -771,8 +757,6 @@ ball_game = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -806,8 +790,6 @@ war_bonfires = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -841,8 +823,6 @@ merchant_officials = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -878,8 +858,6 @@ copperworking = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -916,8 +894,6 @@ refined_obsidian_weaponry = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -978,8 +954,6 @@ cultivate_the_land = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1013,8 +987,6 @@ feathered_serpent = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1048,8 +1020,6 @@ ritual_bloodletting = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1088,8 +1058,6 @@ valley_irrigation = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1097,7 +1065,7 @@ valley_irrigation = {
 			}
 		}
 	}
-	global_monthly_food_modifier = 0.1
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 }
 
 artisan_migration = {
@@ -1119,8 +1087,6 @@ artisan_migration = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1154,8 +1120,6 @@ terrace_farming = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1187,8 +1151,6 @@ mountain_cities = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1220,8 +1182,6 @@ river_trade = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1253,8 +1213,6 @@ rainforests_and_mountaintops = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1287,8 +1245,6 @@ knot_system = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1322,8 +1278,6 @@ llama_farming = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1355,8 +1309,6 @@ mountain_roads = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1390,8 +1342,6 @@ tears_of_the_sun = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1423,8 +1373,6 @@ hidden_cities = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1432,7 +1380,7 @@ hidden_cities = {
 			}
 		}
 	}
-	global_devastation_recovery = 0.005
+	global_devastation_recovery = 0.0025
 
 	requires = tears_of_the_sun
 }
@@ -1457,8 +1405,6 @@ potato_production = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1490,8 +1436,6 @@ head_hunters = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {
@@ -1523,8 +1467,6 @@ border_raiders = {
 					has_variable = hafp_g_reg_great_plains_region
 					has_variable = hafp_g_reg_mesoamerica_region
 					has_variable = hafp_g_reg_west_coast_region
-					has_variable = hafp_g_area_xalisco_area
-					has_variable = hafp_g_area_zacatecas_area
 				}
 			}
 			AND = {

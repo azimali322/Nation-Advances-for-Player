@@ -420,7 +420,7 @@ thrive_under_persecution = {
 		}
 	}
 	
-	global_devastation_recovery = 0.005
+	global_devastation_recovery = 0.0025
 	
 	requires = power_projection_advance_5
 }

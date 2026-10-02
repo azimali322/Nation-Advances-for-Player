@@ -23,7 +23,7 @@
 	}
 
 	global_monthly_development = 0.001
-	global_trade_through_owned_territory_efficiency = 0.10
+	trade_land_efficiency = tiny_trade_land_efficiency_bonus
 
 	requires = agriculture_advance
 }
@@ -240,7 +240,7 @@ blg_la_grasa = {
 	}
 
 	export_efficiency = small_trade_efficiency_bonus
-	global_monthly_food_modifier = 0.10
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 
 	requires = banking_advance
 }
@@ -535,8 +535,8 @@ par_the_new_duchy = {
 		}
 	}
 
-	fort_maintenance_efficiency = 0.15
-	diplomatic_reputation = 1
+	fort_maintenance_efficiency = 0.20
+	improve_relation_impact = 0.1
 
 	requires = crown_power_advance_discovery
 }
@@ -747,7 +747,7 @@ pcz_the_citadel = {
 	}
 
 	antagonism_received_modifier = -0.1
-	global_garrison_growth = 0.20
+	global_garrison_growth = 0.01
 
 	requires = construction_speed_reformation
 }
@@ -905,7 +905,7 @@ par_prosciutto_e_parmigiano = {
 	}
 
 	export_efficiency = medium_trade_efficiency_bonus
-	global_monthly_food_modifier = 0.20
+	global_monthly_food_modifier = monthly_food_productivity_extreme_bonus
 
 	requires = rgo_size_advance_absolutism
 }
@@ -1015,7 +1015,7 @@ fer_po_delta_reclamation = {
 	}
 
 	global_max_rgo_size_modifier = 0.15
-	global_monthly_food_modifier = 0.15
+	global_monthly_food_modifier = monthly_food_productivity_severe_bonus
 
 	requires = rotherham_plough
 }
@@ -1042,7 +1042,7 @@ man_po_agriculture = {
 	}
 
 	expand_rgo_farming_cost_modifier = -0.20
-	global_monthly_food_modifier = 0.15
+	global_monthly_food_modifier = monthly_food_productivity_severe_bonus
 
 	requires = modern_bureaucracy
 }
@@ -1121,7 +1121,7 @@ pcz_new_industry = {
 		}
 	}
 
-	global_production_efficiency = 0.10
+	global_production_efficiency = 0.05
 	non_rural_migration_attraction = 0.15
 
 	requires = construction_speed_revolutions

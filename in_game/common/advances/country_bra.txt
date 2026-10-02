@@ -1,5 +1,6 @@
 ﻿expansive_policies = {
 	age = age_1_traditions
+	icon = expansive_policies
 	potential = {
 		OR = {
 			AND = {
@@ -24,6 +25,7 @@
 
 northern_march = {
 	age = age_1_traditions
+	icon = northern_march
 	potential = {
 		OR = {
 			AND = {
@@ -48,6 +50,7 @@ northern_march = {
 
 divide_estates = {
 	age = age_2_renaissance
+	icon = divide_estates
 	potential = {
 		OR = {
 			AND = {
@@ -73,6 +76,7 @@ divide_estates = {
 
 soldiers_fortune = {
 	age = age_2_renaissance
+	icon = soldiers_fortune
 	potential = {
 		OR = {
 			AND = {
@@ -97,6 +101,7 @@ soldiers_fortune = {
 
 iron_tooth = {
 	age = age_3_discovery
+	icon = iron_tooth
 	potential = {
 		OR = {
 			AND = {
@@ -122,6 +127,7 @@ iron_tooth = {
 
 kammergericht = {
 	age = age_3_discovery
+	icon = kammergericht
 	potential = {
 		OR = {
 			AND = {
@@ -171,6 +177,7 @@ dispositio_achillea = {
 
 margrave_council = {
 	age = age_4_reformation
+	icon = margrave_council
 	potential = {
 		OR = {
 			AND = {
@@ -197,6 +204,7 @@ margrave_council = {
 
 religious_toleration = {
 	age = age_4_reformation
+	icon = religious_toleration
 	potential = {
 		OR = {
 			AND = {

@@ -1,0 +1,210 @@
+﻿glh_kipchak_khanate = {
+	age = age_1_traditions
+	icon = glh_kipchak_khanate
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+	requires = horse_riding_advance
+	
+	global_manpower_modifier = 0.1
+	cultures_capacity_modifier = 0.5
+}
+
+glh_legacy_of_jochi = {
+	age = age_1_traditions
+	icon = glh_legacy_of_jochi
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = horse_riding_advance
+
+	army_light_cavalry_maintenance_cost_modifier = -0.20
+}
+
+glh_legacy_of_the_golden_horde = {
+	age = age_2_renaissance
+	icon = glh_legacy_of_the_golden_horde
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = medieval_military
+
+	monthly_legitimacy = 0.1
+	monthly_horde_unity = 0.1
+}
+
+glh_perso_mongol_administration = {
+	age = age_2_renaissance
+	icon = glh_perso_mongol_administration
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_2_renaissance
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = vibrant_court_advance
+
+	global_integration_speed_modifier = 0.25
+}
+
+glh_tatar_traditions = {
+	age = age_3_discovery
+	icon = glh_tatar_traditions
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = correct_box_advance_discovery
+
+	army_light_cavalry_power = 0.2
+}
+
+glh_secure_the_trade_routes = {
+	age = age_4_reformation
+	icon = glh_secure_the_trade_routes
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = sturdy_privateers
+
+	global_trade_protection_factor = 0.1
+}
+
+glh_religious_pragmatism = {
+	age = age_5_absolutism
+	icon = glh_religious_pragmatism
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = power_projection_advance_5
+
+	tolerance_heathen = 1
+}
+
+glh_modernization_of_steppes = {
+	age = age_6_revolutions
+	icon = glh_modernization_of_steppes
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_6_revolutions
+					has_variable = hafp_g_tall
+					has_variable = hafp_g_cont_europe
+					has_variable = hafp_g_reg_steppes_region
+					has_variable = hafp_g_area_lower_don_area
+				}
+			}
+			AND = {
+				has_or_had_tag = GLH
+			}
+		}
+	}
+
+	requires = urbanization
+
+	research_speed_modifier = 0.1
+	global_monthly_prosperity = 0.001
+}

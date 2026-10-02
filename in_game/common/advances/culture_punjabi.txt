@@ -11,6 +11,7 @@
 ############################
 pun_breadbasket_of_india = {
     age = age_3_discovery
+    icon = pun_breadbasket_of_india
     potential = {
 		OR = {
 			AND = {
@@ -28,10 +29,11 @@ pun_breadbasket_of_india = {
 		}
 	}
     requires = rgo_logistics_discovery
-    global_monthly_food_modifier = 0.2
+    global_monthly_food_modifier = monthly_food_productivity_extreme_bonus
 }
 pun_encourage_indo_persian_trade = {
     age = age_3_discovery
+    icon = pun_encourage_indo_persian_trade
     potential = {
 		OR = {
 			AND = {
@@ -56,6 +58,7 @@ pun_encourage_indo_persian_trade = {
 ############################
 pun_gurmukhi_script = {
     age = age_4_reformation
+    icon = pun_gurmukhi_script
     potential = {
 		OR = {
 			AND = {
@@ -78,6 +81,7 @@ pun_gurmukhi_script = {
 }
 pun_foundation_of_the_khalsa = {
     age = age_4_reformation
+    icon = pun_foundation_of_the_khalsa
     potential = {
 		OR = {
 			AND = {
@@ -103,6 +107,7 @@ pun_foundation_of_the_khalsa = {
 ############################
 pun_punjabi_textile_industry = {
     age = age_5_absolutism
+    icon = pun_punjabi_textile_industry
     potential = {
 		OR = {
 			AND = {
@@ -125,6 +130,7 @@ pun_punjabi_textile_industry = {
 }
 pun_strength_of_the_misls = {
     age = age_5_absolutism
+    icon = pun_strength_of_the_misls
     potential = {
 		OR = {
 			AND = {
@@ -149,6 +155,7 @@ pun_strength_of_the_misls = {
 ############################
 pun_reforming_the_punjabi_army = {
     age = age_6_revolutions
+    icon = pun_reforming_the_punjabi_army
     potential = {
 		OR = {
 			AND = {

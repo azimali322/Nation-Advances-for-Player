@@ -23,7 +23,7 @@
 	}
 
 	morale_recovery_in_friendly = 0.05
-	selling_efficiency = small_trade_efficiency_bonus
+	selling_efficiency = small_selling_efficiency_bonus
 
 	requires = feudalism_advance
 }
@@ -161,7 +161,7 @@ ths_the_wallachian_scutari_advance = {
 
 greek_group_hesychast_traditions_advance = {
 	age = age_2_renaissance
-	icon = patriarchate_of_lithuania
+	icon = greek_group_hesychast_traditions_advance
 
 	potential = {
 		OR = {
@@ -218,7 +218,7 @@ epi_balkan_marriages_advance = {
 
 feo_the_bastion_of_mangup_advance = {
 	age = age_2_renaissance
-	icon = defensive_mentality
+	icon = feo_the_bastion_of_mangup_advance
 
 	potential = {
 		OR = {
@@ -268,7 +268,7 @@ gre_rebuilding_the_theme_system_advance = {
 
 moe_reclaiming_the_peloponnese_advance = {
 	age = age_2_renaissance
-	icon = diplomatic_range_age_1
+	icon = moe_reclaiming_the_peloponnese_advance
 
 	potential = {
 		OR = {
@@ -295,7 +295,7 @@ moe_reclaiming_the_peloponnese_advance = {
 
 ths_meteora_sanctuaries_advance = {
 	age = age_2_renaissance
-	icon = religious_icon_power_advance
+	icon = ths_meteora_sanctuaries_advance
 
 	potential = {
 		OR = {
@@ -886,7 +886,7 @@ feo_the_iron_harvest_advance = {
 
 gre_megali_idea_realized_advance = {
 	age = age_6_revolutions
-	icon = imperial_ambitions
+	icon = gre_megali_idea_realized_advance
 
 	potential = {
 		OR = {

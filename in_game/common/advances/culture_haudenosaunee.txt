@@ -1,5 +1,6 @@
 ﻿haudenosaunee_tradition = {
 	age = age_1_traditions
+	icon = haudenosaunee_tradition
 	potential = {
 		OR = {
 			AND = {
@@ -21,6 +22,7 @@
 }
 haudenosaunee_heritage = {
 	age = age_1_traditions
+	icon = haudenosaunee_heritage
 	potential = {
 		OR = {
 			AND = {
@@ -41,6 +43,7 @@ haudenosaunee_heritage = {
 }
 tree_of_peace = {
 	age = age_1_traditions
+	icon = tree_of_peace
 	potential = {
 		OR = {
 			AND = {
@@ -62,6 +65,7 @@ tree_of_peace = {
 }
 kainerekowa = {
 	age = age_2_renaissance
+	icon = kainerekowa
 	potential = {
 		OR = {
 			AND = {
@@ -82,6 +86,7 @@ kainerekowa = {
 }
 mourning_wars = {
 	age = age_2_renaissance
+	icon = mourning_wars
 	potential = {
 		OR = {
 			AND = {
@@ -102,6 +107,7 @@ mourning_wars = {
 }
 haudenosaunee_present_giving = {
 	age = age_2_renaissance
+	icon = haudenosaunee_present_giving
 	potential = {
 		OR = {
 			AND = {
@@ -117,11 +123,12 @@ haudenosaunee_present_giving = {
 			}
 		}
 	}
-	selling_efficiency = small_trade_efficiency_bonus
+	selling_efficiency = small_selling_efficiency_bonus
 	requires = recovery_efforts
 }
 warriors_unity = {
 	age = age_3_discovery
+	icon = warriors_unity
 	potential = {
 		OR = {
 			AND = {
@@ -142,6 +149,7 @@ warriors_unity = {
 }
 captives_in_war = {
 	age = age_3_discovery
+	icon = captives_in_war
 	potential = {
 		OR = {
 			AND = {
@@ -162,6 +170,7 @@ captives_in_war = {
 }
 haudenosaunee_ambition = {
 	age = age_6_revolutions
+	icon = haudenosaunee_ambition
 	potential = {
 		OR = {
 			AND = {

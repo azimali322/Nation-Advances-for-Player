@@ -99,6 +99,7 @@ north_german_hanseatic_traditions = {
 ############################
 custom_union_of_the_rhine = {
 	age = age_2_renaissance
+	icon = custom_union_of_the_rhine
 	potential = {
 		OR = {
 			AND = {
@@ -128,6 +129,7 @@ custom_union_of_the_rhine = {
 
 lub_hanseatic_coins = {
 	age = age_1_traditions
+	icon = lub_hanseatic_coins
 
 	potential = {
 		OR = {
@@ -157,6 +159,7 @@ lub_hanseatic_coins = {
 
 hamburg_port_cities = {
 	age = age_1_traditions
+	icon = hamburg_port_cities
 
 	potential = {
 		OR = {
@@ -246,6 +249,7 @@ franconian_proud_knights = {
 
 saiger_process = {
 	age = age_2_renaissance
+	icon = saiger_process
 	
 	potential = {
 		OR = {
@@ -410,8 +414,9 @@ landsknechte = {
 		}
 	}
 
+	mercenary_payment_to_owner = 0.15
 	unlock_unit = a_landsknechte
-	
+
 	requires = pike_square
 }
 
@@ -538,6 +543,7 @@ german_biedermeier = {
 #Noble Societies
 noble_society_baden_palatine = {
 	age = age_2_renaissance
+	icon = noble_society_baden_palatine
 
 	potential = {
 		OR = {
@@ -564,6 +570,7 @@ noble_society_baden_palatine = {
 
 noble_society_nassau = {
 	age = age_2_renaissance
+	icon = noble_society_nassau
 
 	potential = {
 		OR = {
@@ -595,6 +602,7 @@ noble_society_nassau = {
 
 noble_society_mainz = {
 	age = age_2_renaissance
+	icon = noble_society_mainz
 
 	potential = {
 		OR = {
@@ -618,6 +626,7 @@ noble_society_mainz = {
 
 noble_society_franconia = {
 	age = age_2_renaissance
+	icon = noble_society_franconia
 
 	potential = {
 		OR = {
@@ -645,6 +654,7 @@ noble_society_franconia = {
 
 noble_society_tyrol = {
 	age = age_2_renaissance
+	icon = noble_society_tyrol
 
 	potential = {
 		OR = {
@@ -674,6 +684,7 @@ noble_society_tyrol = {
 
 noble_society_cologne = {
 	age = age_2_renaissance
+	icon = noble_society_cologne
 
 	potential = {
 		OR = {

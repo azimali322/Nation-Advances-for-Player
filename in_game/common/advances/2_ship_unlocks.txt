@@ -93,6 +93,7 @@ unlock_war_galleon = {
 			}
 			AND = {
 				original_capital ?= { continent = continent:europe }
+				NOT = { culture = { has_culture_group = culture_group:iberian_group } }
 			}
 		}
 	}

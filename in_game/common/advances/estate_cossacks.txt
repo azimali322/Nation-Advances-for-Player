@@ -41,7 +41,7 @@ tamed_steppes = {
 			}
 		}
 	}
-	global_monthly_food_modifier = 0.05
+	global_monthly_food_modifier = monthly_food_productivity_weak_bonus
 
 	requires = agriculture_advance
 }

@@ -1,5 +1,6 @@
 ﻿mounted_people = {
 	age = age_1_traditions
+	icon = mounted_people
 	potential = {
 		OR = {
 			AND = {
@@ -27,6 +28,7 @@
 
 falconry_mastery = {
 	age = age_1_traditions
+	icon = falconry_mastery
 	potential = {
 		OR = {
 			AND = {
@@ -51,6 +53,7 @@ falconry_mastery = {
 
 rich_lands = {
 	age = age_2_renaissance
+	icon = rich_lands
 	potential = {
 		OR = {
 			AND = {
@@ -73,6 +76,7 @@ rich_lands = {
 
 jurchen_honor = {
 	age = age_2_renaissance
+	icon = jurchen_honor
 	potential = {
 		OR = {
 			AND = {
@@ -96,6 +100,7 @@ jurchen_honor = {
 
 unite_the_tribes = {
 	age = age_3_discovery
+	icon = unite_the_tribes
 	potential = {
 		OR = {
 			AND = {
@@ -147,6 +152,7 @@ leader_under_sky = {
 
 foraging_our_way = {
 	age = age_4_reformation
+	icon = foraging_our_way
 	potential = {
 		OR = {
 			AND = {
@@ -192,6 +198,7 @@ the_eight_banners = {
 
 deliberative_council = {
 	age = age_5_absolutism
+	icon = deliberative_council
 	potential = {
 		OR = {
 			AND = {
@@ -215,6 +222,7 @@ deliberative_council = {
 
 manchu_script = {
 	age = age_5_absolutism
+	icon = manchu_script
 	potential = {
 		OR = {
 			AND = {
@@ -237,6 +245,7 @@ manchu_script = {
 
 a_new_dawn = {
 	age = age_6_revolutions
+	icon = a_new_dawn
 	potential = {
 		OR = {
 			AND = {
@@ -261,7 +270,7 @@ a_new_dawn = {
 		}
 	}
 	global_monthly_development = 0.001
-	global_monthly_food_modifier = 0.1
+	global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 	
 	requires = urbanization
 }

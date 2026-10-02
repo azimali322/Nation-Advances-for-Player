@@ -3,6 +3,7 @@
 ############################
 sme_jaqeli_dynasty = {
 	age = age_1_traditions
+	icon = sme_jaqeli_dynasty
 	potential = {
 		OR = {
 			AND = {
@@ -31,6 +32,7 @@ sme_jaqeli_dynasty = {
 ############################
 sme_atabegs_of_samtskhe = {
 	age = age_2_renaissance
+	icon = sme_atabegs_of_samtskhe
 	potential = {
 		OR = {
 			AND = {
@@ -56,6 +58,7 @@ sme_atabegs_of_samtskhe = {
 
 sme_proactive_diplomacy = {
 	age = age_2_renaissance
+	icon = sme_proactive_diplomacy
 	potential = {
 		OR = {
 			AND = {
@@ -110,6 +113,7 @@ sme_fortresses_of_samtskhe = {
 
 sme_independent_ambitions = {
 	age = age_3_discovery
+	icon = sme_independent_ambitions
 	potential = {
 		OR = {
 			AND = {
@@ -139,6 +143,7 @@ sme_independent_ambitions = {
 ############################
 sme_protect_trade_routes = {
 	age = age_4_reformation
+	icon = sme_protect_trade_routes
 	potential = {
 		OR = {
 			AND = {
@@ -164,6 +169,7 @@ sme_protect_trade_routes = {
 
 sme_frontier_warriors = {
 	age = age_4_reformation
+	icon = sme_frontier_warriors
 	potential = {
 		OR = {
 			AND = {
@@ -220,6 +226,7 @@ sme_sacred_land = {
 ############################
 sme_bridge_between_worlds = {
 	age = age_6_revolutions
+	icon = sme_bridge_between_worlds
 	potential = {
 		OR = {
 			AND = {

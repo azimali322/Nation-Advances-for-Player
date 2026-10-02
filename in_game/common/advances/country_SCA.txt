@@ -192,7 +192,6 @@ swedish_roots = {
 					has_variable = hafp_g_reg_north_atlantic_islands_region
 					has_variable = hafp_g_reg_scandinavian_region
 					has_variable = hafp_g_area_iceland_area
-					has_variable = hafp_g_area_svealand_area
 				}
 			}
 			AND = {

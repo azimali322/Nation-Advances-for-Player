@@ -1,5 +1,29 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 19 checks (EU5 1.4 open-beta migration)
+
+Regenerated from 1.4 game files on branch `update/1.4-open-beta`. Scale: **209** override files / **2,844** gated advances (was 197 / 2,467); 318 toggles; 755 tall; 156 unit-granting.
+
+**Load / smoke**
+- [ ] Launcher shows the mod as version 1.0 for game 1.4.*, with CMF 2.4.1 enabled above it. CMF still declares `1.3.*`, so the launcher may flag CMF itself as out of date — that is expected and is CMF's declaration, not ours.
+- [ ] Start a new 1337 game as France; `error.log` has no new entries mentioning `hafp`, `advances`, `cmm`, or `subject_types`. **This is the key 1.4 compatibility check.**
+- [ ] With *Enabled* off, France sees exactly its base-game advances (mod invisible).
+
+**Renamed files (the big 1.4 risk)**
+- [ ] Paradox renamed most country advance files to lowercase (`country_FRA.txt` -> `country_fra.txt`); 20 stay uppercase. The mod now mirrors vanilla exactly. Confirm no duplicate-advance errors in `error.log` and that French/Ottoman/Tlemcen advances appear exactly once in the tree.
+
+**New 1.4 content**
+- [ ] New toggles exist and work: Misc > Judaism; Cultures > Catalan, Galician, Jewish, Leonese, Maltese, Hassaniya; new regions Carpathia and Maghreb under their continents.
+- [ ] New nations are selectable in their areas: Adal, Algiers, Greenland, Kel Ahaggar / Kel Ajjer / Kel Adagh / Kel Ayr / Kel Gres / Iwellemmeden (Tuareg) and Guanche (Canary Islands).
+- [ ] Canal megaprojects (Suez, Panama) behave sanely: they appear for nations that qualify in vanilla and are not offered to Oceania-capital nations.
+- [ ] Tabs are still Europe / Asia / Africa / America / Cultures / Misc / Settings — there should be **no** Oceania tab.
+
+**Regression sweep (previous rounds still hold)**
+- [ ] Mod off => vanilla behavior; *Unlock All* + a continent selection unlocks the right advances.
+- [ ] *Allow Unique Unit Advances* off => research buttons grant no unique units, own nation's included.
+- [ ] Research scope default is *All, No Future Ages*; no future-age units appear.
+- [ ] Vassalization still available after gaining samanta through the mod.
+
 ## Round 18 checks (Tall: buildings, literacy, research, satisfaction recovery)
 
 Tall now covers **580** advances (was 444).

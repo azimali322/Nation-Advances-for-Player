@@ -15,10 +15,7 @@ italy_great_families = {
 				}
 			}
 			AND = {
-				AND = {
-				num_locations > 0
-				capital = { region = region:italy_region }
-				}
+				culture = { has_culture_group = culture_group:italian_group }
 			}
 		}
 	}
@@ -45,10 +42,7 @@ italian_condottieri = {
 				}
 			}
 			AND = {
-				AND = {
-				num_locations > 0
-				capital = { region = region:italy_region }
-				}
+				culture = { has_culture_group = culture_group:italian_group }
 			}
 		}
 	}
