@@ -1,0 +1,55 @@
+# Runs the generator test suite on every push and pull request.
+#
+# GitHub's machines do not have EU5 installed, so the checks that read the game
+# files (vanilla fidelity, override filenames matching vanilla, manual region
+# overrides) skip themselves here. Run them locally after every regeneration:
+#
+#   python tools/verify_fidelity.py
+#   python tools/test_generators.py
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: ${{ matrix.label }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Mirrors the machine the generators actually run on.
+          - label: Windows / Python 3.9
+            os: windows-latest
+            python: "3.9"
+          # Case-sensitive filesystem and the newest Python, to catch problems
+          # before they reach the local machine.
+          - label: Linux / Python 3.14
+            os: ubuntu-latest
+            python: "3.14"
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+
+      # The suite does not import every script when the game is absent, so a
+      # syntax error in, say, generate_cmm.py would otherwise go unnoticed.
+      - name: Byte-compile every tool script
+        run: python -m compileall -q tools
+
+      - name: Run the test suite
+        run: python tools/test_generators.py

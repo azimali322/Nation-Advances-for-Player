@@ -7,6 +7,7 @@ Covers the parsing and classification logic that the EU5 1.4 migration
 touched, plus an integration pass over the generated output.
 """
 
+import collections
 import json
 import os
 import re
@@ -22,9 +23,17 @@ import build_groups as bg
 import generate_advances as ga
 import generate_exclusions as gx
 
-VANILLA_ADVANCES = os.path.join(
-    ga.__dict__.get("HERE") and r"C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis V" or "",
-    "game", "in_game", "common", "advances")
+VANILLA_ADVANCES = os.path.join(bg.GAME_DEFAULT, "game", "in_game", "common", "advances")
+SHIPPED_ADVANCES = os.path.join(ROOT, "in_game", "common", "advances")
+REGISTER = os.path.join(ROOT, "in_game", "common", "scripted_effects", "hafp_cmm_register.txt")
+RESEARCH = os.path.join(ROOT, "in_game", "common", "scripted_effects", "hafp_research_effects.txt")
+LOCALIZATION = os.path.join(ROOT, "main_menu", "localization", "english", "hafp_cmm_l_english.yml")
+METADATA = os.path.join(ROOT, ".metadata", "metadata.json")
+
+
+def read_text(path):
+    with open(path, encoding="utf-8-sig") as fh:
+        return fh.read()
 
 
 def braces_balanced(text):
@@ -485,6 +494,250 @@ class TestVanillaFidelity(unittest.TestCase):
     def test_detects_subject_type_drift(self):
         self.assertTrue(self._mutated(lambda t: self._edit(
             t, os.path.join("subject_types", "vassal.txt"), "level = 2", "level = 3")))
+
+
+class TestShippedFiles(unittest.TestCase):
+    """Repository hygiene that must hold for every future version of the mod."""
+
+    def test_every_paradox_file_has_a_utf8_bom(self):
+        """EU5 expects .txt script and .yml localization files to begin with a
+        UTF-8 byte order mark."""
+        missing = []
+        for top in ("in_game", "main_menu"):
+            for dirpath, _dirs, files in os.walk(os.path.join(ROOT, top)):
+                for fname in files:
+                    if fname.endswith((".txt", ".yml")):
+                        path = os.path.join(dirpath, fname)
+                        with open(path, "rb") as fh:
+                            if fh.read(3) != b"\xef\xbb\xbf":
+                                missing.append(os.path.relpath(path, ROOT))
+        self.assertEqual(missing, [], "files without a UTF-8 BOM")
+
+    def test_metadata_is_valid(self):
+        with open(METADATA, encoding="utf-8-sig") as fh:
+            meta = json.load(fh)
+        for key in ("name", "id", "version", "supported_game_version",
+                    "short_description", "tags", "relationships"):
+            self.assertIn(key, meta)
+        m = re.match(r"^(\d+\.\d+)\.\*$", meta["supported_game_version"])
+        self.assertIsNotNone(m, "supported_game_version should look like 1.4.*")
+        self.assertIn(m.group(1), meta["tags"],
+                      "the version tag must match supported_game_version - bump both together")
+        deps = [r for r in meta["relationships"] if r.get("id") == "community_mod_framework"]
+        self.assertEqual(len(deps), 1, "the Community Mod Framework dependency is missing")
+        self.assertEqual(deps[0].get("rel_type"), "dependency")
+
+    def test_mod_id_never_changes(self):
+        """Changing the id orphans every player's saved settings and Workshop
+        subscription, so it is pinned on purpose."""
+        with open(METADATA, encoding="utf-8-sig") as fh:
+            self.assertEqual(json.load(fh)["id"], "handicap_advances_for_player")
+
+
+def _field(body, name):
+    m = re.search(r"\b%s = (\w+)" % name, body)
+    return m.group(1) if m else None
+
+
+class TestMenuLocalization(unittest.TestCase):
+    """Every element of the Community Mod Menu needs localization; a missing
+    key shows the player a raw identifier such as hafp__area_x_name."""
+
+    @classmethod
+    def setUpClass(cls):
+        if not os.path.isfile(REGISTER):
+            raise unittest.SkipTest("register file not generated")
+        cls.reg = read_text(REGISTER)
+        cls.keys = set(re.findall(r"^ ([A-Za-z0-9_]+):", read_text(LOCALIZATION), re.M))
+        cls.regs = []
+        for kind, body in re.findall(r"cmm_register_(\w+?)_setting = \{(.*?)\n\t\}", cls.reg, re.S):
+            cls.regs.append({"kind": kind, "id": _field(body, "setting_id"),
+                             "tab": _field(body, "tab_id"), "group": _field(body, "group_id"),
+                             "options": _field(body, "option_count"),
+                             "default": _field(body, "default_index")})
+
+    def _missing(self, wanted):
+        return sorted(k for k in set(wanted) if k not in self.keys)
+
+    def test_registrations_were_parsed(self):
+        kinds = {r["kind"] for r in self.regs}
+        self.assertTrue({"bool", "dropdown", "button"} <= kinds,
+                        "registration parsing broke - found only %s" % sorted(kinds))
+
+    def test_mod_has_a_name_and_description(self):
+        self.assertEqual(self._missing(["hafp_name", "hafp_desc"]), [])
+
+    def test_every_setting_has_a_name_and_description(self):
+        wanted = []
+        for r in self.regs:
+            wanted += ["hafp__%s_name" % r["id"], "hafp__%s_desc" % r["id"]]
+        self.assertEqual(self._missing(wanted), [])
+
+    def test_every_tab_and_group_has_a_name(self):
+        wanted = []
+        for r in self.regs:
+            wanted += ["hafp__%s_name" % r["tab"], "hafp__%s__%s_name" % (r["tab"], r["group"])]
+        self.assertEqual(self._missing(wanted), [])
+
+    def test_every_button_has_label_text(self):
+        self.assertEqual(self._missing(["hafp__%s_text" % r["id"]
+                                        for r in self.regs if r["kind"] == "button"]), [])
+
+    def test_every_dropdown_option_has_a_name_and_a_valid_default(self):
+        for r in (r for r in self.regs if r["kind"] == "dropdown"):
+            count, default = int(r["options"]), int(r["default"])
+            self.assertTrue(1 <= default <= count, "%s default out of range" % r["id"])
+            self.assertEqual(self._missing(["hafp__%s_option_%d_name" % (r["id"], i)
+                                            for i in range(1, count + 1)]), [])
+
+    def test_every_action_log_key_is_localized(self):
+        used = re.findall(r"(?:action|arg1|arg2) = (hafp[A-Za-z0-9_]+)", self.reg)
+        self.assertTrue(used, "no Mod Action Log entries found")
+        self.assertEqual(self._missing(used), [])
+
+    def test_cascades_only_target_registered_settings(self):
+        """Parent toggles (continent, region, Select All) write into children."""
+        targets = set(re.findall(r"key = flag:hafp__(\w+) value", self.reg))
+        self.assertTrue(targets, "no cascades found")
+        self.assertEqual(sorted(targets - {r["id"] for r in self.regs}), [])
+
+
+class TestResearchEffects(unittest.TestCase):
+    """The instant-research buttons (hafp_research_effects.txt)."""
+
+    @classmethod
+    def setUpClass(cls):
+        if not os.path.isfile(RESEARCH):
+            raise unittest.SkipTest("research effects not generated")
+        cls.text = read_text(RESEARCH)
+        cls.ids = re.findall(r"research_advance = advance_type:([A-Za-z0-9_.]+)", cls.text)
+        cls.blocks = dict(re.findall(
+            r"\tif = \{\n\t\tlimit = \{\n\t\t\tNOT = \{ has_advance = ([A-Za-z0-9_.]+) \}(.*?)research_advance",
+            cls.text, re.S))
+        cls.gated, cls.units = set(), set()
+        for fname in os.listdir(SHIPPED_ADVANCES):
+            text = read_text(os.path.join(SHIPPED_ADVANCES, fname))
+            mask = ga.strip_positions(text)
+            for name, _k, o, c in ga.find_blocks(text, mask, 0, len(text)):
+                body = text[o:c]
+                if "has_variable = " + ga.MASTER_ENABLED in body:
+                    cls.gated.add(name)
+                    if ga.is_military_advance(fname, body):
+                        cls.units.add(name)
+
+    def test_each_advance_has_exactly_one_research_block(self):
+        dup = sorted(i for i, n in collections.Counter(self.ids).items() if n > 1)
+        self.assertEqual(dup, [], "advances with more than one research block")
+
+    def test_every_gated_advance_is_researchable(self):
+        self.assertEqual(sorted(self.gated - set(self.ids)), [])
+
+    def test_unique_unit_advances_need_the_opt_in_toggle(self):
+        """Requirement 7, research layer: the buttons never grant a unique unit -
+        the player's own included - unless Allow Unique Unit Advances is on.
+
+        The check must sit at the TOP of the limit. The block also embeds the
+        advance's gate, whose mod branch repeats the toggle, but that copy only
+        covers foreign units: the player's own unit advance passes the gate
+        through its vanilla branch and would still be researched."""
+        self.assertTrue(self.units, "no unit-granting advances found - parsing broke?")
+        top = re.compile(r"\s*has_variable = %s\n" % ga.ALLOW_UNIT_UNLOCKS)
+        lacking = sorted(u for u in self.units if not top.match(self.blocks.get(u, "")))
+        self.assertEqual(lacking, [])
+
+    def test_scope_checks_match_the_dropdown(self):
+        """Adding or reordering Research Scope options must be mirrored in the
+        effects; a mismatch silently changes what a button researches."""
+        block = re.search(r"setting_id = research_scope(.*?)\n\t\}", read_text(REGISTER), re.S)
+        count = int(_field(block.group(1), "option_count"))
+        used = set(int(v) for v in re.findall(r'research_scope\)" = (\d+)', self.text))
+        self.assertEqual(used, set(range(1, count + 1)))
+
+
+class TestUserRequirements(unittest.TestCase):
+    """Behaviours the user explicitly asked for (REQUIREMENTS.md), pinned to
+    real advances in the shipped output.
+
+    If a game patch renames or removes one of these advances, the test fails
+    with 'golden example ... is gone'. Pick another advance that shows the same
+    behaviour and update the entry here - the behaviour is what matters."""
+
+    def advance(self, fname, adv_id):
+        path = os.path.join(SHIPPED_ADVANCES, fname)
+        if os.path.isfile(path):
+            text = read_text(path)
+            mask = ga.strip_positions(text)
+            for name, _k, o, c in ga.find_blocks(text, mask, 0, len(text)):
+                if name == adv_id:
+                    return text[o:c]
+        self.fail("golden example %s in %s is gone - a game patch probably renamed or "
+                  "removed it; pick another advance with the same behaviour" % (adv_id, fname))
+
+    def assertGate(self, fname, adv_id, has=(), lacks=()):
+        """`has` needles must appear as whole tokens (hafp_g_tall must not be
+        satisfied by hafp_g_tallX); `lacks` needles must not appear at all."""
+        body = self.advance(fname, adv_id)
+        for needle in has:
+            self.assertRegex(body, re.escape(needle) + r"(?![A-Za-z0-9_])",
+                             "%s should contain %r" % (adv_id, needle))
+        for needle in lacks:
+            self.assertNotIn(needle, body, "%s should not contain %r" % (adv_id, needle))
+
+    def test_req1_nations_filed_by_continent_region_and_area(self):
+        self.assertGate("country_fra.txt", "french_tradition",
+                        has=("hafp_g_cont_europe", "hafp_g_reg_france_region",
+                             "hafp_g_area_ile_de_france_area"))
+
+    def test_req4_own_nation_keeps_its_vanilla_condition(self):
+        self.assertGate("country_fra.txt", "french_tradition", has=("has_or_had_tag = FRA",))
+
+    def test_req7_foreign_unique_units_are_opt_in(self):
+        self.assertGate("country_tur.txt", "a_revolutions_janissaries_advance",
+                        has=("has_variable = hafp_allow_unit_unlocks", "has_or_had_tag = TUR"))
+        self.assertGate("culture_arabian.txt", "a_bedouin_cavalry_advance",
+                        has=("has_variable = hafp_allow_unit_unlocks",))
+
+    def test_req7_military_buffs_are_not_treated_as_units(self):
+        self.assertGate("country_fra.txt", "elan", lacks=("hafp_allow_unit_unlocks",))
+
+    def test_req8_vassals_kept_alongside_samanta(self):
+        text = read_text(os.path.join(ROOT, "in_game", "common", "subject_types", "vassal.txt"))
+        self.assertIn("samanta_advance", text)
+        self.assertIn("culture_group:indian_group", text)
+
+    def test_req9_tall_examples(self):
+        for fname, adv in (("culture_netherlands.txt", "polders_advance"),   # tall building
+                           ("country_hab.txt", "geheimrat"),                # cabinet seats
+                           ("country_vij.txt", "vij_the_bunds")):           # tall building
+            self.assertGate(fname, adv, has=("hafp_g_tall",))
+        self.assertGate("country_fra.txt", "french_tradition", lacks=("hafp_g_tall",))
+
+    def test_government_key_is_folded_as_a_trigger(self):
+        self.assertGate("government_monarchy.txt", "noble_knights",
+                        has=("government_type = government_type:monarchy",),
+                        lacks=("\tgovernment = monarchy",))
+
+    def test_institution_requirements_are_untouched(self):
+        self.assertGate("0_age_of_traditions.txt", "meritocracy_advance",
+                        has=("has_embraced_institution = institution:meritocracy",),
+                        lacks=("hafp_",))
+
+    def test_negated_geography_is_not_read_as_membership(self):
+        """1.4: the Panama canal is gated NOT = { continent = continent:oceania }."""
+        self.assertGate("canal_advances.txt", "panama_canal_advance",
+                        lacks=("hafp_g_cont_oceania",))
+
+    def test_formable_conquest_territory_is_not_home_geography(self):
+        """The Roman Empire's formable spans Britain to Egypt; its Byzantine
+        advances belong in the Balkans and Anatolia."""
+        text = read_text(os.path.join(SHIPPED_ADVANCES, "D008_byzantine_unlocks.txt"))
+        self.assertIn("hafp_g_reg_balkan_region", text)
+        self.assertNotIn("hafp_g_cont_africa", text)
+
+    def test_pop_nations_are_placed_by_seed_location(self):
+        """1.4: Kel Ahaggar declares no capital and is seeded at Abalessa."""
+        self.assertGate("country_tle.txt", "ahg_hoggar_massif",
+                        has=("hafp_g_reg_maghreb_region",))
 
 
 if __name__ == "__main__":

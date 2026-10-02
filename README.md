@@ -81,6 +81,12 @@ python tools/test_generators.py    # unit + integration tests
 
 `verify_fidelity.py` checks that the mod loads exactly vanilla's advances (same files, same order, no duplicates, nothing resurrected that a patch removed) and that every overridden advance is token-identical to vanilla apart from its gate, whose original branch must be vanilla's own conditions.
 
+### Continuous integration
+
+`.github/workflows/tests.yml` runs `python tools/test_generators.py` on every push and pull request, on **Windows / Python 3.9** (the machine the generators run on) and **Linux / Python 3.14** (case-sensitive filesystem, newest Python). Results show on the repository's **Actions** tab and as a check on each commit and pull request.
+
+GitHub's machines do not have EU5, so the game-dependent checks skip there: `verify_fidelity.py`, override filenames matching vanilla, and the manual region overrides. Those stay a local step after every regeneration. Everything else runs - parser and classifier unit tests; integrity of the committed output (balanced braces, a 1:1 gate-variable/toggle mapping, untouched institution gates); menu localization coverage; the research-button rules; metadata and BOM hygiene; and the user requirements pinned to real advances (`TestUserRequirements` - if a game patch renames one of those advances, swap in another example of the same behaviour).
+
 `generate_exclusions.py` also reports any *new* "having advance X removes capability Y" site introduced by a patch, so it can be classified before release.
 
 Defaults assume a standard Steam install; pass the EU5 folder as `--game` / first argument otherwise.
