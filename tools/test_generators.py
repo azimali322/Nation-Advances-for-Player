@@ -740,5 +740,131 @@ class TestUserRequirements(unittest.TestCase):
                         has=("hafp_g_reg_maghreb_region",))
 
 
+def shipped_advances(fname):
+    """Advance id -> body for one shipped override file ({} if absent)."""
+    path = os.path.join(SHIPPED_ADVANCES, fname)
+    if not os.path.isfile(path):
+        return {}
+    text = read_text(path)
+    mask = ga.strip_positions(text)
+    return {name: text[o:c] for name, _k, o, c in ga.find_blocks(text, mask, 0, len(text))}
+
+
+def has_token(body, needle):
+    return re.search(re.escape(needle) + r"(?![A-Za-z0-9_])", body) is not None
+
+
+class TestUnlockAll(unittest.TestCase):
+    """The user plays with Unlock All Custom Advances switched on."""
+
+    def _gated(self):
+        for fname in os.listdir(SHIPPED_ADVANCES):
+            for adv_id, body in shipped_advances(fname).items():
+                if has_token(body, "has_variable = " + ga.MASTER_ENABLED):
+                    yield fname, adv_id, body
+
+    def test_unlock_all_reaches_every_custom_advance(self):
+        missing = [adv for _f, adv, body in self._gated()
+                   if not has_token(body, "has_variable = " + ga.UNLOCK_ALL)]
+        self.assertEqual(missing, [], "custom advances Unlock All cannot reach")
+
+    def test_unique_units_stay_opt_in_even_with_unlock_all(self):
+        """Requirement 7, unlock layer: Unlock All must not hand out foreign
+        unique units unless Allow Unique Unit Advances is also on."""
+        lacking = [adv for f, adv, body in self._gated()
+                   if ga.is_military_advance(f, body)
+                   and not has_token(body, "has_variable = " + ga.ALLOW_UNIT_UNLOCKS)]
+        self.assertEqual(lacking, [], "unit advances that Unlock All alone would grant")
+
+
+# Nations the user actually plays - tall, with Unlock All Custom Advances on.
+# To protect another nation, add an entry here (see MAINTAINING.md).
+PLAYER_PROFILES = {
+    "France": {"file": "country_fra.txt", "tag": "FRA",
+               "region": "france_region", "area": "ile_de_france_area",
+               "tall": ("estates_general", "the_philosophes"),
+               "own_units": ()},
+    "Khmer": {"file": "country_khm.txt", "tag": "KHM",
+              "region": "indochina_region", "area": "lower_mekong_area",
+              "tall": ("khm_foreign_production_skills", "khm_invest_in_irrigation"),
+              "own_units": ("khm_ballista_elephants",)},
+}
+
+
+class TestPlayerProfiles(unittest.TestCase):
+    """What must keep working for the nations in PLAYER_PROFILES.
+
+    A failure saying a nation or advance 'is gone' means a game patch renamed
+    or removed it - update the profile rather than the generators."""
+
+    def _advances(self, nation, profile):
+        advs = shipped_advances(profile["file"])
+        if not advs:
+            self.fail("%s: %s is gone - a game patch renamed or removed it; "
+                      "update PLAYER_PROFILES" % (nation, profile["file"]))
+        return advs
+
+    def _advance(self, nation, profile, adv_id):
+        body = self._advances(nation, profile).get(adv_id)
+        if body is None:
+            self.fail("%s: advance %s is gone - pick another example and update "
+                      "PLAYER_PROFILES" % (nation, adv_id))
+        return body
+
+    def test_own_advances_keep_their_vanilla_condition(self):
+        """Requirement 4: the nation always sees its own tree, mod on or off."""
+        for nation, p in PLAYER_PROFILES.items():
+            with self.subTest(nation=nation):
+                lost = [a for a, body in self._advances(nation, p).items()
+                        if not has_token(body, "has_or_had_tag = " + p["tag"])]
+                self.assertEqual(lost, [])
+
+    def test_own_advances_are_filed_under_home_region_and_area(self):
+        """Requirement 1: selecting the home region or area unlocks the tree."""
+        for nation, p in PLAYER_PROFILES.items():
+            with self.subTest(nation=nation):
+                for adv_id, body in self._advances(nation, p).items():
+                    for var in ("hafp_g_reg_" + p["region"], "hafp_g_area_" + p["area"]):
+                        self.assertTrue(has_token(body, "has_variable = " + var),
+                                        "%s/%s is not filed under %s" % (nation, adv_id, var))
+
+    def test_tall_advances_are_classified_tall(self):
+        """Requirement 9."""
+        for nation, p in PLAYER_PROFILES.items():
+            for adv_id in p["tall"]:
+                with self.subTest(nation=nation, advance=adv_id):
+                    self.assertTrue(has_token(self._advance(nation, p, adv_id),
+                                              "has_variable = hafp_g_tall"))
+
+    def test_own_unique_units_are_left_to_the_player(self):
+        """Requirement 7: the nation can still research its own unique units by
+        hand (vanilla branch kept), but no research button grants them unless
+        Allow Unique Unit Advances is on."""
+        research = read_text(RESEARCH)
+        for nation, p in PLAYER_PROFILES.items():
+            for adv_id in p["own_units"]:
+                with self.subTest(nation=nation, advance=adv_id):
+                    self.assertTrue(has_token(self._advance(nation, p, adv_id),
+                                              "has_or_had_tag = " + p["tag"]))
+                    m = re.search(r"NOT = \{ has_advance = %s \}\n\s*has_variable = %s\n"
+                                  % (re.escape(adv_id), ga.ALLOW_UNIT_UNLOCKS), research)
+                    self.assertIsNotNone(m, "%s's research block lacks the opt-in" % adv_id)
+
+
+class TestDevelopmentEnvironment(unittest.TestCase):
+    def test_local_python_matches_the_ci_pin(self):
+        """GitHub's Windows test job runs the Python named in .python-version, so
+        CI tests what you actually use. Upgrade Python locally and this fails,
+        telling you exactly what to change - nothing to remember."""
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            self.skipTest("only meaningful on the machine that runs the generators")
+        pin = read_text(os.path.join(ROOT, ".python-version")).strip()
+        local = "%d.%d" % sys.version_info[:2]
+        self.assertEqual(".".join(pin.split(".")[:2]), local,
+                         "You are running Python %s but .python-version pins %s. Change "
+                         ".python-version to %s, then commit and push - GitHub's Windows "
+                         "test job reads it. See MAINTAINING.md." % (local, pin, local))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

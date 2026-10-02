@@ -28,12 +28,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Mirrors the machine the generators actually run on.
-          - label: Windows / Python 3.9
+          # Mirrors the machine the generators actually run on. The Python
+          # version comes from .python-version - update that file when you
+          # change your local Python (the local test suite reminds you).
+          - label: Windows / your Python (.python-version)
             os: windows-latest
-            python: "3.9"
+            python-file: .python-version
           # Case-sensitive filesystem and the newest Python, to catch problems
-          # before they reach the local machine.
+          # before they reach the local machine. Bump now and then.
           - label: Linux / Python 3.14
             os: ubuntu-latest
             python: "3.14"
@@ -45,6 +47,7 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
+          python-version-file: ${{ matrix.python-file }}
 
       # The suite does not import every script when the game is absent, so a
       # syntax error in, say, generate_cmm.py would otherwise go unnoticed.
