@@ -47,8 +47,11 @@ GENERIC_FILES = {
     "new_world.txt", "readme.txt", "_advances_template.txt",
 }
 
-# Manual fallbacks: tag -> region id, applied when neither the 1337 setup nor
-# formable definitions place the tag. Verified against definitions at build time.
+# Curated tag -> region overrides, checked BEFORE the 1337 setup and the
+# formable definitions. Needed for tags that either nothing places, or that a
+# formable definition places far too broadly: a formable's `regions` list is the
+# territory required to FORM it, not where the nation sits, so the Roman Empire
+# would otherwise file its Byzantine advances under Britain, Iberia and Egypt.
 MANUAL_TAG_REGIONS = {
     "HIN": "hindustan_region",   # Hindustan (formable)
     "MLC": "indochina_region",   # Malacca (formable, Malay peninsula)
@@ -56,6 +59,9 @@ MANUAL_TAG_REGIONS = {
     "ASK": "japan_region",       # Ashikaga (formable)
     "MLK": "caucasus_region",    # appears in Armenian culture advances
     "MTP": "italy_region",       # appears in Tuscan culture advances
+    "ROM": "balkan_region",      # Roman Empire: formed from Byzantium,
+                                 # seat Constantinople (thrace_area). Its
+                                 # formable spans 12 regions / 3 continents.
 }
 
 SPECIAL_FILES = {
@@ -172,7 +178,8 @@ def load_capitals(game):
     are seeded from a location list instead, so fall back to the first location
     they are seeded from - that still places them on the map correctly."""
     path = setup_path(game, "10_countries.txt")
-    text = strip_comments(open(path, encoding="utf-8-sig").read())
+    with open(path, encoding="utf-8-sig") as fh:
+        text = strip_comments(fh.read())
     capitals = {}
     seeded = re.compile(
         r"(?:add_pops_from_locations|own_control_core)\s*=\s*\{\s*([a-z0-9_]+)")
@@ -354,6 +361,9 @@ def main():
     unmapped_tags = set()
 
     def tag_geo(tag):
+        if tag in MANUAL_TAG_REGIONS:
+            region = MANUAL_TAG_REGIONS[tag]
+            return [], [region], [region_info[region]]
         cap = capitals.get(tag)
         if cap and cap in loc_to_area:
             area = loc_to_area[cap]

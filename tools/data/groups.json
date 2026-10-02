@@ -2155,24 +2155,11 @@
      "age": "age_1_traditions",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -2182,24 +2169,11 @@
      "age": "age_2_renaissance",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -2209,24 +2183,11 @@
      "age": "age_3_discovery",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -2236,24 +2197,11 @@
      "age": "age_4_reformation",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -2263,24 +2211,11 @@
      "age": "age_5_absolutism",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -2290,24 +2225,11 @@
      "age": "age_6_revolutions",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4597,24 +4519,11 @@
      "age": "age_4_reformation",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4624,24 +4533,11 @@
      "age": "age_3_discovery",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4651,24 +4547,11 @@
      "age": "age_4_reformation",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4678,24 +4561,11 @@
      "age": "age_5_absolutism",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4705,24 +4575,11 @@
      "age": "age_3_discovery",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4732,24 +4589,11 @@
      "age": "age_1_traditions",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4759,24 +4603,11 @@
      "age": "age_5_absolutism",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4786,24 +4617,11 @@
      "age": "age_2_renaissance",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4813,24 +4631,11 @@
      "age": "age_2_renaissance",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4840,24 +4645,11 @@
      "age": "age_6_revolutions",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4867,24 +4659,11 @@
      "age": "age_1_traditions",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -4894,24 +4673,11 @@
      "age": "age_5_absolutism",
      "areas": [],
      "continents": [
-      "africa",
-      "asia",
       "europe"
      ],
      "institution": null,
      "regions": [
-      "anatolia_region",
-      "balkan_region",
-      "carpathia_region",
-      "caucasus_region",
-      "crescent_region",
-      "egypt_region",
-      "france_region",
-      "great_britain_region",
-      "iberia_region",
-      "italy_region",
-      "maghreb_region",
-      "south_german_region"
+      "balkan_region"
      ],
      "tags": [
       "ROM"
@@ -26254,17 +26020,14 @@
     "arm_highland_fortresses": {
      "age": "age_6_revolutions",
      "areas": [
-      "armenia_area",
-      "hawaii_area"
+      "armenia_area"
      ],
      "continents": [
-      "europe",
-      "oceania"
+      "europe"
      ],
      "institution": null,
      "regions": [
-      "caucasus_region",
-      "polynesia_region"
+      "caucasus_region"
      ],
      "tags": [
       "ARM",
