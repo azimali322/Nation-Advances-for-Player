@@ -1,5 +1,13 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 20 checks (vanilla fidelity on 1.4)
+
+Statically verified by `tools/verify_fidelity.py`: with no toggle set the mod loads exactly vanilla 1.4's **3,559** advances - same files, same order, no duplicates, none of the 17 advances 1.4 removed - and each of the **3,208** overridden advances is token-identical to vanilla apart from its gate, whose original branch is vanilla's own conditions. Static analysis cannot prove engine behavior, so:
+
+- [ ] **Government change mid-game.** On 71 advances (the five government trees plus 6 one-offs) the mod folds vanilla's top-level `government = X` key into the potential as `government_type = government_type:X`. Start as a monarchy, change to a republic (reform, event or console), and confirm the republic tree appears and monarchy-only advances behave as in vanilla. If anything differs, repeat with the mod disabled to compare.
+- [ ] New 1.4 advances with the mod enabled and nothing selected: Tlemcen, Castile, Morocco, Algiers, Tunis, the Catalan / Leonese / Galician culture trees and Judaism each show for their own nation, culture or religion exactly as with the mod off.
+- [ ] None of the 17 advances 1.4 removed appear anywhere (old Carthage / Saharan / Maghrebi trees, e.g. `cth_mercenary_army`, `saharan_trade`, `zenata_roots`). Three of their icon names are reused by new advances - that is vanilla's artwork, not a leftover.
+
 ## Round 19 checks (EU5 1.4 open-beta migration)
 
 Regenerated from 1.4 game files on branch `update/1.4-open-beta`. Scale: **209** override files / **2,844** gated advances (was 197 / 2,467); 318 toggles; 755 tall; 156 unit-granting.

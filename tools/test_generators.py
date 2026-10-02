@@ -345,11 +345,13 @@ class TestGeneratedOutput(unittest.TestCase):
                                 "hafp_cmm_register.txt")
         if not os.path.isfile(reg_path):
             self.skipTest("register file not generated")
-        reg = open(reg_path, encoding="utf-8-sig").read()
+        with open(reg_path, encoding="utf-8-sig") as fh:
+            reg = fh.read()
         aliases = set(re.findall(r"alias = (hafp_[a-z0-9_]+)", reg))
         gate_vars = set()
         for fname in os.listdir(self.ADV):
-            text = open(os.path.join(self.ADV, fname), encoding="utf-8-sig").read()
+            with open(os.path.join(self.ADV, fname), encoding="utf-8-sig") as fh:
+                text = fh.read()
             gate_vars.update(re.findall(r"has_variable = (hafp_[a-z0-9_]+)", text))
         self.assertEqual(gate_vars - aliases, set(), "gate variables with no CMM toggle")
         self.assertEqual(aliases - gate_vars, set(), "toggles that gate nothing")
@@ -357,7 +359,8 @@ class TestGeneratedOutput(unittest.TestCase):
     def test_institution_allow_gates_are_never_wrapped(self):
         from generate_advances import strip_positions, find_blocks
         for fname in os.listdir(self.ADV):
-            text = open(os.path.join(self.ADV, fname), encoding="utf-8-sig").read()
+            with open(os.path.join(self.ADV, fname), encoding="utf-8-sig") as fh:
+                text = fh.read()
             mask = strip_positions(text)
             for _n, _k, obrace, cbrace in find_blocks(text, mask, 0, len(text)):
                 body = text[obrace + 1:cbrace]
@@ -421,6 +424,67 @@ class TestGroupingSanity(unittest.TestCase):
         missing = [f for f, e in self.groups["files"].items()
                    if e["kind"] in ("culture", "culture_group") and not e.get("home_continent")]
         self.assertEqual(missing, [], "culture files with no home continent")
+
+
+class TestVanillaFidelity(unittest.TestCase):
+    """With no toggle set, the mod must reproduce vanilla exactly.
+
+    verify_fidelity.py compares every overridden advance token-by-token against
+    the installed game; these tests run it on the real output and prove it
+    actually fails when the output drifts from vanilla."""
+
+    @classmethod
+    def setUpClass(cls):
+        if not os.path.isdir(os.path.join(bg.GAME_DEFAULT, "game")):
+            raise unittest.SkipTest("game files not available")
+        import verify_fidelity
+        cls.vf = verify_fidelity
+
+    def _mutated(self, mutate):
+        import shutil
+        tmp = tempfile.mkdtemp()
+        try:
+            shutil.copytree(os.path.join(ROOT, "in_game"), os.path.join(tmp, "in_game"))
+            mutate(tmp)
+            self.vf.ROOT = tmp
+            problems, _ = self.vf.run(bg.GAME_DEFAULT)
+        finally:
+            self.vf.ROOT = ROOT
+            shutil.rmtree(tmp, ignore_errors=True)
+        return problems
+
+    def _edit(self, tmp, rel, old, new):
+        path = os.path.join(tmp, "in_game", "common", rel)
+        with open(path, encoding="utf-8-sig") as fh:
+            text = fh.read()
+        self.assertIn(old, text)
+        with open(path, "w", encoding="utf-8-sig") as fh:
+            fh.write(text.replace(old, new, 1))
+
+    def test_shipped_mod_matches_vanilla(self):
+        problems, stats = self.vf.run(bg.GAME_DEFAULT)
+        self.assertEqual(problems, [])
+        self.assertEqual(stats["vanilla advances"], stats["effective advances"])
+
+    def test_detects_changed_modifier(self):
+        self.assertTrue(self._mutated(lambda t: self._edit(
+            t, os.path.join("advances", "country_fra.txt"),
+            "diplomatic_capacity = 1", "diplomatic_capacity = 9")))
+
+    def test_detects_altered_vanilla_condition(self):
+        self.assertTrue(self._mutated(lambda t: self._edit(
+            t, os.path.join("advances", "country_fra.txt"),
+            "has_or_had_tag = FRA", "has_or_had_tag = ENG")))
+
+    def test_detects_stray_condition_in_mod_branch(self):
+        self.assertTrue(self._mutated(lambda t: self._edit(
+            t, os.path.join("advances", "country_fra.txt"),
+            "has_variable = hafp_all_advances_enabled",
+            "has_variable = hafp_all_advances_enabled always = yes")))
+
+    def test_detects_subject_type_drift(self):
+        self.assertTrue(self._mutated(lambda t: self._edit(
+            t, os.path.join("subject_types", "vassal.txt"), "level = 2", "level = 3")))
 
 
 if __name__ == "__main__":

@@ -88,7 +88,8 @@ def main():
     for fname in sorted(os.listdir(adv_dir)):
         if not fname.endswith(".txt") or fname in ("readme.txt", "_advances_template.txt"):
             continue
-        text = open(os.path.join(adv_dir, fname), encoding="utf-8-sig").read()
+        with open(os.path.join(adv_dir, fname), encoding="utf-8-sig") as fh:
+            text = fh.read()
         is_custom = fname in files
         for adv_id, body in split_advances(text):
             if adv_id in advs:
@@ -140,7 +141,8 @@ def main():
     for fname in os.listdir(mod_adv_dir):
         if not fname.endswith(".txt"):
             continue
-        text = open(os.path.join(mod_adv_dir, fname), encoding="utf-8-sig").read()
+        with open(os.path.join(mod_adv_dir, fname), encoding="utf-8-sig") as fh:
+            text = fh.read()
         mask = strip_positions(text)
         for name, kstart, obrace, cbrace in find_blocks(text, mask, 0, len(text)):
             if name not in advs or name in gates:

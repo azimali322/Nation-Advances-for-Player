@@ -416,7 +416,8 @@ def main():
     for fname in sorted(os.listdir(adv_dir)):
         if not fname.endswith(".txt") or fname in GENERIC_FILES:
             continue
-        text = open(os.path.join(adv_dir, fname), encoding="utf-8-sig").read()
+        with open(os.path.join(adv_dir, fname), encoding="utf-8-sig") as fh:
+            text = fh.read()
         entry = {"kind": None, "advances": {}}
 
         if fname.startswith("culture_group_"):

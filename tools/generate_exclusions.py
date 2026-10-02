@@ -76,7 +76,8 @@ def advance_potentials(game):
     for fname in sorted(os.listdir(adv_dir)):
         if not fname.endswith(".txt"):
             continue
-        text = open(os.path.join(adv_dir, fname), encoding="utf-8-sig").read()
+        with open(os.path.join(adv_dir, fname), encoding="utf-8-sig") as fh:
+            text = fh.read()
         mask = strip_positions(text)
         for name, kstart, obrace, cbrace in find_blocks(text, mask, 0, len(text)):
             if name in potentials:
@@ -142,7 +143,8 @@ def main():
         if not os.path.isfile(src):
             print("  MISSING in game files, skipped: %s" % relpath)
             continue
-        text = open(src, encoding="utf-8-sig").read()
+        with open(src, encoding="utf-8-sig") as fh:
+            text = fh.read()
         new_text, count = relax(text, advances, potentials)
         if count == 0:
             print("  no exclusion found (vanilla changed?): %s" % relpath)
@@ -169,7 +171,8 @@ def main():
             if relpath.startswith("advances" + os.sep):
                 continue
             try:
-                text = open(full, encoding="utf-8-sig").read()
+                with open(full, encoding="utf-8-sig") as fh:
+                    text = fh.read()
             except (OSError, UnicodeDecodeError):
                 continue
             for m in EXCLUSION_RE.finditer(text):
