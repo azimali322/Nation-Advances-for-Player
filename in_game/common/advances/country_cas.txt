@@ -547,6 +547,7 @@ cas_new_world = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_cont_europe
 					has_variable = hafp_g_reg_iberia_region
 					has_variable = hafp_g_area_castile_area

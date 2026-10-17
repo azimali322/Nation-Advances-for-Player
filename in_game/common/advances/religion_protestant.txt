@@ -11,6 +11,7 @@ protestant_invite_persecuted = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_4_reformation
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_protestant
 				}
 			}
@@ -139,6 +140,7 @@ expulsion_of_heretics = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_5_absolutism
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_protestant
 				}
 			}

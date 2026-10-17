@@ -759,6 +759,14 @@ class TestUserRequirements(unittest.TestCase):
                            ("country_ser.txt", "hum_the_ponor_storage_system")):  # food storage
             self.assertGate(fname, adv, has=("hafp_g_tall",))
 
+    def test_req9_colonization_migration_speed_life_expectancy(self):
+        for fname, adv in (("country_grl.txt", "grl_western_outpost"),        # colonial migration
+                           ("country_KON.txt", "kon_european_contact"),       # colonial range
+                           ("country_maj.txt", "maj_island_colonies"),        # colonial charter cost
+                           ("country_bra.txt", "edict_of_potsdam"),           # migration speed
+                           ("country_bos.txt", "bos_bosnian_ljekaruse")):     # life expectancy
+            self.assertGate(fname, adv, has=("hafp_g_tall",))
+
     def test_req9_false_positives_are_not_tall(self):
         self.assertGate("country_son.txt", "sharia", lacks=("hafp_g_tall",))      # penalty only
         self.assertGate("0_age_of_traditions.txt", "state_administration_advance",
@@ -929,11 +937,23 @@ class TestTallRules141(unittest.TestCase):
                      "global_monthly_development = -0.1"):
             self.assertFalse(ga.is_tall_advance(body), body)
 
+    def test_colonization_migration_speed_and_life_expectancy_are_tall(self):
+        """Requested for 1.4.1."""
+        for body in ("colonial_migration_size_modifier = 0.25",   # Monthly Colonial Migration
+                     "colonial_migration_size = 1",
+                     "colonial_range_modifier = 0.2",
+                     "colonial_maintenance_efficiency = 0.2",
+                     "create_colonial_charter_cost_modifier = -0.1",
+                     "can_colonize = yes",
+                     "global_migration_speed_modifier = 0.1",     # Pop Migration Speed
+                     "global_life_expectancy = 3"):               # Character Life Expectancy
+            self.assertTrue(ga.is_tall_advance(body), body)
+
     def test_deliberately_excluded(self):
-        for body in ("rural_migration_attraction = 0.1",          # countryside, not towns
-                     "global_migration_speed_modifier = 0.1",     # speed, not attraction
-                     "colonial_migration_size_modifier = 0.1",
-                     "global_life_expectancy = 3"):               # characters, not pops
+        for body in ("rural_migration_attraction = 0.1",          # countryside, not towns - agreed
+                     "exploration_mission_speed = 0.1",           # exploration, not colonization
+                     "aid_colonial_war_cost_modifier = -0.1",     # war, not colonization
+                     "join_colonial_federation_cost_modifier = -0.1"):
             self.assertFalse(ga.is_tall_advance(body), body)
 
     def test_is_bonus_polarity(self):
@@ -1073,6 +1093,81 @@ class TestTownRights(unittest.TestCase):
             used.update(re.findall(r"has_variable = (hafp_[a-z0-9_]+)",
                                    read_text(os.path.join(folder, fname))))
         self.assertEqual(used, {ga.MASTER_ENABLED, ga.UNLOCK_ALL, "hafp_g_tall"})
+
+
+class TestCoreTenets(unittest.TestCase):
+    """The promises the mod makes whatever else changes - all runnable without
+    the game, so GitHub checks them on every push.
+
+    1. Installing it changes nothing until the player opts in: every toggle is
+       off by default and every unlock path needs the Enabled master switch.
+    2. The player's own nation keeps its vanilla tree (TestPlayerProfiles and
+       test_req4 below), and institution gates are never bypassed
+       (test_institution_allow_gates_are_never_wrapped).
+    3. Unique units, future ages and DLC content each need an explicit choice:
+       units the Allow Unique Unit Advances toggle (TestResearchEffects,
+       TestUnlockAll), future ages a research scope that says so (below), and
+       DLC ownership (TestDlcOwnership)."""
+
+    def setUp(self):
+        if not os.path.isfile(REGISTER):
+            self.skipTest("register file not generated")
+        self.reg = read_text(REGISTER)
+
+    def test_every_toggle_defaults_to_off(self):
+        bools = re.findall(r"cmm_register_bool_setting = \{(.*?)\n\t\}", self.reg, re.S)
+        self.assertGreater(len(bools), 300, "toggle parsing broke")
+        on = [_field(b, "setting_id") for b in bools if _field(b, "default_value") != "0"]
+        self.assertEqual(on, [], "toggles that would change the game on first load")
+
+    def test_research_scope_defaults_to_no_future_ages(self):
+        block = re.search(r"setting_id = research_scope(.*?)\n\t\}", self.reg, re.S).group(1)
+        default = _field(block, "default_index")
+        self.assertEqual(default, "2")
+        names = set(re.findall(r'^ hafp__research_scope_option_%s_name: "(.*)"' % default,
+                               read_text(LOCALIZATION), re.M))
+        self.assertEqual(names, {"All, No Future Ages"})
+
+    def test_every_unlock_path_needs_the_master_switch(self):
+        """Each rewritten gate is OR { AND {unlock branch} AND {vanilla} }; the
+        unlock branch must open with has_variable = hafp_enabled."""
+        checked = 0
+        for sub in ("advances", "town_rights"):
+            folder = os.path.join(ROOT, "in_game", "common", sub)
+            if not os.path.isdir(folder):
+                continue
+            for fname in os.listdir(folder):
+                text = read_text(os.path.join(folder, fname))
+                mask = ga.strip_positions(text)
+                for name, _k, o, c in ga.find_blocks(text, mask, 0, len(text)):
+                    _kept, or_block = potential_parts(text[o:c + 1])
+                    if "hafp_" not in or_block:
+                        continue
+                    checked += 1
+                    first = re.search(r"OR = \{\s*AND = \{\s*(\S+ = \S+)", or_block)
+                    self.assertIsNotNone(first, "%s/%s: unexpected gate shape" % (fname, name))
+                    self.assertEqual(first.group(1), "has_variable = " + ga.MASTER_ENABLED,
+                                     "%s/%s: unlock branch skips the master switch" % (fname, name))
+        self.assertGreater(checked, 2800, "gate parsing broke")
+
+    def test_research_only_reaches_future_ages_under_all_advances(self):
+        """Scopes 2-4 state their age limit explicitly in every block of an
+        age's research effect; only scope 1 (All Advances) may skip ahead."""
+        text = read_text(RESEARCH)
+        effects = re.findall(r"^hafp_research_(age_\d_[a-z]+)_(?:generic|custom) = \{\n(.*?)\n\}",
+                             text, re.M | re.S)
+        self.assertEqual(len(effects), 12, "expected generic + custom effects for six ages")
+        blocks = 0
+        for age, body in effects:
+            # prefix a newline so the effect's first block is split off too
+            for block in re.split(r"\n\tif = \{", "\n" + body)[1:]:
+                blocks += 1
+                adv = re.search(r"has_advance = (\S+) \}", block).group(1)
+                self.assertGreaterEqual(block.count("current_age_or_later = { age = %s }" % age), 2,
+                                        "%s: a scope can research it before %s" % (adv, age))
+                self.assertIn("current_age = %s" % age, block,
+                              "%s: Current Age Institutions is not limited to %s" % (adv, age))
+        self.assertGreater(blocks, 3000)
 
 
 class TestDevelopmentEnvironment(unittest.TestCase):

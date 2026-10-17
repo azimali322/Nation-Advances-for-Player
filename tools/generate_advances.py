@@ -81,6 +81,18 @@ TALL_KEYS = {
     "expand_rgo_gathering_cost_modifier",
     # pop promotion
     "global_pop_promotion_speed_modifier",
+    # colonization and colonial migration (requested 1.4.1) - listed one by one
+    # because a blanket "colonial" rule would also sweep in colonial-war costs,
+    # colonial-federation politics and AI policy biases
+    "colonial_migration_size",            # "Monthly Colonial Migration"
+    "colonial_migration_size_modifier",
+    "colonial_range",
+    "colonial_range_modifier",
+    "colonial_maintenance_efficiency",
+    "create_colonial_charter_cost_modifier",
+    "can_colonize",
+    "can_create_colonial_charters",
+    "can_invite_settlers",
     # cabinet seats - the game calls this modifier "Cabinet Seats", so it does
     # not contain "cabinet" and is not caught by TALL_KEY_SUBSTRINGS
     "government_size",
@@ -89,11 +101,14 @@ TALL_KEYS = {
 # equilibrium (the game's "target satisfaction")
 TALL_KEY_SUFFIXES = ("_output_modifier", "_target_satisfaction")
 # whole families: population capacity (flat and %), food storage (capacity and
-# decay, flat and %), the cabinet (members, efficiency, actions), government
+# decay, flat and %), pop migration speed and character life expectancy
+# (requested 1.4.1), the cabinet (members, efficiency, actions), government
 # reforms (unlocks and slots), crown power, estate satisfaction recovery,
-# literacy (max and monthly gain, overall and per pop type), research (cost and
-# speed), and prosperity
+# literacy (max and monthly gain, overall and per pop type), research speed,
+# and prosperity. Rural migration attraction stays out on purpose: it pulls
+# pops to the countryside, away from towns and cities.
 TALL_KEY_SUBSTRINGS = ("population_capacity", "food_capacity", "food_decay",
+                       "migration_speed", "life_expectancy",
                        "cabinet", "government_reform", "crown",
                        "satisfaction_recovery", "literacy", "research",
                        "prosperity")

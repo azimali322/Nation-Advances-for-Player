@@ -1,5 +1,11 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 22 checks (Tall: colonization, migration speed, life expectancy)
+
+- [ ] With only *Tall Empire Advances* on: Greenland's *Western Outpost* and Castile's *New World* (colonial migration), Kongo's *European Contact* (colonial range), Brandenburg's *Edict of Potsdam* (migration speed) and Bosnia's *Ljekaruše* (life expectancy) are researchable.
+- [ ] Advances whose only bonus is **rural** migration attraction are still **not** unlocked by Tall alone.
+- [ ] Core tenets spot-check on a fresh save: with *Enabled* off nothing changes; the Research Scope dropdown shows *All, No Future Ages*; no button grants a unique unit while *Allow Unique Unit Advances* is off.
+
 ## Round 21 checks (1.4.1, Tall extension, DLC, town rights)
 
 - [ ] **Load on 1.4.1** and check `error.log` for anything mentioning `hafp`, `advances`, `town_rights` or `subject_types`.

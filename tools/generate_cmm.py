@@ -322,7 +322,9 @@ def main():
                "Tall Empire Advances",
                "Unlock every custom advance in the world that grows and "
                "governs what you already own - development, population growth "
-               "and capacity, migration to your towns and cities, prosperity, "
+               "and capacity, migration to your towns and cities and migration "
+               "speed, colonization and colonial migration, character life "
+               "expectancy, prosperity, "
                "food production, storage and purchase efficiency, reduced pop "
                "food consumption, farmland and RGO expansion, raw material "
                "and goods output, pop promotion speed, literacy and research, "

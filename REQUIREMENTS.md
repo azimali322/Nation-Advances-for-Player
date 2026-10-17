@@ -4,6 +4,20 @@ Living document. Update this file as new requirements are added.
 
 **Premise:** a handicap/cheat mod to help players. The player can select all or some of the custom (unique) advances they would like to play with, alongside the advances of the nation they are already playing. Instead of only giving *all* advances to the player (which it can also do), the player can custom-select the specific custom advances they want from a certain continent, region, or area — covering all the custom nations in that continent/region/area. The base "all advances" behavior stays available as a single toggle.
 
+## Core tenets
+
+These must hold through every feature and game patch. Each is enforced by tests that run on every push (`tools/test_generators.py`, on GitHub too) or locally against the game (`tools/verify_fidelity.py`).
+
+| Tenet | Enforced by |
+| --- | --- |
+| **Invisible until opted in.** Every toggle defaults to off and every unlock needs the *Enabled* master switch; with nothing set, the game is vanilla - same advances, files and order, each identical apart from its gate. | `TestCoreTenets`; `verify_fidelity.py` |
+| **Your own nation is never changed.** Its advances keep their vanilla conditions and stay researchable by hand. | `TestPlayerProfiles`, `test_req4_*`; `verify_fidelity.py` |
+| **Institutions are never bypassed.** `allow` gates (e.g. Meritocracy) are untouched; only the research buttons' *All Advances* scope may force past them. | `test_institution_allow_gates_are_never_wrapped` |
+| **Unique units are opt-in.** Foreign unit advances stay locked, and no research button grants any unique unit (your own included), until *Allow Unique Unit Advances* is on. | `TestResearchEffects`, `TestUnlockAll`, `test_req7_*` |
+| **No future ages by default.** Research stays within reached ages unless the *All Advances* scope is chosen; the default scope is *All, No Future Ages*. | `TestCoreTenets` |
+| **DLC needs the DLC.** DLC content only ever unlocks for owners. | `TestDlcOwnership` |
+| **Base capabilities are kept.** Unlocking an advance never takes something away (vassals alongside samanta). | `test_req8_*`; `verify_fidelity.py` |
+
 ---
 
 ## 1. Selectable custom advances by continent / region / area
@@ -74,12 +88,15 @@ A second tab called **Settings** containing:
 ## 9. Tall category (Misc tab)
 
 - A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
-- **799 advances and 12 town rights as of 1.4.1.** An advance counts when it carries at least one of the bonuses below, or unlocks a tall building. Counts are advances carrying each bonus (one advance can carry several).
+- **824 advances and 12 town rights as of 1.4.1.** An advance counts when it carries at least one of the bonuses below, or unlocks a tall building. Counts are advances carrying each bonus (one advance can carry several).
 
   | Category | Modifiers | Advances |
   | --- | --- | ---: |
   | Population growth & capacity | `global_population_growth`; anything containing `population_capacity` | 5 |
   | Migration | `global_migration_attraction`; `non_rural_migration_attraction` = *"Towns and Cities Migration Attraction"* (1.4.1) | 36 |
+  | Migration speed | anything containing `migration_speed` (*"Pop Migration Speed"*) | 10 |
+  | Colonization & colonial migration | `colonial_migration_size` (*"Monthly Colonial Migration"*), `colonial_range`, `colonial_maintenance_efficiency`, `create_colonial_charter_cost_modifier`, `can_colonize`, `can_create_colonial_charters`, `can_invite_settlers` (flat and modifier forms) | 15 |
+  | Character life expectancy | anything containing `life_expectancy` | 6 |
   | Development | `global_monthly_development` | 29 |
   | Prosperity | anything containing `prosperity` | 41 |
   | Food production | `global_monthly_food_modifier`, `food_purchase_efficiency` | 44 |
@@ -98,7 +115,7 @@ A second tab called **Settings** containing:
 
 - **Bonuses only:** a modifier counts only when it helps - named values unless they are penalties, numbers above zero, or below zero for decay, consumption and cost modifiers. (Songhai's *Sharia* was in Tall only for a dhimmi satisfaction *penalty*.)
 - **Not modifiers:** `research_cost` sets the price of the advance it sits in (2.0 = twice as expensive), so it does not count; *State Administration* and *Trade Caravans* were wrongly in Tall because of it until 1.4.1.
-- **Deliberately excluded:** `rural_migration_attraction` (pulls pops to the countryside, not towns), `global_migration_speed_modifier` (speed, not attraction), `colonial_migration_size_modifier`, `global_life_expectancy` (characters, not pops), construction speed, tax income, legislative efficiency.
+- **Deliberately excluded:** `rural_migration_attraction` (pulls pops to the countryside, not towns - agreed with the user), exploration modifiers, colonial-war and colonial-federation costs, AI policy biases, construction speed, tax income, legislative efficiency. Colonization is listed key by key rather than by a blanket `colonial` rule so those stay out.
 - **Granaries:** no advance unlocks or modifies granary buildings (they are base buildings); food storage bonuses are covered above, e.g. Poland's *Granary of Europe* and Hum's *Ponor Storage System*.
 - **Falaj** (Oman) is an event-only building with no advance behind it, so no toggle can unlock it.
 - **Town rights** (see item 10): Unlock All and Tall also unlock the 12 nation/culture-locked town rights with tall bonuses - Byzantium's *Imperial Breadbasket* (population growth, food storage, prosperity, lower food consumption), *Scholai Literacy*, *Constantinopolitan Silk Monopoly* and *Municipia Privilegia*; Castile/León's *Fuero Juzgo* and *Fuero Real*; Aragon's *Furs de València*; the British *Borough* and *Manorial Customals*; *Magdeburg* and *Nuremberg* rights; and *Ville Franche*.
@@ -145,3 +162,4 @@ A second tab called **Settings** containing:
 - **2026-10-02 (1.4 fidelity audit)** - 1.4 added 398 advances and removed 17 (a Maghreb and Iberia rework: Tlemcen +135, Castile +37, Morocco +26, Algiers +24, Catalan and Leonese +24 each, Tunis +21, Judaism +16; the old Carthage, Saharan and Maghrebi advances removed). Verified the regenerated mod loads exactly vanilla's 3,559 advances with every overridden advance token-identical apart from its gate. Added `tools/verify_fidelity.py` and fidelity tests, including mutation tests proving the check fails when the output drifts.
 - **2026-10-02 (CI)** - added the GitHub Actions workflow and grew the suite from 45 to 71 tests: metadata and BOM hygiene, a pinned mod id, menu localization coverage (settings, tabs, groups, buttons, dropdown options, action-log keys, cascades), the research-button rules (one block per advance, every gated advance researchable, the unit opt-in at the top of each unit advance's limit, scope values matching the dropdown), and user requirements pinned to real advances. Every new test was mutation-tested; doing so exposed that the unit opt-in check accepted the embedded gate's copy of the toggle, which does not cover the player's own units - now tightened.
 - **2026-10-17 (1.4.1)** - regenerated from 1.4.1 (build 25905365): about 26 advances rebalanced, 2 added (`silk_production_guild_advance`, `unlock_barbary_fusta`), vanilla `vassal.txt` changed - until regenerated the mod would have reverted those balance changes. Tall extended to 799 advances and 12 town rights (item 9): towns & cities migration, farmland and RGO expansion, RGO size, food storage `%`, population capacity in any form, and a building rule that catches advances unlocking capacity/food/migration buildings (Aqueduct System). Bonus-only polarity and the `research_cost` exclusion removed three false positives. DLC ownership enforced for the 12 DLC advances (item 10). Nation-locked town rights with tall bonuses now unlock (item 10).
+- **2026-10-17 (Tall: colonization, migration speed, life expectancy)** - confirmed still on 1.4.1 build 25905365 (no new patch; shipped output matched vanilla). Tall 799 -> 824: colonization and colonial migration, pop migration speed, character life expectancy; rural migration attraction kept out. Added a Core tenets section and `TestCoreTenets` (toggles default off, master switch on every unlock path, default scope, no future ages); mutation-testing the new age-limit test exposed that it skipped the first block of every research effect - fixed.
