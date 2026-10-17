@@ -41,6 +41,7 @@ SKIP = ("readme.txt", "_advances_template.txt")
 EXPECTED_COLLISION_DIRS = (
     os.path.join("in_game", "common", "advances"),
     os.path.join("in_game", "common", "subject_types"),
+    os.path.join("in_game", "common", "town_rights"),
 )
 
 
@@ -76,18 +77,35 @@ def split_gate(body):
 
 
 def branches(potential_inner):
-    """Expect OR = { AND = {mod} AND = {orig} }; return (mod, orig) or None."""
+    """Expect [statements kept for everyone] OR = { AND = {mod} AND = {orig} }.
+
+    Returns (mod, orig, kept) or None, where `kept` is the potential's text
+    outside the OR block - the DLC checks (and, for town rights, the
+    progression requirements) that must apply to both branches."""
     mask = ga.strip_positions(potential_inner)
     top = list(ga.find_blocks(potential_inner, mask, 0, len(potential_inner)))
-    if len(top) != 1 or top[0][0] != "OR":
+    ors = [b for b in top if b[0] == "OR"]
+    if len(ors) != 1:
         return None
-    or_inner = potential_inner[top[0][2] + 1:top[0][3]]
+    _n, kstart, obrace, cbrace = ors[0]
+    kept = potential_inner[:kstart] + potential_inner[cbrace + 1:]
+    or_inner = potential_inner[obrace + 1:cbrace]
     omask = ga.strip_positions(or_inner)
     parts = list(ga.find_blocks(or_inner, omask, 0, len(or_inner)))
     if len(parts) != 2 or parts[0][0] != "AND" or parts[1][0] != "AND":
         return None
     get = lambda b: or_inner[b[2] + 1:b[3]]
-    return get(parts[0]), get(parts[1])
+    return get(parts[0]), get(parts[1]), kept
+
+
+def mod_branch_problem(mod_branch):
+    """The unlock branch may only test hafp_ variables, led by the master switch."""
+    mt = toks(mod_branch)
+    allowed = {"has_variable", "=", "{", "}", "OR"}
+    stray = [t for t in mt if t not in allowed and not t.startswith("hafp_")]
+    if stray or mt[:3] != ["has_variable", "=", ga.MASTER_ENABLED]:
+        return "mod branch has unexpected content %s" % stray[:4]
+    return None
 
 
 def check_advance(fname, adv_id, van_body, mod_body):
@@ -118,18 +136,23 @@ def check_advance(fname, adv_id, van_body, mod_body):
     if split is None:
         problems.append("%s/%s: potential is not OR { AND{mod} AND{orig} }" % (fname, adv_id))
         return problems
-    mod_branch, orig_branch = split
+    mod_branch, orig_branch, kept = split
 
-    mt = toks(mod_branch)
-    allowed = {"has_variable", "=", "{", "}", "OR"}
-    stray = [t for t in mt if t not in allowed and not t.startswith("hafp_")]
-    if stray or mt[:3] != ["has_variable", "=", ga.MASTER_ENABLED]:
-        problems.append("%s/%s: mod branch has unexpected content %s" % (fname, adv_id, stray[:4]))
+    issue = mod_branch_problem(mod_branch)
+    if issue:
+        problems.append("%s/%s: %s" % (fname, adv_id, issue))
+
+    # Vanilla's top-level DLC checks must sit OUTSIDE the OR, so the unlock
+    # branch cannot hand DLC advances to players who do not own the DLC.
+    dlc_lines, v_rest_inner = ga.split_dlc_checks(v_inner or "")
+    if toks(kept) != toks("\n".join(dlc_lines)):
+        problems.append("%s/%s: DLC checks not kept outside the unlock branch (expected %s)"
+                        % (fname, adv_id, dlc_lines or "none"))
 
     expected = []
     for g in v_govs:
         expected += ["government_type", "=", "government_type:%s" % g]
-    expected += toks(v_inner or "")
+    expected += toks(v_rest_inner)
     if toks(orig_branch) != expected:
         problems.append("%s/%s: vanilla conditions not preserved in the original branch"
                         % (fname, adv_id))
@@ -212,6 +235,65 @@ def check_subject_types(game):
     return problems
 
 
+def potential_of(body):
+    """-> (potential inner or None, body with the potential removed)."""
+    mask = ga.strip_positions(body)
+    pots = [(k, o, c) for name, k, o, c in ga.find_blocks(body, mask, 0, len(body))
+            if name == "potential"]
+    if not pots:
+        return None, body
+    k, o, c = pots[0]
+    return body[o + 1:c], body[:k] + body[c + 1:]
+
+
+def statement_tokens(text):
+    return [toks(text[s:e]) for s, e in ga.top_level_statements(text)]
+
+
+def check_town_rights(game):
+    """Each shipped town right must equal vanilla outside its potential. A
+    rewritten potential must keep every vanilla condition: progression and DLC
+    checks outside the OR, who-you-are checks in the original branch."""
+    problems = []
+    mod_dir = os.path.join(ROOT, "in_game", "common", "town_rights")
+    van_dir = os.path.join(game, "game", "in_game", "common", "town_rights")
+    if not os.path.isdir(mod_dir):
+        return problems
+    for fname in sorted(os.listdir(mod_dir)):
+        van_path = os.path.join(van_dir, fname)
+        if not os.path.isfile(van_path):
+            problems.append("town_rights/%s: no vanilla counterpart" % fname)
+            continue
+        van, mod = advances_of(read(van_path)), advances_of(read(os.path.join(mod_dir, fname)))
+        if [n for n, _ in van] != [n for n, _ in mod]:
+            problems.append("town_rights/%s: town right ids/order differ from vanilla" % fname)
+            continue
+        for (name, vb), (_m, mb) in zip(van, mod):
+            v_pot, v_rest = potential_of(vb)
+            m_pot, m_rest = potential_of(mb)
+            where = "town_rights/%s/%s" % (fname, name)
+            if toks(v_rest) != toks(m_rest):
+                problems.append("%s: content outside the potential differs from vanilla" % where)
+            if v_pot is None or toks(v_pot) == toks(m_pot or ""):
+                continue                                   # untouched
+            split = branches(m_pot or "")
+            if split is None:
+                problems.append("%s: potential is not [kept] OR { AND{mod} AND{orig} }" % where)
+                continue
+            mod_branch, orig_branch, kept = split
+            issue = mod_branch_problem(mod_branch)
+            if issue:
+                problems.append("%s: %s" % (where, issue))
+            keep, identity = ga.split_town_right_potential(v_pot)
+            if statement_tokens(kept) != [toks(s) for s in keep]:
+                problems.append("%s: DLC/progression checks not kept for everyone" % where)
+            if statement_tokens(orig_branch) != [toks(s) for s in identity]:
+                problems.append("%s: who-you-are conditions not preserved" % where)
+            if not identity:
+                problems.append("%s: rewritten although vanilla has no who-you-are gate" % where)
+    return problems
+
+
 def check_collisions(game):
     problems = []
     for top in ("in_game", "main_menu"):
@@ -228,6 +310,7 @@ def check_collisions(game):
 def run(game):
     problems, stats = check_advances(game)
     problems += check_subject_types(game)
+    problems += check_town_rights(game)
     problems += check_collisions(game)
     return problems, stats
 

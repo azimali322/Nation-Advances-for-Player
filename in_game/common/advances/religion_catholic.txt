@@ -369,7 +369,8 @@ frequent_councils = {
 		}
 	}
 	
-	cardinal_price_cost_modifier = -0.05
+	cardinal_price_cost_modifier = -0.1
+	propose_curia_action_cost_modifier = -0.1
 
 	requires = regulate_court_procedures
 }
@@ -385,7 +386,6 @@ mendicant_orders = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
-					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_religion_catholic
 				}
 			}
@@ -395,7 +395,8 @@ mendicant_orders = {
 		}
 	}
 	
-	global_monthly_prosperity = 0.001
+	global_pop_conversion_speed_modifier = 0.1
+	invite_religious_order_price_cost_modifier = -0.05
 
 	requires = diplomatic_training
 }
@@ -446,7 +447,7 @@ confutatio_augustana = {
 		}
 	}
 	
-	monthly_rebel_growth = -0.0005
+	national_lutheranism_movement_resistance_modifier = 0.1
 
 	requires = gov_reform_reformation_a
 }
@@ -746,8 +747,8 @@ divine_church_music = {
 		}
 	}
 	
-	hire_artist_cost_modifier = -0.025
-	
+	num_possible_artists = 1
+
 	requires = artists_advance_revolutions
 }
 

@@ -23,7 +23,7 @@ a message telling you to do it whenever your Python and the pin disagree.
    python tools/generate_cmm.py
    ```
 
-2. Read the generators' output for warnings: `UNMAPPED TAGS`,
+2. Read the generators' output. `generate_advances.py` also prints which town rights it unlocked - check the list still makes sense. Watch for warnings: `UNMAPPED TAGS`,
    `FILE WITH NO GEOGRAPHY`, `CULTURE FILE WITHOUT HOME`, `UNCLASSIFIED`
    exclusion sites.
 3. Verify - both must pass:

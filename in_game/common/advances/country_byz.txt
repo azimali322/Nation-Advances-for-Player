@@ -120,6 +120,7 @@ byz_bureaucracy_advance = {
 	icon = library_advance
 
 	potential = {
+		has_dlc = "d008_fate_of_the_phoenix"
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
@@ -133,7 +134,6 @@ byz_bureaucracy_advance = {
 			}
 			AND = {
 				has_or_had_tag = BYZ
-				has_dlc = "d008_fate_of_the_phoenix"
 			}
 		}
 	}

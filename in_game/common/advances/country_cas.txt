@@ -95,7 +95,7 @@ cas_camino_de_santiago = {
 
 crd_city_of_the_caliphs = {
 	age = age_1_traditions
-	icon = city_building_advance
+	icon = crd_city_of_the_caliphs
 
 	potential = {
 		OR = {
@@ -359,7 +359,7 @@ crd_silver_filigree = {
 
 jae_olive_presses = {
 	age = age_2_renaissance
-	icon = trade_caravans
+	icon = jae_olive_presses
 
 	potential = {
 		OR = {
@@ -388,7 +388,7 @@ jae_olive_presses = {
 
 muc_silk_looms = {
 	age = age_2_renaissance
-	icon = guilds
+	icon = muc_silk_looms
 
 	potential = {
 		OR = {
@@ -655,7 +655,7 @@ muc_consulado_de_la_seda = {
 
 sev_casa_de_contratacion = {
 	age = age_3_discovery
-	icon = global_trade_routes_advance
+	icon = sev_casa_de_contratacion
 
 	potential = {
 		OR = {
@@ -684,7 +684,7 @@ sev_casa_de_contratacion = {
 
 tol_toledan_steel = {
 	age = age_3_discovery
-	icon = guilds
+	icon = tol_toledan_steel
 
 	potential = {
 		OR = {

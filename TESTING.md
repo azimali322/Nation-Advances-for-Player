@@ -1,5 +1,14 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 21 checks (1.4.1, Tall extension, DLC, town rights)
+
+- [ ] **Load on 1.4.1** and check `error.log` for anything mentioning `hafp`, `advances`, `town_rights` or `subject_types`.
+- [ ] **Tall, new items.** With only *Tall Empire Advances* on (Enabled on): Italy's *Attractive Migration*, Algiers' *Zibane Palmery*, Hungary's *Curtailed Peasantry*, Vidin's *Mining Grants* and the *Aqueduct System* advance are researchable.
+- [ ] **Tall, removed false positives:** Songhai's *Sharia* and *State Administration* are no longer unlocked by Tall alone.
+- [ ] **Town rights.** As France (or any non-Byzantine nation) with Tall on, open a town's rights: *Imperial Breadbasket*, *Scholai Literacy* and *Constantinopolitan Silk Monopoly* can be granted. *Municipia Privilegia* appears **only if you own Fate of the Phoenix**, and still needs its Latin-language condition. *Ville Franche*, *Magdeburg* and *Nuremberg* rights still need their burghers estate privilege first.
+- [ ] With Tall **and** Unlock All off, none of those town rights appear for a nation that does not qualify in vanilla.
+- [ ] **DLC ownership** (only testable if you *lack* a DLC): without Fate of the Phoenix, *Unlock All* must not show the Hellenic DLC advances (e.g. *Epic Poetry*). Without Across the Pillars, Aragon's *Catalan Crossbowmen* stays hidden.
+
 ## Round 20 checks (vanilla fidelity on 1.4)
 
 Statically verified by `tools/verify_fidelity.py`: with no toggle set the mod loads exactly vanilla 1.4's **3,559** advances - same files, same order, no duplicates, none of the 17 advances 1.4 removed - and each of the **3,208** overridden advances is token-identical to vanilla apart from its gate, whose original branch is vanilla's own conditions. Static analysis cannot prove engine behavior, so:

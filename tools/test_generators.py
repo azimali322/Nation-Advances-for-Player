@@ -358,10 +358,14 @@ class TestGeneratedOutput(unittest.TestCase):
             reg = fh.read()
         aliases = set(re.findall(r"alias = (hafp_[a-z0-9_]+)", reg))
         gate_vars = set()
-        for fname in os.listdir(self.ADV):
-            with open(os.path.join(self.ADV, fname), encoding="utf-8-sig") as fh:
-                text = fh.read()
-            gate_vars.update(re.findall(r"has_variable = (hafp_[a-z0-9_]+)", text))
+        towns = os.path.join(ROOT, "in_game", "common", "town_rights")
+        for folder in (self.ADV, towns):
+            if not os.path.isdir(folder):
+                continue
+            for fname in os.listdir(folder):
+                with open(os.path.join(folder, fname), encoding="utf-8-sig") as fh:
+                    text = fh.read()
+                gate_vars.update(re.findall(r"has_variable = (hafp_[a-z0-9_]+)", text))
         self.assertEqual(gate_vars - aliases, set(), "gate variables with no CMM toggle")
         self.assertEqual(aliases - gate_vars, set(), "toggles that gate nothing")
 
@@ -490,6 +494,18 @@ class TestVanillaFidelity(unittest.TestCase):
             t, os.path.join("advances", "country_fra.txt"),
             "has_variable = hafp_all_advances_enabled",
             "has_variable = hafp_all_advances_enabled always = yes")))
+
+    def test_detects_dlc_check_left_out_of_the_unlock_branch(self):
+        """The pre-1.4.1 bug: has_dlc only in the vanilla branch, so Unlock All
+        granted DLC advances to players without the DLC."""
+        self.assertTrue(self._mutated(lambda t: self._edit(
+            t, os.path.join("advances", "religion_hellenism.txt"),
+            '\t\thas_dlc = "d008_fate_of_the_phoenix"\n\t\tOR = {', "\t\tOR = {")))
+
+    def test_detects_dropped_town_right_requirement(self):
+        self.assertTrue(self._mutated(lambda t: self._edit(
+            t, os.path.join("town_rights", "10_country_specific.txt"),
+            "\t\tmodifier:allow_ville_franche_town_rights = yes\n", "")))
 
     def test_detects_subject_type_drift(self):
         self.assertTrue(self._mutated(lambda t: self._edit(
@@ -734,6 +750,41 @@ class TestUserRequirements(unittest.TestCase):
         self.assertIn("hafp_g_reg_balkan_region", text)
         self.assertNotIn("hafp_g_cont_africa", text)
 
+    def test_req9_141_additions(self):
+        for fname, adv in (("0_age_of_traditions.txt", "aqueduct_system"),     # tall building
+                           ("country_ITA.txt", "ita_attractive_migration"),    # towns & cities migration
+                           ("country_alg.txt", "zab_zibane_palmery"),          # farmland expansion
+                           ("country_HUN.txt", "hun_curtailed_peasantry"),     # max RGO size
+                           ("country_pol.txt", "granary_of_europe"),           # food production
+                           ("country_ser.txt", "hum_the_ponor_storage_system")):  # food storage
+            self.assertGate(fname, adv, has=("hafp_g_tall",))
+
+    def test_req9_false_positives_are_not_tall(self):
+        self.assertGate("country_son.txt", "sharia", lacks=("hafp_g_tall",))      # penalty only
+        self.assertGate("0_age_of_traditions.txt", "state_administration_advance",
+                        lacks=("hafp_g_tall",))                                    # research_cost
+
+    def test_req9_roman_town_rights_unlocked_by_tall(self):
+        path = os.path.join(ROOT, "in_game", "common", "town_rights", "byzantine_greek_roman.txt")
+        if not os.path.isfile(path):
+            self.fail("byzantine_greek_roman.txt town rights are gone - a patch renamed them")
+        text = read_text(path)
+        mask = ga.strip_positions(text)
+        rights = {n: text[o:c + 1] for n, _k, o, c in ga.find_blocks(text, mask, 0, len(text))}
+        for name in ("imperial_breadbasket_rights", "scholai_literacy_rights",
+                     "constantinopolitan_silk_monopoly_rights", "municipia_privilegia"):
+            self.assertIn(name, rights, "town right %s is gone" % name)
+            kept, or_block = potential_parts(rights[name])
+            self.assertTrue(has_token(or_block, "has_variable = hafp_g_tall"), name)
+        kept, or_block = potential_parts(rights["municipia_privilegia"])
+        self.assertIn("has_dlc", kept, "Municipia must still require Fate of the Phoenix")
+
+    def test_dlc_advances_require_the_dlc(self):
+        kept, or_block = potential_parts(self.advance("religion_hellenism.txt",
+                                                     "epic_poetry_advance"))
+        self.assertIn('has_dlc = "d008_fate_of_the_phoenix"', kept)
+        self.assertNotIn("has_dlc", or_block)
+
     def test_pop_nations_are_placed_by_seed_location(self):
         """1.4: Kel Ahaggar declares no capital and is seeded at Abalessa."""
         self.assertGate("country_tle.txt", "ahg_hoggar_massif",
@@ -849,6 +900,179 @@ class TestPlayerProfiles(unittest.TestCase):
                     m = re.search(r"NOT = \{ has_advance = %s \}\n\s*has_variable = %s\n"
                                   % (re.escape(adv_id), ga.ALLOW_UNIT_UNLOCKS), research)
                     self.assertIsNotNone(m, "%s's research block lacks the opt-in" % adv_id)
+
+
+class TestTallRules141(unittest.TestCase):
+    """Tall additions for 1.4.1: towns & cities migration, food production and
+    storage, RGO capacity, tall buildings - and the false positives removed."""
+
+    def test_new_families_are_tall(self):
+        for body in ("non_rural_migration_attraction = 0.1",      # towns & cities migration
+                     "expand_rgo_farming_cost_modifier = -0.1",   # cheaper farmland
+                     "global_max_rgo_size_modifier = 0.1",
+                     "expand_rgo_mining_cost_modifier = -0.1",
+                     "expand_rgo_gathering_cost_modifier = -0.1",
+                     "global_food_capacity_modifier = 0.1",       # food storage %
+                     "global_food_decay = -0.005",                # food storage
+                     "global_population_capacity_modifier = 0.1"):
+            self.assertTrue(ga.is_tall_advance(body), body)
+
+    def test_research_cost_is_not_a_research_bonus(self):
+        """research_cost prices the advance it sits in (2.0 = twice as dear)."""
+        self.assertFalse(ga.is_tall_advance("research_cost = 2.0"))
+        self.assertTrue(ga.is_tall_advance("research_speed_modifier = 0.1"))
+
+    def test_penalties_do_not_count(self):
+        for body in ("dhimmi_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty",
+                     "global_food_decay = 0.01",                  # more spoilage
+                     "expand_rgo_farming_cost_modifier = 0.1",    # dearer farmland
+                     "global_monthly_development = -0.1"):
+            self.assertFalse(ga.is_tall_advance(body), body)
+
+    def test_deliberately_excluded(self):
+        for body in ("rural_migration_attraction = 0.1",          # countryside, not towns
+                     "global_migration_speed_modifier = 0.1",     # speed, not attraction
+                     "colonial_migration_size_modifier = 0.1",
+                     "global_life_expectancy = 3"):               # characters, not pops
+            self.assertFalse(ga.is_tall_advance(body), body)
+
+    def test_is_bonus_polarity(self):
+        self.assertTrue(ga.is_bonus("global_monthly_food_modifier", "monthly_food_productivity_severe_bonus"))
+        self.assertFalse(ga.is_bonus("nobles_estate_target_satisfaction", "small_privilege_target_satisfaction_penalty"))
+        self.assertTrue(ga.is_bonus("global_pop_food_consumption", "-0.05"))
+        self.assertFalse(ga.is_bonus("global_pop_food_consumption", "0.05"))
+        self.assertTrue(ga.is_bonus("allow_female_cabinet", "yes"))
+
+    def test_unlocking_a_tall_building_makes_an_advance_tall(self):
+        body = "potential = { has_or_had_tag = X }\n\tunlock_building = aqueduct_system\n"
+        self.assertTrue(ga.is_tall_advance(body, {"aqueduct_system"}))
+        self.assertFalse(ga.is_tall_advance(body, set()))
+        self.assertFalse(ga.is_tall_advance("# unlock_building = aqueduct_system", {"aqueduct_system"}))
+
+    def test_building_rule_reads_building_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d = os.path.join(tmp, "game", "in_game", "common", "building_types")
+            os.makedirs(d)
+            with open(os.path.join(d, "test.txt"), "w", encoding="utf-8") as fh:
+                fh.write("granary = {\n\tmodifier = { local_food_capacity = 100 }\n}\n"
+                         "barracks = {\n\tmodifier = { local_manpower = 1 }\n}\n"
+                         "housing = {\n\tmodifier = { local_population_capacity = 0.5 }\n}\n")
+            saved = set(ga._tall_buildings)
+            try:
+                found = ga.load_tall_buildings(tmp)
+            finally:
+                ga._tall_buildings.clear()
+                ga._tall_buildings.update(saved)
+        self.assertEqual(found, {"granary", "housing"})
+
+
+def potential_parts(text):
+    """-> (text outside the OR, OR block text) of the first potential block
+    found at any depth in `text` (an advance, a town right, or a fragment)."""
+    mask = ga.strip_positions(text)
+    for m in re.finditer(r"\bpotential\s*=\s*\{", text):
+        if mask[m.start()]:
+            continue                                   # inside a comment
+        o = m.end() - 1
+        inner = text[o + 1:ga.match_brace(text, mask, o)]
+        imask = ga.strip_positions(inner)
+        for iname, ik, _io, ic in ga.find_blocks(inner, imask, 0, len(inner)):
+            if iname == "OR":
+                return inner[:ik] + inner[ic + 1:], inner[ik:ic + 1]
+        return inner, ""
+    return "", ""
+
+
+class TestDlcOwnership(unittest.TestCase):
+    """DLC content lives in the base files behind has_dlc checks. The mod must
+    never unlock it for players who do not own the DLC."""
+
+    def test_wrap_gate_keeps_dlc_check_outside_the_unlock_branch(self):
+        body = ('\n\tpotential = {\n\t\thas_dlc = "d008_fate_of_the_phoenix"\n'
+                '\t\treligion = religion:hellenism_religion\n\t}\n')
+        out, changed = ga.process_advance("x", body, [ga.UNLOCK_ALL])
+        self.assertTrue(changed)
+        kept, or_block = potential_parts("x = {" + out + "}")
+        self.assertIn("has_dlc", kept)
+        self.assertNotIn("has_dlc", or_block)
+        self.assertIn("religion = religion:hellenism_religion", or_block)
+        self.assertTrue(braces_balanced("x = {" + out + "}"))
+
+    def test_every_shipped_dlc_gate_applies_to_both_branches(self):
+        checked = 0
+        for sub in ("advances", "town_rights"):
+            folder = os.path.join(ROOT, "in_game", "common", sub)
+            if not os.path.isdir(folder):
+                continue
+            for fname in os.listdir(folder):
+                text = read_text(os.path.join(folder, fname))
+                mask = ga.strip_positions(text)
+                for name, _k, o, c in ga.find_blocks(text, mask, 0, len(text)):
+                    body = text[o:c + 1]
+                    kept, or_block = potential_parts(body)
+                    if "has_dlc" in kept + or_block:
+                        checked += 1
+                        self.assertNotIn("has_dlc", or_block,
+                                         "%s/%s unlocks DLC content without the DLC" % (fname, name))
+        self.assertGreater(checked, 0, "no DLC-gated content found - parsing broke?")
+
+
+class TestTownRights(unittest.TestCase):
+    """Nation/culture-locked town rights with tall bonuses, unlocked by Tall."""
+
+    def tr(self, potential, modifiers="local_monthly_food_modifier = 0.1"):
+        return ("\n\tlocation_modifier = {\n\t\t%s\n\t}\n\tpotential = {\n\t\t%s\n\t}\n"
+                "\tallow = { }\n" % (modifiers, potential))
+
+    def test_statement_splitter_understands_question_equals(self):
+        text = "capital ?= { region = region:x }\nmodifier:allow_y = yes\nvalue >= 0.5"
+        got = [text[s:e] for s, e in ga.top_level_statements(text)]
+        self.assertEqual(got, ["capital ?= { region = region:x }", "modifier:allow_y = yes",
+                               "value >= 0.5"])
+
+    def test_identity_gate_is_unlocked(self):
+        out, changed = ga.process_town_right(self.tr("OR = { has_or_had_tag = BYZ has_or_had_tag = ROM }"))
+        self.assertTrue(changed)
+        kept, or_block = potential_parts("x = {" + out + "}")
+        self.assertIn("hafp_g_tall", or_block)
+        self.assertIn("has_or_had_tag = BYZ", or_block)
+        self.assertNotIn("hafp_g_reg_", out, "town rights only respond to Tall and Unlock All")
+
+    def test_progression_gate_is_left_alone(self):
+        body = self.tr("has_reform = government_reform:agrarian_community")
+        self.assertEqual(ga.process_town_right(body), (body, False))
+
+    def test_mixed_gate_keeps_the_progression_part_for_everyone(self):
+        out, changed = ga.process_town_right(self.tr(
+            "culture = { has_culture_group = culture_group:french_group }\n"
+            "\t\tmodifier:allow_ville_franche_town_rights = yes"))
+        self.assertTrue(changed)
+        kept, or_block = potential_parts("x = {" + out + "}")
+        self.assertIn("modifier:allow_ville_franche_town_rights = yes", kept)
+        self.assertIn("french_group", or_block)
+
+    def test_dlc_gate_is_kept_for_everyone(self):
+        out, _ = ga.process_town_right(self.tr('has_dlc = "d008_fate_of_the_phoenix"\n'
+                                               "\t\thas_or_had_tag = BYZ"))
+        kept, or_block = potential_parts("x = {" + out + "}")
+        self.assertIn("has_dlc", kept)
+        self.assertNotIn("has_dlc", or_block)
+
+    def test_non_tall_and_penalty_only_rights_are_left_alone(self):
+        for mods in ("local_nobles_estate_power = -0.5",
+                     "nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty"):
+            body = self.tr("has_or_had_tag = BOH", mods)
+            self.assertEqual(ga.process_town_right(body), (body, False), mods)
+
+    def test_shipped_town_rights_only_respond_to_tall_and_unlock_all(self):
+        folder = os.path.join(ROOT, "in_game", "common", "town_rights")
+        if not os.path.isdir(folder):
+            self.skipTest("no town rights shipped")
+        used = set()
+        for fname in os.listdir(folder):
+            used.update(re.findall(r"has_variable = (hafp_[a-z0-9_]+)",
+                                   read_text(os.path.join(folder, fname))))
+        self.assertEqual(used, {ga.MASTER_ENABLED, ga.UNLOCK_ALL, "hafp_g_tall"})
 
 
 class TestDevelopmentEnvironment(unittest.TestCase):

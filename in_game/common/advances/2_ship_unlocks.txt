@@ -536,6 +536,33 @@ unlock_long_fada_2 = {
 	unlock_unit = n_long_fada_2
 }
 
+unlock_barbary_fusta = {
+	age = age_1_traditions
+
+	potential = {
+		OR = {
+			AND = {
+				has_variable = hafp_enabled
+				has_variable = hafp_allow_unit_unlocks
+				OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_1_traditions
+				}
+			}
+			AND = {
+				culture = {
+				has_culture_group = culture_group:maghrebi_group
+				}
+			}
+		}
+	}
+	requires = ship_building_advance
+	allow_children = no
+
+	unlock_levy = levy_barbary_fusta
+
+}
+
 
 ######################
 # Transports

@@ -12,7 +12,7 @@ All controls live in the **Community Mod Menu** (CMM) under *Handicap Advances f
 
 - **Continent tabs (Europe / Asia / Africa / America):** an *All of &lt;continent&gt;* toggle on top, then one group per region with an *All of &lt;region&gt;* toggle followed by individual **area** toggles. Area labels name the custom nations based there (e.g. *Bosnia - Bosnia, Hum, Travunija*). Selecting any group unlocks every custom advance of the nations in it; overlapping selections are harmless (an advance unlocks if *any* of its groups is on).
 - **Cultures tab:** one toggle per culture and culture-group advance tree, grouped by the continent where the culture's pops live in 1337.
-- **Misc tab:** one toggle per religion tree, per government tree, the special trees (Colonial Nations, Cossacks Estate), plus a **Playstyle** group with **Tall Empire Advances** — unlocks every custom advance worldwide that boosts development, population, prosperity, the food economy, raw material/goods output, pop promotion speed, the cabinet, government reforms, crown power, or estate satisfaction equilibrium.
+- **Misc tab:** one toggle per religion tree, per government tree, the special trees (Colonial Nations, Cossacks Estate), plus a **Playstyle** group with **Tall Empire Advances** — unlocks every custom advance worldwide that grows or governs what you own (population, migration to towns and cities, development, prosperity, food production and storage, farmland and RGOs, goods output, literacy, research, the cabinet, reforms, crown power, estate satisfaction), advances unlocking tall buildings, and nation-locked town rights with tall bonuses such as Byzantium's Imperial Breadbasket. The full list is item 9 of [REQUIREMENTS.md](REQUIREMENTS.md).
 - **Settings tab:**
   - **Enabled** - master switch, off by default. While off the mod is invisible: every nation sees exactly its base-game advances. Turning it on applies your selections; your own nation's advances are never affected.
   - **Unlock All Custom Advances** - one toggle that mimics the original "All Advances Unlocked" mod (equivalent to selecting every continent/region/area, culture, religion, and government).
@@ -20,6 +20,8 @@ All controls live in the **Community Mod Menu** (CMM) under *Handicap Advances f
   - **Unlock by Era** - per-age toggles that make every gated advance of that age researchable.
   - **Research Scope** - what the buttons below may research: *All Advances* (ignores ages and institutions), *All, No Future Ages* (ignores institutions, keeps era progression), *Embraced Institutions*, or *Current Age Institutions*.
   - **Research buttons** - instantly research: all custom advances, all advances (including default trees), the current era, or all previous eras.
+
+**DLC content** (e.g. Fate of the Phoenix's Hellenic advances) is included, but only ever unlocks for players who own that DLC.
 
 Every toggle and button has hover-over tooltip text; the advances themselves keep their normal vanilla tooltips in the advances screen.
 
@@ -58,6 +60,7 @@ Where each advance belongs is computed by [tools/build_groups.py](tools/build_gr
 | --- | --- |
 | `in_game/common/advances/*` | `tools/generate_advances.py` |
 | `in_game/common/subject_types/*` | `tools/generate_exclusions.py` |
+| `in_game/common/town_rights/*` | `tools/generate_advances.py` |
 | `in_game/common/scripted_effects/hafp_cmm_register.txt` | `tools/generate_cmm.py` |
 | `in_game/common/scripted_effects/hafp_research_effects.txt` | `tools/generate_cmm.py` |
 | `in_game/common/on_action/hafp_on_actions.txt` | `tools/generate_cmm.py` |

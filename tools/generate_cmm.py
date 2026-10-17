@@ -29,6 +29,7 @@ import json
 import os
 import re
 import sys
+import time
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -321,15 +322,18 @@ def main():
                "Tall Empire Advances",
                "Unlock every custom advance in the world that grows and "
                "governs what you already own - development, population growth "
-               "and capacity, prosperity, food production, food purchase "
-               "efficiency, reduced pop food consumption, raw material and "
-               "goods output including masonry, pop promotion speed, "
-               "literacy and research, the cabinet (seats, members, "
-               "efficiency, actions), government reforms and reform slots, "
-               "crown power, estate satisfaction equilibrium and recovery, "
-               "and the tall building unlocks (Bunds, Calmecac, Incamisana, "
-               "Polders, Terraces) - no matter which continents, cultures or "
-               "religions you have selected.")
+               "and capacity, migration to your towns and cities, prosperity, "
+               "food production, storage and purchase efficiency, reduced pop "
+               "food consumption, farmland and RGO expansion, raw material "
+               "and goods output, pop promotion speed, literacy and research, "
+               "the cabinet (seats, members, efficiency, actions), government "
+               "reforms, crown power, and estate satisfaction - plus advances "
+               "unlocking buildings that raise population capacity, food or "
+               "migration (Aqueducts, Bunds, Polders, Terraces, ...), and "
+               "nation-locked town rights with tall bonuses such as "
+               "Byzantium's Imperial Breadbasket. Works whatever continents, "
+               "cultures or religions you have selected. DLC content still "
+               "requires owning the DLC.")
 
     # --- settings tab ---------------------------------------------------
     tab = "settings"
@@ -349,8 +353,10 @@ def main():
                "Unlock All Custom Advances",
                "Unlock every nation, culture, religion, and government advance "
                "in the game for research - the same as selecting every "
-               "continent, region, and area. Overrides the individual toggles "
-               "in the other tabs (they stay as you set them).")
+               "continent, region, and area - along with the nation-locked "
+               "town rights that Tall covers. Overrides the individual toggles "
+               "in the other tabs (they stay as you set them). DLC content "
+               "still requires owning the DLC.")
     add_toggle("allow_unit_unlocks", tab, "master", "hafp_allow_unit_unlocks",
                "Allow Unique Unit Advances",
                "Off by default, so army and navy choices stay yours: other "
@@ -703,8 +709,18 @@ hafp_on_callback = {
     def write(relpath, content):
         path = os.path.join(ROOT, relpath)
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w", encoding="utf-8", newline="\n") as fh:
-            fh.write(content)
+        # Antivirus scanners briefly lock large files (the research effects are
+        # ~3.7 MB) right after they are written; Windows then refuses to reopen
+        # them ("Invalid argument"). Retry for a few seconds before giving up.
+        for attempt in range(5):
+            try:
+                with open(path, "w", encoding="utf-8", newline="\n") as fh:
+                    fh.write(content)
+                break
+            except OSError:
+                if attempt == 4:
+                    raise
+                time.sleep(1.5)
         print("wrote %s (%d lines)" % (relpath, content.count("\n")))
 
     write("in_game/common/scripted_effects/hafp_cmm_register.txt", "\n".join(reg) + "\n")

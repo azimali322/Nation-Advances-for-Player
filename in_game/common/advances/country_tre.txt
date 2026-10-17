@@ -58,6 +58,7 @@ tre_komnenos_legacy = {
 tre_empire_in_exile = {
 	age = age_1_traditions
 	potential = {
+		has_dlc = "d008_fate_of_the_phoenix"
 		OR = {
 			AND = {
 				has_variable = hafp_enabled
@@ -70,7 +71,6 @@ tre_empire_in_exile = {
 				}
 			}
 			AND = {
-				has_dlc = "d008_fate_of_the_phoenix"
 				has_or_had_tag = TRE
 				NOT = { has_or_had_tag = BYZ } # you want 5 bureaucracy slots are you kidding me
 			}

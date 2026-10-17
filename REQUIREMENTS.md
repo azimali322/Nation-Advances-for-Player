@@ -74,24 +74,40 @@ A second tab called **Settings** containing:
 ## 9. Tall category (Misc tab)
 
 - A **Playstyle** group in the Misc tab with a single **Tall Empire Advances** toggle that unlocks every custom advance in the world carrying a "tall" bonus, independently of the geography/culture/religion selections.
-- Qualifying modifiers (755 advances as of 1.4):
-  - development — `global_monthly_development`
-  - population — `global_population_growth`, `global_population_capacity_modifier`
-  - prosperity — `global_monthly_prosperity`
-  - food economy — `global_monthly_food_modifier`, `global_food_capacity`, `global_food_decay`, `food_purchase_efficiency`, `food_consumption_modifier`, `global_pop_food_consumption`, `global_clergy_food_consumption`
-  - raw materials / production — `global_raw_material_output`, `global_production_efficiency`, and every per-good `*_output_modifier`
-  - pop promotion — `global_pop_promotion_speed_modifier`
-  - cabinet seats (added 2026-07-19) — `government_size`. The game localizes this modifier as **"Cabinet Seats"**, so it contains neither "cabinet" nor "seat" and must be listed explicitly. Six custom advances grant seats: `colonial_assembly`, `geheimrat` (HAB), `zta_the_code_of_the_black_mountain` (SER), `grand_coordinators` (CHI), `cro_the_royal_council_of_croatia`, `ath_the_athenian_bureaucracy_advance`.
-  - cabinet (added 2026-07-19) — any key containing `cabinet`: `country_cabinet_efficiency`, `set_cabinet_member_cost_modifier`, `replace_cabinet_member_cost_modifier`, `head_of_cabinet_promotion_cost_modifier`, `allow_female_cabinet`, `estate_power_from_cabinet`, `unlock_cabinet_action`
-  - government reforms (added 2026-07-19) — any key containing `government_reform`: `unlock_government_reform`, `government_reform_slots`
-  - crown power (added 2026-07-19) — any key containing `crown`: `global_crown_estate_power`
-  - estate satisfaction equilibrium (added 2026-07-19) — any `*_target_satisfaction` key (the game's "target satisfaction" is the equilibrium value)
-  - estate satisfaction recovery (added 2026-07-19) — any key containing `satisfaction_recovery` (global and per-estate)
-  - literacy (added 2026-07-19) — any key containing `literacy`: `global_max_literacy`, the per-pop `global_<pop>_max_literacy` family, and `global_monthly_literacy` (gain rate)
-  - research (added 2026-07-19) — any key containing `research`: `research_cost`, `research_speed_modifier`
-  - masonry — already covered by the per-good `*_output_modifier` rule (`global_masonry_output_modifier`)
-  - tall building unlocks (added 2026-07-19) — advances whose `unlock_building` is one of `bund`, `calmecac`, `incamisana`, `polders`, `terraces`, even if the advance carries no tall modifier itself. **Oman's Falaj is not included**: `oma_falaj` is an event-only building granted by an event chain, with no advance unlocking it.
-- The per-good `*_output_modifier` family is included on the reading that "raw material productivity and bonuses" covers goods output; trim the list in `tools/generate_advances.py` (`TALL_KEYS` / `TALL_KEY_SUFFIXES`) if it should be narrower.
+- **799 advances and 12 town rights as of 1.4.1.** An advance counts when it carries at least one of the bonuses below, or unlocks a tall building. Counts are advances carrying each bonus (one advance can carry several).
+
+  | Category | Modifiers | Advances |
+  | --- | --- | ---: |
+  | Population growth & capacity | `global_population_growth`; anything containing `population_capacity` | 5 |
+  | Migration | `global_migration_attraction`; `non_rural_migration_attraction` = *"Towns and Cities Migration Attraction"* (1.4.1) | 36 |
+  | Development | `global_monthly_development` | 29 |
+  | Prosperity | anything containing `prosperity` | 41 |
+  | Food production | `global_monthly_food_modifier`, `food_purchase_efficiency` | 44 |
+  | Food storage | anything containing `food_capacity` or `food_decay` (incl. the `%` variants) | 3 |
+  | Pop food consumption | `food_consumption_modifier`, `global_pop_food_consumption`, `global_clergy_food_consumption` | 11 |
+  | Farmland & RGOs | `expand_rgo_farming/mining/gathering_cost_modifier`, `global_max_rgo_size_modifier` | 46 |
+  | Raw material & goods output | `global_raw_material_output`, `global_production_efficiency`, every per-good `*_output_modifier` (incl. masonry) | 265 |
+  | Pop promotion | `global_pop_promotion_speed_modifier` | 15 |
+  | Literacy | anything containing `literacy` (max and monthly gain, overall and per pop type) | 122 |
+  | Research | `research_speed_modifier` | 44 |
+  | Cabinet | anything containing `cabinet`; `government_size` (the game's *"Cabinet Seats"*) | 76 |
+  | Government reforms | anything containing `government_reform` (unlocks, slots) | 27 |
+  | Crown power | anything containing `crown` | 34 |
+  | Estate satisfaction | `*_target_satisfaction` (equilibrium), anything containing `satisfaction_recovery` | 157 |
+  | Tall buildings | unlocks a building that raises population capacity, food production or storage, migration, development or prosperity (derived from the game's building files), or one of the requested `bund`, `calmecac`, `incamisana`, `polders`, `terraces` | 6 |
+
+- **Bonuses only:** a modifier counts only when it helps - named values unless they are penalties, numbers above zero, or below zero for decay, consumption and cost modifiers. (Songhai's *Sharia* was in Tall only for a dhimmi satisfaction *penalty*.)
+- **Not modifiers:** `research_cost` sets the price of the advance it sits in (2.0 = twice as expensive), so it does not count; *State Administration* and *Trade Caravans* were wrongly in Tall because of it until 1.4.1.
+- **Deliberately excluded:** `rural_migration_attraction` (pulls pops to the countryside, not towns), `global_migration_speed_modifier` (speed, not attraction), `colonial_migration_size_modifier`, `global_life_expectancy` (characters, not pops), construction speed, tax income, legislative efficiency.
+- **Granaries:** no advance unlocks or modifies granary buildings (they are base buildings); food storage bonuses are covered above, e.g. Poland's *Granary of Europe* and Hum's *Ponor Storage System*.
+- **Falaj** (Oman) is an event-only building with no advance behind it, so no toggle can unlock it.
+- **Town rights** (see item 10): Unlock All and Tall also unlock the 12 nation/culture-locked town rights with tall bonuses - Byzantium's *Imperial Breadbasket* (population growth, food storage, prosperity, lower food consumption), *Scholai Literacy*, *Constantinopolitan Silk Monopoly* and *Municipia Privilegia*; Castile/León's *Fuero Juzgo* and *Fuero Real*; Aragon's *Furs de València*; the British *Borough* and *Manorial Customals*; *Magdeburg* and *Nuremberg* rights; and *Ville Franche*.
+- Edit the lists in `tools/generate_advances.py` (`TALL_KEYS`, `TALL_KEY_SUFFIXES`, `TALL_KEY_SUBSTRINGS`, `TALL_BUILDINGS`, `TALL_EXCLUDED_KEYS`) to change what counts.
+
+## 10. DLC content and town rights
+
+- **DLC ownership is always required.** EU5's DLC content lives in the base files behind `has_dlc` checks (11 Fate of the Phoenix advances, 1 Across the Pillars advance, 1 town right). The mod keeps those checks outside its unlock branch, so DLC content unlocks only for players who own the DLC. Before 1.4.1 the check sat inside the vanilla branch only, so Unlock All granted these advances to non-owners - fixed, and guarded by tests.
+- **Town rights** locked to a nation, culture or region are unlocked by Unlock All and Tall when they carry a tall bonus. Only the *who-you-are* part of a town right's gate is relaxed: DLC checks and progression requirements (an estate privilege's `modifier:allow_*`, government reforms, policies, HRE status) stay required for everyone, and `allow` blocks are untouched. Town rights gated only by progression are left alone, as are those with no tall bonus or only penalties (Bohemian Royal Cities).
 
 ## Non-functional / setup requirements
 
@@ -128,3 +144,4 @@ A second tab called **Settings** containing:
 - **2026-10-02 (1.4 open beta)** — ported to EU5 1.4 on branch `update/1.4-open-beta`; `main` stays on 1.3. Game changes handled: start-setup data moved from `setup/start/` to per-start-date folders (`1337`, `1658`) — the mod keeps mapping geography from **1337**; most country advance files were renamed to lowercase (`country_FRA.txt` → `country_fra.txt`, 20 staying uppercase), so the generator now purges any override whose filename no longer matches a vanilla file case-sensitively and asserts the result before finishing; pop-type nations (Tuareg confederations, Guanche) that declare no capital are placed by their seed location; formables listing bare `locations` (Tuareg) now resolve; and negated references — `NOT = { continent = continent:oceania }` on the Panama canal — no longer file an advance under the one continent that cannot have it (this had produced a phantom Oceania tab). New 1.4 modifier `global_migration_attraction` added to Tall as population growth. Scale: 209 override files, 2,844 gated advances, 318 toggles, 755 tall, 156 unit-granting.
 - **2026-10-02 (1.4 fidelity audit)** - 1.4 added 398 advances and removed 17 (a Maghreb and Iberia rework: Tlemcen +135, Castile +37, Morocco +26, Algiers +24, Catalan and Leonese +24 each, Tunis +21, Judaism +16; the old Carthage, Saharan and Maghrebi advances removed). Verified the regenerated mod loads exactly vanilla's 3,559 advances with every overridden advance token-identical apart from its gate. Added `tools/verify_fidelity.py` and fidelity tests, including mutation tests proving the check fails when the output drifts.
 - **2026-10-02 (CI)** - added the GitHub Actions workflow and grew the suite from 45 to 71 tests: metadata and BOM hygiene, a pinned mod id, menu localization coverage (settings, tabs, groups, buttons, dropdown options, action-log keys, cascades), the research-button rules (one block per advance, every gated advance researchable, the unit opt-in at the top of each unit advance's limit, scope values matching the dropdown), and user requirements pinned to real advances. Every new test was mutation-tested; doing so exposed that the unit opt-in check accepted the embedded gate's copy of the toggle, which does not cover the player's own units - now tightened.
+- **2026-10-17 (1.4.1)** - regenerated from 1.4.1 (build 25905365): about 26 advances rebalanced, 2 added (`silk_production_guild_advance`, `unlock_barbary_fusta`), vanilla `vassal.txt` changed - until regenerated the mod would have reverted those balance changes. Tall extended to 799 advances and 12 town rights (item 9): towns & cities migration, farmland and RGO expansion, RGO size, food storage `%`, population capacity in any form, and a building rule that catches advances unlocking capacity/food/migration buildings (Aqueduct System). Bonus-only polarity and the `research_cost` exclusion removed three false positives. DLC ownership enforced for the 12 DLC advances (item 10). Nation-locked town rights with tall bonuses now unlock (item 10).

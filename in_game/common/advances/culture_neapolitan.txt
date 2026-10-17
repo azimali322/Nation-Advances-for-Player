@@ -160,6 +160,7 @@ encouraged_city_living = {
 				OR = {
 					has_variable = hafp_all_advances_enabled
 					has_variable = hafp_g_age_age_3_discovery
+					has_variable = hafp_g_tall
 					has_variable = hafp_g_f_culture_neapolitan
 				}
 			}

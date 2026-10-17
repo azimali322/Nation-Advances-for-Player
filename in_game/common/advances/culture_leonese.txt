@@ -30,7 +30,7 @@
 
 atu_cradle_of_reconquista = {
 	age = age_1_traditions
-	icon = glorious_arms
+	icon = atu_cradle_of_reconquista
 
 	potential = {
 		OR = {
@@ -83,7 +83,7 @@ lon_kingdom_from_oviedo = {
 
 lon_order_of_santiago = {
 	age = age_1_traditions
-	icon = glorious_arms
+	icon = lon_order_of_santiago
 
 	potential = {
 		OR = {
@@ -112,7 +112,7 @@ lon_order_of_santiago = {
 
 leonese_gothic_art = {
 	age = age_2_renaissance
-	icon = patron_of_art
+	icon = leonese_gothic_art
 
 	potential = {
 		OR = {
