@@ -798,6 +798,23 @@ class TestUserRequirements(unittest.TestCase):
         self.assertGate("country_tle.txt", "ahg_hoggar_massif",
                         has=("hafp_g_reg_maghreb_region",))
 
+    def test_142_patch_changes(self):
+        """1.4.2: Toledan Steel boosts weaponry instead of steel output - still
+        goods output, so still Tall. The Japanese Atakebune moved from the Age
+        of Discovery to the Age of Reformation; its era toggle and research
+        block must follow, and it stays behind the unique-unit opt-in."""
+        self.assertGate("country_cas.txt", "tol_toledan_steel",
+                        has=("global_weaponry_output_modifier", "hafp_g_tall"))
+        self.assertGate("2_ship_unlocks.txt", "unlock_atakebune",
+                        has=("has_variable = hafp_allow_unit_unlocks",
+                             "hafp_g_age_age_4_reformation"),
+                        lacks=("hafp_g_age_age_3_discovery",))
+        block = re.search(r"NOT = \{ has_advance = unlock_atakebune \}(.*?)research_advance",
+                          read_text(RESEARCH), re.S)
+        self.assertIsNotNone(block, "unlock_atakebune has no research block")
+        self.assertIn("current_age_or_later = { age = age_4_reformation }", block.group(1))
+        self.assertNotIn("age_3_discovery", block.group(1))
+
 
 def shipped_advances(fname):
     """Advance id -> body for one shipped override file ({} if absent)."""

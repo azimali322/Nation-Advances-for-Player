@@ -36,7 +36,19 @@ a message telling you to do it whenever your Python and the pin disagree.
 4. If a test says an advance or nation "is gone", the patch renamed or removed
    it. Pick another advance with the same behaviour and update the test (or
    ask Claude to).
-5. For a new game version, bump `supported_game_version` and the version tag
+5. To see everything else the patch touched, list the game files Steam wrote
+   on patch day (Git Bash, from the EU5 install folder, with the patch's date):
+
+   ```
+   find game -type f -newermt 2026-10-20
+   ```
+
+   The folders that feed the mod are `in_game/common/advances`,
+   `subject_types`, `town_rights`, `building_types` (Tall buildings) and
+   `main_menu/setup/1337` (geography). The generators already re-read all of
+   them, so `git diff` after regenerating shows what actually changed for the
+   mod.
+6. For a new game version, bump `supported_game_version` and the version tag
    in `.metadata/metadata.json` together (a test enforces it), and add a
    TESTING.md round for the in-game checks.
 

@@ -100,7 +100,7 @@ Defaults assume a standard Steam install; pass the EU5 folder as `--game` / firs
 
 ```
 .metadata/metadata.json      mod metadata + CMF dependency
-in_game/common/advances/     generated advance overrides (209 files, ~2,844 advances)
+in_game/common/advances/     generated advance overrides (209 files, ~2,845 advances)
 in_game/common/scripted_effects/
 in_game/common/on_action/
 main_menu/localization/english/

@@ -1,5 +1,13 @@
 # Handicap Advances for Player — In-Game Test Plan (phase 2, CMM menu)
 
+## Round 23 checks (1.4.2 open beta)
+
+Regenerated from 1.4.2 (build 26043558). Only three advances changed and the scale is unchanged: 209 override files, 2,845 gated advances, 824 tall, 157 unit-granting.
+
+- [ ] **Load on 1.4.2** and check `error.log` for anything mentioning `hafp` or `advances`.
+- [ ] **Atakebune** (Japanese ship) is now an Age of Reformation advance in the Global Trade tree. With *Allow Unique Unit Advances* on, the *Age of Reformation* era toggle unlocks it and the *Age of Discovery* toggle no longer does. The research buttons grant it only from the Age of Reformation onward (default scope).
+- [ ] **Toledan Steel** (Toledo) now gives +10% weaponry output instead of steel output, and is still unlocked by *Tall Empire Advances* alone.
+
 ## Round 22 checks (Tall: colonization, migration speed, life expectancy)
 
 - [ ] With only *Tall Empire Advances* on: Greenland's *Western Outpost* and Castile's *New World* (colonial migration), Kongo's *European Contact* (colonial range), Brandenburg's *Edict of Potsdam* (migration speed) and Bosnia's *Ljekaruše* (life expectancy) are researchable.

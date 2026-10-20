@@ -62595,50 +62595,6 @@ hafp_research_age_3_discovery_custom = {
 	}
 	if = {
 		limit = {
-			NOT = { has_advance = unlock_atakebune }
-			has_variable = hafp_allow_unit_unlocks
-			OR = {
-				AND = {
-					OR = {
-						"variable_map(cmm|flag:hafp__research_scope)" = 1
-						AND = {
-							"variable_map(cmm|flag:hafp__research_scope)" = 2
-							current_age_or_later = { age = age_3_discovery }
-						}
-					}
-					OR = {
-					AND = {
-					has_variable = hafp_enabled
-					has_variable = hafp_allow_unit_unlocks
-					OR = {
-					has_variable = hafp_all_advances_enabled
-					has_variable = hafp_g_age_age_3_discovery
-					}
-					}
-					AND = {
-					culture = {
-					has_culture_group = culture_group:japanese_group
-					}
-					}
-					}
-				}
-				AND = {
-					has_advance_available = unlock_atakebune
-					current_age_or_later = { age = age_3_discovery }
-					OR = {
-						"variable_map(cmm|flag:hafp__research_scope)" = 3
-						AND = {
-							"variable_map(cmm|flag:hafp__research_scope)" = 4
-							current_age = age_3_discovery
-						}
-					}
-				}
-			}
-		}
-		research_advance = advance_type:unlock_atakebune
-	}
-	if = {
-		limit = {
 			NOT = { has_advance = steppe_horde_tribal_cultural_identity_law_advance }
 			OR = {
 				AND = {
@@ -86814,6 +86770,50 @@ hafp_research_age_4_reformation_custom = {
 			}
 		}
 		research_advance = advance_type:unlock_galiot
+	}
+	if = {
+		limit = {
+			NOT = { has_advance = unlock_atakebune }
+			has_variable = hafp_allow_unit_unlocks
+			OR = {
+				AND = {
+					OR = {
+						"variable_map(cmm|flag:hafp__research_scope)" = 1
+						AND = {
+							"variable_map(cmm|flag:hafp__research_scope)" = 2
+							current_age_or_later = { age = age_4_reformation }
+						}
+					}
+					OR = {
+					AND = {
+					has_variable = hafp_enabled
+					has_variable = hafp_allow_unit_unlocks
+					OR = {
+					has_variable = hafp_all_advances_enabled
+					has_variable = hafp_g_age_age_4_reformation
+					}
+					}
+					AND = {
+					culture = {
+					has_culture_group = culture_group:japanese_group
+					}
+					}
+					}
+				}
+				AND = {
+					has_advance_available = unlock_atakebune
+					current_age_or_later = { age = age_4_reformation }
+					OR = {
+						"variable_map(cmm|flag:hafp__research_scope)" = 3
+						AND = {
+							"variable_map(cmm|flag:hafp__research_scope)" = 4
+							current_age = age_4_reformation
+						}
+					}
+				}
+			}
+		}
+		research_advance = advance_type:unlock_atakebune
 	}
 	if = {
 		limit = {
